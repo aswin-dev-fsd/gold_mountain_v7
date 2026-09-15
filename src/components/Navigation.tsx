@@ -146,18 +146,6 @@ export default function Navigation() {
               )}
             </div>
 
-            {/* WhatsApp Direct Chat (Visible on Tablet & Desktop; inside Drawer on Mobile) */}
-            <a
-              href="https://wa.me/910000000000"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Connect on WhatsApp"
-              className="hidden sm:flex w-9 h-9 sm:w-10 sm:h-10 rounded-full items-center justify-center text-forest-deep hover:text-forest-charcoal hover:bg-forest-deep/10 transition-colors"
-              title="Chat on WhatsApp"
-            >
-              <span className="material-symbols-outlined text-[20px]">chat</span>
-            </a>
-
             {/* Book / Enquire Desktop & Tablet CTA */}
             <a
               href="#enquiry"
@@ -173,14 +161,6 @@ export default function Navigation() {
             >
               Book
             </a>
-
-            {/* Guest Portal Avatar */}
-            <div
-              className="hidden lg:flex w-8 h-8 rounded-full bg-primary items-center justify-center cursor-pointer hover:opacity-90 transition-opacity shadow-2xs"
-              title="Guest Portal"
-            >
-              <span className="material-symbols-outlined text-on-primary text-[18px]">person</span>
-            </div>
 
             {/* Hamburger Toggle (Tablets & Mobile) */}
             <button
@@ -269,17 +249,6 @@ export default function Navigation() {
               ))}
             </div>
           </div>
-
-          {/* WhatsApp Direct Concierge */}
-          <a
-            href="https://wa.me/910000000000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-surface-cream border border-border-muted text-forest-deep font-label-md text-label-md uppercase tracking-wider hover:bg-forest-deep/5 transition-colors font-semibold"
-          >
-            <span className="material-symbols-outlined text-[18px]">chat</span>
-            <span>WhatsApp Concierge</span>
-          </a>
 
           {/* Book / Enquire Primary Button */}
           <a
