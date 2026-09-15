@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scratch, agents & debug scripts
+screenshots/
+temp/
+.agents/
+ORIGINAL_REQUEST.md
+*.js
+!*.config.js
+
