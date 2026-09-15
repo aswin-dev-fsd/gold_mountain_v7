@@ -64,7 +64,7 @@ export default function Hero() {
       scrub: true,
       animation: gsap.timeline()
         .to(bgRef.current, { yPercent: 20, ease: "none" }, 0)
-        .to(contentRef.current, { yPercent: 40, opacity: 0, ease: "none" }, 0)
+        .to(contentRef.current, { yPercent: 40, ease: "none" }, 0)
     });
 
   }, { scope: sectionRef });
