@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import { revealStagger, createParallax, createImageReveal, revealSection } from "../utils/animations";
+import { revealStagger, createParallax, createImageReveal, revealSection, createImageParallax } from "../utils/animations";
 
 export default function Resort() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -21,7 +21,7 @@ export default function Resort() {
     // Right Image Reveal
     if (rightImageRef.current) {
       createImageReveal(rightImageRef.current);
-      createParallax(rightImageRef.current, rightImageContainerRef.current!, 15);
+      createImageParallax(rightImageRef.current, rightImageContainerRef.current!);
     }
 
     // Cards Stagger

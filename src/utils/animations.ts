@@ -79,6 +79,34 @@ export const createParallax = (element: Element | string, trigger: Element | str
   });
 };
 
+export const createImageParallax = (
+  element: Element | string,
+  trigger: Element | string,
+  fromYPercent = -8,
+  toYPercent = 8,
+  scale = 1.2
+) => {
+  if (isReducedMotion()) {
+    gsap.set(element, { scale: 1, yPercent: 0 });
+    return;
+  }
+  return gsap.fromTo(
+    element,
+    { yPercent: fromYPercent, scale },
+    {
+      yPercent: toYPercent,
+      scale,
+      ease: "none",
+      scrollTrigger: {
+        trigger: trigger,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    }
+  );
+};
+
 export const createImageReveal = (element: Element | string) => {
   if (isReducedMotion()) {
     gsap.set(element, { opacity: 1 });

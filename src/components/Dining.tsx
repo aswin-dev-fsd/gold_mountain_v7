@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import { revealStagger, createParallax, createImageReveal, revealSection } from "../utils/animations";
+import { revealStagger, createParallax, createImageReveal, revealSection, createImageParallax } from "../utils/animations";
 
 export default function Dining() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -17,7 +17,7 @@ export default function Dining() {
     // Image Reveal & Parallax
     if (imageRef.current) {
       createImageReveal(imageRef.current);
-      createParallax(imageRef.current, imageContainerRef.current!, 15);
+      createImageParallax(imageRef.current, imageContainerRef.current!);
     }
 
     // Floating Quote Delayed Entrance
@@ -53,7 +53,7 @@ export default function Dining() {
             <div ref={imageContainerRef} className="rounded-xl overflow-hidden shadow-2xl bg-canvas-ivory aspect-[4/3] group">
               <div 
                 ref={imageRef}
-                className="w-full h-full bg-cover bg-center transition-transform duration-1000" 
+                className="w-full h-full bg-cover bg-center" 
                 style={{ backgroundImage: "url('/images/dining_image.png')" }}
               ></div>
             </div>

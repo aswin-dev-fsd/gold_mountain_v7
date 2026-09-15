@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import { revealStagger, createParallax, createImageReveal } from "../utils/animations";
+import { revealStagger, createParallax, createImageReveal, createImageParallax } from "../utils/animations";
 
 export default function Wellness() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -24,7 +24,7 @@ export default function Wellness() {
     // Image reveal & parallax
     if (imageRef.current) {
       createImageReveal(imageRef.current);
-      createParallax(imageRef.current, imageContainerRef.current!, 10);
+      createImageParallax(imageRef.current, imageContainerRef.current!);
     }
 
     // Overlay depth entrance
@@ -79,7 +79,7 @@ export default function Wellness() {
           <div ref={imageContainerRef} className="lg:col-span-7 relative group rounded-xl overflow-hidden shadow-xl bg-surface-cream">
             <div 
               ref={imageRef}
-              className="w-full aspect-[4/3] bg-cover bg-center transition-transform duration-700" 
+              className="w-full aspect-[4/3] bg-cover bg-center" 
               style={{ backgroundImage: "url('/images/wellness_image.png')" }}
             ></div>
             
