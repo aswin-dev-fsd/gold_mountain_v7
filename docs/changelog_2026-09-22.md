@@ -8,4 +8,5 @@
 - **Development**: Refactored `Navigation.tsx` (Desktop and Mobile) to use `next/link` and point to the new routes.
 - **Development**: Updated `Hero.tsx` dual CTA buttons to use `next/link` routing to `/wellness` and `/stay`.
 - **Development**: Implemented the complete `/wellness` page with Hero, Philosophy, Approach, Ayurveda highlight, Dimensions of Healing grid, Packages & Programmes cards, and CTAs.
+- **Development**: Implemented the complete `/ayurveda` page with Hero, Introduction, Interactive Therapies Accordion, Panchakarma & Rasayana Packages, and CTAs.
 - **Documentation**: Generated `status.md` to track ongoing project progress.
