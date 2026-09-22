@@ -18,7 +18,7 @@
 
 ### Phase 2: Page Development (In Progress)
 - **Home (`/`)**: Core sections built. Links updated. Needs final review against client requirements.
-- **Wellness (`/wellness`)**: Pending. Placeholder created.
+- **Wellness (`/wellness`)**: Completed. Includes Hero, Philosophy, Approach, Ayurveda Highlight, Dimensions of Healing, Packages, and CTAs.
 - **Ayurveda (`/ayurveda`)**: Pending. Placeholder created.
 - **Stay & Rooms (`/stay`)**: Pending. Placeholder created.
 - **About Us (`/about`)**: Pending. Placeholder created.

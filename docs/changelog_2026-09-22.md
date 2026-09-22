@@ -7,4 +7,5 @@
 - **Development**: Scaffolded new empty page directories in Next.js App Router (`/wellness`, `/ayurveda`, `/stay`, `/about`, `/contact`).
 - **Development**: Refactored `Navigation.tsx` (Desktop and Mobile) to use `next/link` and point to the new routes.
 - **Development**: Updated `Hero.tsx` dual CTA buttons to use `next/link` routing to `/wellness` and `/stay`.
+- **Development**: Implemented the complete `/wellness` page with Hero, Philosophy, Approach, Ayurveda highlight, Dimensions of Healing grid, Packages & Programmes cards, and CTAs.
 - **Documentation**: Generated `status.md` to track ongoing project progress.
