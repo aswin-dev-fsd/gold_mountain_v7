@@ -1,0 +1,252 @@
+BUILD PAGE: HOME
+
+The homepage is the primary storytelling page.
+
+Its job is not to explain everything.
+
+Its job is to create desire, communicate the positioning and guide the visitor toward Wellness, Stay, Experience and Enquiry.
+
+Homepage information hierarchy:
+
+1. HERO
+2. WELLNESS
+3. RESORT / PLACE
+4. STAY
+5. EXPERIENCE
+6. LOCATION
+7. DINING
+8. TRUST
+9. BLOG
+10. BOOK / ENQUIRE
+
+--------------------------------------------------
+SECTION 01 — HERO
+--------------------------------------------------
+
+Use a full-width immersive image of the actual resort/nature/mountain surroundings.
+
+Headline direction:
+
+A Wellness Stay
+in the Presence of Arunachala.
+
+Supporting copy:
+
+A peaceful resort where traditional wellness, healthy food and nature come together.
+
+Primary CTA:
+Explore Wellness
+
+Secondary CTA:
+Plan Your Stay
+
+Do not overcrowd the hero.
+
+Use the logo in the navigation.
+
+--------------------------------------------------
+SECTION 02 — WELLNESS
+--------------------------------------------------
+
+This should be the strongest section after the hero.
+
+Headline:
+
+Wellness, in its own time.
+
+Explain that Gold Mountain offers an environment where guests can slow down, reconnect and explore traditional wellness practices.
+
+Include:
+- Ayurveda
+- Traditional therapies
+- Yoga
+- Meditation
+- Healthy food
+- Nature
+
+CTA:
+Explore Wellness
+
+Use strong photography.
+
+--------------------------------------------------
+SECTION 03 — THE RESORT
+--------------------------------------------------
+
+Introduce Gold Mountain as a resort first.
+
+Headline direction:
+
+Stay close to nature.
+Stay close to yourself.
+
+Show:
+- Architecture
+- Rooms
+- Gardens
+- Common spaces
+- Natural surroundings
+
+CTA:
+Explore the Resort
+
+--------------------------------------------------
+SECTION 04 — STAY
+--------------------------------------------------
+
+Show accommodation.
+
+Use actual available room categories only.
+
+Each accommodation card should include:
+- Image
+- Room name
+- Short description
+- Key amenities if confirmed
+- Enquire / View Stay
+
+Do not show fake prices.
+
+--------------------------------------------------
+SECTION 05 — EXPERIENCE
+--------------------------------------------------
+
+Introduce the unique experiences available at the property.
+
+Potential confirmed strategic areas include:
+- Shiva Shakthi Darshanam
+- Cow shelter
+- Fish pond
+- Five-element philosophy
+- Farm-grown vegetables
+- Herbal garden
+
+Only display these as factual offerings once the client confirms the final content.
+
+Headline:
+
+More than a stay.
+
+Supporting idea:
+
+A place shaped by nature, tradition and a deeper connection to the surroundings.
+
+CTA:
+Explore the Experience
+
+--------------------------------------------------
+SECTION 06 — LOCATION
+--------------------------------------------------
+
+Make the location a major storytelling element.
+
+Headline direction:
+
+In the presence of Arunachala.
+
+Explain:
+- Arunachala to the East
+- Parvati Malai mountain stretch to the West
+- Natural surroundings
+- Connection to Tiruvannamalai
+
+Use a map/location visual where appropriate.
+
+Do not exaggerate geographical claims.
+
+--------------------------------------------------
+SECTION 07 — DINING
+--------------------------------------------------
+
+Position food as part of wellness.
+
+Headline:
+
+Food that nourishes.
+
+Explain healthy, thoughtful food without making unsupported medical claims.
+
+Show actual food photography.
+
+CTA:
+Discover Dining
+
+--------------------------------------------------
+SECTION 08 — TRUST
+--------------------------------------------------
+
+Use genuine information only.
+
+Possible elements:
+- Guest testimonials
+- Guest feedback
+- Resort experience
+- Years of operation if confirmed
+- Genuine ratings if confirmed
+
+Never fabricate testimonials or statistics.
+
+--------------------------------------------------
+SECTION 09 — BLOG
+--------------------------------------------------
+
+The website should use BLOG instead of GALLERY.
+
+Show 3 featured articles.
+
+Topics may include:
+- Wellness
+- Ayurveda
+- Arunachala
+- Healthy food
+- Lifestyle
+- Experiences around the resort
+
+Do not create fake articles.
+
+Use placeholders until actual content is supplied.
+
+--------------------------------------------------
+SECTION 10 — FINAL CTA
+--------------------------------------------------
+
+Headline:
+
+Your time at Gold Mountain begins here.
+
+Supporting text:
+
+Plan your stay, explore our wellness offerings or simply speak with us.
+
+Primary CTA:
+WhatsApp Us
+
+Secondary CTA:
+Send an Enquiry
+
+Email should be clearly available.
+
+--------------------------------------------------
+FOOTER
+--------------------------------------------------
+
+Include:
+
+Logo
+Short brand description
+Navigation
+Wellness
+Stay
+Experience
+About
+Blog
+Contact
+WhatsApp
+Email
+Address
+Google Maps
+Social links
+Privacy Policy
+Terms & Conditions
+
+Keep footer minimal.

@@ -1,0 +1,126 @@
+BUILD PAGE: WELLNESS
+
+PURPOSE:
+
+Introduce Gold Mountain's wellness philosophy without making the property look like an Ayurveda clinic.
+
+The visitor should understand:
+
+Wellness here is an experience.
+
+It includes traditional therapies, healthy food, movement, meditation, nature and lifestyle.
+
+--------------------------------------------------
+HERO
+--------------------------------------------------
+
+Headline:
+
+A slower way back to yourself.
+
+Supporting copy:
+
+Explore traditional wellness practices, nourishing food and quiet spaces designed to help you reconnect with body and mind.
+
+CTA:
+Explore Our Wellness
+
+--------------------------------------------------
+SECTION 02 — WELLNESS PHILOSOPHY
+--------------------------------------------------
+
+Explain:
+
+Gold Mountain brings together traditional wellness practices and the restorative qualities of nature.
+
+Keep copy short.
+
+Do not make medical claims.
+
+--------------------------------------------------
+SECTION 03 — WELLNESS APPROACH
+--------------------------------------------------
+
+Create a clean editorial grid containing:
+
+Ayurveda
+Traditional therapies
+Yoga
+Meditation
+Healthy food
+Nature
+Lifestyle
+
+Use minimal line icons.
+
+Do not make this look like a generic icon-card grid.
+
+--------------------------------------------------
+SECTION 04 — AYURVEDA
+--------------------------------------------------
+
+Introduce Ayurveda as one important part of the wellness experience.
+
+Headline:
+
+Traditional wisdom, thoughtfully experienced.
+
+Explain Ayurveda in simple international English.
+
+Include available therapies/packages only after client confirmation.
+
+CTA:
+Explore Ayurveda
+
+--------------------------------------------------
+SECTION 05 — HEALING
+--------------------------------------------------
+
+Introduce the client's wellness philosophy.
+
+Potential themes:
+- Body
+- Mind
+- Food
+- Movement
+- Nature
+- Rest
+
+If healing crystals are included, present them as part of the resort's wellness philosophy/experience, not as scientifically proven medical treatment.
+
+--------------------------------------------------
+SECTION 06 — PROGRAMMES / PACKAGES
+--------------------------------------------------
+
+Display confirmed Ayurveda and wellness packages.
+
+Each package:
+
+Package name
+Duration
+Short description
+What's included
+Price
+INR
+USD
+EUR
+Enquire
+
+Do not invent pricing.
+
+If price is missing:
+[PRICE TO BE PROVIDED]
+
+--------------------------------------------------
+SECTION 07 — FINAL CTA
+--------------------------------------------------
+
+Headline:
+
+Find the kind of wellness that suits your stay.
+
+CTA:
+Enquire on WhatsApp
+
+Secondary:
+Send an Email

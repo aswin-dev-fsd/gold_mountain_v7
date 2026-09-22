@@ -1,0 +1,17 @@
+INTENTIONAL DEVIATIONS FROM MASTER REQUIREMENTS
+================================================
+
+This document tracks intentional decisions that deviate from the original Master prompt and Lovable Important Notes.
+
+1. TYPOGRAPHY
+   - Requirement: Use Garet Sans and The Seasons.
+   - Change: We are using `Inter` and `Outfit` fonts instead.
+
+2. UI & VISUAL EFFECTS
+   - Requirement: Do not introduce glassmorphism. Avoid excessive parallax and animations.
+   - Change: Glassmorphism (`backdrop-blur-md`) is actively used for UI elements like buttons and overlays.
+   - Change: GSAP scroll-triggered parallax effects have been explicitly added and refined on images (e.g., maintaining a constant 1.2 scale with smooth Y-axis translation).
+
+3. NAVIGATION & BOOKING
+   - Requirement: WhatsApp is the primary conversion/enquiry method and should be easy to access.
+   - Change: The direct WhatsApp quick-link icons were removed from the desktop navbar and the mobile slide-out menu to clean up the navigation UI. The primary CTA is now the "Book / Enquire" button.

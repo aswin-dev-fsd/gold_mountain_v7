@@ -1,0 +1,45 @@
+STRICT IMPLEMENTATION RULE:
+
+Do not improvise the design direction.
+
+Do not add new sections simply to fill space.
+
+Do not invent content.
+
+Do not invent pricing.
+
+Do not invent testimonials.
+
+Do not invent facilities.
+
+Do not invent certifications.
+
+Do not invent wellness claims.
+
+Do not replace the approved typography.
+
+Do not change the approved colour direction.
+
+Do not redesign the logo.
+
+Do not introduce glassmorphism.
+
+Do not introduce excessive cards.
+
+Do not turn the website into an Ayurveda clinic website.
+
+Do not turn the website into a generic hotel booking website.
+
+Do not create a fake booking system.
+
+Do not create fake availability.
+
+If information is missing, use:
+
+[CONTENT TO BE PROVIDED]
+
+instead of generating fictional information.
+
+Prioritize visual hierarchy, whitespace, typography, photography and calm interactions.
+
+The final result should feel like a premium international wellness resort website, not an AI-generated template.

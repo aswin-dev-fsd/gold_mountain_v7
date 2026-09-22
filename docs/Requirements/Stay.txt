@@ -1,0 +1,84 @@
+BUILD PAGE: STAY
+
+PURPOSE:
+
+Sell the accommodation experience without turning the website into a generic hotel booking platform.
+
+--------------------------------------------------
+HERO
+--------------------------------------------------
+
+Headline:
+
+A peaceful place to stay.
+
+Supporting copy:
+
+Comfortable spaces surrounded by nature, created for rest and reconnection.
+
+--------------------------------------------------
+ROOMS
+--------------------------------------------------
+
+Use only confirmed room categories.
+
+For each room:
+
+Room name
+Photography
+Short description
+Amenities
+Capacity
+Price if available
+Enquire
+
+CTA:
+Enquire About This Room
+
+Do not create live availability.
+
+--------------------------------------------------
+MONTHLY STAYS
+--------------------------------------------------
+
+Add a dedicated section for monthly stays.
+
+Headline:
+
+Stay a little longer.
+
+Explain that monthly stay options are available.
+
+Use actual package information once provided.
+
+CTA:
+Ask About Monthly Stay
+
+--------------------------------------------------
+AMENITIES
+--------------------------------------------------
+
+Use confirmed amenities only.
+
+The previous website currently lists:
+
+- Room service
+- Dining area
+- Free parking
+- Air conditioning
+- High-speed Wi-Fi
+- CCTV
+- 24-hour front desk
+
+Verify these before final implementation.
+
+Do not add additional amenities automatically.
+
+--------------------------------------------------
+FINAL CTA
+--------------------------------------------------
+
+Plan your stay at Gold Mountain.
+
+WhatsApp
+Email

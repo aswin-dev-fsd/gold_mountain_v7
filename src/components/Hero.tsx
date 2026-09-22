@@ -5,7 +5,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { isReducedMotion, EASE_CINEMATIC } from "../utils/animations";
-
+import Link from "next/link";
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
@@ -120,20 +120,20 @@ export default function Hero() {
         
         {/* Dual Call to Actions */}
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
-          <a 
-            href="#wellness" 
+          <Link 
+            href="/wellness" 
             className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-forest-deep text-canvas-ivory px-space-xl py-space-md rounded-lg font-label-lg text-label-lg uppercase tracking-wider shadow-lg hover:bg-forest-charcoal hover:border-accent-gold/60 border border-forest-deep focus:ring-2 focus:ring-accent-gold/50 active:scale-95 hover:-translate-y-0.5 transition-all duration-300 group"
           >
             <span>Explore Wellness</span>
             <span className="material-symbols-outlined text-accent-gold text-[18px] group-hover:translate-x-1 transition-transform">east</span>
-          </a>
-          <a 
-            href="#stay" 
+          </Link>
+          <Link 
+            href="/stay" 
             className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md px-space-xl py-space-md rounded-lg font-label-lg text-label-lg uppercase tracking-wider shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300 hover:-translate-y-0.5"
           >
             <span>Plan Your Stay</span>
             <span className="material-symbols-outlined text-gold-light text-[18px]">calendar_month</span>
-          </a>
+          </Link>
         </div>
         
         {/* Micro Indicator */}

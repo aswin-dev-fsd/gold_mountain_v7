@@ -1,0 +1,27 @@
+CREATE REUSABLE COMPONENTS:
+
+1. Header
+2. Mobile Navigation
+3. Footer
+4. Primary Button
+5. Secondary Button
+6. WhatsApp CTA
+7. Enquiry CTA
+8. Editorial Image/Text Section
+9. Image Gallery
+10. Room Card
+11. Wellness Offering
+12. Experience Block
+13. Blog Card
+14. Testimonial
+15. Pricing / Package Card
+16. Enquiry Form
+17. Section Heading
+18. Location Block
+19. Breadcrumb
+20. Image Reveal Animation
+21. FAQ Accordion
+
+All components must follow the same design system.
+
+Do not create visually unrelated components for different pages.

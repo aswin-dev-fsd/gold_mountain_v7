@@ -5,15 +5,15 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+import Link from "next/link";
+
 const NAV_ITEMS = [
-  { label: "Wellness", href: "#wellness" },
-  { label: "The Resort", href: "#the-resort" },
-  { label: "Stay", href: "#stay" },
-  { label: "Experiences", href: "#experiences" },
-  { label: "Location", href: "#location" },
-  { label: "Dining", href: "#dining" },
-  { label: "Journal", href: "#journal" },
-  { label: "Contact", href: "#enquiry" },
+  { label: "Home", href: "/" },
+  { label: "Wellness", href: "/wellness" },
+  { label: "Ayurveda", href: "/ayurveda" },
+  { label: "Stay & Rooms", href: "/stay" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const CURRENCIES = [
@@ -82,20 +82,20 @@ export default function Navigation() {
       <header ref={headerRef} className="fixed top-0 left-0 w-full z-40 bg-canvas-ivory/95 backdrop-blur-md transition-shadow duration-300 shadow-[0_1px_8px_rgba(27,50,36,0.05)]">
         <div className="h-20 w-full px-4 sm:px-margin lg:px-6 xl:px-6 2xl:px-margin-desktop flex items-center justify-between gap-2 xl:gap-3">
           {/* Logo */}
-          <a href="#" className="flex items-center shrink-0 group" aria-label="Gold Mountain Wellness Sanctuary Home">
+          <Link href="/" className="flex items-center shrink-0 group" aria-label="Gold Mountain Wellness Sanctuary Home">
             <img alt="Gold Mountain Wellness Resort" className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105" src="/images/logo.png" />
-          </a>
+          </Link>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden xl:flex items-center gap-2 2xl:gap-5 shrink">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className="font-label-md text-xs 2xl:text-label-md uppercase text-on-surface-variant hover:text-forest-deep transition-colors whitespace-nowrap py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-accent-gold hover:after:w-full after:transition-all after:duration-200"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -147,20 +147,20 @@ export default function Navigation() {
             </div>
 
             {/* Book / Enquire Desktop & Tablet CTA */}
-            <a
-              href="#enquiry"
+            <Link
+              href="/contact"
               className="hidden sm:inline-flex items-center justify-center bg-forest-deep text-canvas-ivory font-label-md text-xs 2xl:text-label-md uppercase tracking-wider px-3 xl:px-4 2xl:px-5 py-2 2xl:py-2.5 rounded-lg hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep shadow-sm transition-all font-semibold active:scale-95"
             >
               Book / Enquire
-            </a>
+            </Link>
 
             {/* Compact Mobile Book CTA */}
-            <a
-              href="#enquiry"
+            <Link
+              href="/contact"
               className="sm:hidden inline-flex items-center justify-center bg-forest-deep text-canvas-ivory font-label-sm text-[11px] uppercase tracking-wider px-3.5 py-2 min-h-[36px] rounded-md hover:bg-forest-charcoal font-semibold active:scale-95 shadow-xs"
             >
               Book
-            </a>
+            </Link>
 
             {/* Hamburger Toggle (Tablets & Mobile) */}
             <button
@@ -196,9 +196,9 @@ export default function Navigation() {
         <div>
           {/* Drawer Top Header */}
           <div className="flex items-center justify-between pb-4 border-b border-accent-gold/25">
-            <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
               <img alt="Gold Mountain Logo" className="h-9 sm:h-10 w-auto object-contain" src="/images/logo.png" />
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -212,7 +212,7 @@ export default function Navigation() {
           {/* Navigation Links */}
           <nav className="flex flex-col py-6 space-y-1">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -222,7 +222,7 @@ export default function Navigation() {
                 <span className="material-symbols-outlined text-border-muted text-[18px] group-hover:text-accent-terracotta group-hover:translate-x-0.5 transition-all">
                   chevron_right
                 </span>
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
@@ -251,13 +251,13 @@ export default function Navigation() {
           </div>
 
           {/* Book / Enquire Primary Button */}
-          <a
-            href="#enquiry"
+          <Link
+            href="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
             className="w-full flex items-center justify-center py-3 px-4 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-widest hover:bg-forest-charcoal shadow-sm transition-all font-semibold active:scale-[0.98]"
           >
             Book / Enquire
-          </a>
+          </Link>
 
           {/* Sanctuary Location Note */}
           <div className="text-center pt-2">

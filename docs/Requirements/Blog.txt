@@ -1,0 +1,80 @@
+BUILD PAGE: BLOG
+
+PURPOSE:
+
+Replace the previous Gallery navigation with a Blog.
+
+The blog should support:
+- International SEO
+- Wellness education
+- Arunachala discovery
+- Lifestyle content
+- Resort storytelling
+- Ayurveda education
+
+--------------------------------------------------
+BLOG HERO
+--------------------------------------------------
+
+Headline:
+
+Stories from Gold Mountain.
+
+Supporting copy:
+
+Thoughts on wellness, nature, food, Ayurveda and life around Arunachala.
+
+--------------------------------------------------
+CATEGORIES
+--------------------------------------------------
+
+Wellness
+Ayurveda
+Food
+Nature
+Arunachala
+Life at Gold Mountain
+
+--------------------------------------------------
+BLOG CARDS
+--------------------------------------------------
+
+Each card:
+
+Image
+Category
+Title
+Short excerpt
+Read article
+
+Do not generate fake article statistics.
+
+Do not create fake author names.
+
+--------------------------------------------------
+ARTICLE PAGE
+--------------------------------------------------
+
+Include:
+
+Title
+Category
+Date
+Hero image
+Article content
+Related articles
+CTA to Gold Mountain
+
+SEO-friendly structure.
+
+--------------------------------------------------
+IMPORTANT
+--------------------------------------------------
+
+If articles are not supplied:
+
+Create sample placeholders only.
+
+Clearly label them for replacement.
+
+Do not invent articles and present them as real Gold Mountain content.

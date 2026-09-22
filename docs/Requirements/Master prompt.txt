@@ -1,0 +1,613 @@
+PROJECT NAME:
+Gold Mountain Wellness Resort
+
+PROJECT TYPE:
+Premium international-facing wellness resort website
+
+PRIMARY GOAL:
+Design and develop a premium, calm, editorial-style website for Gold Mountain Wellness Resort in Tiruvannamalai, Tamil Nadu, India.
+
+The website must position Gold Mountain primarily as a WELLNESS RESORT.
+
+It must NOT feel like:
+- An Ayurveda clinic
+- An Ayurveda treatment centre
+- A retreat-only business
+- A generic hotel website
+- A spiritual organization
+- A medical website
+- A typical Indian resort booking website
+- A generic wellness template
+
+The experience should communicate:
+
+RESORT + NATURE + WELLNESS + HEALING + FOOD + LOCATION + EXPERIENCE
+
+with the resort experience being the foundation and wellness being the strongest supporting proposition.
+
+--------------------------------------------------
+1. BRAND POSITIONING
+--------------------------------------------------
+
+Gold Mountain Wellness Resort is a peaceful wellness resort located in the natural and spiritual surroundings of Arunachala, Tiruvannamalai.
+
+The core idea is:
+
+"Heal the body and mind through traditional therapy and healthy food amidst nature, in the presence of divine Arunachala."
+
+The website should communicate that guests come to Gold Mountain not only for Ayurveda or treatments, but to stay, slow down, reconnect with nature, experience the location, eat well and explore wellness at their own pace.
+
+The resort itself is the destination.
+
+Wellness is part of the experience.
+
+Ayurveda is an important offering, but it should NOT dominate the entire brand.
+
+--------------------------------------------------
+2. TARGET AUDIENCE
+--------------------------------------------------
+
+PRIMARY AUDIENCE:
+
+International guests looking for:
+- A peaceful wellness-oriented stay in India
+- Nature
+- Traditional Indian wellness practices
+- Ayurveda
+- Healthy food
+- Spiritual surroundings
+- A meaningful travel experience
+- Comfortable accommodation
+- A slower and more intentional stay
+
+SECONDARY AUDIENCE:
+
+Indian guests looking for:
+- Wellness stays
+- Peaceful accommodation
+- Ayurveda
+- Nature
+- Spiritual experiences around Arunachala
+- Longer stays
+- Healthy food
+- Rest and rejuvenation
+
+The website should be understandable to someone who has never heard of Gold Mountain or Tiruvannamalai.
+
+Avoid assuming the visitor already understands Ayurveda, Arunachala or Indian spiritual practices.
+
+Explain things simply and respectfully.
+
+--------------------------------------------------
+3. CONTENT PRIORITY
+--------------------------------------------------
+
+The website content hierarchy must follow this approximate priority:
+
+50% — WELLNESS
+20% — LOCATION
+15% — FOOD / DINING
+10% — RESORT / STAY
+5% — BRAND STORY
+
+However:
+
+DO NOT make the website look like 50% of the screen is Ayurveda.
+
+Wellness includes:
+- Healing
+- Healthy lifestyle
+- Ayurveda
+- Traditional therapies
+- Meditation
+- Yogic practices
+- Nature
+- Food
+- Mind-body wellbeing
+
+--------------------------------------------------
+4. CORE MESSAGE
+--------------------------------------------------
+
+The main strategic statement is:
+
+"Healing the body and mind through traditional therapy and healthy food amidst nature, in the presence of divine Arunachala."
+
+Use this idea throughout the website without repeating the exact sentence excessively.
+
+The website should make visitors understand:
+
+COME FOR THE PLACE.
+STAY FOR THE EXPERIENCE.
+DISCOVER WELLNESS.
+LEAVE FEELING RESTORED.
+
+Do not necessarily use those exact words as visible copy unless appropriate. This is the UX philosophy behind the website.
+
+--------------------------------------------------
+5. LOCATION STORY
+--------------------------------------------------
+
+Location is a major part of the brand.
+
+Gold Mountain is surrounded by the natural landscape around Arunachala.
+
+The strategic location story should communicate:
+
+- Arunachala to the East
+- Parvati Malai mountain stretch to the West
+- The resort/farm land surrounded by nature
+- Proximity to Tiruvannamalai and Arunachaleswarar Temple
+- Peaceful natural surroundings
+- Connection between nature, spirituality and wellbeing
+
+Do not invent geographical facts.
+
+Do not exaggerate views.
+
+Do not claim that the resort has a direct view of something unless confirmed by the client.
+
+--------------------------------------------------
+6. VISUAL DIRECTION
+--------------------------------------------------
+
+The visual direction must feel:
+
+MINIMAL
+LUXURIOUS
+CALM
+EDITORIAL
+NATURAL
+PREMIUM
+INTERNATIONAL
+WARM
+TIMELESS
+
+Reference the visual feeling of high-end wellness resorts and boutique hospitality brands.
+
+The website should feel closer to a premium editorial hospitality website than a conventional hotel website.
+
+Use:
+- Large photography
+- Generous whitespace
+- Elegant typography
+- Strong visual hierarchy
+- Editorial layouts
+- Asymmetrical compositions where appropriate
+- Large headings
+- Short paragraphs
+- Fine divider lines
+- Subtle icons
+- Organic shapes
+- Minimal line illustrations
+- Restrained decorative elements
+- Natural photography
+
+Avoid:
+- Excessive cards
+- Heavy shadows
+- Glassmorphism
+- Excessive gradients
+- Neon colours
+- Excessive rounded cards
+- Overly decorative UI
+- Huge icon grids
+- Generic wellness illustrations
+- Stock-looking imagery
+- Overuse of gold
+- Excessive animations
+- Crowded layouts
+
+--------------------------------------------------
+7. TYPOGRAPHY
+--------------------------------------------------
+
+PRIMARY TYPEFACE:
+
+Garet Sans
+
+Use Garet Sans for:
+- Major headings
+- Navigation
+- Buttons
+- Labels
+- Supporting UI
+- Short body copy where appropriate
+
+SECONDARY TYPEFACE:
+
+The Seasons
+
+Use The Seasons for:
+- Editorial statements
+- Elegant supporting headings
+- Quotes
+- Selected display text
+- Emotional brand moments
+
+Typography should create contrast between:
+
+MODERN + CLEAN
+and
+EDITORIAL + HUMAN
+
+Do not introduce random third-party fonts.
+
+If the exact fonts are unavailable during development, use the closest possible fallback temporarily, but structure the CSS so the approved fonts can easily be inserted.
+
+Do NOT replace Garet with another geometric sans-serif without instruction.
+
+--------------------------------------------------
+8. COLOUR DIRECTION
+--------------------------------------------------
+
+Use the approved Gold Mountain brand colours from the supplied brand identity guidelines.
+
+The visual balance should be approximately:
+
+50% — Warm white / off-white
+25% — Deep natural green
+15% — Gold
+10% — Red / warm accent
+
+IMPORTANT:
+
+Do NOT interpret this as a requirement to put all four colours heavily inside every component.
+
+The colours should be used strategically.
+
+Primary visual environment:
+- Warm off-white
+- Deep green
+
+Gold:
+- Logo
+- Fine details
+- Buttons / accents
+- Dividers
+- Small highlights
+
+Red:
+- Extremely restrained accent only
+- Small decorative moments or specific highlights where appropriate
+
+Do NOT make the website gold-heavy.
+
+Do NOT use gradients simply because the brand contains gold.
+
+Do NOT create colourful wellness cards.
+
+--------------------------------------------------
+9. LOGO
+--------------------------------------------------
+
+Use the APPROVED Gold Mountain Wellness Resort logo.
+
+The approved direction contains:
+- Mountain line illustration
+- Crescent moon
+- GOLD MOUNTAIN wordmark
+- wellness resort secondary text
+
+Do not redesign the logo.
+
+Do not modify the mountain.
+
+Do not add a person, meditation figure, tree, lotus or additional illustration inside the logo.
+
+Use the supplied final logo assets.
+
+Logo should have sufficient clear space.
+
+--------------------------------------------------
+10. UI STYLE
+--------------------------------------------------
+
+The website should use a premium editorial hospitality UI.
+
+Preferred characteristics:
+
+- Full-width photography
+- Split-screen sections
+- Editorial text/image layouts
+- Large typography
+- Minimal navigation
+- Fine borders
+- Thin dividers
+- Subtle hover interactions
+- Scroll-based image movement
+- Gentle fade/slide animations
+- Image reveals
+- Smooth transitions
+
+Animations should be subtle.
+
+The website should feel slow and calm, not flashy.
+
+NO:
+- Excessive parallax
+- Excessive motion
+- Loading-heavy animations
+- Constant floating elements
+- Overly animated cards
+- Excessive glass effects
+
+--------------------------------------------------
+11. NAVIGATION
+--------------------------------------------------
+
+PRIMARY NAVIGATION:
+
+Home
+Wellness
+Stay
+Experience
+About
+Blog
+Contact
+
+PRIMARY CTA:
+
+Book / Enquire
+
+The navigation should remain simple.
+
+Do NOT add unnecessary navigation items.
+
+Do NOT use Gallery as a primary navigation item.
+
+Social media content can be integrated through selected sections or footer links.
+
+--------------------------------------------------
+12. BOOKING STRATEGY
+--------------------------------------------------
+
+IMPORTANT:
+
+DO NOT build a complex hotel booking engine into the homepage.
+
+The client has decided to use WhatsApp-based booking/enquiry.
+
+Primary conversion:
+
+WHATSAPP ENQUIRY
+
+Secondary conversion:
+
+EMAIL ENQUIRY
+
+The user should be able to enquire about:
+- Stay
+- Wellness programmes
+- Ayurveda packages
+- Monthly stays
+- Availability
+- Number of guests
+- Preferred dates
+- Questions
+
+The website should make it clear that the enquiry will be handled personally.
+
+Do NOT pretend that real-time room availability exists unless a real booking system/API is connected.
+
+Do NOT create fake availability calendars.
+
+Do NOT create fake booking confirmation systems.
+
+--------------------------------------------------
+13. INTERNATIONAL USER EXPERIENCE
+--------------------------------------------------
+
+The website is specifically being developed to appeal to international guests.
+
+Therefore:
+
+- Use clear international English
+- Avoid excessive Indian tourism clichés
+- Explain Ayurveda simply
+- Display pricing clearly
+- Support INR
+- Provide USD and EUR equivalents where applicable
+- Do not assume visitors understand Indian terminology
+- Show location clearly
+- Make contact options obvious
+- Include email as well as WhatsApp
+- Make forms simple
+- Avoid overly long forms
+- Make accommodation information easy to understand
+
+WhatsApp remains the primary enquiry CTA, but email must always be available as an alternative.
+
+--------------------------------------------------
+14. RESPONSIVE DESIGN
+--------------------------------------------------
+
+Build mobile-first responsive behaviour.
+
+Desktop:
+- Spacious editorial layouts
+- Large photography
+- Split sections
+- Strong typography
+
+Tablet:
+- Maintain hierarchy
+- Reduce spacing
+- Reorganize split layouts when required
+
+Mobile:
+- Do NOT simply shrink desktop
+- Rebuild sections where necessary
+- Keep typography readable
+- Maintain generous spacing
+- Stack content intelligently
+- Keep CTA accessible
+- WhatsApp enquiry should remain easy to access
+
+--------------------------------------------------
+15. IMAGE DIRECTION
+--------------------------------------------------
+
+Photography should feel:
+
+Natural
+Warm
+Quiet
+Authentic
+Premium
+Human
+Cinematic but believable
+
+Prioritize:
+- Arunachala / mountain surroundings
+- Resort architecture
+- Rooms
+- Natural landscape
+- Food
+- Wellness treatment spaces
+- Ayurveda
+- Meditation
+- Gardens
+- Herbal plants
+- Farm
+- Guest experiences
+- Details of the resort
+
+Avoid:
+- Generic spa stock photography
+- Fake luxury interiors
+- Unrealistic AI architecture
+- Excessively posed models
+- Generic Buddha imagery
+- Generic yoga stock images
+- Overly spiritual imagery
+
+Images should support the actual experience of Gold Mountain.
+
+--------------------------------------------------
+16. CONTENT RULE
+--------------------------------------------------
+
+THIS IS CRITICAL.
+
+DO NOT INVENT INFORMATION.
+
+Do not invent:
+- Room types
+- Prices
+- Therapies
+- Doctors
+- Certifications
+- Awards
+- Facilities
+- Guest numbers
+- Reviews
+- Medical claims
+- Distance claims
+- Resort facilities
+- Package durations
+- Availability
+- Testimonials
+- Founder's achievements
+
+If information is not provided, create a clearly marked placeholder:
+
+[CONTENT TO BE PROVIDED BY CLIENT]
+
+Never fabricate content to make the website look complete.
+
+--------------------------------------------------
+17. UX PHILOSOPHY
+--------------------------------------------------
+
+The visitor journey should broadly follow:
+
+DISCOVER
+↓
+UNDERSTAND
+↓
+CONNECT
+↓
+EXPLORE WELLNESS
+↓
+EXPERIENCE THE PLACE
+↓
+EXPLORE STAY
+↓
+BUILD TRUST
+↓
+ENQUIRE
+
+The website should sell the EXPERIENCE rather than aggressively sell packages.
+
+--------------------------------------------------
+18. DEVELOPMENT QUALITY
+--------------------------------------------------
+
+Build:
+- Clean component architecture
+- Reusable components
+- Responsive layouts
+- Semantic HTML
+- Accessible buttons and forms
+- Proper heading hierarchy
+- SEO-friendly structure
+- Optimized images
+- Lazy loading
+- Fast page performance
+- Proper metadata
+- Open Graph metadata
+- Accessible navigation
+- Keyboard-friendly interactions
+
+Do not create unnecessary dependencies.
+
+Do not add functionality that has not been requested.
+
+Do not change the content strategy.
+
+Do not change the brand strategy.
+
+Do not redesign the logo.
+
+Do not introduce another visual direction.
+
+--------------------------------------------------
+19. OVERALL DESIGN RULE
+--------------------------------------------------
+
+When there is a conflict between:
+
+MORE CONTENT
+and
+BETTER DESIGN
+
+choose better hierarchy and readability.
+
+When there is a conflict between:
+
+MORE UI ELEMENTS
+and
+SIMPLICITY
+
+choose simplicity.
+
+When there is a conflict between:
+
+TRENDY DESIGN
+and
+TIMELESS LUXURY
+
+choose timeless luxury.
+
+The final website should feel like:
+
+A premium wellness resort in nature.
+
+NOT:
+
+A wellness SaaS website.
+A spa website.
+An Ayurveda clinic.
+A generic hotel template.
+A futuristic glassmorphism website.

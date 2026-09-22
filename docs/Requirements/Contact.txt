@@ -1,0 +1,91 @@
+BUILD PAGE: CONTACT
+
+PURPOSE:
+
+Make contacting Gold Mountain extremely easy for international and Indian guests.
+
+--------------------------------------------------
+HERO
+--------------------------------------------------
+
+Headline:
+
+Let's plan your stay.
+
+Supporting copy:
+
+Have a question about staying, wellness programmes or availability? Speak with us directly.
+
+--------------------------------------------------
+CONTACT OPTIONS
+--------------------------------------------------
+
+WHATSAPP
+Primary CTA
+
+EMAIL
+Secondary CTA
+
+PHONE
+Use verified client number only.
+
+--------------------------------------------------
+ENQUIRY FORM
+--------------------------------------------------
+
+Keep it simple.
+
+Fields:
+
+Name *
+Email *
+WhatsApp / Phone
+Preferred dates
+Number of guests
+Enquiry type
+Message
+
+Enquiry type options:
+
+Stay
+Wellness
+Ayurveda
+Monthly Stay
+General Enquiry
+
+CTA:
+
+Send Enquiry
+
+After submission:
+
+Show a simple success message.
+
+Do not claim that a booking has been confirmed.
+
+--------------------------------------------------
+LOCATION
+--------------------------------------------------
+
+Show:
+
+No.97, Kottangal Road,
+Adiannamalai,
+Tiruvannamalai,
+Tamil Nadu 606604,
+India
+
+Use Google Maps integration.
+
+Verify address before production.
+
+--------------------------------------------------
+INTERNATIONAL CONTACT
+--------------------------------------------------
+
+Clearly show:
+
+WhatsApp
+Email
+
+Do not make WhatsApp the only contact method.
