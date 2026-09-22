@@ -191,6 +191,82 @@ function PhilosophyNarrative() {
   );
 }
 
+// --- GROUNDS & NOURISHMENT ---
+function GroundsAndNourishment() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    revealSection(contentRef.current as Element);
+  }, { scope: sectionRef });
+
+  return (
+    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
+      <div ref={contentRef} className="max-w-6xl mx-auto flex flex-col items-center text-center">
+        <span className="text-accent-terracotta uppercase tracking-widest font-label-sm text-sm mb-4 block">The Sanctuary</span>
+        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16">Grounds &amp; Nourishment</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
+          {/* Nature & Grounds */}
+          <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-sm">
+            <h3 className="text-xl font-headline-sm text-forest-deep mb-4 flex items-center gap-2">
+              <span className="material-symbols-outlined text-accent-gold">local_florist</span>
+              The Estate
+            </h3>
+            <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
+              <li className="flex gap-3">
+                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">grass</span>
+                <div>
+                  <strong className="block text-forest-deep font-medium">Goshala with Kangayam Cows</strong>
+                  <p>Our traditional cow shelter houses native Kangayam cows, playing a vital role in our organic farming cycle.</p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">yard</span>
+                <div>
+                  <strong className="block text-forest-deep font-medium">Organic Food Farm</strong>
+                  <p>A dedicated plot where we cultivate fresh, chemical-free vegetables and herbs used directly in our kitchens.</p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">deceased</span>
+                <div>
+                  <strong className="block text-forest-deep font-medium">Flower Garden</strong>
+                  <p>Tranquil walking paths surrounded by native flora, offering spaces for quiet reflection and meditation.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Dining */}
+          <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-sm">
+            <h3 className="text-xl font-headline-sm text-forest-deep mb-4 flex items-center gap-2">
+              <span className="material-symbols-outlined text-accent-gold">restaurant</span>
+              Nourishment
+            </h3>
+            <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
+              <li className="flex gap-3">
+                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">eco</span>
+                <div>
+                  <strong className="block text-forest-deep font-medium">Sattvic Vegetarian Restaurant</strong>
+                  <p>Our kitchen follows pure Sattvic principles, serving meals designed to bring clarity to the mind and lightness to the body.</p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">set_meal</span>
+                <div>
+                  <strong className="block text-forest-deep font-medium">Dietary Accommodations</strong>
+                  <p>Vegan and gluten-free meals are readily available upon advance request, thoughtfully prepared without compromising on taste.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // --- FINAL CTA ---
 function FinalCTA() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -224,6 +300,7 @@ export default function AboutPage() {
       <TheStory />
       <FounderProfile />
       <PhilosophyNarrative />
+      <GroundsAndNourishment />
       <FinalCTA />
       <Footer />
     </main>

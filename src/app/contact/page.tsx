@@ -183,13 +183,23 @@ function ContactDetails() {
 
       <div className="contact-block flex flex-col items-start p-6 bg-canvas-ivory border border-border-muted/50 rounded-sm">
         <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Location</span>
-        <p className="font-body-md text-forest-deep leading-relaxed">
+        <p className="font-body-md text-forest-deep leading-relaxed mb-4">
           No.97, Kottangal Road,<br/>
           Adiannamalai,<br/>
           Tiruvannamalai,<br/>
           Tamil Nadu 606604,<br/>
           India
         </p>
+        
+        <div className="w-full border-t border-border-muted/50 pt-4 mt-2">
+          <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-3">Nearby Attractions</span>
+          <ul className="space-y-2 text-sm text-forest-deep/80 font-body-sm">
+            <li className="flex justify-between"><span>Girivalam Path</span> <span className="text-accent-terracotta">1.0 KM</span></li>
+            <li className="flex justify-between"><span>Aadhi Arunachala Temple</span> <span className="text-accent-terracotta">1.5 KM</span></li>
+            <li className="flex justify-between"><span>Ramanasramam</span> <span className="text-accent-terracotta">5.0 KM</span></li>
+            <li className="flex justify-between"><span>Arunachaleswarar Temple</span> <span className="text-accent-terracotta">6.0 KM</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   );

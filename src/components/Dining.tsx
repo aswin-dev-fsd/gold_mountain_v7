@@ -73,7 +73,7 @@ export default function Dining() {
             <div ref={contentRef}>
               <div className="flex items-center gap-space-xs mb-space-xs">
                 <span className="h-0.5 w-6 bg-accent-gold"></span>
-                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Section 07 · Conscious Nourishment</span>
+                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Conscious Nourishment</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Food that nourishes.

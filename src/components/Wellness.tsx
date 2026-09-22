@@ -58,7 +58,7 @@ export default function Wellness() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-space-xs mb-space-xs">
               <span className="h-0.5 w-6 bg-accent-gold"></span>
-              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Section 02 · Sacred Restoration</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sacred Restoration</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Wellness, in its own time.

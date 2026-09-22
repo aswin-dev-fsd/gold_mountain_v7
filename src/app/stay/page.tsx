@@ -44,7 +44,7 @@ function StayHero() {
           A peaceful place to <span className="text-accent-gold italic font-serif">stay.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
-          Comfortable spaces surrounded by nature, created for rest and reconnection.
+          Comfortable spaces surrounded by nature, created for rest and reconnection. All rooms include breakfast, lunch, and dinner.
         </p>
       </div>
     </section>
@@ -54,22 +54,31 @@ function StayHero() {
 // --- ROOMS SECTION ---
 const ROOMS = [
   {
-    name: "Valley View Suite",
-    capacity: "2 Adults",
-    description: "Our signature suite offering expansive views of the valley. Features a private balcony, king-sized bed, and an en-suite bathroom with sustainable amenities designed for complete relaxation.",
-    amenities: ["Private Balcony", "King Size Bed", "En-suite Bathroom", "Forest Views"],
-    price: "[PRICE TO BE PROVIDED]",
+    name: "Mountain View Deluxe",
+    capacity: "2 Persons",
+    description: "Our comfortable deluxe room offering direct views of the mountain. Features a king-sized bed, air conditioning, and full board (breakfast, lunch, and dinner included).",
+    amenities: ["Mountain View", "King Size Bed", "Air Conditioning", "All Meals Included"],
+    price: "INR 3000",
     image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   },
   {
-    name: "Forest Pavilion",
-    capacity: "Up to 3 Adults",
-    description: "Tucked away in the greenery, the Forest Pavilion offers deep quiet and privacy. A spacious layout with natural wood finishes brings the calming energy of the outdoors inside.",
-    amenities: ["Spacious Layout", "Sitting Area", "Premium Linens", "Garden Access"],
-    price: "[PRICE TO BE PROVIDED]",
+    name: "Mountain View Suite",
+    capacity: "2 Persons",
+    description: "A spacious suite offering elevated mountain views and additional living space. Perfect for longer stays, featuring a king-sized bed, premium amenities, and full board.",
+    amenities: ["Spacious Layout", "Mountain View", "King Size Bed", "All Meals Included"],
+    price: "INR 4500",
     image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
     reverse: true
+  },
+  {
+    name: "Mountain View Family Suite",
+    capacity: "4 Persons",
+    description: "Our largest accommodation, designed for families or small groups. Offers multiple sleeping arrangements, expansive mountain views, and full board for all guests.",
+    amenities: ["Family Layout", "Mountain View", "King Size Beds", "All Meals Included"],
+    price: "INR 7999",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+    reverse: false
   }
 ];
 
@@ -182,13 +191,14 @@ function MonthlyStays() {
 
 // --- AMENITIES GRID ---
 const AMENITIES = [
-  { name: "Room Service", icon: "room_service" },
-  { name: "Dining Area", icon: "restaurant" },
-  { name: "Free Parking", icon: "local_parking" },
   { name: "Air Conditioning", icon: "ac_unit" },
   { name: "High-speed Wi-Fi", icon: "wifi" },
-  { name: "CCTV", icon: "videocam" },
-  { name: "24-hour Front Desk", icon: "concierge" }
+  { name: "Secure Parking", icon: "local_parking" },
+  { name: "Sattvic Restaurant", icon: "restaurant" },
+  { name: "King Size Beds", icon: "bed" },
+  { name: "Long-stay Options", icon: "calendar_month" },
+  { name: "Alcohol & Smoke Free", icon: "smoke_free" },
+  { name: "Ayurveda Doctor", icon: "health_and_safety" }
 ];
 
 function AmenitiesGrid() {
@@ -201,7 +211,7 @@ function AmenitiesGrid() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory">
+    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory border-t border-border-muted/30">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-headline-md text-forest-deep mb-16">Resort Amenities</h2>
         

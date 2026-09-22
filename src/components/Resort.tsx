@@ -47,7 +47,7 @@ export default function Resort() {
             <div ref={leftContentRef}>
               <div className="flex items-center gap-space-xs mb-space-xs">
                 <span className="h-0.5 w-6 bg-accent-gold"></span>
-                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Section 03 · Sanctuary Architecture</span>
+                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sanctuary Architecture</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Stay close to nature. <br className="hidden sm:block"/>Stay close to yourself.

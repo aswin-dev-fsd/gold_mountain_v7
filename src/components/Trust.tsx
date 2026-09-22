@@ -33,7 +33,7 @@ export default function Trust() {
         <div ref={introRef} className="text-center max-w-2xl mx-auto mb-space-2xl">
           <div className="flex items-center justify-center gap-space-xs mb-space-xs">
             <span className="h-0.5 w-6 bg-accent-gold"></span>
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Section 08 · Integrity &amp; Presence</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Integrity &amp; Presence</span>
             <span className="h-0.5 w-6 bg-accent-gold"></span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">

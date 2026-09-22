@@ -37,7 +37,7 @@ export default function Stay() {
           <div ref={introRef}>
             <div className="flex items-center gap-space-xs mb-space-xs">
               <span className="h-0.5 w-6 bg-accent-gold"></span>
-              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Section 04 · Rest &amp; Replenishment</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Rest &amp; Replenishment</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Spaces for Rest and Healing.
