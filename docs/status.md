@@ -20,9 +20,9 @@
 - **Home (`/`)**: Core sections built. Links updated. Needs final review against client requirements.
 - **Wellness (`/wellness`)**: Completed. Includes Hero, Philosophy, Approach, Ayurveda Highlight, Dimensions of Healing, Packages, and CTAs.
 - **Ayurveda (`/ayurveda`)**: Completed. Includes Hero, Philosophy Intro, Therapies Accordion, Panchakarma & Rasayana Packages, and CTAs.
-- **Stay & Rooms (`/stay`)**: Pending. Placeholder created.
-- **About Us (`/about`)**: Pending. Placeholder created.
-- **Contact Us (`/contact`)**: Pending. Placeholder created.
+- **Stay & Rooms (`/stay`)**: Completed. Includes alternating rooms layout, monthly stays banner, and amenities grid.
+- **About Us (`/about`)**: Completed. Includes narrative story, philosophy, and founder profile skeleton.
+- **Contact Us (`/contact`)**: Completed. Includes live form, interactive Google Map, and contact block layout.
 
 ## Notes
 - Intentional deviations from the initial master prompt (regarding typography, glassmorphism, parallax animations, and navbar UI) have been logged in `Requirements/Intentional_Deviations.txt`.
