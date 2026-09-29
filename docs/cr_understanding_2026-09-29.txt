@@ -2,16 +2,16 @@
 
 ## Section 1: What I Understood (Ready to Proceed)
 
-1. **Stay Page Prices (Point 1):** Update the Stay page with the new rates:
+1. **[COMPLETED] Stay Page Prices (Point 1):** Update the Stay page with the new rates:
    - Mountain view deluxe: ₹3099 (2 persons, includes bf & lunch)
    - Mountain view Suite: ₹4099 (2 persons, includes bf & lunch)
    - Mountain view family suite: ₹7999 (4 persons, includes bf, lunch, & dinner)
 
-2. **Contact Details (Point 2):** Update the site-wide contact information to:
+2. **[COMPLETED] Contact Details (Point 2):** Update the site-wide contact information to:
    - Phone/WhatsApp: +918838198769
    - Email: goldmountainstay@gmail.com
 
-3. **Content Removal (Point 4):** Search the website and completely remove the following terms, as they are not offered:
+3. **[COMPLETED] Content Removal (Point 4):** Search the website and completely remove the following terms, as they are not offered:
    - "meditation caves"
    - "koi fish"
    - "master botanist"
@@ -19,7 +19,7 @@
    - "Heritage Villa"
    - "in-villa therapy"
 
-4. **Currencies (Point 6):** Update the Stay page so it doesn't just show INR. Add pricing/currency options for USD and EUR as well.
+4. **[COMPLETED] Currencies (Point 6):** Update the Stay page so it doesn't just show INR. Add pricing/currency options for USD and EUR as well.
 
 5. **CTA Button Text (Point 7):** Change the text of the call-to-action buttons from "Book Enquiry" (or "Book / Enquire") to simply "Book".
 
