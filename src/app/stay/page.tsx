@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -52,13 +52,15 @@ function StayHero() {
 }
 
 // --- ROOMS SECTION ---
+type Currency = 'INR' | 'USD' | 'EUR';
+
 const ROOMS = [
   {
     name: "Mountain View Deluxe",
     capacity: "2 Persons",
     description: "Our comfortable deluxe room offering direct views of the mountain. Features a king-sized bed, air conditioning, and a meal plan including breakfast and lunch.",
     amenities: ["Mountain View", "King Size Bed", "Air Conditioning", "Breakfast & Lunch"],
-    price: "INR 3099",
+    prices: { INR: "INR 3099", USD: "USD 37", EUR: "EUR 34" },
     image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   },
@@ -67,7 +69,7 @@ const ROOMS = [
     capacity: "2 Persons",
     description: "A spacious suite offering elevated mountain views and additional living space. Perfect for longer stays, featuring a king-sized bed, premium amenities, and a meal plan including breakfast and lunch.",
     amenities: ["Spacious Layout", "Mountain View", "King Size Bed", "Breakfast & Lunch"],
-    price: "INR 4099",
+    prices: { INR: "INR 4099", USD: "USD 49", EUR: "EUR 45" },
     image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
     reverse: true
   },
@@ -76,23 +78,35 @@ const ROOMS = [
     capacity: "4 Persons",
     description: "Our largest accommodation, designed for families or small groups. Offers multiple sleeping arrangements, expansive mountain views, and full board for all guests (breakfast, lunch, and dinner).",
     amenities: ["Family Layout", "Mountain View", "King Size Beds", "All Meals Included"],
-    price: "INR 7999",
+    prices: { INR: "INR 7999", USD: "USD 95", EUR: "EUR 89" },
     image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   }
 ];
 
 function Rooms() {
+  const [currency, setCurrency] = useState<Currency>('INR');
+
   return (
     <div className="bg-canvas-ivory">
+      {/* Currency Switcher */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-4 flex justify-end">
+        <div className="flex items-center gap-space-xs p-space-xs bg-surface-cream rounded-lg shadow-sm">
+          <span className="font-label-sm text-label-sm uppercase text-on-surface-variant px-space-xs">Guide:</span>
+          <span onClick={() => setCurrency('INR')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'INR' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>₹ INR</span>
+          <span onClick={() => setCurrency('USD')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'USD' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>$ USD</span>
+          <span onClick={() => setCurrency('EUR')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'EUR' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>€ EUR</span>
+        </div>
+      </div>
+      
       {ROOMS.map((room, index) => (
-        <RoomBlock key={room.name} room={room} index={index} />
+        <RoomBlock key={room.name} room={room} index={index} currency={currency} />
       ))}
     </div>
   );
 }
 
-function RoomBlock({ room, index }: { room: typeof ROOMS[0], index: number }) {
+function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: number, currency: Currency }) {
   const sectionRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -145,7 +159,7 @@ function RoomBlock({ room, index }: { room: typeof ROOMS[0], index: number }) {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full gap-6">
             <div className="flex flex-col">
               <span className="text-xs uppercase tracking-widest text-forest-deep/60">From</span>
-              <span className="font-headline-sm text-xl text-forest-deep">{room.price}</span>
+              <span className="font-headline-sm text-xl text-forest-deep">{room.prices[currency]}</span>
             </div>
             <Link 
               href="/contact" 

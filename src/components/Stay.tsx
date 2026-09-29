@@ -1,10 +1,19 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { revealStagger, revealSection } from "../utils/animations";
 
+type Currency = 'INR' | 'USD' | 'EUR';
+
+const PRICES = {
+  deluxe: { INR: '₹3,099', USD: '$37', EUR: '€34' },
+  suite: { INR: '₹4,099', USD: '$49', EUR: '€45' },
+  family: { INR: '₹7,999', USD: '$95', EUR: '€89' }
+};
+
 export default function Stay() {
+  const [currency, setCurrency] = useState<Currency>('INR');
   const sectionRef = useRef<HTMLElement>(null);
   const introRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
@@ -50,9 +59,9 @@ export default function Stay() {
           {/* Currency Switcher */}
           <div className="flex items-center gap-space-xs p-space-xs bg-surface-cream rounded-lg shadow-sm">
             <span className="font-label-sm text-label-sm uppercase text-on-surface-variant px-space-xs">Guide:</span>
-            <span className="font-label-sm text-label-sm px-space-sm py-1 rounded bg-forest-deep text-canvas-ivory">₹ INR</span>
-            <span className="font-label-sm text-label-sm px-space-sm py-1 text-on-surface-variant hover:text-forest-deep cursor-pointer">$ USD (~1:84)</span>
-            <span className="font-label-sm text-label-sm px-space-sm py-1 text-on-surface-variant hover:text-forest-deep cursor-pointer">€ EUR (~1:90)</span>
+            <span onClick={() => setCurrency('INR')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'INR' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>₹ INR</span>
+            <span onClick={() => setCurrency('USD')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'USD' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>$ USD</span>
+            <span onClick={() => setCurrency('EUR')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'EUR' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>€ EUR</span>
           </div>
         </div>
         
@@ -84,7 +93,7 @@ export default function Stay() {
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹3,099 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.deluxe[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
@@ -121,7 +130,7 @@ export default function Stay() {
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹4,099 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.suite[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
@@ -158,7 +167,7 @@ export default function Stay() {
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹7,999 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.family[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
