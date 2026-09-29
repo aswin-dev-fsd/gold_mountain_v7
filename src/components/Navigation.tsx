@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { useCurrency, Currency } from "../context/CurrencyContext";
 
 import Link from "next/link";
 
@@ -27,7 +28,8 @@ export default function Navigation() {
   const currencyRef = useRef<HTMLDivElement>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCurrencyOpen, setIsCurrencyOpen] = useState(false);
-  const [selectedCurrency, setSelectedCurrency] = useState(CURRENCIES[0]);
+  const { currency, setCurrency } = useCurrency();
+  const selectedCurrency = CURRENCIES.find(c => c.code === currency) || CURRENCIES[0];
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -106,7 +108,7 @@ export default function Navigation() {
               <button
                 type="button"
                 onClick={() => setIsCurrencyOpen((prev) => !prev)}
-                className="flex items-center gap-1 px-2 2xl:px-2.5 py-1.5 rounded-lg border border-border-muted bg-surface-cream/80 hover:bg-surface-cream hover:border-accent-gold/60 text-forest-deep font-label-sm text-xs 2xl:text-label-sm font-semibold transition-all cursor-pointer shadow-2xs"
+                className="flex items-center justify-between w-24 px-2 2xl:px-2.5 py-1.5 rounded-lg border border-border-muted bg-surface-cream/80 hover:bg-surface-cream hover:border-accent-gold/60 text-forest-deep font-label-sm text-xs 2xl:text-label-sm font-semibold transition-all cursor-pointer shadow-2xs"
                 aria-expanded={isCurrencyOpen}
                 aria-haspopup="listbox"
                 aria-label="Select Currency"
@@ -127,7 +129,7 @@ export default function Navigation() {
                       key={curr.code}
                       type="button"
                       onClick={() => {
-                        setSelectedCurrency(curr);
+                        setCurrency(curr.code as Currency);
                         setIsCurrencyOpen(false);
                       }}
                       className={`px-3 py-1.5 text-left font-label-sm text-label-sm flex items-center justify-between transition-colors ${
@@ -237,7 +239,7 @@ export default function Navigation() {
                 <button
                   key={curr.code}
                   type="button"
-                  onClick={() => setSelectedCurrency(curr)}
+                  onClick={() => setCurrency(curr.code as Currency)}
                   className={`py-2 px-1 text-center font-label-sm text-xs rounded-md transition-all font-semibold ${
                     selectedCurrency.code === curr.code
                       ? "bg-forest-deep text-canvas-ivory shadow-xs"

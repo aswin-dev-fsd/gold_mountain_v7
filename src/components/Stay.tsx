@@ -1,10 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { revealStagger, revealSection } from "../utils/animations";
-
-type Currency = 'INR' | 'USD' | 'EUR';
+import { useCurrency } from "../context/CurrencyContext";
 
 const PRICES = {
   deluxe: { INR: '₹3,099', USD: '$37', EUR: '€34' },
@@ -13,7 +12,7 @@ const PRICES = {
 };
 
 export default function Stay() {
-  const [currency, setCurrency] = useState<Currency>('INR');
+  const { currency } = useCurrency();
   const sectionRef = useRef<HTMLElement>(null);
   const introRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
@@ -56,13 +55,6 @@ export default function Stay() {
             </p>
           </div>
           
-          {/* Currency Switcher */}
-          <div className="flex items-center gap-space-xs p-space-xs bg-surface-cream rounded-lg shadow-sm">
-            <span className="font-label-sm text-label-sm uppercase text-on-surface-variant px-space-xs">Guide:</span>
-            <span onClick={() => setCurrency('INR')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'INR' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>₹ INR</span>
-            <span onClick={() => setCurrency('USD')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'USD' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>$ USD</span>
-            <span onClick={() => setCurrency('EUR')} className={`font-label-sm text-label-sm px-space-sm py-1 rounded cursor-pointer transition-colors ${currency === 'EUR' ? 'bg-forest-deep text-canvas-ivory' : 'text-on-surface-variant hover:text-forest-deep'}`}>€ EUR</span>
-          </div>
         </div>
         
         {/* Accommodation Cards Grid */}
