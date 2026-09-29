@@ -53,7 +53,6 @@ function StayHero() {
 }
 
 // --- ROOMS SECTION ---
-type Currency = 'INR' | 'USD' | 'EUR';
 
 const ROOMS = [
   {
