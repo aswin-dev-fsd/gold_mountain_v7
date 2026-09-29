@@ -48,7 +48,6 @@ export default function Footer() {
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
               <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Ayurveda Programs</a></li>
               <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Yoga Shala</a></li>
-              <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Meditation Caves</a></li>
               <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Lifestyle Consultations</a></li>
             </ul>
           </div>

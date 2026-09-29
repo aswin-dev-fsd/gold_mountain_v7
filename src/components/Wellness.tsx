@@ -115,7 +115,7 @@ export default function Wellness() {
               </div>
               <div className="flex items-center gap-space-sm text-forest-charcoal font-body-sm text-body-sm">
                 <span className="material-symbols-outlined text-accent-gold text-[20px]">check_circle</span>
-                <span>Meditation caves and stillness reflection spots</span>
+                <span>Quiet stillness reflection spots</span>
               </div>
             </div>
             <div className="pt-space-sm">

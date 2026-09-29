@@ -92,7 +92,7 @@ export default function Experiences() {
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Water Meditation</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Lotus Reflection Pond</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                A serene expanse of clear natural water reflecting the golden silhouette of the mountain at sunrise, surrounded by native water lilies, koi, and silent stepped stone ghats.
+                A serene expanse of clear natural water reflecting the golden silhouette of the mountain at sunrise, surrounded by native water lilies and silent stepped stone ghats.
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
@@ -126,7 +126,7 @@ export default function Experiences() {
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Soil Medicine</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Organic Farm &amp; Medicinal Flora Garden</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                Walk through dense rows of Brahmi, Ashwagandha, Tulsi, Moringa, and heirloom indigenous vegetables. Learn herbal preparations and taste wild herbs harvested fresh during morning quiet walks guided by our master botanist.
+                Walk through dense rows of Brahmi, Ashwagandha, Tulsi, Moringa, and heirloom indigenous vegetables. Learn herbal preparations and taste wild herbs harvested fresh during morning quiet walks.
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
