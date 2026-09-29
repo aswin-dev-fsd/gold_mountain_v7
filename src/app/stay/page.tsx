@@ -56,25 +56,25 @@ const ROOMS = [
   {
     name: "Mountain View Deluxe",
     capacity: "2 Persons",
-    description: "Our comfortable deluxe room offering direct views of the mountain. Features a king-sized bed, air conditioning, and full board (breakfast, lunch, and dinner included).",
-    amenities: ["Mountain View", "King Size Bed", "Air Conditioning", "All Meals Included"],
-    price: "INR 3000",
+    description: "Our comfortable deluxe room offering direct views of the mountain. Features a king-sized bed, air conditioning, and a meal plan including breakfast and lunch.",
+    amenities: ["Mountain View", "King Size Bed", "Air Conditioning", "Breakfast & Lunch"],
+    price: "INR 3099",
     image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   },
   {
     name: "Mountain View Suite",
     capacity: "2 Persons",
-    description: "A spacious suite offering elevated mountain views and additional living space. Perfect for longer stays, featuring a king-sized bed, premium amenities, and full board.",
-    amenities: ["Spacious Layout", "Mountain View", "King Size Bed", "All Meals Included"],
-    price: "INR 4500",
+    description: "A spacious suite offering elevated mountain views and additional living space. Perfect for longer stays, featuring a king-sized bed, premium amenities, and a meal plan including breakfast and lunch.",
+    amenities: ["Spacious Layout", "Mountain View", "King Size Bed", "Breakfast & Lunch"],
+    price: "INR 4099",
     image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
     reverse: true
   },
   {
     name: "Mountain View Family Suite",
     capacity: "4 Persons",
-    description: "Our largest accommodation, designed for families or small groups. Offers multiple sleeping arrangements, expansive mountain views, and full board for all guests.",
+    description: "Our largest accommodation, designed for families or small groups. Offers multiple sleeping arrangements, expansive mountain views, and full board for all guests (breakfast, lunch, and dinner).",
     amenities: ["Family Layout", "Mountain View", "King Size Beds", "All Meals Included"],
     price: "INR 7999",
     image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
@@ -244,18 +244,18 @@ function FinalCTA() {
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-headline-md mb-12">Plan your stay at Gold Mountain.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link 
-            href="/contact" 
+          <a 
+            href="https://wa.me/918838198769" 
             className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white px-8 py-3 rounded font-label-md uppercase tracking-wider hover:bg-[#128C7E] transition-colors shadow-lg"
           >
             WhatsApp
-          </Link>
-          <Link 
-            href="/contact" 
+          </a>
+          <a 
+            href="mailto:goldmountainstay@gmail.com" 
             className="w-full sm:w-auto inline-flex justify-center items-center gap-2 border border-canvas-ivory/40 text-canvas-ivory px-8 py-3 rounded font-label-md uppercase tracking-wider hover:bg-canvas-ivory/10 transition-colors"
           >
             Email
-          </Link>
+          </a>
         </div>
       </div>
     </section>

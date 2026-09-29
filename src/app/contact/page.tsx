@@ -167,16 +167,16 @@ function ContactDetails() {
       
       <div className="contact-block flex flex-col items-start p-6 bg-canvas-ivory border border-border-muted/50 rounded-sm">
         <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">WhatsApp / Phone</span>
-        <p className="text-lg font-body-md text-forest-deep mb-4">[PHONE TO BE PROVIDED]</p>
-        <a href="#" className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-2 rounded text-xs uppercase tracking-wider hover:bg-[#128C7E] transition-colors">
+        <p className="text-lg font-body-md text-forest-deep mb-4">+91 88381 98769</p>
+        <a href="https://wa.me/918838198769" className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-2 rounded text-xs uppercase tracking-wider hover:bg-[#128C7E] transition-colors">
           Message on WhatsApp
         </a>
       </div>
 
       <div className="contact-block flex flex-col items-start p-6 bg-canvas-ivory border border-border-muted/50 rounded-sm">
         <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Email</span>
-        <p className="text-lg font-body-md text-forest-deep mb-4">[EMAIL TO BE PROVIDED]</p>
-        <a href="mailto:hello@goldmountain.com" className="inline-flex items-center gap-2 border border-forest-deep/20 text-forest-deep px-6 py-2 rounded text-xs uppercase tracking-wider hover:bg-forest-deep/5 transition-colors">
+        <p className="text-lg font-body-md text-forest-deep mb-4">goldmountainstay@gmail.com</p>
+        <a href="mailto:goldmountainstay@gmail.com" className="inline-flex items-center gap-2 border border-forest-deep/20 text-forest-deep px-6 py-2 rounded text-xs uppercase tracking-wider hover:bg-forest-deep/5 transition-colors">
           Send Email
         </a>
       </div>

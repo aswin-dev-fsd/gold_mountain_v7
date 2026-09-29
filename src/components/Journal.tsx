@@ -27,7 +27,7 @@ export default function Journal() {
         <div ref={introRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-lg">
           <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
-              <span className="h-0.5 w-6 bg-accent-gold"></span>
+
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Journal &amp; Wisdom</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">

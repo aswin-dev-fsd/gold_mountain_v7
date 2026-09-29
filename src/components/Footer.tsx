@@ -79,7 +79,7 @@ export default function Footer() {
               <li>Girivalam Outer Ring Rd</li>
               <li>Tiruvannamalai, TN 606603</li>
               <li>
-                <a href="https://wa.me/910000000000" className="hover:text-canvas-ivory transition-colors flex items-center gap-space-xs mt-space-xs">
+                <a href="https://wa.me/918838198769" className="hover:text-canvas-ivory transition-colors flex items-center gap-space-xs mt-space-xs">
                   <span className="material-symbols-outlined text-[16px] text-accent-gold">chat</span> WhatsApp Enquiry
                 </a>
               </li>

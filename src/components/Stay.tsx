@@ -36,7 +36,7 @@ export default function Stay() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-lg">
           <div ref={introRef}>
             <div className="flex items-center gap-space-xs mb-space-xs">
-              <span className="h-0.5 w-6 bg-accent-gold"></span>
+
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Rest &amp; Replenishment</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
@@ -67,25 +67,24 @@ export default function Stay() {
                 style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgHH2vB_Lh8e5Q8IMxsfZP65dP-16-6HiBxMKJxFwFHwv7UwVKcY9DTOXKUplRFYLaTBQsp2aos0xypMpDNF6toKbYLgQdvdaoB_KUyUq3mWM6XVj-65T2KLTvLRzm_436vRndIvc2InOZQo8b_ok-TA4bo6lvKaHrdlT1nK1d71xl4A2fzsysbM4aM1ClVa0hyGISrMXkZXqtYEeg_lTHsTte8P2dIizeqK0yWiBm-27TmbV0B7DP')" }}
               ></div>
               <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-forest-deep/90 text-canvas-ivory font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
-                Single / Double
+                2 Guests
               </span>
             </div>
             <div className="p-space-lg flex-1 flex flex-col justify-between">
               <div>
-                <h3 className="font-headline-sm text-headline-sm text-forest-deep">Garden Cottage</h3>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep">Mountain View Deluxe</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs mb-space-md leading-relaxed">
-                  Natural stone floors, secluded private veranda shaded by native neem trees, pure handloom organic cotton linens, and brass rain showers.
+                  A serene and comfortable space offering beautiful views of the mountain, perfect for a peaceful retreat.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Garden Porch</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Natural Cooling</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Private Bath</span>
+                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Mountain View</span>
+                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Breakfast & Lunch</span>
                 </div>
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹8,500 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹3,099 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
@@ -105,25 +104,24 @@ export default function Stay() {
                 style={{ backgroundImage: "url('/images/stay_suite.png')" }}
               ></div>
               <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-accent-gold text-forest-charcoal font-label-sm text-label-sm uppercase font-semibold tracking-wider shadow-sm">
-                Signature View
+                2 Guests
               </span>
             </div>
             <div className="p-space-lg flex-1 flex flex-col justify-between relative">
               <div>
-                <h3 className="font-headline-sm text-headline-sm text-forest-deep">Arunachala Mountain Suite</h3>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep">Mountain View Suite</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs mb-space-md leading-relaxed">
-                  Unobstructed panoramic alignment toward sacred Mount Arunachala. Features an elevated stone sun-deck, dedicated meditation nook, and deep soaking tub.
+                  An expansive suite featuring a comfortable sitting area and uninterrupted panoramic views of the sacred mountain.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Sacred Mountain View</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Meditation Deck</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Herbal Bath Tub</span>
+                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Panoramic View</span>
+                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Breakfast & Lunch</span>
                 </div>
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹14,000 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹4,099 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
@@ -143,25 +141,24 @@ export default function Stay() {
                 style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWI45UeEFbYgTReGpFa8JM3ytvvvwzSU9RNhRMXIbnYWoOmKmuGEolhG9O3r-rzv6TmRi-VCyntHk12zJw66uvU8KM4TKX-QbMn2bpbu9_5oGfo4RTKsKhWayJISk01Cx302LzZCJCI86Ot3yaJjc12mOhQ_QZp_QStc1xlPq1gYw4l1h-DwFbDswrtAA0PJBcMNuN33u-HdLYRMvZkA01iZbpMkmnkKVvAq8Vo-75XBXhG8fPq9ni')" }}
               ></div>
               <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-forest-deep/90 text-canvas-ivory font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
-                Exclusive Sanctuary
+                4 Guests
               </span>
             </div>
             <div className="p-space-lg flex-1 flex flex-col justify-between">
               <div>
-                <h3 className="font-headline-sm text-headline-sm text-forest-deep">Heritage Wellness Villa</h3>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep">Mountain View Family Suite</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs mb-space-md leading-relaxed">
-                  Traditional Chettinad woodwork, private open-to-sky inner courtyard, in-villa therapy facilities, and private organic pantry for bespoke retreats.
+                  A spacious suite designed for families or larger groups, offering comfort, togetherness, and stunning mountain vistas.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Private Courtyard</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">In-Villa Therapy</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Extended Stays</span>
+                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Spacious Living</span>
+                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">All Meals Included</span>
                 </div>
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹22,000 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <p className="font-headline-sm text-headline-sm text-forest-deep">₹7,999 <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 

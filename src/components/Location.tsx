@@ -53,7 +53,7 @@ export default function Location() {
         {/* Section Intro */}
         <div ref={introRef} className="max-w-3xl mb-space-2xl">
           <div className="flex items-center gap-space-xs mb-space-xs">
-            <span className="h-0.5 w-6 bg-accent-gold"></span>
+
             <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sacred Geography</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">

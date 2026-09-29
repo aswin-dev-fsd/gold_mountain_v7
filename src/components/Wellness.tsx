@@ -57,7 +57,7 @@ export default function Wellness() {
         <div ref={headerRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-lg">
           <div className="max-w-2xl">
             <div className="flex items-center gap-space-xs mb-space-xs">
-              <span className="h-0.5 w-6 bg-accent-gold"></span>
+
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sacred Restoration</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
@@ -68,18 +68,18 @@ export default function Wellness() {
             </p>
           </div>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-md leading-relaxed">
-            Gold Mountain offers an unhurried environment where guests can slow down, reconnect, and explore authentic Ayurvedic living. Healing here is an organic way of being — not a clinical transaction.
+            Gold Mountain offers an unhurried environment where guests can slow down, reconnect, and explore authentic Ayurvedic living. Healing here is an organic way of being not a clinical transaction.
           </p>
         </div>
         
         {/* Feature Visual & Immersion Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center mb-space-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:items-stretch mb-space-2xl">
           
           {/* Main Large Wellness Photo */}
-          <div ref={imageContainerRef} className="lg:col-span-7 relative group rounded-xl overflow-hidden shadow-xl bg-surface-cream">
+          <div ref={imageContainerRef} className="lg:col-span-7 relative group rounded-xl overflow-hidden shadow-xl bg-surface-cream h-full flex flex-col">
             <div 
               ref={imageRef}
-              className="w-full aspect-[4/3] bg-cover bg-center" 
+              className="w-full aspect-[4/3] lg:aspect-auto lg:h-full lg:flex-1 bg-cover bg-center" 
               style={{ backgroundImage: "url('/images/wellness_image.png')" }}
             ></div>
             
@@ -94,7 +94,7 @@ export default function Wellness() {
           </div>
           
           {/* Wellness Narrative & Quote Card */}
-          <div ref={narrativeRef} className="lg:col-span-5 flex flex-col gap-space-lg bg-surface-cream p-space-xl rounded-xl shadow-sm">
+          <div ref={narrativeRef} className="lg:col-span-5 flex flex-col justify-between gap-space-lg bg-surface-cream p-space-xl rounded-xl shadow-sm h-full">
             <div className="w-12 h-12 rounded-full bg-forest-deep text-accent-gold flex items-center justify-center">
               <span className="material-symbols-outlined text-[24px]">spa</span>
             </div>

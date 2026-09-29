@@ -40,13 +40,13 @@ export default function Resort() {
   return (
     <section ref={sectionRef} id="the-resort" className="w-full py-space-3xl bg-surface-cream relative overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center lg:items-stretch">
           
           {/* Left: Editorial Content */}
-          <div className="lg:col-span-6 flex flex-col">
+          <div className="lg:col-span-6 flex flex-col justify-center">
             <div ref={leftContentRef}>
               <div className="flex items-center gap-space-xs mb-space-xs">
-                <span className="h-0.5 w-6 bg-accent-gold"></span>
+
                 <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sanctuary Architecture</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
@@ -60,28 +60,28 @@ export default function Resort() {
             {/* Key Architectural Facets */}
             <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-xl">
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-accent-terracotta mb-1">
+                <div className="flex items-center gap-space-xs text-accent-terracotta mb-2">
                   <span className="material-symbols-outlined text-[20px]">roofing</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Terracotta &amp; Stone</span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Cool Athangudi tiles, local granite masonry, and breathable clay roof tiles.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-accent-gold mb-1">
+                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
                   <span className="material-symbols-outlined text-[20px]">water</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Lotus Ponds</span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Living reflection waters soothing the midday heat and welcoming native birds.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-forest-deep mb-1">
+                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
                   <span className="material-symbols-outlined text-[20px]">deck</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Verandas &amp; Gardens</span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Open-air shaded corridors overlooking fragrant jasmine and medicinal tulsi groves.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-secondary mb-1">
+                <div className="flex items-center gap-space-xs text-secondary mb-2">
                   <span className="material-symbols-outlined text-[20px]">temple_hindu</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Silent Shalas</span>
                 </div>
@@ -101,7 +101,7 @@ export default function Resort() {
           
           {/* Right: Layered Image Composition */}
           <div className="lg:col-span-6 relative">
-            <div ref={rightImageContainerRef} className="rounded-xl overflow-hidden shadow-2xl bg-canvas-ivory aspect-[4/3]">
+            <div ref={rightImageContainerRef} className="rounded-xl overflow-hidden shadow-2xl bg-canvas-ivory aspect-[4/3] lg:aspect-auto lg:absolute lg:inset-0">
               <div 
                 ref={rightImageRef}
                 className="w-full h-full bg-cover bg-center" 

@@ -94,7 +94,7 @@ export default function Hero() {
       </div>
       
       {/* Hero Content Container */}
-      <div ref={contentRef} className="relative z-20 w-full max-w-5xl mx-auto px-margin lg:px-margin-desktop pt-32 pb-24 text-center flex flex-col items-center">
+      <div ref={contentRef} className="relative z-20 w-full max-w-5xl mx-auto px-margin lg:px-margin-desktop pt-32 pb-8 text-center flex flex-col items-center">
         
         {/* Subtitle Pill */}
         <div ref={subtitleRef} className="inline-flex items-center gap-space-xs sm:gap-space-sm px-space-sm sm:px-space-md py-1 sm:py-space-xs rounded-full bg-forest-deep/80 border border-accent-gold/30 backdrop-blur-md shadow-md mb-space-lg max-w-[calc(100%-1rem)]">
@@ -122,14 +122,14 @@ export default function Hero() {
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
           <Link 
             href="/wellness" 
-            className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-forest-deep text-canvas-ivory px-space-xl py-space-md rounded-lg font-label-lg text-label-lg uppercase tracking-wider shadow-lg hover:bg-forest-charcoal hover:border-accent-gold/60 border border-forest-deep focus:ring-2 focus:ring-accent-gold/50 active:scale-95 hover:-translate-y-0.5 transition-all duration-300 group"
+            className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-forest-deep text-canvas-ivory px-space-xl py-space-md rounded-xl font-label-lg text-label-lg uppercase tracking-wider shadow-lg hover:bg-forest-charcoal hover:border-accent-gold/60 border border-forest-deep focus:ring-2 focus:ring-accent-gold/50 active:scale-95 hover:-translate-y-0.5 transition-all duration-300 group"
           >
             <span>Explore Wellness</span>
             <span className="material-symbols-outlined text-accent-gold text-[18px] group-hover:translate-x-1 transition-transform">east</span>
           </Link>
           <Link 
             href="/stay" 
-            className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md px-space-xl py-space-md rounded-lg font-label-lg text-label-lg uppercase tracking-wider shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300 hover:-translate-y-0.5"
+            className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md px-space-xl py-space-md rounded-xl font-label-lg text-label-lg uppercase tracking-wider shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300 hover:-translate-y-0.5"
           >
             <span>Plan Your Stay</span>
             <span className="material-symbols-outlined text-gold-light text-[18px]">calendar_month</span>
