@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -30,7 +30,7 @@ export default function Experiences() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div ref={introRef} className="max-w-3xl mb-space-2xl">
+        <div ref={introRef} className="max-w-3xl mb-space-lg">
           <div className="flex items-center gap-space-xs mb-space-xs">
 
             <span className="font-label-md text-label-md uppercase tracking-widest text-gold-light">The Living Sanctuary</span>
@@ -38,10 +38,10 @@ export default function Experiences() {
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             More than a stay.
           </h2>
-          <p className="font-headline-md text-headline-md text-gold-light mt-space-xs">
+          <p className="font-headline-sm text-headline-sm text-gold-light mt-space-sm font-normal">
             A place shaped by nature, tradition, and a deeper connection to the surroundings.
           </p>
-          <p className="font-body-md text-body-md text-surface-container-high/80 mt-space-md leading-relaxed">
+          <p className="font-body-md text-body-md text-surface-container-high/80 mt-space-sm leading-relaxed">
             Every corner of Gold Mountain is deliberately tuned to cultivate stillness. Here, daily activities are not organized entertainments, but organic touchpoints with the soil, sacred hills, and ancient customs.
           </p>
         </div>
