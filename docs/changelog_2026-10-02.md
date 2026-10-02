@@ -14,3 +14,8 @@
 
 ### Changed
 - Reverted section label colors (`text-label-sm` and `text-label-md`) across major components (`Resort.tsx`, `Stay.tsx`, `Trust.tsx`, `Wellness.tsx`) back to `text-accent-gold` from `text-forest-deep` to restore the previous highlighting style.
+
+### Changed
+- Refactored UI consistency: updated floating info badges in `Dining.tsx` and `Location.tsx` to match the solid `bg-forest-deep` visual style from `Resort.tsx`.
+- Removed `italic` typography treatments from the `Hero.tsx` main heading and testimonial quotes in `Trust.tsx` for cleaner readability.
+- Removed the "Home" link from the main `Navigation.tsx` menu.
