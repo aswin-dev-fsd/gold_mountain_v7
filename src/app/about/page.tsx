@@ -211,7 +211,7 @@ function GroundsAndNourishment() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
           {/* Nature & Grounds */}
-          <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-sm">
+          <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
             <h3 className="text-xl font-headline-sm text-forest-deep mb-4 flex items-center gap-2">
               <span className="material-symbols-outlined text-accent-gold">local_florist</span>
               The Estate
@@ -242,7 +242,7 @@ function GroundsAndNourishment() {
           </div>
 
           {/* Dining */}
-          <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-sm">
+          <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
             <h3 className="text-xl font-headline-sm text-forest-deep mb-4 flex items-center gap-2">
               <span className="material-symbols-outlined text-accent-gold">restaurant</span>
               Nourishment
