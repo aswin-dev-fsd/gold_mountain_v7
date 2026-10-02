@@ -42,7 +42,7 @@ function StayHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
-          A peaceful place to <span className="text-accent-gold italic font-serif">stay.</span>
+          A peaceful place to <span className="text-accent-gold font-serif">stay.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
           Comfortable spaces surrounded by nature, created for rest and reconnection. Deluxe and Suite rooms include breakfast and lunch; the Family Suite includes all meals.
@@ -178,7 +178,7 @@ function MonthlyStays() {
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream text-center border-t border-border-muted/30">
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">Extended Retreats</span>
-        <h2 className="text-3xl md:text-5xl font-headline-md mb-8 italic font-serif text-forest-deep">Stay a little longer.</h2>
+        <h2 className="text-3xl md:text-5xl font-headline-md mb-8 font-serif text-forest-deep">Stay a little longer.</h2>
         <p className="text-forest-deep/80 font-body-md text-lg mb-10 max-w-xl mx-auto">
           Take the time to truly disconnect. We offer tailored packages and pricing for guests looking to stay for a month or longer, providing a quiet sanctuary for deep work, healing, or extended rest.
         </p>

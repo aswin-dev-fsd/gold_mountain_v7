@@ -79,13 +79,10 @@ export default function Location() {
               ></div>
               
               {/* Overlay Pin Details */}
-              <div ref={mapOverlayRef} className="absolute top-space-md left-space-md p-space-md rounded-lg bg-forest-charcoal/90 text-canvas-ivory backdrop-blur-md max-w-[calc(100%-2rem)] sm:max-w-xs shadow-md border border-accent-gold/20">
-                <div className="flex items-center gap-2 text-accent-gold mb-1">
-                  <span className="material-symbols-outlined text-[18px]">location_on</span>
-                  <span className="font-label-sm text-label-sm uppercase tracking-wider">Sanctuary Coordinates</span>
-                </div>
-                <p className="font-headline-sm text-headline-sm">Outer Girivalam Ring</p>
-                <p className="font-body-sm text-body-sm text-surface-container-high/80">Tiruvannamalai, Tamil Nadu 606603</p>
+              <div ref={mapOverlayRef} className="absolute bottom-4 left-4 bg-forest-deep text-canvas-ivory p-space-md rounded-xl shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs border border-accent-gold/20">
+                <span className="material-symbols-outlined text-accent-gold text-[32px] mb-space-xs">location_on</span>
+                <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Sanctuary Coordinates</p>
+                <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Outer Girivalam Ring, Tiruvannamalai, Tamil Nadu 606603</p>
               </div>
             </div>
             

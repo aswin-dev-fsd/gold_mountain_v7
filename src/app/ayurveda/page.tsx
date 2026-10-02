@@ -42,7 +42,7 @@ function AyurvedaHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
-          Traditional wisdom, <span className="text-accent-gold italic font-serif block mt-2">thoughtfully experienced.</span>
+          Traditional wisdom, <span className="text-accent-gold font-serif block mt-2">thoughtfully experienced.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
           A gentle, profound approach to well-being that restores your body&apos;s natural balance.

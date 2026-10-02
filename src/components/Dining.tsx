@@ -59,12 +59,10 @@ export default function Dining() {
             </div>
             
             {/* Inset Quote / Tag */}
-            <div ref={quoteRef} className="absolute -bottom-4 right-3 sm:-bottom-6 sm:right-2 lg:bottom-4 lg:right-4 p-space-md rounded-xl bg-forest-charcoal text-canvas-ivory shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs hidden sm:block border border-accent-gold/20">
-              <div className="flex items-center gap-1 text-accent-gold mb-1">
-                <span className="material-symbols-outlined text-[18px]">restaurant</span>
-                <span className="font-label-sm text-label-sm uppercase tracking-wider">Ahara Chikitsa</span>
-              </div>
-              <p className="font-body-sm text-body-sm text-surface-container-high/90">&quot;Food taken in awareness is medicine; food taken in haste is burden.&quot;</p>
+            <div ref={quoteRef} className="absolute -bottom-4 left-3 sm:-bottom-6 sm:left-2 lg:bottom-4 lg:left-4 bg-forest-deep text-canvas-ivory p-space-md rounded-xl shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs hidden sm:block border border-accent-gold/20">
+              <span className="material-symbols-outlined text-accent-gold text-[32px] mb-space-xs">restaurant</span>
+              <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Ahara Chikitsa</p>
+              <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">&quot;Food taken in awareness is medicine; food taken in haste is burden.&quot;</p>
             </div>
           </div>
           

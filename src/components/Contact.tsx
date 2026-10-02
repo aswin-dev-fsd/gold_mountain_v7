@@ -32,10 +32,6 @@ export default function Contact() {
       <div className="w-full max-w-5xl mx-auto px-margin lg:px-margin-desktop relative z-10">
         
         <div ref={introRef} className="text-center mb-space-xl">
-          <div className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-forest-deep text-gold-light mb-space-md">
-            <span className="material-symbols-outlined text-[16px]">contact_support</span>
-            <span className="font-label-sm text-label-sm uppercase tracking-widest">Reserve Your Sanctuary</span>
-          </div>
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             Your time at Gold Mountain begins here.
           </h2>
@@ -142,5 +138,6 @@ export default function Contact() {
     </section>
   );
 }
+
 
 

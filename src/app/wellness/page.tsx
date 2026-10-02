@@ -41,7 +41,7 @@ function WellnessHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
-          A slower way back to <span className="text-accent-gold italic font-serif">yourself.</span>
+          A slower way back to <span className="text-accent-gold font-serif">yourself.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
           Explore traditional wellness practices, nourishing food and quiet spaces designed to help you reconnect with body and mind.
@@ -106,13 +106,13 @@ function WellnessApproach() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-headline-md text-forest-deep mb-16 text-center">Our Approach</h2>
         
-        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-          {APPROACH_ITEMS.map((item, i) => (
-            <div key={item.title} className={`approach-item group relative overflow-hidden flex flex-col ${i === 3 ? "md:col-span-2 lg:col-span-1" : ""} ${i === 6 ? "lg:col-start-2" : ""}`}>
-              <div className="relative aspect-[4/5] w-full overflow-hidden mb-4">
+        <div ref={gridRef} className="flex flex-wrap justify-center gap-x-6 gap-y-8">
+          {APPROACH_ITEMS.map((item) => (
+            <div key={item.title} className="approach-item group relative overflow-hidden flex flex-col w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)]">
+              <div className="relative aspect-[4/3] w-full overflow-hidden mb-3">
                 <img src={item.img} alt={item.title} className="parallax-img absolute inset-0 w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-headline-sm text-forest-deep uppercase tracking-wider">{item.title}</h3>
+              <h3 className="text-base md:text-lg font-headline-sm text-forest-deep uppercase tracking-wider">{item.title}</h3>
               <div className="w-8 h-[1px] bg-accent-gold mt-3 transition-all duration-300 group-hover:w-full"></div>
             </div>
           ))}
@@ -135,7 +135,7 @@ function AyurvedaHighlight() {
     <section ref={sectionRef} className="py-32 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
       <div ref={contentRef} className="max-w-3xl mx-auto">
         <span className="text-gold-light uppercase tracking-widest font-label-sm text-sm mb-4 block">Ayurveda</span>
-        <h2 className="text-3xl md:text-5xl font-headline-md mb-8 italic font-serif">Traditional wisdom, thoughtfully experienced.</h2>
+        <h2 className="text-3xl md:text-5xl font-headline-md mb-8 font-serif">Traditional wisdom, thoughtfully experienced.</h2>
         <p className="text-canvas-ivory/80 font-body-md text-lg mb-12 max-w-2xl mx-auto">
           Ayurveda forms the root of our physical healing practices. We offer authentic treatments designed not just to cure, but to restore your body&apos;s natural balance. Discover a gentle, profound approach to well-being.
         </p>
@@ -145,39 +145,6 @@ function AyurvedaHighlight() {
         >
           Explore Ayurveda <span className="material-symbols-outlined text-[18px]">east</span>
         </Link>
-      </div>
-    </section>
-  );
-}
-
-// --- HEALING PHILOSOPHY ---
-function HealingPhilosophy() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const itemsRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(() => {
-    revealSection(titleRef.current as Element);
-    revealStagger(itemsRef.current?.querySelectorAll('.heal-item') as NodeListOf<Element>, itemsRef.current as Element);
-  }, { scope: sectionRef });
-
-  const areas = ["Body", "Mind", "Food", "Movement", "Nature", "Rest"];
-
-  return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory">
-      <div className="max-w-5xl mx-auto">
-        <h2 ref={titleRef} className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16 text-center">The Dimensions of Healing</h2>
-        
-        <div ref={itemsRef} className="grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8 text-center">
-          {areas.map(area => (
-            <div key={area} className="heal-item flex flex-col items-center">
-              <div className="w-16 h-16 rounded-lg border border-accent-gold/40 flex items-center justify-center mb-6 text-accent-gold">
-                <span className="material-symbols-outlined text-[28px]">spa</span>
-              </div>
-              <h3 className="text-xl font-headline-sm text-forest-deep">{area}</h3>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
@@ -304,7 +271,6 @@ export default function WellnessPage() {
       <Philosophy />
       <WellnessApproach />
       <AyurvedaHighlight />
-      <HealingPhilosophy />
       <Programmes />
       <FinalCTA />
       <Footer />

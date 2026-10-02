@@ -110,7 +110,7 @@ export default function Hero() {
         
         {/* Headline */}
         <h1 ref={headlineRef} className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory max-w-4xl tracking-tight leading-[1.15] mb-space-md font-normal">
-          A Wellness Stay in the Presence of <span className="text-accent-gold font-normal italic font-serif">Arunachala.</span>
+          A Wellness Stay in the Presence of <span className="text-accent-gold font-normal font-serif">Arunachala.</span>
         </h1>
         
         {/* Supporting Copy */}

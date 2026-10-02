@@ -42,7 +42,7 @@ function AboutHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
-          A place created <span className="text-accent-gold italic font-serif block mt-2">with purpose.</span>
+          A place created <span className="text-accent-gold font-serif block mt-2">with purpose.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
           Discover the story behind Gold Mountain, built on a foundation of harmony, traditional wellness, and deep respect for the natural world.
@@ -119,7 +119,7 @@ function FounderProfile() {
             
             <div>
               <h3 className="text-xs uppercase tracking-widest text-forest-deep font-semibold mb-2">The Vision</h3>
-              <p className="italic font-serif text-forest-deep text-xl">
+              <p className="font-serif text-forest-deep text-xl">
                 &ldquo;[FOUNDER VISION TO BE PROVIDED. A short, impactful quote or statement about what they hope guests experience here.]&rdquo;
               </p>
             </div>
@@ -282,7 +282,7 @@ function FinalCTA() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-headline-md mb-12 italic font-serif">Come experience Gold Mountain.</h2>
+        <h2 className="text-3xl md:text-5xl font-headline-md mb-12 font-serif">Come experience Gold Mountain.</h2>
         <Link 
           href="/" 
           className="inline-flex items-center gap-2 bg-accent-gold text-forest-charcoal px-10 py-4 rounded-lg font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors"

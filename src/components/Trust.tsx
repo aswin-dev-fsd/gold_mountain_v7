@@ -78,7 +78,7 @@ export default function Trust() {
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
               </div>
-              <p className="font-body-md text-body-md text-forest-charcoal italic leading-relaxed">
+              <p className="font-body-md text-body-md text-forest-charcoal leading-relaxed">
                 &quot;The silence of this place under the gaze of Arunachala is unlike anything I experienced in years of travel. The treatments were genuine, unhurried, and deeply grounding.&quot;
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function Trust() {
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
               </div>
-              <p className="font-body-md text-body-md text-forest-charcoal italic leading-relaxed">
+              <p className="font-body-md text-body-md text-forest-charcoal leading-relaxed">
                 &quot;Not a commercial resort and not a clinical hospital, it occupies the sweetest balance. The food is light and vibrant, and the early morning lotus pond meditation is life-changing.&quot;
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function Trust() {
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
               </div>
-              <p className="font-body-md text-body-md text-forest-charcoal italic leading-relaxed">
+              <p className="font-body-md text-body-md text-forest-charcoal leading-relaxed">
                 &quot;Waking up to the mountain mist, walking through the herbal gardens, and consulting with the compassionate doctors gave me tools I still carry home with me.&quot;
               </p>
             </div>

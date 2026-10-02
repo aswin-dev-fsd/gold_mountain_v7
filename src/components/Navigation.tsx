@@ -9,7 +9,6 @@ import { useCurrency, Currency } from "../context/CurrencyContext";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "Home", href: "/" },
   { label: "Wellness", href: "/wellness" },
   { label: "Ayurveda", href: "/ayurveda" },
   { label: "Stay & Rooms", href: "/stay" },

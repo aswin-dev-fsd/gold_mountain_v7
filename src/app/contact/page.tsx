@@ -25,7 +25,7 @@ function ContactHero() {
     <section ref={sectionRef} className="w-full pt-48 pb-16 px-6 md:px-12 bg-canvas-ivory text-center border-b border-border-muted/30">
       <div ref={contentRef} className="max-w-3xl mx-auto">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-forest-deep tracking-tight mb-6">
-          Let&apos;s plan your <span className="text-accent-gold italic font-serif">stay.</span>
+          Let&apos;s plan your <span className="text-accent-gold font-serif">stay.</span>
         </h1>
         <p className="font-body-lg text-lg text-forest-deep/80 max-w-2xl mx-auto font-light leading-relaxed">
           Have a question about staying, wellness programmes or availability? Speak with us directly.
