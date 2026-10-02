@@ -60,7 +60,7 @@ const ROOMS = [
     capacity: "2 Persons",
     description: "Our comfortable deluxe room offering direct views of the mountain. Features a king-sized bed, air conditioning, and a meal plan including breakfast and lunch.",
     amenities: ["Mountain View", "King Size Bed", "Air Conditioning", "Breakfast & Lunch"],
-    prices: { INR: "?3,099", USD: "$37", EUR: "ï¿½34" },
+    prices: { INR: "₹3,099", USD: "$37", EUR: "€34" },
     image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   },
@@ -69,7 +69,7 @@ const ROOMS = [
     capacity: "2 Persons",
     description: "A spacious suite offering elevated mountain views and additional living space. Perfect for longer stays, featuring a king-sized bed, premium amenities, and a meal plan including breakfast and lunch.",
     amenities: ["Spacious Layout", "Mountain View", "King Size Bed", "Breakfast & Lunch"],
-    prices: { INR: "?4,099", USD: "$49", EUR: "ï¿½45" },
+    prices: { INR: "₹4,099", USD: "$49", EUR: "€45" },
     image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
     reverse: true
   },
@@ -78,7 +78,7 @@ const ROOMS = [
     capacity: "4 Persons",
     description: "Our largest accommodation, designed for families or small groups. Offers multiple sleeping arrangements, expansive mountain views, and full board for all guests (breakfast, lunch, and dinner).",
     amenities: ["Family Layout", "Mountain View", "King Size Beds", "All Meals Included"],
-    prices: { INR: "?7,999", USD: "$95", EUR: "ï¿½89" },
+    prices: { INR: "₹7,999", USD: "$95", EUR: "€89" },
     image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   }
@@ -280,4 +280,9 @@ export default function StayPage() {
     </main>
   );
 }
+
+
+
+
+
 
