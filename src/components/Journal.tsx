@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -28,7 +28,7 @@ export default function Journal() {
           <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
-              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Journal &amp; Wisdom</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Journal &amp; Wisdom</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Stories of Wellness &amp; Arunachala.
@@ -37,9 +37,9 @@ export default function Journal() {
               Reflections on conscious living, ancient science, and sacred geography.
             </p>
           </div>
-          <a href="#journal" className="font-label-md text-label-md uppercase tracking-wider text-forest-deep hover:text-accent-gold transition-all inline-flex items-center gap-1 group py-1.5 px-3 rounded hover:bg-forest-deep/5 font-semibold">
+          <a href="#journal" className="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] group">
             <span>Read All Journal Entries</span>
-            <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
         </div>
         
@@ -57,18 +57,18 @@ export default function Journal() {
             <div className="p-space-lg flex-1 flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-space-sm mb-space-xs">
-                  <span className="px-2 py-0.5 rounded bg-surface-cream text-accent-gold font-label-sm text-label-sm uppercase">Spirituality</span>
+                  <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">Spirituality</span>
                   <span className="font-label-sm text-label-sm text-on-surface-variant">5 min read</span>
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
-                  The Sacred Stillness of Arunachala: An International Traveler’s Guide
+                  The Sacred Stillness of Arunachala: An International Travelerâ€™s Guide
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
                   Navigating the sacred geography of Tiruvannamalai, the 14 km Girivalam circumambulation, and finding deep inner quietude.
                 </p>
               </div>
               <div className="pt-space-md border-t border-border-muted mt-space-md">
-                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-accent-gold transition-colors">
+                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-forest-deep transition-colors">
                   Read Article <span className="material-symbols-outlined text-[14px]">east</span>
                 </span>
               </div>
@@ -86,7 +86,7 @@ export default function Journal() {
             <div className="p-space-lg flex-1 flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-space-sm mb-space-xs">
-                  <span className="px-2 py-0.5 rounded bg-surface-cream text-accent-gold font-label-sm text-label-sm uppercase">Ayurveda</span>
+                  <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">Ayurveda</span>
                   <span className="font-label-sm text-label-sm text-on-surface-variant">7 min read</span>
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
@@ -97,7 +97,7 @@ export default function Journal() {
                 </p>
               </div>
               <div className="pt-space-md border-t border-border-muted mt-space-md">
-                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-accent-gold transition-colors">
+                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-forest-deep transition-colors">
                   Read Article <span className="material-symbols-outlined text-[14px]">east</span>
                 </span>
               </div>
@@ -126,7 +126,7 @@ export default function Journal() {
                 </p>
               </div>
               <div className="pt-space-md border-t border-border-muted mt-space-md">
-                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-accent-gold transition-colors">
+                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-forest-deep transition-colors">
                   Read Article <span className="material-symbols-outlined text-[14px]">east</span>
                 </span>
               </div>

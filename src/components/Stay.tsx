@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -6,9 +6,9 @@ import { revealStagger, revealSection } from "../utils/animations";
 import { useCurrency } from "../context/CurrencyContext";
 
 const PRICES = {
-  deluxe: { INR: '₹3,099', USD: '$37', EUR: '€34' },
-  suite: { INR: '₹4,099', USD: '$49', EUR: '€45' },
-  family: { INR: '₹7,999', USD: '$95', EUR: '€89' }
+  deluxe: { INR: 'â‚¹3,099', USD: '$37', EUR: 'â‚¬34' },
+  suite: { INR: 'â‚¹4,099', USD: '$49', EUR: 'â‚¬45' },
+  family: { INR: 'â‚¹7,999', USD: '$95', EUR: 'â‚¬89' }
 };
 
 export default function Stay() {
@@ -45,7 +45,7 @@ export default function Stay() {
           <div ref={introRef}>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
-              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Rest &amp; Replenishment</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Rest &amp; Replenishment</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Spaces for Rest and Healing.
@@ -78,18 +78,18 @@ export default function Stay() {
                   A serene and comfortable space offering beautiful views of the mountain, perfect for a peaceful retreat.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Mountain View</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Breakfast & Lunch</span>
+                  <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Mountain View</span>
+                  <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Breakfast & Lunch</span>
                 </div>
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
-                  <span className="font-label-sm text-label-sm uppercase text-accent-gold font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.deluxe[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <span className="font-label-sm text-label-sm uppercase text-forest-deep font-medium">From</span>
+                  <p className="font-headline-md text-headline-md text-forest-deep">{PRICES.deluxe[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
-                  className="px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
+                  className="px-8 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
                 >
                   Enquire
                 </a>
@@ -98,13 +98,13 @@ export default function Stay() {
           </div>
           
           {/* Room 2: Hero Room */}
-          <div className="flex flex-col rounded-xl overflow-hidden bg-surface-cream shadow-lg group hover:shadow-2xl hover:-translate-y-1 transition-all ring-1 ring-accent-gold/40">
+          <div className="flex flex-col rounded-xl overflow-hidden bg-surface-cream shadow-md group hover:shadow-xl hover:-translate-y-1 transition-all">
             <div className="w-full aspect-[16/10] overflow-hidden relative">
               <div 
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
                 style={{ backgroundImage: "url('/images/stay_suite.png')" }}
               ></div>
-              <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-accent-gold text-forest-charcoal font-label-sm text-label-sm uppercase font-semibold tracking-wider shadow-sm">
+              <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-forest-deep/90 text-canvas-ivory font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
                 2 Guests
               </span>
             </div>
@@ -115,18 +115,18 @@ export default function Stay() {
                   An expansive suite featuring a comfortable sitting area and uninterrupted panoramic views of the sacred mountain.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Panoramic View</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Breakfast & Lunch</span>
+                  <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Panoramic View</span>
+                  <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Breakfast & Lunch</span>
                 </div>
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
-                  <span className="font-label-sm text-label-sm uppercase text-accent-gold font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.suite[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <span className="font-label-sm text-label-sm uppercase text-forest-deep font-medium">From</span>
+                  <p className="font-headline-md text-headline-md text-forest-deep">{PRICES.suite[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
-                  className="px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
+                  className="px-8 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
                 >
                   Enquire
                 </a>
@@ -152,18 +152,18 @@ export default function Stay() {
                   A spacious suite designed for families or larger groups, offering comfort, togetherness, and stunning mountain vistas.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">Spacious Living</span>
-                  <span className="px-2 py-1 rounded bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm">All Meals Included</span>
+                  <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Spacious Living</span>
+                  <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">All Meals Included</span>
                 </div>
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
-                  <span className="font-label-sm text-label-sm uppercase text-accent-gold font-medium">From</span>
-                  <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.family[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
+                  <span className="font-label-sm text-label-sm uppercase text-forest-deep font-medium">From</span>
+                  <p className="font-headline-md text-headline-md text-forest-deep">{PRICES.family[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
                   href="#enquiry" 
-                  className="px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
+                  className="px-8 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
                 >
                   Enquire
                 </a>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
@@ -18,9 +18,9 @@ const NAV_ITEMS = [
 ];
 
 const CURRENCIES = [
-  { code: "INR", symbol: "₹", label: "₹ INR" },
+  { code: "INR", symbol: "â‚¹", label: "â‚¹ INR" },
   { code: "USD", symbol: "$", label: "$ USD" },
-  { code: "EUR", symbol: "€", label: "€ EUR" },
+  { code: "EUR", symbol: "â‚¬", label: "â‚¬ EUR" },
 ];
 
 export default function Navigation() {
@@ -218,7 +218,7 @@ export default function Navigation() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep hover:text-accent-gold hover:translate-x-1.5 transition-all py-2.5 px-2 rounded-lg flex items-center justify-between group"
+                className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep hover:text-forest-deep hover:translate-x-1.5 transition-all py-2.5 px-2 rounded-lg flex items-center justify-between group"
               >
                 <span>{item.label}</span>
                 <span className="material-symbols-outlined text-border-muted text-[18px] group-hover:text-accent-gold group-hover:translate-x-0.5 transition-all">
@@ -263,7 +263,7 @@ export default function Navigation() {
 
           {/* Sanctuary Location Note */}
           <div className="text-center pt-2">
-            <span className="font-label-sm text-[10px] uppercase tracking-widest text-accent-gold">
+            <span className="font-label-sm text-[10px] uppercase tracking-widest text-forest-deep">
               Tiruvannamalai, Tamil Nadu
             </span>
           </div>

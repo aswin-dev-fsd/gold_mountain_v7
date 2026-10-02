@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -54,7 +54,7 @@ export default function Location() {
         <div ref={introRef} className="max-w-3xl mb-space-2xl">
           <div className="flex items-center gap-space-xs mb-space-xs">
 
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Geography</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Sacred Geography</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             In the presence of Arunachala.
@@ -94,7 +94,7 @@ export default function Location() {
                 <span className="w-2 h-2 rounded-full bg-forest-deep"></span> 
                 Direct access to Girivalam Path
               </span>
-              <span className="font-label-sm text-label-sm text-accent-gold font-medium">GPS: 12.2253° N, 79.0747° E</span>
+              <span className="font-label-sm text-label-sm text-accent-gold font-medium">GPS: 12.2253Â° N, 79.0747Â° E</span>
             </div>
 
             {/* NEW: Nearby Attractions */}
@@ -128,7 +128,7 @@ export default function Location() {
               <div className="space-y-space-md flex-grow">
                 <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-gold">Chennai International (MAA)</span>
+                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep">Chennai International (MAA)</span>
                     <span className="font-headline-sm text-headline-sm text-forest-deep">3.5 Hours</span>
                   </div>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">Smooth highway transit (180 km) via scenic Tindivanam route. We provide dedicated airport transfer assistance.</p>
@@ -136,7 +136,7 @@ export default function Location() {
                 
                 <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-gold">Bengaluru International (BLR)</span>
+                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep">Bengaluru International (BLR)</span>
                     <span className="font-headline-sm text-headline-sm text-forest-deep">4.0 Hours</span>
                   </div>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">Direct roadway (205 km) through Krishnagiri and Chengam ghats into the quiet valleys of Tiruvannamalai.</p>
@@ -146,7 +146,7 @@ export default function Location() {
               <div className="travel-card mt-space-lg pt-space-md border-t border-border-muted flex items-center justify-between gap-2 mt-auto">
                 <span className="font-body-sm text-body-sm text-forest-deep font-medium">Chauffeur Service Available</span>
                 <a href="/contact" className="inline-flex items-center justify-center font-label-sm text-label-sm uppercase tracking-wider text-forest-deep bg-accent-gold/20 hover:bg-accent-gold hover:text-forest-charcoal border border-accent-gold/40 hover:border-accent-gold px-4 py-2 min-h-[38px] rounded transition-all group font-semibold shadow-xs hover:shadow">
-                  Book Transfer <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
+                  Book Transfer <span className="inline-block group-hover:translate-x-1 transition-transform">â†’</span>
                 </a>
               </div>
             </div>

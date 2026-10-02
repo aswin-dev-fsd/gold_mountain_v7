@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -110,7 +110,7 @@ export default function Contact() {
                     <span className="material-symbols-outlined text-[22px]">chat</span>
                   </span>
                   <div className="min-w-0 flex-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-gold block">WhatsApp Sanctuary Desk</span>
+                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep block">WhatsApp Sanctuary Desk</span>
                     <p className="font-headline-sm text-headline-sm leading-none mt-0.5 truncate">+91 88381 98769</p>
                   </div>
                 </a>
@@ -119,7 +119,7 @@ export default function Contact() {
                     <span className="material-symbols-outlined text-[22px]">mail</span>
                   </span>
                   <div className="min-w-0 flex-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-gold block">Email Concierge</span>
+                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep block">Email Concierge</span>
                     <p className="font-body-sm text-xs sm:text-body-sm leading-tight mt-1 break-all text-canvas-ivory/90">goldmountainstay@gmail.com</p>
                   </div>
                 </a>

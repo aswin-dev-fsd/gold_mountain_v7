@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -55,7 +55,7 @@ export default function Experiences() {
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">visibility</span>
               </div>
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Sacred Alignment</span>
+              <span className="font-label-sm text-label-sm uppercase tracking-widest text-forest-deep">Sacred Alignment</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Shiva Shakti Darshanam</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
                 Direct sacred sightlines to Arunachala in the East and Parvati Malai to the West, creating a unique energetic balance honoring the divine masculine and feminine principles.
@@ -72,7 +72,7 @@ export default function Experiences() {
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">cruelty_free</span>
               </div>
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Compassionate Living</span>
+              <span className="font-label-sm text-label-sm uppercase tracking-widest text-forest-deep">Compassionate Living</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Desi Cow Goshala</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
                 Home to indigenous Gir and Kangayam cows cared for with gentle reverence. Guests may participate in peaceful morning feedings and discover the spiritual calm of the sanctuary.
@@ -89,7 +89,7 @@ export default function Experiences() {
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">water_lux</span>
               </div>
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Water Meditation</span>
+              <span className="font-label-sm text-label-sm uppercase tracking-widest text-forest-deep">Water Meditation</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Lotus Reflection Pond</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
                 A serene expanse of clear natural water reflecting the golden silhouette of the mountain at sunrise, surrounded by native water lilies and silent stepped stone ghats.
@@ -106,7 +106,7 @@ export default function Experiences() {
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">blur_on</span>
               </div>
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Spatial Harmony</span>
+              <span className="font-label-sm text-label-sm uppercase tracking-widest text-forest-deep">Spatial Harmony</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Five-Element Philosophy</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
                 The spatial plan honors Pancha Bhoota: Earth, Water, Fire, Air, and Space. Healing pathways are specifically sequenced to balance sensory stimuli and restore equilibrium.
@@ -123,7 +123,7 @@ export default function Experiences() {
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">potted_plant</span>
               </div>
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Soil Medicine</span>
+              <span className="font-label-sm text-label-sm uppercase tracking-widest text-forest-deep">Soil Medicine</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Organic Farm &amp; Medicinal Flora Garden</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
                 Walk through dense rows of Brahmi, Ashwagandha, Tulsi, Moringa, and heirloom indigenous vegetables. Learn herbal preparations and taste wild herbs harvested fresh during morning quiet walks.
@@ -131,9 +131,9 @@ export default function Experiences() {
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
               <span className="font-label-sm text-label-sm text-gold-light">Guided Daily Walks at 07:30 AM</span>
-              <a href="#dining" className="text-accent-gold hover:text-canvas-ivory transition-colors font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 group py-1">
+              <a href="#dining" className="inline-flex items-center justify-center gap-space-xs px-4 py-2 rounded-lg bg-accent-gold text-forest-charcoal font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all min-h-[36px] group">
                 <span>Explore Farm To Table</span>
-                <span className="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                <span className="material-symbols-outlined text-forest-charcoal text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </a>
             </div>
           </div>

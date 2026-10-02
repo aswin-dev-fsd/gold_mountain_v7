@@ -103,15 +103,15 @@ const config: Config = {
       fontSize: {
         "display-lg-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }],
         "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }],
-        "body-lg": ["1.125rem", { "lineHeight": "1.7", "letterSpacing": "0.01em", "fontWeight": "400" }],
+        "body-lg": ["1.125rem", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
         "label-lg": ["0.875rem", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600" }],
         "headline-md": ["1.75rem", { "lineHeight": "1.3", "letterSpacing": "0em", "fontWeight": "500" }],
         "display-lg": ["3.5rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "400" }],
         "label-md": ["0.75rem", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
         "label-sm": ["0.6875rem", { "lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "600" }],
         "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "0em", "fontWeight": "400" }],
-        "body-md": ["1rem", { "lineHeight": "1.65", "letterSpacing": "0.01em", "fontWeight": "400" }],
-        "body-sm": ["0.875rem", { "lineHeight": "1.6", "letterSpacing": "0.015em", "fontWeight": "400" }],
+        "body-md": ["1rem", { "lineHeight": "1.45", "letterSpacing": "0.01em", "fontWeight": "400" }],
+        "body-sm": ["0.875rem", { "lineHeight": "1.4", "letterSpacing": "0.015em", "fontWeight": "400" }],
         "headline-sm": ["1.25rem", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" }]
       }
     }

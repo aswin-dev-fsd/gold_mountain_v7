@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -37,14 +37,14 @@ export default function Footer() {
             <p className="font-body-md text-body-md text-surface-container-high/80 mb-space-lg leading-relaxed max-w-xl">
               A peaceful sanctuary where traditional Ayurveda, mindful meditation, farm-to-table dining, and sacred nature come together in the eternal presence of sacred Arunachala.
             </p>
-            <div className="flex items-center gap-space-xs text-accent-gold font-label-md text-label-md uppercase tracking-wider">
+            <div className="flex items-center gap-space-xs text-forest-deep font-label-md text-label-md uppercase tracking-wider">
               <span className="material-symbols-outlined text-[18px]">spa</span>
               <span>Tiruvannamalai, Tamil Nadu</span>
             </div>
           </div>
           
           <div className="flex flex-col">
-            <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Wellness</h4>
+            <h4 className="font-label-md text-label-md uppercase tracking-widest text-forest-deep mb-space-md">Wellness</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
               <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Ayurveda Programs</a></li>
               <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Yoga Shala</a></li>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
           
           <div className="flex flex-col">
-            <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Stay</h4>
+            <h4 className="font-label-md text-label-md uppercase tracking-widest text-forest-deep mb-space-md">Stay</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
               <li><a href="#stay" className="hover:text-canvas-ivory transition-colors">Garden Cottages</a></li>
               <li><a href="#stay" className="hover:text-canvas-ivory transition-colors">Hill View Suites</a></li>
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
           
           <div className="flex flex-col">
-            <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Experiences</h4>
+            <h4 className="font-label-md text-label-md uppercase tracking-widest text-forest-deep mb-space-md">Experiences</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
               <li><a href="#experiences" className="hover:text-canvas-ivory transition-colors">Shiva Shakti Darshan</a></li>
               <li><a href="#experiences" className="hover:text-canvas-ivory transition-colors">Organic Farm &amp; Garden</a></li>
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
           
           <div className="flex flex-col">
-            <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Contact</h4>
+            <h4 className="font-label-md text-label-md uppercase tracking-widest text-forest-deep mb-space-md">Contact</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
               <li>Girivalam Outer Ring Rd</li>
               <li>Tiruvannamalai, TN 606603</li>
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high/50 border-t border-forest-deep">
-          <p>© 2024 Gold Mountain Wellness Resort. All rights reserved.</p>
+          <p>Â© 2024 Gold Mountain Wellness Resort. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-space-lg">
             <span>Preserving Arunachala Ecology</span>
             <a href="#" className="hover:text-canvas-ivory transition-colors">Privacy Policy</a>

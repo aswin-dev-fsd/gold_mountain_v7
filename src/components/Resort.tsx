@@ -47,7 +47,7 @@ export default function Resort() {
             <div ref={leftContentRef}>
               <div className="flex items-center gap-space-xs mb-space-xs">
 
-                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sanctuary Architecture</span>
+                <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Sanctuary Architecture</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Stay close to nature. <br className="hidden sm:block"/>Stay close to yourself.
@@ -60,14 +60,14 @@ export default function Resort() {
             {/* Key Architectural Facets */}
             <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-xl">
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
+                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
                   <span className="material-symbols-outlined text-[20px]">roofing</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Terracotta &amp; Stone</span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Cool Athangudi tiles, local granite masonry, and breathable clay roof tiles.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
+                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
                   <span className="material-symbols-outlined text-[20px]">water</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Lotus Ponds</span>
                 </div>
@@ -81,7 +81,7 @@ export default function Resort() {
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Open-air shaded corridors overlooking fragrant jasmine and medicinal tulsi groves.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-secondary mb-2">
+                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
                   <span className="material-symbols-outlined text-[20px]">temple_hindu</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Silent Shalas</span>
                 </div>

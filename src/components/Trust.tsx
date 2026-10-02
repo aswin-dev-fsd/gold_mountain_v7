@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -32,7 +32,7 @@ export default function Trust() {
         {/* Section Intro */}
         <div ref={introRef} className="text-center max-w-2xl mx-auto mb-space-2xl">
           <div className="flex items-center justify-center gap-space-xs mb-space-xs">
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Integrity &amp; Presence</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Integrity &amp; Presence</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             A Sanctuary Built on Authenticity.
@@ -84,7 +84,7 @@ export default function Trust() {
             </div>
             <div className="pt-space-md border-t border-border-muted mt-space-md">
               <p className="font-headline-sm text-headline-sm text-forest-deep">Elena Lindqvist</p>
-              <p className="font-label-sm text-label-sm text-on-surface-variant">Stockholm, Sweden · 14-Day Ayurvedic Retreat</p>
+              <p className="font-label-sm text-label-sm text-on-surface-variant">Stockholm, Sweden Â· 14-Day Ayurvedic Retreat</p>
             </div>
           </div>
           
@@ -104,7 +104,7 @@ export default function Trust() {
             </div>
             <div className="pt-space-md border-t border-border-muted mt-space-md">
               <p className="font-headline-sm text-headline-sm text-forest-deep">Dr. Rajesh Swaminathan</p>
-              <p className="font-label-sm text-label-sm text-on-surface-variant">Bengaluru, India · Mountain Suite Guest</p>
+              <p className="font-label-sm text-label-sm text-on-surface-variant">Bengaluru, India Â· Mountain Suite Guest</p>
             </div>
           </div>
           
@@ -124,7 +124,7 @@ export default function Trust() {
             </div>
             <div className="pt-space-md border-t border-border-muted mt-space-md">
               <p className="font-headline-sm text-headline-sm text-forest-deep">Claire Vaugrenard</p>
-              <p className="font-label-sm text-label-sm text-on-surface-variant">Lyon, France · 21-Day Panchakarma</p>
+              <p className="font-label-sm text-label-sm text-on-surface-variant">Lyon, France Â· 21-Day Panchakarma</p>
             </div>
           </div>
           
