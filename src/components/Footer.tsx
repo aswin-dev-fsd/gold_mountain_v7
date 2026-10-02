@@ -31,9 +31,9 @@ export default function Footer() {
       <div className="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-space-lg xl:gap-space-xl pb-space-2xl">
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-3 xl:col-span-2 flex flex-col items-start pr-0 xl:pr-space-lg mb-space-md xl:mb-0">
-            <div className="flex items-center gap-space-sm mb-space-md">
-              <span className="font-headline-sm text-headline-sm tracking-wide text-canvas-ivory">Gold Mountain</span>
-            </div>
+            <a href="/" className="inline-flex items-center mb-space-md rounded-lg bg-canvas-ivory px-4 py-3" aria-label="Gold Mountain Wellness Sanctuary Home">
+              <img alt="Gold Mountain Wellness Resort" className="h-12 w-auto object-contain" src="/images/logo.png" />
+            </a>
             <p className="font-body-md text-body-md text-surface-container-high/80 mb-space-lg leading-relaxed max-w-xl">
               A peaceful sanctuary where traditional Ayurveda, mindful meditation, farm-to-table dining, and sacred nature come together in the eternal presence of sacred Arunachala.
             </p>
