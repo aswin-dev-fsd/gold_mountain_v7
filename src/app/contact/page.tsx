@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { isReducedMotion, EASE_CINEMATIC, revealSection, revealStagger } from "@/utils/animations";
+import { isReducedMotion, EASE_CINEMATIC, revealSection } from "@/utils/animations";
 
 // --- HERO SECTION ---
 function ContactHero() {
@@ -48,18 +48,22 @@ function ContactSection() {
 
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
+      <div className="max-w-7xl mx-auto flex flex-col gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
         
         {/* Left Column: Form */}
-        <div ref={formRef} className="w-full lg:w-1/2">
+        <div ref={formRef} className="w-full">
           <EnquiryForm />
         </div>
 
         {/* Right Column: Info & Map */}
-        <div ref={infoRef} className="w-full lg:w-1/2 flex flex-col gap-12">
+        <div ref={infoRef} className="w-full">
           <ContactDetails />
-          <LocationMap />
         </div>
+        </div>
+
+        {/* Full-width Map */}
+        <LocationMap />
         
       </div>
     </section>
@@ -94,40 +98,40 @@ function EnquiryForm() {
   }
 
   return (
-    <div className="bg-canvas-ivory border border-border-muted p-8 md:p-12 rounded-xl shadow-sm">
+    <div className="bg-canvas-ivory border border-border-muted p-8 md:p-12 rounded-xl shadow-sm h-full flex flex-col">
       <h2 className="text-2xl font-headline-sm text-forest-deep mb-8">Send an Enquiry</h2>
       
-      <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-6 flex-1">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="name" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Name *</label>
-            <input required type="text" id="name" className="border-b border-border-muted bg-transparent py-2 outline-none focus:border-forest-deep transition-colors font-body-sm" />
+            <input required type="text" id="name" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="email" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Email *</label>
-            <input required type="email" id="email" className="border-b border-border-muted bg-transparent py-2 outline-none focus:border-forest-deep transition-colors font-body-sm" />
+            <input required type="email" id="email" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="phone" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">WhatsApp / Phone</label>
-            <input type="tel" id="phone" className="border-b border-border-muted bg-transparent py-2 outline-none focus:border-forest-deep transition-colors font-body-sm" />
+            <input type="tel" id="phone" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="dates" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Preferred Dates</label>
-            <input type="text" id="dates" placeholder="e.g. Oct 10 - Oct 15" className="border-b border-border-muted bg-transparent py-2 outline-none focus:border-forest-deep transition-colors font-body-sm" />
+            <input type="text" id="dates" placeholder="e.g. Oct 10 - Oct 15" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex flex-col gap-2 w-full md:w-1/2">
             <label htmlFor="guests" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Number of Guests</label>
-            <input type="number" min="1" id="guests" className="border-b border-border-muted bg-transparent py-2 outline-none focus:border-forest-deep transition-colors font-body-sm" />
+            <input type="number" min="1" id="guests" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
           <div className="flex flex-col gap-2 w-full md:w-1/2">
             <label htmlFor="type" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Enquiry Type</label>
-            <select id="type" className="border-b border-border-muted bg-transparent py-2 outline-none focus:border-forest-deep transition-colors font-body-sm text-forest-deep/80 cursor-pointer">
+            <select id="type" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm text-forest-deep/80 cursor-pointer">
               <option value="stay">Stay</option>
               <option value="wellness">Wellness</option>
               <option value="ayurveda">Ayurveda</option>
@@ -137,9 +141,9 @@ function EnquiryForm() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 w-full mt-4">
+        <div className="flex flex-col gap-2 w-full mt-4 flex-1">
           <label htmlFor="message" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Message</label>
-          <textarea id="message" rows={4} className="border-b border-border-muted bg-transparent py-2 outline-none focus:border-forest-deep transition-colors font-body-sm resize-none"></textarea>
+          <textarea id="message" rows={5} className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm resize-none flex-1 min-h-[120px]"></textarea>
         </div>
 
         <button 
@@ -159,22 +163,22 @@ function ContactDetails() {
 
   useGSAP(() => {
     if (!containerRef.current) return;
-    revealStagger(containerRef.current.querySelectorAll('.contact-block'), containerRef.current);
+    revealSection(containerRef.current);
   });
 
   return (
-    <div ref={containerRef} className="flex flex-col gap-8">
+    <div ref={containerRef} className="flex flex-col p-6 md:p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl h-full">
       
-      <div className="contact-block flex flex-col items-start p-6 bg-canvas-ivory border border-border-muted/50 rounded-xl">
+      <div className="flex flex-col items-start">
         <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">WhatsApp / Phone</span>
         <p className="text-lg font-body-md text-forest-deep mb-4">+91 88381 98769</p>
-        <a href="https://wa.me/918838198769" className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-2 rounded-[9999px] text-xs uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors">
+        <a href="https://wa.me/918838198769" className="inline-flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-[9999px] text-xs uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors">
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          Message on WhatsApp
+          WhatsApp Now
         </a>
       </div>
 
-      <div className="contact-block flex flex-col items-start p-6 bg-canvas-ivory border border-border-muted/50 rounded-xl">
+      <div className="flex flex-col items-start pt-6 border-t border-border-muted/50 mt-6">
         <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Email</span>
         <p className="text-lg font-body-md text-forest-deep mb-4">goldmountainstay@gmail.com</p>
         <a href="mailto:goldmountainstay@gmail.com" className="inline-flex items-center gap-2 border border-forest-deep/20 text-forest-deep px-6 py-2 rounded-lg text-xs uppercase tracking-wider hover:bg-forest-deep/5 transition-colors">
@@ -182,14 +186,13 @@ function ContactDetails() {
         </a>
       </div>
 
-      <div className="contact-block flex flex-col items-start p-6 bg-canvas-ivory border border-border-muted/50 rounded-xl">
+      <div className="flex flex-col items-start pt-6 border-t border-border-muted/50 mt-6">
         <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Location</span>
         <p className="font-body-md text-forest-deep leading-relaxed mb-4">
-          No.97, Kottangal Road,<br/>
-          Adiannamalai,<br/>
-          Tiruvannamalai,<br/>
-          Tamil Nadu 606604,<br/>
-          India
+          Gold Mountain Wellness Resort,<br/>
+          Kottangal,<br/>
+          Girivalam Path,<br/>
+          Thiruvannamalai 606604
         </p>
         
         <div className="w-full border-t border-border-muted/50 pt-4 mt-2">
@@ -209,16 +212,16 @@ function ContactDetails() {
 // --- LOCATION MAP ---
 function LocationMap() {
   return (
-    <div className="w-full h-64 md:h-80 bg-border-muted/20 relative rounded-xl overflow-hidden border border-border-muted">
+    <div className="w-full h-72 md:h-96 bg-border-muted/20 relative rounded-xl overflow-hidden border border-border-muted">
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.492576394145!2d79.0519!3d12.2471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc123456789ab%3A0xabcdef1234567890!2sTiruvannamalai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+        src="https://www.google.com/maps?q=12.2428722,79.0256161&hl=en&z=15&output=embed" 
         width="100%" 
         height="100%" 
         style={{ border: 0 }} 
         allowFullScreen={false} 
         loading="lazy" 
         referrerPolicy="no-referrer-when-downgrade"
-        title="Gold Mountain Location"
+        title="Gold Mountain Wellness Resort location map"
       ></iframe>
     </div>
   );
