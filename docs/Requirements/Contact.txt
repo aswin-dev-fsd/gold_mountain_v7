@@ -69,15 +69,14 @@ LOCATION
 
 Show:
 
-No.97, Kottangal Road,
-Adiannamalai,
-Tiruvannamalai,
-Tamil Nadu 606604,
-India
+Gold Mountain Wellness Resort,
+Kottangal,
+Girivalam Path,
+Thiruvannamalai 606604
 
 Use Google Maps integration.
 
-Verify address before production.
+Address confirmed by client on 2026-10-02.
 
 --------------------------------------------------
 INTERNATIONAL CONTACT

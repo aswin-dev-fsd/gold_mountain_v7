@@ -60,7 +60,7 @@ export default function Location() {
             In the presence of Arunachala.
           </h2>
           <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
-            Tiruvannamalai, Tamil Nadu, the eternal beacon of silence and transformation.
+            Thiruvannamalai, Tamil Nadu, the eternal beacon of silence and transformation.
           </p>
           <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
             Nestled along the quiet outer perimeter, Gold Mountain offers undisturbed visual access to sacred Mount Arunachala to the East and the undulating Parvati Malai mountain stretch to the West. Guests enjoy seamless proximity to the ancient Girivalam path while remaining enveloped in complete sanctuary quietude.
@@ -71,7 +71,7 @@ export default function Location() {
           
           {/* Orientation Map Box & Attractions */}
           <div className="lg:col-span-7 flex flex-col gap-space-md h-full">
-            <div ref={mapContainerRef} className="w-full h-80 lg:h-96 rounded-xl overflow-hidden shadow-md relative bg-surface-cream" data-location="Arunachala, Tiruvannamalai, Tamil Nadu, India">
+            <div ref={mapContainerRef} className="w-full h-80 lg:h-96 rounded-xl overflow-hidden shadow-md relative bg-surface-cream" data-location="Arunachala, Thiruvannamalai, Tamil Nadu, India">
               <div 
                 ref={mapRef}
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000"
@@ -82,7 +82,7 @@ export default function Location() {
               <div ref={mapOverlayRef} className="absolute bottom-4 left-4 bg-forest-deep text-canvas-ivory p-space-md rounded-xl shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs border border-accent-gold/20">
                 <span className="material-symbols-outlined text-accent-gold text-[32px] mb-space-xs">location_on</span>
                 <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Sanctuary Coordinates</p>
-                <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Outer Girivalam Ring, Tiruvannamalai, Tamil Nadu 606603</p>
+                <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Gold Mountain Wellness Resort, Kottangal, Girivalam Path, Thiruvannamalai 606604</p>
               </div>
             </div>
             
@@ -91,7 +91,7 @@ export default function Location() {
                 <span className="w-2 h-2 rounded-full bg-forest-deep"></span> 
                 Direct access to Girivalam Path
               </span>
-              <span className="font-label-sm text-label-sm text-accent-gold font-medium">GPS: 12.2253° N, 79.0747° E</span>
+              <span className="font-label-sm text-label-sm text-accent-gold font-medium">GPS: 12.2429° N, 79.0256° E</span>
             </div>
 
             {/* NEW: Nearby Attractions */}
@@ -136,7 +136,7 @@ export default function Location() {
                     <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep">Bengaluru International (BLR)</span>
                     <span className="font-headline-sm text-headline-sm text-forest-deep">4.0 Hours</span>
                   </div>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Direct roadway (205 km) through Krishnagiri and Chengam ghats into the quiet valleys of Tiruvannamalai.</p>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant">Direct roadway (205 km) through Krishnagiri and Chengam ghats into the quiet valleys of Thiruvannamalai.</p>
                 </div>
 
                 <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">

@@ -39,7 +39,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-space-xs text-accent-gold font-label-md text-label-md uppercase tracking-wider">
               <span className="material-symbols-outlined text-[18px]">spa</span>
-              <span>Tiruvannamalai, Tamil Nadu</span>
+              <span>Thiruvannamalai, Tamil Nadu</span>
             </div>
           </div>
           
@@ -75,8 +75,8 @@ export default function Footer() {
           <div className="flex flex-col">
             <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Contact</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
-              <li>Girivalam Outer Ring Rd</li>
-              <li>Tiruvannamalai, TN 606603</li>
+              <li>Kottangal, Girivalam Path</li>
+              <li>Thiruvannamalai 606604</li>
               <li>
                 <a href="https://wa.me/918838198769" className="hover:text-canvas-ivory transition-colors flex items-center gap-space-xs mt-space-xs">
                   <span className="material-symbols-outlined text-[16px] text-accent-gold">chat</span> WhatsApp Enquiry

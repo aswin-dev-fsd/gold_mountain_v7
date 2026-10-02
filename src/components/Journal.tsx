@@ -64,7 +64,7 @@ export default function Journal() {
                   The Sacred Stillness of Arunachala: An International Traveler&apos;s Guide
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
-                  Navigating the sacred geography of Tiruvannamalai, the 14 km Girivalam circumambulation, and finding deep inner quietude.
+                  Navigating the sacred geography of Thiruvannamalai, the 14 km Girivalam circumambulation, and finding deep inner quietude.
                 </p>
               </div>
               <div className="pt-space-md border-t border-border-muted mt-space-md">

@@ -254,7 +254,7 @@ export default function Navigation() {
           {/* Sanctuary Location Note */}
           <div className="text-center pt-2">
             <span className="font-label-sm text-[10px] uppercase tracking-widest text-forest-deep">
-              Tiruvannamalai, Tamil Nadu
+              Thiruvannamalai, Tamil Nadu
             </span>
           </div>
         </div>
