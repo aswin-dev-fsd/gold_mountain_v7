@@ -78,7 +78,7 @@ function EnquiryForm() {
   if (isSubmitted) {
     return (
       <div className="bg-canvas-ivory border border-border-muted p-12 text-center rounded-sm h-full flex flex-col items-center justify-center">
-        <div className="w-16 h-16 rounded-full bg-forest-deep/10 text-forest-deep flex items-center justify-center mb-6">
+        <div className="w-16 h-16 rounded-lg bg-forest-deep/10 text-forest-deep flex items-center justify-center mb-6">
           <span className="material-symbols-outlined text-[32px]">check</span>
         </div>
         <h3 className="text-2xl font-headline-md text-forest-deep mb-4">Thank you.</h3>

@@ -204,7 +204,7 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-9 h-9 rounded-full flex items-center justify-center text-forest-deep hover:bg-forest-deep/10 transition-colors"
+              className="w-9 h-9 rounded-lg flex items-center justify-center text-forest-deep hover:bg-forest-deep/10 transition-colors"
               aria-label="Close menu"
             >
               <span className="material-symbols-outlined text-[24px]">close</span>

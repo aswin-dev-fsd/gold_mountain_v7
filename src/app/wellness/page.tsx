@@ -171,7 +171,7 @@ function HealingPhilosophy() {
         <div ref={itemsRef} className="grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8 text-center">
           {areas.map(area => (
             <div key={area} className="heal-item flex flex-col items-center">
-              <div className="w-16 h-16 rounded-full border border-accent-gold/40 flex items-center justify-center mb-6 text-accent-gold">
+              <div className="w-16 h-16 rounded-lg border border-accent-gold/40 flex items-center justify-center mb-6 text-accent-gold">
                 <span className="material-symbols-outlined text-[28px]">spa</span>
               </div>
               <h3 className="text-xl font-headline-sm text-forest-deep">{area}</h3>

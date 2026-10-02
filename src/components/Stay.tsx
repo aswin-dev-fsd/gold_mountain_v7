@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -82,7 +82,7 @@ export default function Stay() {
                   <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Breakfast & Lunch</span>
                 </div>
               </div>
-              <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
+              <div className="pt-space-md border-t border-border-muted flex items-end justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-forest-deep font-medium">From</span>
                   <p className="font-headline-md text-headline-md text-forest-deep">{PRICES.deluxe[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
@@ -119,7 +119,7 @@ export default function Stay() {
                   <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Breakfast & Lunch</span>
                 </div>
               </div>
-              <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
+              <div className="pt-space-md border-t border-border-muted flex items-end justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-forest-deep font-medium">From</span>
                   <p className="font-headline-md text-headline-md text-forest-deep">{PRICES.suite[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
@@ -156,7 +156,7 @@ export default function Stay() {
                   <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">All Meals Included</span>
                 </div>
               </div>
-              <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
+              <div className="pt-space-md border-t border-border-muted flex items-end justify-between gap-2">
                 <div>
                   <span className="font-label-sm text-label-sm uppercase text-forest-deep font-medium">From</span>
                   <p className="font-headline-md text-headline-md text-forest-deep">{PRICES.family[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
@@ -194,6 +194,7 @@ export default function Stay() {
     </section>
   );
 }
+
 
 
 

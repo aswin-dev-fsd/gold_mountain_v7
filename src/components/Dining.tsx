@@ -88,7 +88,7 @@ export default function Dining() {
             
             <div ref={listRef} className="space-y-space-md mb-space-xl">
               <div className="flex items-start gap-space-md">
-                <span className="w-8 h-8 rounded-full bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
+                <span className="w-8 h-8 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
                   <span className="material-symbols-outlined text-[16px]">eco</span>
                 </span>
                 <div>
@@ -97,7 +97,7 @@ export default function Dining() {
                 </div>
               </div>
               <div className="flex items-start gap-space-md">
-                <span className="w-8 h-8 rounded-full bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
+                <span className="w-8 h-8 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
                   <span className="material-symbols-outlined text-[16px]">water_drop</span>
                 </span>
                 <div>
@@ -106,7 +106,7 @@ export default function Dining() {
                 </div>
               </div>
               <div className="flex items-start gap-space-md">
-                <span className="w-8 h-8 rounded-full bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
+                <span className="w-8 h-8 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
                   <span className="material-symbols-outlined text-[16px]">group</span>
                 </span>
                 <div>

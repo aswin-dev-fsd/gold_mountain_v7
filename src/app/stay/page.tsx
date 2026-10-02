@@ -146,7 +146,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
             </ul>
           </div>
           
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full gap-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between w-full gap-6">
             <div className="flex flex-col">
               <span className="text-xs uppercase tracking-widest text-forest-deep/60">From</span>
               <span className="font-headline-sm text-xl text-forest-deep">{room.prices[currency]}</span>
@@ -222,7 +222,7 @@ function AmenitiesGrid() {
         <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-6">
           {AMENITIES.map(amenity => (
             <div key={amenity.name} className="amenity-item flex flex-col items-center group">
-              <div className="w-16 h-16 rounded-full bg-surface-cream border border-border-muted flex items-center justify-center mb-4 text-forest-deep/80 group-hover:bg-forest-deep group-hover:text-accent-gold transition-colors duration-300">
+              <div className="w-16 h-16 rounded-lg bg-surface-cream border border-border-muted flex items-center justify-center mb-4 text-forest-deep/80 group-hover:bg-forest-deep group-hover:text-accent-gold transition-colors duration-300">
                 <span className="material-symbols-outlined text-[28px]">{amenity.icon}</span>
               </div>
               <h3 className="text-sm font-label-md uppercase tracking-wider text-forest-deep">{amenity.name}</h3>
@@ -280,6 +280,7 @@ export default function StayPage() {
     </main>
   );
 }
+
 
 
 

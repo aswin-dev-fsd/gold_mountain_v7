@@ -106,7 +106,7 @@ export default function Contact() {
               </p>
               <div className="space-y-space-md min-w-0">
                 <a href="https://wa.me/918838198769" rel="noopener noreferrer" target="_blank" className="p-space-md rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center gap-space-md text-canvas-ivory shadow-sm group min-w-0">
-                  <span className="w-10 h-10 rounded-full bg-accent-gold text-forest-charcoal flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <span className="w-10 h-10 rounded-lg bg-accent-gold text-forest-charcoal flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined text-[22px]">chat</span>
                   </span>
                   <div className="min-w-0 flex-1">
@@ -115,7 +115,7 @@ export default function Contact() {
                   </div>
                 </a>
                 <a href="mailto:goldmountainstay@gmail.com" className="p-space-md rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center gap-space-md text-canvas-ivory shadow-sm group min-w-0">
-                  <span className="w-10 h-10 rounded-full bg-forest-charcoal text-accent-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <span className="w-10 h-10 rounded-lg bg-forest-charcoal text-accent-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined text-[22px]">mail</span>
                   </span>
                   <div className="min-w-0 flex-1">
