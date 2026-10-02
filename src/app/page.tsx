@@ -20,8 +20,8 @@ export default function Home() {
       <Resort />
       <Stay />
       <Experiences />
-      <Location />
       <Dining />
+      <Location />
       <Trust />
       <Journal />
       <Contact />

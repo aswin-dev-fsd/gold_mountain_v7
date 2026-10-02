@@ -1,0 +1,132 @@
+GOLD MOUNTAIN WELLNESS RESORT - DETAILS NEEDED FROM CLIENT
+Prepared from a review of the current website build (2 Oct 2026)
+
+============================================================
+A. REQUIRED - the site shows "[... TO BE PROVIDED]" text today
+============================================================
+
+1. WELLNESS PAGE - Programmes & Packages (3 packages)
+   For each: Inner Silence Retreat (3 Days / 2 Nights),
+             Ayurveda Detox - Panchakarma (14 Days),
+             Rejuvenation Therapy (7 Days)
+   - Price in INR, USD and EUR (per person or per room? twin or single?)
+   - Confirm the duration options (the Ayurveda page says 14 / 21 days for
+     Panchakarma and 7 / 14 days for Rasayana, the Wellness page shows one each)
+   - Final "includes" list for each package
+   - Is accommodation included in the price? Which room type?
+   - Minimum stay, advance/booking amount, cancellation policy
+
+2. AYURVEDA PAGE - Packages (2 packages)
+   - Price in INR, USD, EUR for Ayurveda Detox (Panchakarma) and
+     Rejuvenation Therapy (Rasayana)
+   - Same questions as above (inclusions, accommodation, durations)
+
+3. AYURVEDA PAGE - Individual therapy descriptions (5 therapies)
+   Abhyanga, Shirodhara, Udvartana (dry powder massage), Pizhichil, Swedana
+   - Approved descriptions in the client's own words
+   - Duration of each session and price per session (if sold separately)
+   - Any therapy missing from the list (Njavarakizhi, Nasyam, Basti, etc.)
+
+4. ABOUT PAGE - Founder section
+   - Founder name
+   - Founder photo (high resolution, portrait 3:4)
+   - Biography (150-250 words)
+   - Founder vision quote (1-2 sentences)
+   - "Why Gold Mountain Exists" (100-150 words)
+   - Resident doctor / team details if they should be shown
+
+============================================================
+B. PRICING TO CONFIRM
+============================================================
+Room prices currently on the site (INR / USD / EUR, per night):
+   - Mountain View Deluxe        3,099 / 37 / 34
+   - Mountain View Suite         4,099 / 49 / 45
+   - Mountain View Family Suite  7,999 / 95 / 89
+Please confirm:
+   - These are final and whether taxes (GST) are included
+   - Per room or per person, single vs double occupancy
+   - Extra bed / extra person charge
+   - Season or festival rates (Karthigai Deepam, Pournami, holidays)
+   - Discount for long stays (14+ nights / monthly)
+   - Fixed exchange rate for USD and EUR, or updated manually
+   - Long stay / "Monthly Sadhana Stays" rates (the Stay page has a
+     "Request Long Stay Rates" button, are rates to be published?)
+
+============================================================
+C. PHOTOS AND VIDEO (many are stock placeholders today)
+============================================================
+   - Real photos of each room: Deluxe, Suite, Family Suite (3-5 each)
+   - Real photo for the Wellness page "Our Approach" grid:
+     Ayurveda, Traditional Therapies, Yoga, Meditation, Healthy Food,
+     Nature, Lifestyle (7 images)
+   - Founder portrait and a second About page image
+   - Home page images: Stay cards, Journal cards, Resort, Experiences
+   - Hero images for About / Ayurveda / Wellness / Stay
+   - Final logo files (SVG or high-res PNG, light and dark versions)
+   - Permission to use any people shown in the photos
+
+============================================================
+D. CONTACT AND BUSINESS DETAILS (confirm)
+============================================================
+   - Full postal address (the site shows Kottangal, Girivalam Path,
+     Thiruvannamalai 606604) and the Google Maps pin location
+   - Phone / WhatsApp number (+91 88381 98769) and confirm it is monitored
+   - Email (goldmountainstay@gmail.com), any separate booking email
+   - Reception hours and response time promise
+   - Check-in / check-out times
+   - Social media links (Instagram, Facebook, YouTube) - none on site yet
+   - Business registration, GST number, tourism / AYUSH registration to
+     show in the footer if wanted
+   - Where enquiry form submissions should be sent (the form does not
+     send anywhere yet - need the email or tool they want to use)
+
+============================================================
+E. HOME PAGE CONTENT TO VERIFY
+============================================================
+   - Trust section: the three guest testimonials (Elena Lindqvist,
+     Dr. Rajesh Swaminathan, Claire Vaugrenard) are sample text.
+     Need real reviews with written permission, or remove them
+   - Trust claims: "BAMS-qualified resident Ayurvedic doctors",
+     "100% Organic", "Earthen Architecture" - confirm each is accurate
+     and provide the doctor names and qualifications
+   - Journal section: the 3 articles (Spirituality, Ayurveda, Nourishment)
+     are placeholders. Need real articles or hide the section
+   - Experiences: Shiva Shakti Darshanam, Desi Cow Goshala (Gir and
+     Kangayam cows), Lotus Pond, Five-Element Philosophy, Organic Farm,
+     Guided daily walk at 07:30 AM - confirm they exist and the timing
+   - Dining: confirm purely Sattvic vegetarian, herbal teas brewed
+     twice daily, communal and private dining verandas, meal timings
+   - Nearby attractions distances (Girivalam Path 1.0 km, Aadhi Arunachala
+     1.5 km, Ramanasramam 5 km, Arunachaleswarar Temple 6 km) and
+     travel distances: Chennai Airport 180 km, Bengaluru 205 km,
+     Katpadi Junction 105 km. Confirm and add the nearest railway station
+     to Tiruvannamalai and airport transfer prices
+   - Footer room names (Garden Cottages, Hill View Suites, Wellness Villas,
+     Private Sanctums) do not match the actual rooms (Deluxe, Suite,
+     Family Suite). Confirm which names are correct
+   - Footer lists "Yoga Shala" and "Lifestyle Consultations": confirm
+     they are offered
+
+============================================================
+F. POLICIES AND LEGAL
+============================================================
+   - Privacy Policy and Terms & Conditions text (footer links are empty)
+   - Cancellation and refund policy
+   - Health disclaimer for Ayurveda treatments (medical screening,
+     pregnancy, medical conditions)
+   - Rules: alcohol-free and smoke-free (shown on Stay page), pets,
+     children, visitors, ID requirements for foreign guests
+   - Payment methods accepted and advance payment process
+
+============================================================
+G. DECISIONS FOR THE CLIENT
+============================================================
+   - Online booking needed or enquiry-only (WhatsApp / email)?
+   - Languages (English only, or Tamil / Hindi too)?
+   - Domain name and hosting account
+   - Google Analytics / Search Console access
+   - Google Business Profile link
+   - Will the client supply blog content, or should the Journal be hidden
+     at launch?
+   - Copyright line in the footer says 2024: confirm the correct year and
+     the legal business name

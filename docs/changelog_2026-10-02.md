@@ -48,3 +48,7 @@
 - The logo image (`public/images/logo.png`) still reads "Tiruvannamalai".
 - The Location section background is a static map image of the old area; the GPS caption and overlay now use the new coordinates.
 - The Location map overlay covers about 48% of the map on mobile.
+
+### Changed
+- Reordered homepage components: moved `<Location />` below `<Dining />` in `src/app/page.tsx` for better content flow.
+- Added a new reference file `client-details-needed.txt` to track missing project details.
