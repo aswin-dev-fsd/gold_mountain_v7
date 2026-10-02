@@ -103,14 +103,14 @@ export default function Hero() {
             <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-gold"></span>
             <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-gold"></span>
           </div>
-          <span className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-wider sm:tracking-widest text-gold-light text-center leading-tight">
+          <span className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-wider sm:tracking-widest text-accent-gold text-center leading-tight">
             Rooted in Nature · Inspired by Arunachala
           </span>
         </div>
         
         {/* Headline */}
         <h1 ref={headlineRef} className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory max-w-4xl tracking-tight leading-[1.15] mb-space-md font-normal">
-          A Wellness Stay in the Presence of <span className="text-accent-gold font-normal font-serif">Arunachala.</span>
+          A Wellness Stay in the Presence of <span className="text-accent-gold font-normal">Arunachala.</span>
         </h1>
         
         {/* Supporting Copy */}
@@ -132,7 +132,7 @@ export default function Hero() {
             className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md px-space-xl py-space-md rounded-xl font-label-lg text-label-lg uppercase tracking-wider shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300 hover:-translate-y-0.5"
           >
             <span>Plan Your Stay</span>
-            <span className="material-symbols-outlined text-gold-light text-[18px]">calendar_month</span>
+            <span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_month</span>
           </Link>
         </div>
         

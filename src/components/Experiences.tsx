@@ -33,12 +33,12 @@ export default function Experiences() {
         <div ref={introRef} className="max-w-3xl mb-space-lg">
           <div className="flex items-center gap-space-xs mb-space-xs">
 
-            <span className="font-label-md text-label-md uppercase tracking-widest text-gold-light">The Living Sanctuary</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">The Living Sanctuary</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             More than a stay.
           </h2>
-          <p className="font-headline-sm text-headline-sm text-gold-light mt-space-sm font-normal">
+          <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
             A place shaped by nature, tradition, and a deeper connection to the surroundings.
           </p>
           <p className="font-body-md text-body-md text-surface-container-high/80 mt-space-sm leading-relaxed">
@@ -62,7 +62,7 @@ export default function Experiences() {
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
-              <span className="font-label-sm text-label-sm text-gold-light">Dawn &amp; Dusk Viewpoints</span>
+              <span className="font-label-sm text-label-sm text-accent-gold">Dawn &amp; Dusk Viewpoints</span>
             </div>
           </div>
           
@@ -79,7 +79,7 @@ export default function Experiences() {
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
-              <span className="font-label-sm text-label-sm text-gold-light">Native Indigenous Breeds</span>
+              <span className="font-label-sm text-label-sm text-accent-gold">Native Indigenous Breeds</span>
             </div>
           </div>
           
@@ -96,7 +96,7 @@ export default function Experiences() {
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
-              <span className="font-label-sm text-label-sm text-gold-light">Silent Contemplation</span>
+              <span className="font-label-sm text-label-sm text-accent-gold">Silent Contemplation</span>
             </div>
           </div>
           
@@ -113,7 +113,7 @@ export default function Experiences() {
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
-              <span className="font-label-sm text-label-sm text-gold-light">Vedic Spatial Design</span>
+              <span className="font-label-sm text-label-sm text-accent-gold">Vedic Spatial Design</span>
             </div>
           </div>
           
@@ -130,7 +130,7 @@ export default function Experiences() {
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
-              <span className="font-label-sm text-label-sm text-gold-light">Guided Daily Walks at 07:30 AM</span>
+              <span className="font-label-sm text-label-sm text-accent-gold">Guided Daily Walks at 07:30 AM</span>
               <a href="#dining" className="inline-flex items-center justify-center gap-space-xs px-4 py-2 rounded-lg bg-accent-gold text-forest-charcoal font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all min-h-[36px] group">
                 <span>Explore Farm To Table</span>
                 <span className="material-symbols-outlined text-forest-charcoal text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>

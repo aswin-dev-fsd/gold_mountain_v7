@@ -35,7 +35,7 @@ export default function Contact() {
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             Your time at Gold Mountain begins here.
           </h2>
-          <p className="font-headline-sm text-headline-sm text-gold-light mt-space-sm font-normal">
+          <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
             Plan your stay, explore our wellness offerings, or simply speak with our retreat advisors.
           </p>
           <p className="font-body-md text-body-md text-surface-container-high/80 max-w-xl mx-auto mt-space-sm leading-relaxed">
@@ -87,7 +87,7 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>
               </button>
               
-              <div className="hidden p-space-sm rounded bg-forest-deep text-gold-light text-center font-body-sm" id="formSuccess">
+              <div className="hidden p-space-sm rounded bg-forest-deep text-accent-gold text-center font-body-sm" id="formSuccess">
                 Thank you. Our retreat advisor will be in touch within 12 hours.
               </div>
             </form>
@@ -100,30 +100,24 @@ export default function Contact() {
               <p className="font-body-sm text-body-sm text-surface-container-high/80 mb-space-lg leading-relaxed">
                 We understand international time zones and spontaneous travel plans. Reach us directly via messaging or phone.
               </p>
-              <div className="space-y-space-md min-w-0">
-                <a href="https://wa.me/918838198769" rel="noopener noreferrer" target="_blank" className="p-space-md rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center gap-space-md text-canvas-ivory shadow-sm group min-w-0">
-                  <span className="w-10 h-10 rounded-lg bg-accent-gold text-forest-charcoal flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-[22px]">chat</span>
+              <div className="space-y-3 min-w-0">
+                <a href="https://wa.me/918838198769" rel="noopener noreferrer" target="_blank" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-center gap-3 text-canvas-ivory shadow-sm group min-w-0">
+                  <span className="w-8 h-8 rounded-md bg-accent-gold text-forest-charcoal flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-[18px]">chat</span>
                   </span>
-                  <div className="min-w-0 flex-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep block">WhatsApp Sanctuary Desk</span>
-                    <p className="font-headline-sm text-headline-sm leading-none mt-0.5 truncate">+91 88381 98769</p>
-                  </div>
+                  <span className="font-body-md font-medium truncate">+91 88381 98769</span>
                 </a>
-                <a href="mailto:goldmountainstay@gmail.com" className="p-space-md rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center gap-space-md text-canvas-ivory shadow-sm group min-w-0">
-                  <span className="w-10 h-10 rounded-lg bg-forest-charcoal text-accent-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-[22px]">mail</span>
+                <a href="mailto:goldmountainstay@gmail.com" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-center gap-3 text-canvas-ivory shadow-sm group min-w-0">
+                  <span className="w-8 h-8 rounded-md bg-forest-charcoal text-accent-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-[18px]">mail</span>
                   </span>
-                  <div className="min-w-0 flex-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep block">Email Concierge</span>
-                    <p className="font-body-sm text-xs sm:text-body-sm leading-tight mt-1 break-all text-canvas-ivory/90">goldmountainstay@gmail.com</p>
-                  </div>
+                  <span className="font-body-md font-medium truncate">goldmountainstay@gmail.com</span>
                 </a>
               </div>
             </div>
             
             <div className="pt-space-lg border-t border-forest-deep/80 mt-space-lg">
-              <div className="flex items-center gap-2 text-gold-light text-label-sm uppercase tracking-widest">
+              <div className="flex items-center gap-2 text-accent-gold text-label-sm uppercase tracking-widest">
                 <span className="material-symbols-outlined text-[16px]">verified_user</span>
                 <span>Personalized Guest Assurance</span>
               </div>

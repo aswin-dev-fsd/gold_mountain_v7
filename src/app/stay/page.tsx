@@ -42,10 +42,10 @@ function StayHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
-          A peaceful place to <span className="text-accent-gold font-serif">stay.</span>
+          A peaceful place to <span className="text-accent-gold">stay.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
-          Comfortable spaces surrounded by nature, created for rest and reconnection. Deluxe and Suite rooms include breakfast and lunch; the Family Suite includes all meals.
+          Peaceful spaces in nature, made for rest. Deluxe and Suite rooms include breakfast and lunch. The Family Suite includes all meals.
         </p>
       </div>
     </section>
@@ -88,7 +88,7 @@ function Rooms() {
   const { currency } = useCurrency();
 
   return (
-    <div className="bg-canvas-ivory pt-16">
+    <div className="bg-canvas-ivory">
       {ROOMS.map((room, index) => (
         <RoomBlock key={room.name} room={room} index={index} currency={currency} />
       ))}
@@ -112,11 +112,11 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
 
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden">
-      <div className={`max-w-7xl mx-auto flex flex-col ${room.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-16`}>
+      <div className={`max-w-7xl mx-auto flex flex-col ${room.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center lg:items-start gap-16`}>
         
         {/* Image Side */}
         <div className="w-full lg:w-1/2 relative">
-          <div className="aspect-[4/3] w-full overflow-hidden relative">
+          <div className="aspect-[4/3] w-full overflow-hidden relative rounded-xl">
             <img 
               ref={imageRef} 
               src={room.image} 
@@ -149,7 +149,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
           <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between w-full gap-6">
             <div className="flex flex-col">
               <span className="text-xs uppercase tracking-widest text-forest-deep/60">From</span>
-              <span className="font-headline-sm text-xl text-forest-deep">{room.prices[currency]}</span>
+              <span className="font-headline-sm text-[25px] text-forest-deep">{room.prices[currency]}</span>
             </div>
             <Link 
               href="/contact" 
@@ -165,8 +165,8 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
   );
 }
 
-// --- MONTHLY STAYS SECTION ---
-function MonthlyStays() {
+// --- LONG STAY CALLOUT ---
+function LongStayCallout() {
   const sectionRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -175,18 +175,20 @@ function MonthlyStays() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream text-center border-t border-border-muted/30">
-      <div ref={contentRef} className="max-w-2xl mx-auto">
-        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">Extended Retreats</span>
-        <h2 className="text-3xl md:text-5xl font-headline-md mb-8 font-serif text-forest-deep">Stay a little longer.</h2>
-        <p className="text-forest-deep/80 font-body-md text-lg mb-10 max-w-xl mx-auto">
-          Take the time to truly disconnect. We offer tailored packages and pricing for guests looking to stay for a month or longer, providing a quiet sanctuary for deep work, healing, or extended rest.
-        </p>
-        <Link 
-          href="/contact" 
-          className="inline-flex items-center gap-2 border border-forest-deep text-forest-deep px-8 py-3 rounded font-label-md uppercase tracking-wider hover:bg-forest-deep hover:text-canvas-ivory transition-colors"
+    <section ref={sectionRef} className="pt-16 px-6 md:px-12 bg-canvas-ivory">
+      <div ref={contentRef} className="max-w-7xl mx-auto p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
+        <div className="flex items-center gap-space-md">
+          <span className="material-symbols-outlined text-accent-gold text-[32px] shrink-0">calendar_today</span>
+          <div>
+            <p className="font-headline-sm text-headline-sm text-forest-deep">Longer Retreats &amp; Monthly Sadhana Stays</p>
+            <p className="font-body-sm text-body-sm text-on-surface-variant">Special seasonal privileges and complete wellness dietary plans for guests staying 14 nights or longer.</p>
+          </div>
+        </div>
+        <Link
+          href="/contact"
+          className="whitespace-nowrap px-space-lg py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center shrink-0"
         >
-          Ask About Monthly Stay <span className="material-symbols-outlined text-[18px]">calendar_month</span>
+          Request Long Stay Rates
         </Link>
       </div>
     </section>
@@ -272,8 +274,8 @@ export default function StayPage() {
     <main className="w-full min-h-screen flex flex-col bg-canvas-ivory selection:bg-accent-gold/20 selection:text-forest-deep">
       <Navigation />
       <StayHero />
+      <LongStayCallout />
       <Rooms />
-      <MonthlyStays />
       <AmenitiesGrid />
       <FinalCTA />
       <Footer />
