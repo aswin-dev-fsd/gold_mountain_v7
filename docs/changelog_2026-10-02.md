@@ -19,3 +19,18 @@
 - Refactored UI consistency: updated floating info badges in `Dining.tsx` and `Location.tsx` to match the solid `bg-forest-deep` visual style from `Resort.tsx`.
 - Removed `italic` typography treatments from the `Hero.tsx` main heading and testimonial quotes in `Trust.tsx` for cleaner readability.
 - Removed the "Home" link from the main `Navigation.tsx` menu.
+
+### Changed (design consistency pass)
+- Icon boxes that used `rounded-full` (12px in this theme) now use `rounded-lg` to match the rest: Dining pillars, Contact quick-links, Wellness dimensions, Stay amenities, `/contact` icon and the mobile nav button.
+- Overlay cards on the Resort, Location map and Dining image are now aligned bottom-left with reduced inner padding.
+- "Our Approach" on `/wellness` is now a compact 4-column landscape grid (4 + 3 centred) instead of tall 3-column portraits.
+- Stay room photos use `rounded-xl`, matching the home page images.
+- Replaced pale `text-gold-light` text with `text-accent-gold` site-wide, including the Wellness "Ayurveda" label and the Experiences/Contact/Hero accents.
+- Removed the unconfigured `font-serif` fallback; only Outfit (headings, labels) and Inter (body) remain.
+- Cards on About, Contact, Ayurveda and Wellness pages use `rounded-xl`; secondary buttons use `rounded-lg`; WhatsApp CTAs are now pill-shaped with a WhatsApp glyph.
+- Stay page CTA order swapped: Email first, WhatsApp second.
+- Footer brand now shows the logo on an ivory tile instead of text; Location "Book Transfer" button restyled to solid forest green.
+- Added a themed scrollbar (dark green track, gold thumb) in `globals.css`.
+
+### Fixed
+- Corrected `docs/status.md` room prices (Deluxe 3,099 / Suite 4,099 / Family 7,999) and the `/stay` header meal-plan text (Deluxe and Suite include breakfast and lunch; Family Suite includes all meals).
