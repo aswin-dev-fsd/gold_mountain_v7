@@ -252,15 +252,6 @@ export default function Navigation() {
             </div>
           </div>
 
-          {/* Book / Enquire Primary Button */}
-          <Link
-            href="/contact"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="w-full flex items-center justify-center py-3 px-4 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-widest hover:bg-forest-charcoal shadow-sm transition-all font-semibold active:scale-[0.98]"
-          >
-            Book / Enquire
-          </Link>
-
           {/* Sanctuary Location Note */}
           <div className="text-center pt-2">
             <span className="font-label-sm text-[10px] uppercase tracking-widest text-forest-deep">
@@ -272,3 +263,4 @@ export default function Navigation() {
     </>
   );
 }
+
