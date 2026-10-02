@@ -39,7 +39,7 @@ export default function Contact() {
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             Your time at Gold Mountain begins here.
           </h2>
-          <p className="font-headline-md text-headline-md text-gold-light mt-space-xs font-serif italic">
+          <p className="font-headline-md text-headline-md text-gold-light mt-space-xs">
             Plan your stay, explore our wellness offerings, or simply speak with our retreat advisors.
           </p>
           <p className="font-body-md text-body-md text-surface-container-high/80 max-w-xl mx-auto mt-space-sm leading-relaxed">
@@ -142,4 +142,5 @@ export default function Contact() {
     </section>
   );
 }
+
 

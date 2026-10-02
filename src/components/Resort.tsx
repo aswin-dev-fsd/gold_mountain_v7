@@ -47,20 +47,20 @@ export default function Resort() {
             <div ref={leftContentRef}>
               <div className="flex items-center gap-space-xs mb-space-xs">
 
-                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sanctuary Architecture</span>
+                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sanctuary Architecture</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Stay close to nature. <br className="hidden sm:block"/>Stay close to yourself.
               </h2>
               <p className="font-body-lg text-body-lg text-forest-charcoal/90 mt-space-md mb-space-lg leading-relaxed">
-                Gold Mountain is first and foremost a peaceful resort that offers a grounded, meaningful stay. Not an impersonal clinic or busy tourist hotel — a serene sanctuary where natural materials harmonize with the earth.
+                Gold Mountain is first and foremost a peaceful resort that offers a grounded, meaningful stay. Not an impersonal clinic or busy tourist hotel, but a serene sanctuary where natural materials harmonize with the earth.
               </p>
             </div>
             
             {/* Key Architectural Facets */}
             <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-xl">
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-accent-terracotta mb-2">
+                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
                   <span className="material-symbols-outlined text-[20px]">roofing</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Terracotta &amp; Stone</span>
                 </div>
@@ -122,4 +122,5 @@ export default function Resort() {
     </section>
   );
 }
+
 

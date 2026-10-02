@@ -218,10 +218,10 @@ export default function Navigation() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep hover:text-accent-terracotta hover:translate-x-1.5 transition-all py-2.5 px-2 rounded-lg flex items-center justify-between group"
+                className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep hover:text-accent-gold hover:translate-x-1.5 transition-all py-2.5 px-2 rounded-lg flex items-center justify-between group"
               >
                 <span>{item.label}</span>
-                <span className="material-symbols-outlined text-border-muted text-[18px] group-hover:text-accent-terracotta group-hover:translate-x-0.5 transition-all">
+                <span className="material-symbols-outlined text-border-muted text-[18px] group-hover:text-accent-gold group-hover:translate-x-0.5 transition-all">
                   chevron_right
                 </span>
               </Link>

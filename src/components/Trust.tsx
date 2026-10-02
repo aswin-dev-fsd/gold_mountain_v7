@@ -32,12 +32,12 @@ export default function Trust() {
         {/* Section Intro */}
         <div ref={introRef} className="text-center max-w-2xl mx-auto mb-space-2xl">
           <div className="flex items-center justify-center gap-space-xs mb-space-xs">
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Integrity &amp; Presence</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Integrity &amp; Presence</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             A Sanctuary Built on Authenticity.
           </h2>
-          <p className="font-headline-md text-headline-md text-secondary mt-space-xs font-serif italic">
+          <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
             Uncompromised standards, certified lineage, and quiet dedication.
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function Trust() {
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Zero chemical pesticides or synthetic inputs</p>
           </div>
           <div className="p-space-md sm:p-space-lg rounded-xl bg-surface-cream text-center flex flex-col items-center shadow-xs">
-            <span className="material-symbols-outlined text-accent-terracotta text-[32px] mb-2">foundation</span>
+            <span className="material-symbols-outlined text-accent-gold text-[32px] mb-2">foundation</span>
             <h3 className="font-headline-sm text-headline-sm text-forest-deep">Earthen Architecture</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Low-carbon natural lime, stone &amp; clay</p>
           </div>
@@ -99,7 +99,7 @@ export default function Trust() {
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
               </div>
               <p className="font-body-md text-body-md text-forest-charcoal italic leading-relaxed">
-                &quot;Not a commercial resort and not a clinical hospital — it occupies the sweetest balance. The food is light and vibrant, and the early morning lotus pond meditation is life-changing.&quot;
+                &quot;Not a commercial resort and not a clinical hospital, it occupies the sweetest balance. The food is light and vibrant, and the early morning lotus pond meditation is life-changing.&quot;
               </p>
             </div>
             <div className="pt-space-md border-t border-border-muted mt-space-md">
@@ -133,4 +133,6 @@ export default function Trust() {
     </section>
   );
 }
+
+
 

@@ -45,12 +45,12 @@ export default function Stay() {
           <div ref={introRef}>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
-              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Rest &amp; Replenishment</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Rest &amp; Replenishment</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Spaces for Rest and Healing.
             </h2>
-            <p className="font-headline-md text-headline-md text-secondary mt-space-xs font-serif italic">
+            <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
               Thoughtfully appointed sanctuaries designed for short visits, intensive retreats, and extended sabbaticals.
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function Stay() {
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
-                  <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
+                  <span className="font-label-sm text-label-sm uppercase text-accent-gold font-medium">From</span>
                   <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.deluxe[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
@@ -121,7 +121,7 @@ export default function Stay() {
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
-                  <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
+                  <span className="font-label-sm text-label-sm uppercase text-accent-gold font-medium">From</span>
                   <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.suite[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
@@ -158,7 +158,7 @@ export default function Stay() {
               </div>
               <div className="pt-space-md border-t border-border-muted flex items-center justify-between gap-2">
                 <div>
-                  <span className="font-label-sm text-label-sm uppercase text-accent-terracotta font-medium">From</span>
+                  <span className="font-label-sm text-label-sm uppercase text-accent-gold font-medium">From</span>
                   <p className="font-headline-sm text-headline-sm text-forest-deep">{PRICES.family[currency]} <span className="font-body-sm text-body-sm text-on-surface-variant font-normal">/ night</span></p>
                 </div>
                 <a 
@@ -194,5 +194,7 @@ export default function Stay() {
     </section>
   );
 }
+
+
 
 

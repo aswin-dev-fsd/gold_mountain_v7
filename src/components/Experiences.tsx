@@ -38,7 +38,7 @@ export default function Experiences() {
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             More than a stay.
           </h2>
-          <p className="font-headline-md text-headline-md text-gold-light mt-space-xs font-serif italic">
+          <p className="font-headline-md text-headline-md text-gold-light mt-space-xs">
             A place shaped by nature, tradition, and a deeper connection to the surroundings.
           </p>
           <p className="font-body-md text-body-md text-surface-container-high/80 mt-space-md leading-relaxed">
@@ -109,7 +109,7 @@ export default function Experiences() {
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Spatial Harmony</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Five-Element Philosophy</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                The spatial plan honors Pancha Bhoota — Earth, Water, Fire, Air, and Space. Healing pathways are specifically sequenced to balance sensory stimuli and restore equilibrium.
+                The spatial plan honors Pancha Bhoota: Earth, Water, Fire, Air, and Space. Healing pathways are specifically sequenced to balance sensory stimuli and restore equilibrium.
               </p>
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
@@ -155,4 +155,5 @@ export default function Experiences() {
     </section>
   );
 }
+
 

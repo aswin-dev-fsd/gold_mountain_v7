@@ -54,13 +54,13 @@ export default function Location() {
         <div ref={introRef} className="max-w-3xl mb-space-2xl">
           <div className="flex items-center gap-space-xs mb-space-xs">
 
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sacred Geography</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Geography</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             In the presence of Arunachala.
           </h2>
-          <p className="font-headline-md text-headline-md text-secondary mt-space-xs font-serif italic">
-            Tiruvannamalai, Tamil Nadu — The eternal beacon of silence and transformation.
+          <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
+            Tiruvannamalai, Tamil Nadu, the eternal beacon of silence and transformation.
           </p>
           <p className="font-body-md text-body-md text-on-surface-variant mt-space-md leading-relaxed">
             Nestled along the quiet outer perimeter, Gold Mountain offers undisturbed visual access to sacred Mount Arunachala to the East and the undulating Parvati Malai mountain stretch to the West. Guests enjoy seamless proximity to the ancient Girivalam path while remaining enveloped in complete sanctuary quietude.
@@ -101,19 +101,19 @@ export default function Location() {
             <div ref={attractionsRef} className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Girivalam Path</span>
-                <span className="font-label-sm text-accent-terracotta tracking-wider">1.0 KM</span>
+                <span className="font-label-sm text-accent-gold tracking-wider">1.0 KM</span>
               </div>
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Aadhi Arunachala Temple</span>
-                <span className="font-label-sm text-accent-terracotta tracking-wider">1.5 KM</span>
+                <span className="font-label-sm text-accent-gold tracking-wider">1.5 KM</span>
               </div>
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Ramanasramam</span>
-                <span className="font-label-sm text-accent-terracotta tracking-wider">5.0 KM</span>
+                <span className="font-label-sm text-accent-gold tracking-wider">5.0 KM</span>
               </div>
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Arunachaleswarar Temple</span>
-                <span className="font-label-sm text-accent-terracotta tracking-wider">6.0 KM</span>
+                <span className="font-label-sm text-accent-gold tracking-wider">6.0 KM</span>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function Location() {
               <div className="space-y-space-md flex-grow">
                 <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-terracotta">Chennai International (MAA)</span>
+                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-gold">Chennai International (MAA)</span>
                     <span className="font-headline-sm text-headline-sm text-forest-deep">3.5 Hours</span>
                   </div>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">Smooth highway transit (180 km) via scenic Tindivanam route. We provide dedicated airport transfer assistance.</p>
@@ -136,7 +136,7 @@ export default function Location() {
                 
                 <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-terracotta">Bengaluru International (BLR)</span>
+                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-accent-gold">Bengaluru International (BLR)</span>
                     <span className="font-headline-sm text-headline-sm text-forest-deep">4.0 Hours</span>
                   </div>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">Direct roadway (205 km) through Krishnagiri and Chengam ghats into the quiet valleys of Tiruvannamalai.</p>
@@ -157,3 +157,5 @@ export default function Location() {
     </section>
   );
 }
+
+

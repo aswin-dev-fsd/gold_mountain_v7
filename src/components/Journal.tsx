@@ -28,16 +28,16 @@ export default function Journal() {
           <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
-              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Journal &amp; Wisdom</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Journal &amp; Wisdom</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Stories of Wellness &amp; Arunachala.
             </h2>
-            <p className="font-headline-md text-headline-md text-secondary mt-space-xs font-serif italic">
+            <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
               Reflections on conscious living, ancient science, and sacred geography.
             </p>
           </div>
-          <a href="#journal" className="font-label-md text-label-md uppercase tracking-wider text-forest-deep hover:text-accent-terracotta transition-all inline-flex items-center gap-1 group py-1.5 px-3 rounded hover:bg-forest-deep/5 font-semibold">
+          <a href="#journal" className="font-label-md text-label-md uppercase tracking-wider text-forest-deep hover:text-accent-gold transition-all inline-flex items-center gap-1 group py-1.5 px-3 rounded hover:bg-forest-deep/5 font-semibold">
             <span>Read All Journal Entries</span>
             <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
@@ -57,7 +57,7 @@ export default function Journal() {
             <div className="p-space-lg flex-1 flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-space-sm mb-space-xs">
-                  <span className="px-2 py-0.5 rounded bg-surface-cream text-accent-terracotta font-label-sm text-label-sm uppercase">Spirituality</span>
+                  <span className="px-2 py-0.5 rounded bg-surface-cream text-accent-gold font-label-sm text-label-sm uppercase">Spirituality</span>
                   <span className="font-label-sm text-label-sm text-on-surface-variant">5 min read</span>
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
@@ -138,4 +138,6 @@ export default function Journal() {
     </section>
   );
 }
+
+
 

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -58,12 +58,12 @@ export default function Wellness() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-space-xs mb-space-xs">
 
-              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Sacred Restoration</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Restoration</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Wellness, in its own time.
             </h2>
-            <p className="font-headline-md text-headline-md text-secondary mt-space-xs font-serif italic">
+            <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
               A place built around healing, healthy living, and traditional practices.
             </p>
           </div>
@@ -119,7 +119,7 @@ export default function Wellness() {
               </div>
             </div>
             <div className="pt-space-sm">
-              <a href="#enquiry" className="inline-flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-accent-terracotta hover:text-forest-deep transition-colors group">
+              <a href="#enquiry" className="inline-flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-accent-gold hover:text-forest-deep transition-colors group">
                 <span>View Treatment Rituals</span>
                 <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </a>
@@ -141,7 +141,7 @@ export default function Wellness() {
                 <div className="w-10 h-10 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                   <span className="material-symbols-outlined text-[20px]">local_pharmacy</span>
                 </div>
-                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-terracotta">01 · Body</span>
+                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Body</span>
                 <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Ayurveda</h4>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                   Traditional therapies matched to individual constitution, herbal concoctions, and healing bodywork.
@@ -157,7 +157,7 @@ export default function Wellness() {
                 <div className="w-10 h-10 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                   <span className="material-symbols-outlined text-[20px]">self_improvement</span>
                 </div>
-                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-terracotta">02 · Mind</span>
+                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Mind</span>
                 <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Meditation</h4>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                   Guided mindfulness and quiet contemplation attuned to the sacred timeless silence of Mount Arunachala.
@@ -173,7 +173,7 @@ export default function Wellness() {
                 <div className="w-10 h-10 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                   <span className="material-symbols-outlined text-[20px]">air</span>
                 </div>
-                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-terracotta">03 · Spirit</span>
+                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Spirit</span>
                 <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Yoga &amp; Prana</h4>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                   Restorative movement, pranayama, and breathwork connecting somatic flow with tranquil presence.
@@ -189,7 +189,7 @@ export default function Wellness() {
                 <div className="w-10 h-10 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                   <span className="material-symbols-outlined text-[20px]">nutrition</span>
                 </div>
-                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-terracotta">04 · Food</span>
+                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Food</span>
                 <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Sattvic Diet</h4>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                   Pure seasonal nourishment harvested directly from our chemical-free soil to kindle digestive fire.
@@ -205,7 +205,7 @@ export default function Wellness() {
                 <div className="w-10 h-10 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                   <span className="material-symbols-outlined text-[20px]">landscape</span>
                 </div>
-                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-terracotta">05 · Habitat</span>
+                <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Habitat</span>
                 <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Sacred Earth</h4>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                   Biophilic architecture aligned with Arunachala to the East and the ancient Parvati Malai ridge to the West.
@@ -233,4 +233,6 @@ export default function Wellness() {
     </section>
   );
 }
+
+
 

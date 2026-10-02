@@ -101,7 +101,7 @@ export default function Hero() {
           <div className="flex items-center gap-1.5 shrink-0">
             <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-forest-deep"></span>
             <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-gold"></span>
-            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-terracotta"></span>
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-gold"></span>
           </div>
           <span className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-wider sm:tracking-widest text-gold-light text-center leading-tight">
             Rooted in Nature · Inspired by Arunachala

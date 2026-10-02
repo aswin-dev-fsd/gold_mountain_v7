@@ -73,13 +73,13 @@ export default function Dining() {
             <div ref={contentRef}>
               <div className="flex items-center gap-space-xs mb-space-xs">
 
-                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-terracotta">Conscious Nourishment</span>
+                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Conscious Nourishment</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Food that nourishes.
               </h2>
-              <p className="font-headline-md text-headline-md text-secondary mt-space-xs font-serif italic">
-                What is grown here is served here — prepared with calm minds and clean fire.
+              <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
+                What is grown here is served here, prepared with calm minds and clean fire.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant mt-space-md mb-space-lg leading-relaxed">
                 We position food as an indispensable pillar of deep retreat restoration. Our kitchen cooks without chemical additives, refined sugars, or excessive oils. Instead, we elevate farm-harvested seasonal produce, traditional cold-pressed sesame oil, raw wild honey, and digestive spices like fresh cumin, turmeric, and ginger.
@@ -133,4 +133,6 @@ export default function Dining() {
     </section>
   );
 }
+
+
 
