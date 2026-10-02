@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -32,7 +32,7 @@ export default function Trust() {
         {/* Section Intro */}
         <div ref={introRef} className="text-center max-w-2xl mx-auto mb-space-xl">
           <div className="flex items-center justify-center gap-space-xs mb-space-xs">
-            <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Integrity &amp; Presence</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Integrity &amp; Presence</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             A Sanctuary Built on Authenticity.

@@ -11,3 +11,6 @@
 
 ### Fixed
 - Fixed character encoding issues for currency symbols (Rupee and Euro) in the Stay page (`src/app/stay/page.tsx`).
+
+### Changed
+- Reverted section label colors (`text-label-sm` and `text-label-md`) across major components (`Resort.tsx`, `Stay.tsx`, `Trust.tsx`, `Wellness.tsx`) back to `text-accent-gold` from `text-forest-deep` to restore the previous highlighting style.

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -54,7 +54,7 @@ export default function Location() {
         <div ref={introRef} className="max-w-3xl mb-space-xl">
           <div className="flex items-center gap-space-xs mb-space-xs">
 
-            <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Sacred Geography</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Geography</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             In the presence of Arunachala.

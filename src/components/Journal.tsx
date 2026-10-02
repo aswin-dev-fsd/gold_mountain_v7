@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -28,7 +28,7 @@ export default function Journal() {
           <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
-              <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Journal &amp; Wisdom</span>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Journal &amp; Wisdom</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Stories of Wellness &amp; Arunachala.
