@@ -34,3 +34,17 @@
 
 ### Fixed
 - Corrected `docs/status.md` room prices (Deluxe 3,099 / Suite 4,099 / Family 7,999) and the `/stay` header meal-plan text (Deluxe and Suite include breakfast and lunch; Family Suite includes all meals).
+
+### Changed (address and map)
+- Replaced the address everywhere with the client-confirmed one: Gold Mountain Wellness Resort, Kottangal, Girivalam Path, Thiruvannamalai 606604 (`/contact` Location block, Footer, Location map overlay, `docs/Requirements/Contact.txt`). The three copies previously disagreed (606603 vs 606604).
+- Standardised the spelling to "Thiruvannamalai" in all page text (Footer, Navigation, Location, Journal).
+- `/contact` map embed now points at the real resort pin (12.2428722, 79.0256161, from the client's Google Maps link) instead of a placeholder place ID; Location GPS caption updated to 12.2429 N, 79.0256 E.
+- `/contact` page layout reworked: form and details side by side, full-width map below, bordered rounded inputs, WhatsApp CTA labels shortened to "WhatsApp Now".
+
+### Added
+- `docs/section_bg_audit_2026-10-02.md`: audit of adjacent sections sharing a background colour (not yet fixed).
+
+### Known issues
+- The logo image (`public/images/logo.png`) still reads "Tiruvannamalai".
+- The Location section background is a static map image of the old area; the GPS caption and overlay now use the new coordinates.
+- The Location map overlay covers about 48% of the map on mobile.
