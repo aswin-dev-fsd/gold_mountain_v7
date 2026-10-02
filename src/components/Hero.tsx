@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -104,7 +104,7 @@ export default function Hero() {
             <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-gold"></span>
           </div>
           <span className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-wider sm:tracking-widest text-gold-light text-center leading-tight">
-            Rooted in Nature Â· Inspired by Arunachala
+            Rooted in Nature · Inspired by Arunachala
           </span>
         </div>
         

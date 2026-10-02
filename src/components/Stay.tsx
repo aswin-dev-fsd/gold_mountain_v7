@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -6,9 +6,9 @@ import { revealStagger, revealSection } from "../utils/animations";
 import { useCurrency } from "../context/CurrencyContext";
 
 const PRICES = {
-  deluxe: { INR: 'â‚¹3,099', USD: '$37', EUR: 'â‚¬34' },
-  suite: { INR: 'â‚¹4,099', USD: '$49', EUR: 'â‚¬45' },
-  family: { INR: 'â‚¹7,999', USD: '$95', EUR: 'â‚¬89' }
+  deluxe: { INR: '₹3,099', USD: '$37', EUR: '€34' },
+  suite: { INR: '₹4,099', USD: '$49', EUR: '€45' },
+  family: { INR: '₹7,999', USD: '$95', EUR: '€89' }
 };
 
 export default function Stay() {
@@ -41,7 +41,7 @@ export default function Stay() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-lg">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
           <div ref={introRef}>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
@@ -50,7 +50,7 @@ export default function Stay() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Spaces for Rest and Healing.
             </h2>
-            <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
+            <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
               Thoughtfully appointed sanctuaries designed for short visits, intensive retreats, and extended sabbaticals.
             </p>
           </div>

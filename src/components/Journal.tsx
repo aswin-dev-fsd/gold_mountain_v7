@@ -24,7 +24,7 @@ export default function Journal() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div ref={introRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-lg">
+        <div ref={introRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
           <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
@@ -33,7 +33,7 @@ export default function Journal() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Stories of Wellness &amp; Arunachala.
             </h2>
-            <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
+            <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
               Reflections on conscious living, ancient science, and sacred geography.
             </p>
           </div>

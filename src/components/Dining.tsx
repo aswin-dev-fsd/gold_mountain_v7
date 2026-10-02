@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -46,7 +46,7 @@ export default function Dining() {
   return (
     <section ref={sectionRef} id="dining" className="w-full py-space-3xl bg-surface-cream relative">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl lg:items-start items-center">
           
           {/* Dining Photography */}
           <div className="lg:col-span-6 relative order-2 lg:order-1">
@@ -78,10 +78,10 @@ export default function Dining() {
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Food that nourishes.
               </h2>
-              <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
+              <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
                 What is grown here is served here, prepared with calm minds and clean fire.
               </p>
-              <p className="font-body-md text-body-md text-on-surface-variant mt-space-md mb-space-lg leading-relaxed">
+              <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm mb-space-lg leading-relaxed">
                 We position food as an indispensable pillar of deep retreat restoration. Our kitchen cooks without chemical additives, refined sugars, or excessive oils. Instead, we elevate farm-harvested seasonal produce, traditional cold-pressed sesame oil, raw wild honey, and digestive spices like fresh cumin, turmeric, and ginger.
               </p>
             </div>

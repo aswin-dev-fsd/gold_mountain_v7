@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -31,7 +31,7 @@ export default function Contact() {
       
       <div className="w-full max-w-5xl mx-auto px-margin lg:px-margin-desktop relative z-10">
         
-        <div ref={introRef} className="text-center mb-space-2xl">
+        <div ref={introRef} className="text-center mb-space-xl">
           <div className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-forest-deep text-gold-light mb-space-md">
             <span className="material-symbols-outlined text-[16px]">contact_support</span>
             <span className="font-label-sm text-label-sm uppercase tracking-widest">Reserve Your Sanctuary</span>
@@ -39,7 +39,7 @@ export default function Contact() {
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             Your time at Gold Mountain begins here.
           </h2>
-          <p className="font-headline-md text-headline-md text-gold-light mt-space-xs">
+          <p className="font-headline-sm text-headline-sm text-gold-light mt-space-sm font-normal">
             Plan your stay, explore our wellness offerings, or simply speak with our retreat advisors.
           </p>
           <p className="font-body-md text-body-md text-surface-container-high/80 max-w-xl mx-auto mt-space-sm leading-relaxed">

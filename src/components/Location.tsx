@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -51,7 +51,7 @@ export default function Location() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div ref={introRef} className="max-w-3xl mb-space-2xl">
+        <div ref={introRef} className="max-w-3xl mb-space-xl">
           <div className="flex items-center gap-space-xs mb-space-xs">
 
             <span className="font-label-md text-label-md uppercase tracking-widest text-forest-deep">Sacred Geography</span>
@@ -59,10 +59,10 @@ export default function Location() {
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             In the presence of Arunachala.
           </h2>
-          <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
+          <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
             Tiruvannamalai, Tamil Nadu, the eternal beacon of silence and transformation.
           </p>
-          <p className="font-body-md text-body-md text-on-surface-variant mt-space-md leading-relaxed">
+          <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
             Nestled along the quiet outer perimeter, Gold Mountain offers undisturbed visual access to sacred Mount Arunachala to the East and the undulating Parvati Malai mountain stretch to the West. Guests enjoy seamless proximity to the ancient Girivalam path while remaining enveloped in complete sanctuary quietude.
           </p>
         </div>
@@ -94,26 +94,26 @@ export default function Location() {
                 <span className="w-2 h-2 rounded-full bg-forest-deep"></span> 
                 Direct access to Girivalam Path
               </span>
-              <span className="font-label-sm text-label-sm text-accent-gold font-medium">GPS: 12.2253Â° N, 79.0747Â° E</span>
+              <span className="font-label-sm text-label-sm text-accent-gold font-medium">GPS: 12.2253° N, 79.0747° E</span>
             </div>
 
             {/* NEW: Nearby Attractions */}
             <div ref={attractionsRef} className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Girivalam Path</span>
-                <span className="font-label-sm text-accent-gold tracking-wider">1.0 KM</span>
+                <span className="font-label-sm text-forest-deep tracking-wider">1.0 KM</span>
               </div>
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Aadhi Arunachala Temple</span>
-                <span className="font-label-sm text-accent-gold tracking-wider">1.5 KM</span>
+                <span className="font-label-sm text-forest-deep tracking-wider">1.5 KM</span>
               </div>
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Ramanasramam</span>
-                <span className="font-label-sm text-accent-gold tracking-wider">5.0 KM</span>
+                <span className="font-label-sm text-forest-deep tracking-wider">5.0 KM</span>
               </div>
               <div className="attraction-item flex items-center justify-between p-4 bg-surface-cream rounded-lg border border-border-muted/50">
                 <span className="font-body-sm text-forest-deep">Arunachaleswarar Temple</span>
-                <span className="font-label-sm text-accent-gold tracking-wider">6.0 KM</span>
+                <span className="font-label-sm text-forest-deep tracking-wider">6.0 KM</span>
               </div>
             </div>
           </div>
@@ -141,12 +141,20 @@ export default function Location() {
                   </div>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">Direct roadway (205 km) through Krishnagiri and Chengam ghats into the quiet valleys of Tiruvannamalai.</p>
                 </div>
+
+                <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
+                  <div className="flex justify-between items-center mb-1">
+                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep">Katpadi Junction (Railway)</span>
+                    <span className="font-headline-sm text-headline-sm text-forest-deep">2.0 Hours</span>
+                  </div>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant">Major railway junction (105 km) with direct connections from all major cities. Pre-booked cabs available for a comfortable drive.</p>
+                </div>
               </div>
               
               <div className="travel-card mt-space-lg pt-space-md border-t border-border-muted flex items-center justify-between gap-2 mt-auto">
                 <span className="font-body-sm text-body-sm text-forest-deep font-medium">Chauffeur Service Available</span>
                 <a href="/contact" className="inline-flex items-center justify-center font-label-sm text-label-sm uppercase tracking-wider text-forest-deep bg-accent-gold/20 hover:bg-accent-gold hover:text-forest-charcoal border border-accent-gold/40 hover:border-accent-gold px-4 py-2 min-h-[38px] rounded transition-all group font-semibold shadow-xs hover:shadow">
-                  Book Transfer <span className="inline-block group-hover:translate-x-1 transition-transform">â†’</span>
+                  Book Transfer <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </div>
             </div>

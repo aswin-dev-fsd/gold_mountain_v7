@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
@@ -18,9 +18,9 @@ const NAV_ITEMS = [
 ];
 
 const CURRENCIES = [
-  { code: "INR", symbol: "â‚¹", label: "â‚¹ INR" },
+  { code: "INR", symbol: "₹", label: "₹ INR" },
   { code: "USD", symbol: "$", label: "$ USD" },
-  { code: "EUR", symbol: "â‚¬", label: "â‚¬ EUR" },
+  { code: "EUR", symbol: "€", label: "€ EUR" },
 ];
 
 export default function Navigation() {

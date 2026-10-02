@@ -54,7 +54,7 @@ export default function Wellness() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Header */}
-        <div ref={headerRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-lg">
+        <div ref={headerRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
           <div className="max-w-2xl">
             <div className="flex items-center gap-space-xs mb-space-xs">
 
@@ -63,7 +63,7 @@ export default function Wellness() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Wellness, in its own time.
             </h2>
-            <p className="font-headline-md text-headline-md text-secondary mt-space-xs">
+            <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
               A place built around healing, healthy living, and traditional practices.
             </p>
           </div>
