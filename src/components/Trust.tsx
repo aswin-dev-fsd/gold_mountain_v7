@@ -45,7 +45,7 @@ export default function Trust() {
         {/* Trust Badges Bar */}
         <div ref={badgesRef} className="grid grid-cols-2 md:grid-cols-4 gap-space-sm sm:gap-space-md mb-space-2xl">
           <div className="p-space-md sm:p-space-lg rounded-xl bg-surface-cream text-center flex flex-col items-center shadow-xs">
-            <span className="material-symbols-outlined text-forest-deep text-[32px] mb-2">verified</span>
+            <span className="material-symbols-outlined text-accent-gold text-[32px] mb-2">verified</span>
             <h3 className="font-headline-sm text-headline-sm text-forest-deep">Certified Vaidyas</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">BAMS-qualified resident Ayurvedic doctors</p>
           </div>
@@ -60,7 +60,7 @@ export default function Trust() {
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Low-carbon natural lime, stone &amp; clay</p>
           </div>
           <div className="p-space-md sm:p-space-lg rounded-xl bg-surface-cream text-center flex flex-col items-center shadow-xs">
-            <span className="material-symbols-outlined text-forest-deep text-[32px] mb-2">self_improvement</span>
+            <span className="material-symbols-outlined text-accent-gold text-[32px] mb-2">self_improvement</span>
             <h3 className="font-headline-sm text-headline-sm text-forest-deep">Traditional Lineage</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Rooted in ancient classical Kerala &amp; Tamil texts</p>
           </div>
@@ -133,6 +133,7 @@ export default function Trust() {
     </section>
   );
 }
+
 
 
 
