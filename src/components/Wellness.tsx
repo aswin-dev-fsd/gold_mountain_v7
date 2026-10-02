@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -86,7 +86,7 @@ export default function Wellness() {
             {/* Editorial Floating Overlay Tag */}
             <div ref={overlayRef} className="absolute bottom-3 left-3 right-3 sm:bottom-space-lg sm:left-space-lg sm:right-space-lg p-3 sm:p-space-md rounded-lg bg-forest-charcoal/90 text-canvas-ivory backdrop-blur-md flex items-center justify-between shadow-lg">
               <div className="min-w-0 pr-2">
-                <p className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-widest text-forest-deep">Authentic Ayurvedic Lineage</p>
+                <p className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-widest text-accent-gold">Authentic Ayurvedic Lineage</p>
                 <p className="font-headline-sm text-xs sm:text-headline-sm text-canvas-ivory leading-tight">Personalized Vaidya Consultations &amp; Abhyanga</p>
               </div>
               <span className="material-symbols-outlined text-accent-gold text-[24px] sm:text-[28px] hidden sm:block shrink-0">self_improvement</span>

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -61,7 +61,7 @@ export default function Journal() {
                   <span className="font-label-sm text-label-sm text-on-surface-variant">5 min read</span>
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
-                  The Sacred Stillness of Arunachala: An International Travelerâ€™s Guide
+                  The Sacred Stillness of Arunachala: An International Traveler&apos;s Guide
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
                   Navigating the sacred geography of Tiruvannamalai, the 14 km Girivalam circumambulation, and finding deep inner quietude.
