@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -63,7 +63,7 @@ export default function Wellness() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Wellness, in its own time.
             </h2>
-            <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
+            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
               A place built around healing, healthy living, and traditional practices.
             </p>
           </div>
@@ -84,20 +84,17 @@ export default function Wellness() {
             ></div>
             
             {/* Editorial Floating Overlay Tag */}
-            <div ref={overlayRef} className="absolute bottom-3 left-3 right-3 sm:bottom-space-lg sm:left-space-lg sm:right-space-lg p-3 sm:p-space-md rounded-lg bg-forest-charcoal/90 text-canvas-ivory backdrop-blur-md flex items-center justify-between shadow-lg">
+            <div ref={overlayRef} className="absolute bottom-3 left-3 right-3 sm:bottom-space-lg sm:left-space-lg sm:right-space-lg p-3 sm:p-space-md rounded-lg bg-forest-charcoal/90 text-canvas-ivory backdrop-blur-md flex items-center justify-start gap-3 sm:gap-4 shadow-lg">
+              <span className="material-symbols-outlined text-accent-gold text-[24px] sm:text-[28px] hidden sm:block shrink-0">self_improvement</span>
               <div className="min-w-0 pr-2">
                 <p className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-widest text-accent-gold">Authentic Ayurvedic Lineage</p>
                 <p className="font-headline-sm text-xs sm:text-headline-sm text-canvas-ivory leading-tight">Personalized Vaidya Consultations &amp; Abhyanga</p>
               </div>
-              <span className="material-symbols-outlined text-accent-gold text-[24px] sm:text-[28px] hidden sm:block shrink-0">self_improvement</span>
             </div>
           </div>
           
           {/* Wellness Narrative & Quote Card */}
           <div ref={narrativeRef} className="lg:col-span-5 flex flex-col justify-between gap-space-lg bg-surface-cream p-space-xl rounded-xl shadow-sm h-full">
-            <div className="w-12 h-12 rounded-full bg-forest-deep text-accent-gold flex items-center justify-center">
-              <span className="material-symbols-outlined text-[24px]">spa</span>
-            </div>
             <h3 className="font-headline-lg text-headline-lg text-forest-deep">
               A Return to Wholeness in the Shadow of the Red Mountain
             </h3>
@@ -148,7 +145,7 @@ export default function Wellness() {
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
-                <span className="font-label-sm text-label-sm text-secondary">Tailored Doshas</span>
+                <span className="font-label-sm text-label-sm text-accent-gold">Tailored Doshas</span>
               </div>
             </div>
             {/* Pillar 2 */}
@@ -164,7 +161,7 @@ export default function Wellness() {
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
-                <span className="font-label-sm text-label-sm text-secondary">Inner Stillness</span>
+                <span className="font-label-sm text-label-sm text-accent-gold">Inner Stillness</span>
               </div>
             </div>
             {/* Pillar 3 */}
@@ -180,7 +177,7 @@ export default function Wellness() {
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
-                <span className="font-label-sm text-label-sm text-secondary">Daily Shala</span>
+                <span className="font-label-sm text-label-sm text-accent-gold">Daily Shala</span>
               </div>
             </div>
             {/* Pillar 4 */}
@@ -196,7 +193,7 @@ export default function Wellness() {
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
-                <span className="font-label-sm text-label-sm text-secondary">Soil to Plate</span>
+                <span className="font-label-sm text-label-sm text-accent-gold">Soil to Plate</span>
               </div>
             </div>
             {/* Pillar 5 */}
@@ -212,7 +209,7 @@ export default function Wellness() {
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
-                <span className="font-label-sm text-label-sm text-secondary">Elemental Peace</span>
+                <span className="font-label-sm text-label-sm text-accent-gold">Elemental Peace</span>
               </div>
             </div>
           </div>

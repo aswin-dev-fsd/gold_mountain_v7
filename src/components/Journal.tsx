@@ -33,7 +33,7 @@ export default function Journal() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Stories of Wellness &amp; Arunachala.
             </h2>
-            <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
+            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
               Reflections on conscious living, ancient science, and sacred geography.
             </p>
           </div>

@@ -59,7 +59,7 @@ export default function Location() {
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             In the presence of Arunachala.
           </h2>
-          <p className="font-headline-sm text-headline-sm text-secondary mt-space-sm font-normal">
+          <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
             Tiruvannamalai, Tamil Nadu, the eternal beacon of silence and transformation.
           </p>
           <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">

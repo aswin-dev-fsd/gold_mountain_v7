@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -60,28 +60,28 @@ export default function Resort() {
             {/* Key Architectural Facets */}
             <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-xl">
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
+                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
                   <span className="material-symbols-outlined text-[20px]">roofing</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Terracotta &amp; Stone</span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Cool Athangudi tiles, local granite masonry, and breathable clay roof tiles.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
+                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
                   <span className="material-symbols-outlined text-[20px]">water</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Lotus Ponds</span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Living reflection waters soothing the midday heat and welcoming native birds.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
+                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
                   <span className="material-symbols-outlined text-[20px]">deck</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Verandas &amp; Gardens</span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">Open-air shaded corridors overlooking fragrant jasmine and medicinal tulsi groves.</p>
               </div>
               <div className="p-space-md rounded-lg bg-surface-container-lowest/80 shadow-sm">
-                <div className="flex items-center gap-space-xs text-forest-deep mb-2">
+                <div className="flex items-center gap-space-xs text-accent-gold mb-2">
                   <span className="material-symbols-outlined text-[20px]">temple_hindu</span>
                   <span className="font-label-sm text-label-sm uppercase tracking-wider">Silent Shalas</span>
                 </div>
@@ -122,5 +122,6 @@ export default function Resort() {
     </section>
   );
 }
+
 
 
