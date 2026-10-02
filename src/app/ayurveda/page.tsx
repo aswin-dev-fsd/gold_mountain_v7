@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, useState } from "react";
 import gsap from "gsap";
@@ -189,7 +189,7 @@ function AyurvedaPackages() {
           {PACKAGES.map(pkg => (
             <div key={pkg.name} className="pkg-card bg-surface-cream border border-border-muted p-8 flex flex-col h-full rounded-sm">
               <h3 className="text-2xl font-headline-sm text-forest-deep mb-2">{pkg.name}</h3>
-              <p className="text-accent-terracotta font-label-md uppercase tracking-wider mb-6">{pkg.duration}</p>
+              <p className="text-accent-gold font-label-md uppercase tracking-wider mb-6">{pkg.duration}</p>
               
               <p className="text-forest-deep/80 font-body-sm mb-6 flex-grow">{pkg.description}</p>
               

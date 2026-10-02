@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, useState } from "react";
 import gsap from "gsap";
@@ -85,7 +85,7 @@ function EnquiryForm() {
         <p className="text-forest-deep/80 font-body-md">We have received your enquiry and will contact you shortly.</p>
         <button 
           onClick={() => setIsSubmitted(false)}
-          className="mt-8 text-sm uppercase tracking-widest text-accent-terracotta hover:text-forest-deep transition-colors"
+          className="mt-8 text-sm uppercase tracking-widest text-accent-gold hover:text-forest-deep transition-colors"
         >
           Send another enquiry
         </button>
@@ -194,10 +194,10 @@ function ContactDetails() {
         <div className="w-full border-t border-border-muted/50 pt-4 mt-2">
           <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-3">Nearby Attractions</span>
           <ul className="space-y-2 text-sm text-forest-deep/80 font-body-sm">
-            <li className="flex justify-between"><span>Girivalam Path</span> <span className="text-accent-terracotta">1.0 KM</span></li>
-            <li className="flex justify-between"><span>Aadhi Arunachala Temple</span> <span className="text-accent-terracotta">1.5 KM</span></li>
-            <li className="flex justify-between"><span>Ramanasramam</span> <span className="text-accent-terracotta">5.0 KM</span></li>
-            <li className="flex justify-between"><span>Arunachaleswarar Temple</span> <span className="text-accent-terracotta">6.0 KM</span></li>
+            <li className="flex justify-between"><span>Girivalam Path</span> <span className="text-accent-gold">1.0 KM</span></li>
+            <li className="flex justify-between"><span>Aadhi Arunachala Temple</span> <span className="text-accent-gold">1.5 KM</span></li>
+            <li className="flex justify-between"><span>Ramanasramam</span> <span className="text-accent-gold">5.0 KM</span></li>
+            <li className="flex justify-between"><span>Arunachaleswarar Temple</span> <span className="text-accent-gold">6.0 KM</span></li>
           </ul>
         </div>
       </div>

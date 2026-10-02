@@ -20,7 +20,7 @@
 - **Home (`/`)**: Core sections built. Links updated. Needs final review against client requirements.
 - **Wellness (`/wellness`)**: Completed. Includes Hero, Philosophy, Approach, Ayurveda Highlight, Dimensions of Healing, Packages, and CTAs.
 - **Ayurveda (`/ayurveda`)**: Completed. Includes Hero, Philosophy Intro, Therapies Accordion, Panchakarma & Rasayana Packages, and CTAs.
-- **Stay & Rooms (`/stay`)**: Completed. Updated with client CR pricing (Deluxe ₹2,999, Super Deluxe ₹4,099, Family Suite ₹7,999), guest capacities, and refined card layouts.
+- **Stay & Rooms (`/stay`)**: Completed. Updated with client CR pricing (Mountain View Deluxe ₹3,099, Mountain View Suite ₹4,099, Mountain View Family Suite ₹7,999), guest capacities, and refined card layouts.
 - **About Us (`/about`)**: Completed. Includes narrative story, philosophy, and founder profile skeleton.
 - **Contact Us (`/contact`)**: Completed. Includes live form, interactive Google Map, and contact block layout.
 

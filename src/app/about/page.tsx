@@ -41,9 +41,12 @@ function AboutHero() {
       <div className="absolute inset-0 z-10 bg-forest-charcoal/30 pointer-events-none"></div>
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
-        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15]">
+        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
           A place created <span className="text-accent-gold italic font-serif block mt-2">with purpose.</span>
         </h1>
+        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
+          Discover the story behind Gold Mountain, built on a foundation of harmony, traditional wellness, and deep respect for the natural world.
+        </p>
       </div>
     </section>
   );
@@ -63,7 +66,7 @@ function TheStory() {
       <div ref={textRef} className="max-w-3xl mx-auto">
         <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-6 block">Our Story</span>
         <p className="text-forest-deep/90 font-body-lg text-xl md:text-2xl leading-relaxed font-light">
-          Gold Mountain was born from a desire to create a sanctuary where people could step away from the noise of modern life. We envisioned a place not just for leisure, but for genuine restoration—a space where the natural world and traditional healing practices work together quietly, without pretense.
+          Gold Mountain was born from a desire to create a sanctuary where people could step away from the noise of modern life. We envisioned a place not just for leisure, but for genuine restoration: a space where the natural world and traditional healing practices work together quietly, without pretense.
         </p>
       </div>
     </section>
@@ -102,7 +105,7 @@ function FounderProfile() {
 
         {/* Right: Structured Text Blocks */}
         <div ref={contentRef} className="w-full lg:w-7/12 flex flex-col items-start text-left">
-          <span className="text-accent-terracotta uppercase tracking-widest font-label-sm text-sm mb-2 block">The Founder</span>
+          <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-2 block">The Founder</span>
           
           <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-8">
             [FOUNDER NAME TO BE PROVIDED]
@@ -165,7 +168,7 @@ function PhilosophyNarrative() {
               Our <strong className="text-forest-deep font-medium">Food</strong> is prepared with the same mindfulness. We serve nourishing, locally sourced meals that honor the body&apos;s need for clean energy, proving that healthy eating can be a deeply joyful experience.
             </p>
             <p>
-              We rely on <strong className="text-forest-deep font-medium">Traditional Knowledge</strong>—drawing from the ancient sciences of Ayurveda and Yoga—not as rigid doctrines, but as flexible, living practices tailored to your modern needs.
+              We rely on <strong className="text-forest-deep font-medium">Traditional Knowledge</strong>, drawing from the ancient sciences of Ayurveda and Yoga, not as rigid doctrines, but as flexible, living practices tailored to your modern needs.
             </p>
             <p>
               Finally, our <strong className="text-forest-deep font-medium">Hospitality</strong> is rooted in genuine care. We step forward when you need guidance and step back when you need solitude, ensuring your stay at Gold Mountain is exactly what you require it to be.
@@ -203,7 +206,7 @@ function GroundsAndNourishment() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div ref={contentRef} className="max-w-6xl mx-auto flex flex-col items-center text-center">
-        <span className="text-accent-terracotta uppercase tracking-widest font-label-sm text-sm mb-4 block">The Sanctuary</span>
+        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">The Sanctuary</span>
         <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16">Grounds &amp; Nourishment</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
@@ -215,21 +218,21 @@ function GroundsAndNourishment() {
             </h3>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
-                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">grass</span>
+                <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">grass</span>
                 <div>
                   <strong className="block text-forest-deep font-medium">Goshala with Kangayam Cows</strong>
                   <p>Our traditional cow shelter houses native Kangayam cows, playing a vital role in our organic farming cycle.</p>
                 </div>
               </li>
               <li className="flex gap-3">
-                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">yard</span>
+                <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">yard</span>
                 <div>
                   <strong className="block text-forest-deep font-medium">Organic Food Farm</strong>
                   <p>A dedicated plot where we cultivate fresh, chemical-free vegetables and herbs used directly in our kitchens.</p>
                 </div>
               </li>
               <li className="flex gap-3">
-                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">deceased</span>
+                <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">deceased</span>
                 <div>
                   <strong className="block text-forest-deep font-medium">Flower Garden</strong>
                   <p>Tranquil walking paths surrounded by native flora, offering spaces for quiet reflection and meditation.</p>
@@ -246,14 +249,14 @@ function GroundsAndNourishment() {
             </h3>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
-                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">eco</span>
+                <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">eco</span>
                 <div>
                   <strong className="block text-forest-deep font-medium">Sattvic Vegetarian Restaurant</strong>
                   <p>Our kitchen follows pure Sattvic principles, serving meals designed to bring clarity to the mind and lightness to the body.</p>
                 </div>
               </li>
               <li className="flex gap-3">
-                <span className="material-symbols-outlined text-[20px] text-accent-terracotta mt-0.5">set_meal</span>
+                <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">set_meal</span>
                 <div>
                   <strong className="block text-forest-deep font-medium">Dietary Accommodations</strong>
                   <p>Vegan and gluten-free meals are readily available upon advance request, thoughtfully prepared without compromising on taste.</p>

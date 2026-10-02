@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -45,7 +45,7 @@ function StayHero() {
           A peaceful place to <span className="text-accent-gold italic font-serif">stay.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
-          Comfortable spaces surrounded by nature, created for rest and reconnection. All rooms include breakfast, lunch, and dinner.
+          Comfortable spaces surrounded by nature, created for rest and reconnection. Deluxe and Suite rooms include breakfast and lunch; the Family Suite includes all meals.
         </p>
       </div>
     </section>
@@ -60,7 +60,7 @@ const ROOMS = [
     capacity: "2 Persons",
     description: "Our comfortable deluxe room offering direct views of the mountain. Features a king-sized bed, air conditioning, and a meal plan including breakfast and lunch.",
     amenities: ["Mountain View", "King Size Bed", "Air Conditioning", "Breakfast & Lunch"],
-    prices: { INR: "?3,099", USD: "$37", EUR: "�34" },
+    prices: { INR: "?3,099", USD: "$37", EUR: "ï¿½34" },
     image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   },
@@ -69,7 +69,7 @@ const ROOMS = [
     capacity: "2 Persons",
     description: "A spacious suite offering elevated mountain views and additional living space. Perfect for longer stays, featuring a king-sized bed, premium amenities, and a meal plan including breakfast and lunch.",
     amenities: ["Spacious Layout", "Mountain View", "King Size Bed", "Breakfast & Lunch"],
-    prices: { INR: "?4,099", USD: "$49", EUR: "�45" },
+    prices: { INR: "?4,099", USD: "$49", EUR: "ï¿½45" },
     image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
     reverse: true
   },
@@ -78,7 +78,7 @@ const ROOMS = [
     capacity: "4 Persons",
     description: "Our largest accommodation, designed for families or small groups. Offers multiple sleeping arrangements, expansive mountain views, and full board for all guests (breakfast, lunch, and dinner).",
     amenities: ["Family Layout", "Mountain View", "King Size Beds", "All Meals Included"],
-    prices: { INR: "?7,999", USD: "$95", EUR: "�89" },
+    prices: { INR: "?7,999", USD: "$95", EUR: "ï¿½89" },
     image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
     reverse: false
   }
@@ -128,7 +128,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
 
         {/* Content Side */}
         <div ref={contentRef} className="w-full lg:w-1/2 flex flex-col items-start">
-          <span className="text-accent-terracotta uppercase tracking-widest font-label-sm text-sm mb-4 block">Capacity: {room.capacity}</span>
+          <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">Capacity: {room.capacity}</span>
           <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-6">{room.name}</h2>
           <p className="text-forest-deep/80 font-body-md text-lg leading-relaxed mb-8">
             {room.description}
@@ -177,7 +177,7 @@ function MonthlyStays() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream text-center border-t border-border-muted/30">
       <div ref={contentRef} className="max-w-2xl mx-auto">
-        <span className="text-accent-terracotta uppercase tracking-widest font-label-sm text-sm mb-4 block">Extended Retreats</span>
+        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">Extended Retreats</span>
         <h2 className="text-3xl md:text-5xl font-headline-md mb-8 italic font-serif text-forest-deep">Stay a little longer.</h2>
         <p className="text-forest-deep/80 font-body-md text-lg mb-10 max-w-xl mx-auto">
           Take the time to truly disconnect. We offer tailored packages and pricing for guests looking to stay for a month or longer, providing a quiet sanctuary for deep work, healing, or extended rest.
