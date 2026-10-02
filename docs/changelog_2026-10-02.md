@@ -8,3 +8,6 @@
 
 ### Added
 - Added missing subtitle paragraph to the Hero section of the About page (`src/app/about/page.tsx`) to match the consistency and length of the hero sections on other pages.
+
+### Fixed
+- Fixed character encoding issues for currency symbols (Rupee and Euro) in the Stay page (`src/app/stay/page.tsx`).
