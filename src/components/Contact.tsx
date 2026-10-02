@@ -101,13 +101,13 @@ export default function Contact() {
                 We understand international time zones and spontaneous travel plans. Reach us directly via messaging or phone.
               </p>
               <div className="space-y-3 min-w-0">
-                <a href="https://wa.me/918838198769" rel="noopener noreferrer" target="_blank" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-center gap-3 text-canvas-ivory shadow-sm group min-w-0">
+                <a href="https://wa.me/918838198769" rel="noopener noreferrer" target="_blank" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-start gap-3 text-canvas-ivory shadow-sm group min-w-0">
                   <span className="w-8 h-8 rounded-md bg-accent-gold text-forest-charcoal flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined text-[18px]">chat</span>
                   </span>
                   <span className="font-body-md font-medium truncate">+91 88381 98769</span>
                 </a>
-                <a href="mailto:goldmountainstay@gmail.com" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-center gap-3 text-canvas-ivory shadow-sm group min-w-0">
+                <a href="mailto:goldmountainstay@gmail.com" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-start gap-3 text-canvas-ivory shadow-sm group min-w-0">
                   <span className="w-8 h-8 rounded-md bg-forest-charcoal text-accent-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined text-[18px]">mail</span>
                   </span>
