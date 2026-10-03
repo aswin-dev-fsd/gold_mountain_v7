@@ -27,7 +27,7 @@ export default function Footer() {
   }, { scope: footerRef });
 
   return (
-    <footer ref={footerRef} className="w-full bg-forest-charcoal text-canvas-ivory pt-space-3xl pb-space-xl">
+    <footer ref={footerRef} className="w-full bg-forest-deep text-canvas-ivory pt-space-3xl pb-space-xl">
       <div className="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-space-lg xl:gap-space-xl pb-space-2xl">
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-3 xl:col-span-2 flex flex-col items-start pr-0 xl:pr-space-lg mb-space-md xl:mb-0">
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high/50 border-t border-forest-deep">
+        <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high/60 border-t border-canvas-ivory/15">
           <p>© 2024 Gold Mountain Wellness Resort. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-space-lg">
             <span>Preserving Arunachala Ecology</span>
