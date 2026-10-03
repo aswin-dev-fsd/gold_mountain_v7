@@ -22,7 +22,7 @@ function ContactHero() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="w-full pt-48 pb-16 px-6 md:px-12 bg-canvas-ivory text-center border-b border-border-muted/30">
+    <section ref={sectionRef} className="w-full pt-40 pb-space-3xl px-6 md:px-12 bg-canvas-ivory text-center border-b border-border-muted/30">
       <div ref={contentRef} className="max-w-3xl mx-auto">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-forest-deep tracking-tight mb-6">
           Let&apos;s plan your <span className="text-accent-gold">stay.</span>
@@ -47,7 +47,7 @@ function ContactSection() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream">
       <div className="max-w-7xl mx-auto flex flex-col gap-12 lg:gap-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
         

@@ -74,7 +74,7 @@ const config: Config = {
       },
       spacing: {
         "gutter": "1.5rem",
-        "space-3xl": "6rem",
+        "space-3xl": "5rem",
         "space-lg": "1.5rem",
         "space-md": "1rem",
         "space-2xl": "4rem",

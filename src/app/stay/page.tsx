@@ -111,7 +111,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className={`py-24 px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden ${index % 2 === 0 ? "bg-surface-cream" : "bg-canvas-ivory"}`}>
+    <section ref={sectionRef} className={`py-space-3xl px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden ${index % 2 === 0 ? "bg-surface-cream" : "bg-canvas-ivory"}`}>
       <div className={`max-w-7xl mx-auto flex flex-col ${room.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center lg:items-start gap-16`}>
         
         {/* Image Side */}
@@ -172,7 +172,7 @@ function LongStayCallout() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-16 px-6 md:px-12 bg-canvas-ivory">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
       <div ref={contentRef} className="max-w-7xl mx-auto p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
         <div className="flex items-center gap-space-md">
           <span className="material-symbols-outlined text-accent-gold text-[32px] shrink-0">calendar_today</span>
@@ -211,7 +211,7 @@ function AmenitiesGrid() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory border-t border-border-muted/30">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory border-t border-border-muted/30">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16">Resort Amenities</h2>
         
@@ -240,7 +240,7 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Plan your stay at Gold Mountain.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

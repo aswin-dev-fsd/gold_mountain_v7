@@ -50,7 +50,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
       </section>
 
       {/* Article body */}
-      <article className="py-20 px-6 md:px-12 bg-canvas-ivory">
+      <article className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/#journal"
@@ -79,7 +79,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
       </article>
 
       {/* Related articles */}
-      <section className="py-20 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
+      <section className="py-space-3xl px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10 text-center">More from the Journal</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -104,7 +104,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
+      <section className="py-space-3xl px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-headline-lg text-headline-lg tracking-tight mb-10">Experience it in person at Gold Mountain.</h2>
           <Link href="/contact" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">

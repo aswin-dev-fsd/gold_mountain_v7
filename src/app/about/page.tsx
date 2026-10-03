@@ -62,7 +62,7 @@ function TheStory() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-32 px-6 md:px-12 bg-canvas-ivory text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Our Story</span>
         <p className="text-forest-deep/90 font-body-lg text-xl md:text-2xl leading-relaxed font-light">
@@ -87,7 +87,7 @@ function FounderProfile() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream overflow-hidden">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         
         {/* Left: Founder Image Placeholder */}
@@ -150,7 +150,7 @@ function PhilosophyNarrative() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-32 px-6 md:px-12 bg-canvas-ivory relative">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory relative">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-16">
         
         {/* Narrative Flow */}
@@ -204,7 +204,7 @@ function GroundsAndNourishment() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div ref={contentRef} className="max-w-6xl mx-auto flex flex-col items-center text-center">
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">The Sanctuary</span>
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16">Grounds &amp; Nourishment</h2>
@@ -280,7 +280,7 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Come experience Gold Mountain.</h2>
         <Link href="/" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">

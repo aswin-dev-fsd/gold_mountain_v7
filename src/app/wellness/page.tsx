@@ -61,7 +61,7 @@ function Philosophy() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Our Philosophy</span>
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-1">
@@ -102,7 +102,7 @@ function WellnessApproach() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16 text-center">Our Approach</h2>
         
@@ -132,7 +132,7 @@ function AyurvedaHighlight() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-32 px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
       <div ref={contentRef} className="max-w-3xl mx-auto">
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Ayurveda</span>
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-1">Traditional wisdom, thoughtfully experienced.</h2>
@@ -183,7 +183,7 @@ function Programmes() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16 text-center">Programmes & Packages</h2>
         
@@ -235,7 +235,7 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Find the kind of wellness that suits your stay.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

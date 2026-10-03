@@ -62,7 +62,7 @@ function AyurvedaIntro() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">The Science of Life</span>
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-1">
@@ -111,7 +111,7 @@ function TherapiesAccordion() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-y border-border-muted/30">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream border-y border-border-muted/30">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-1">Therapies & Treatments</h2>
@@ -124,7 +124,7 @@ function TherapiesAccordion() {
             return (
               <div 
                 key={therapy.name} 
-                className={`accordion-item mb-space-xs overflow-hidden transition-all duration-300 bg-canvas-ivory rounded-lg shadow-sm border ${isOpen ? "border-accent-gold/40 shadow-md" : "border-border-muted/20"}`}
+                className={`accordion-item mb-space-xs last:mb-0 overflow-hidden transition-all duration-300 bg-canvas-ivory rounded-lg shadow-sm border ${isOpen ? "border-accent-gold/40 shadow-md" : "border-border-muted/20"}`}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -181,7 +181,7 @@ function AyurvedaPackages() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16 text-center">Ayurvedic Programmes</h2>
         
@@ -233,7 +233,7 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
+    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Begin your healing journey.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
