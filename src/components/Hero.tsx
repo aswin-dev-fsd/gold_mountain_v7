@@ -27,12 +27,12 @@ export default function Hero() {
     // Background settle
     tl.fromTo(bgRef.current, 
       { scale: 1.05, opacity: 0 }, 
-      { scale: 1, opacity: 1, duration: 2 }
+      { scale: 1, opacity: 1, duration: 1 }
     )
     .fromTo(headlineRef.current,
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.2 },
-      "-=1.2"
+      { y: 0, opacity: 1, duration: 0.6 },
+      "-=0.4"
     )
     .fromTo(paraRef.current,
       { y: 30, opacity: 0 },
@@ -41,13 +41,13 @@ export default function Hero() {
     )
     .fromTo(ctaRef.current,
       { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8 },
-      "-=0.6"
+      { y: 0, opacity: 1, duration: 0.4 },
+      "-=0.3"
     )
     .fromTo(indicatorRef.current,
       { opacity: 0 },
       { opacity: 1, duration: 1 },
-      "-=0.2"
+      "-=0.1"
     );
 
     // Scroll Parallax and Exit

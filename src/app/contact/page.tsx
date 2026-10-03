@@ -1,7 +1,8 @@
-﻿"use client";
+"use client";
 
 import { useRef, useState } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -10,24 +11,44 @@ import { isReducedMotion, EASE_CINEMATIC, revealSection } from "@/utils/animatio
 // --- HERO SECTION ---
 function ContactHero() {
   const sectionRef = useRef<HTMLElement>(null);
+  const bgRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
     if (isReducedMotion()) return;
-    gsap.fromTo(
-      contentRef.current, 
-      { y: 30, opacity: 0 }, 
-      { y: 0, opacity: 1, duration: 1.2, ease: EASE_CINEMATIC }
-    );
+    gsap.registerPlugin(ScrollTrigger);
+    
+    // Intro animation
+    const tl = gsap.timeline({ defaults: { ease: EASE_CINEMATIC } });
+    tl.fromTo(bgRef.current, { scale: 1.05, opacity: 0 }, { scale: 1, opacity: 1, duration: 1 })
+      .fromTo(contentRef.current, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.6");
+
+    // Scroll parallax
+    ScrollTrigger.create({
+      trigger: sectionRef.current,
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+      animation: gsap.timeline().to(bgRef.current, { yPercent: 20, ease: "none" }, 0)
+    });
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="w-full pt-40 pb-space-3xl px-6 md:px-12 bg-canvas-ivory text-center border-b border-border-muted/30">
-      <div ref={contentRef} className="max-w-3xl mx-auto">
-        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-forest-deep tracking-tight mb-6">
-          Let&apos;s plan your <span className="text-accent-gold">stay.</span>
+    <section ref={sectionRef} className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden bg-forest-charcoal mt-20">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Scenic image for Contact (reception or serene setting) */}
+        <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1920&q=80')" }} />
+      </div>
+      
+      {/* Scrim / Gradient Overlays */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest-charcoal/80 via-forest-charcoal/40 to-forest-charcoal/85 pointer-events-none"></div>
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-forest-deep/30 to-forest-charcoal/90 pointer-events-none"></div>
+      
+      <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
+        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
+          Let&apos;s plan your <span className="text-accent-gold block mt-2">stay.</span>
         </h1>
-        <p className="font-body-lg text-lg text-forest-deep/80 max-w-2xl mx-auto font-light leading-relaxed">
+        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
           Have a question about staying, wellness programmes or availability? Speak with us directly.
         </p>
       </div>

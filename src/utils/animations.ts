@@ -25,11 +25,11 @@ export const revealSection = (element: Element | string, delay = 0) => {
   }
   return gsap.fromTo(
     element,
-    { opacity: 0, y: 40 },
+    { opacity: 0, y: 20 },
     {
       opacity: 1,
       y: 0,
-      duration: 1.2,
+      duration: 0.6,
       ease: EASE_CINEMATIC,
       delay,
       scrollTrigger: {
@@ -48,12 +48,12 @@ export const revealStagger = (elements: Element[] | NodeListOf<Element> | HTMLCo
   }
   return gsap.fromTo(
     elements,
-    { opacity: 0, y: 30 },
+    { opacity: 0, y: 15 },
     {
       opacity: 1,
       y: 0,
-      duration: 1,
-      stagger: 0.15,
+      duration: 0.5,
+      stagger: 0.08,
       ease: EASE_CINEMATIC,
       delay,
       scrollTrigger: {
@@ -117,7 +117,7 @@ export const createImageReveal = (element: Element | string) => {
     { opacity: 0.85 },
     {
       opacity: 1,
-      duration: 1.2,
+      duration: 0.6,
       ease: "power2.out",
       scrollTrigger: {
         trigger: element,

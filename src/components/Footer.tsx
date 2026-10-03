@@ -17,7 +17,7 @@ export default function Footer() {
       { opacity: 0 },
       {
         opacity: 1,
-        duration: 1.5,
+        duration: 0.6,
         scrollTrigger: {
           trigger: footerRef.current,
           start: "top 95%",

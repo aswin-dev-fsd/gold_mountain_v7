@@ -67,3 +67,13 @@
 ### Known issues
 - Section spacing is not responsive, so 80px also applies on phones and may feel generous on small screens.
 - Footer top (80px) and bottom (40px) are intentionally different because the bottom holds the copyright row.
+
+# Changelog 2026-10-03
+
+## [2026-10-03] - Animation and Overlay Polish
+
+### Changed
+- Refined GSAP animation speeds across the site: shortened `duration` and `stagger` timings in `src/utils/animations.ts` (e.g. 1.2s to 0.6s) for a snappier, more responsive feel without losing cinematic quality.
+- Adjusted entrance animation timelines in `Hero.tsx` and `Footer.tsx` to match the faster global pacing.
+- Enhanced hero readability across `Stay`, `Wellness`, and `Contact` pages by introducing layered gradient/scrim overlays (`bg-gradient-to-b` and `radial-gradient`) behind the text.
+- Re-adjusted margins and text alignments in Hero sections (e.g., separating "stay." onto its own block on the Contact page).
