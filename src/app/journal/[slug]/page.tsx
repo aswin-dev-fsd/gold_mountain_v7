@@ -94,20 +94,10 @@ export default async function JournalArticlePage({ params }: { params: Params })
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-space-3xl px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="font-headline-lg text-headline-lg tracking-tight mb-10">Experience it in person at Gold Mountain.</h2>
-          <Link href="/contact" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
-<span>Enquire Now</span>
-<span className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</Link>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
 }
+
 
 

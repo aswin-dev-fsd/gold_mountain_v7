@@ -67,11 +67,11 @@ export default function Location() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start lg:items-stretch">
           
           {/* Orientation Map Box & Attractions */}
           <div className="lg:col-span-7 flex flex-col gap-space-md h-full">
-            <div ref={mapContainerRef} className="w-full h-80 lg:h-96 rounded-xl overflow-hidden shadow-md relative bg-surface-cream" data-location="Arunachala, Thiruvannamalai, Tamil Nadu, India">
+            <div ref={mapContainerRef} className="w-full h-80 lg:h-auto lg:flex-1 rounded-xl overflow-hidden shadow-md relative bg-surface-cream min-h-[24rem]" data-location="Arunachala, Thiruvannamalai, Tamil Nadu, India">
               <div 
                 ref={mapRef}
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000"
