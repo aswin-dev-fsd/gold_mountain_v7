@@ -43,7 +43,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
             <span className="px-3 py-1 rounded bg-canvas-ivory/15 backdrop-blur-sm uppercase tracking-widest font-label-sm text-sm">{article.category}</span>
             <span className="font-label-sm text-sm tracking-wider">{article.readTime}</span>
           </div>
-          <h1 className="font-headline-lg text-3xl md:text-5xl text-canvas-ivory tracking-tight leading-[1.05] md:leading-[1.05]">
+          <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight">
             {article.title}
           </h1>
         </div>
@@ -66,7 +66,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
           <div className="space-y-12">
             {article.sections.map((section) => (
               <section key={section.heading}>
-                <h2 className="text-2xl md:text-3xl font-headline-md text-forest-deep mb-5 leading-[1.05] md:leading-[1.05]">{section.heading}</h2>
+                <h2 className="font-headline-md text-headline-md font-normal leading-[1.05] text-forest-deep mb-5">{section.heading}</h2>
                 <div className="space-y-5 text-forest-deep/80 font-body-md text-lg leading-relaxed">
                   {section.paragraphs.map((p) => (
                     <p key={p}>{p}</p>
@@ -81,7 +81,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
       {/* Related articles */}
       <section className="py-20 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-headline-md text-forest-deep mb-10 text-center leading-[1.05] md:leading-[1.05]">More from the Journal</h2>
+          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10 text-center">More from the Journal</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {related.map((item) => (
               <div key={item.slug} className="flex flex-col rounded-xl overflow-hidden bg-canvas-ivory border border-border-muted/50 shadow-sm">
@@ -94,7 +94,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
                   <h3 className="font-headline-sm text-xl text-forest-deep mb-6">{item.title}</h3>
                   <Link
                     href={`/journal/${item.slug}`}
-                    className="mt-auto self-start inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md uppercase tracking-wider hover:bg-forest-charcoal transition-colors"
+                    className="mt-auto self-start inline-flex items-center justify-center gap-2 rounded-lg bg-forest-deep text-canvas-ivory font-label-md uppercase tracking-wider hover:bg-forest-charcoal transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
                   >
                     Read Article <span className="material-symbols-outlined text-[16px] text-accent-gold">east</span>
                   </Link>
@@ -108,10 +108,10 @@ export default async function JournalArticlePage({ params }: { params: Params })
       {/* CTA */}
       <section className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-headline-md mb-10 leading-[1.05] md:leading-[1.05]">Experience it in person at Gold Mountain.</h2>
+          <h2 className="font-headline-lg text-headline-lg tracking-tight mb-10">Experience it in person at Gold Mountain.</h2>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-accent-gold text-forest-charcoal font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent-gold text-forest-charcoal font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
           >
             Enquire Now <span className="material-symbols-outlined text-[18px]">east</span>
           </Link>

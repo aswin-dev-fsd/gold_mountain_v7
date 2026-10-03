@@ -64,7 +64,7 @@ function TheStory() {
   return (
     <section ref={sectionRef} className="py-32 px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
-        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-1 block">Our Story</span>
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Our Story</span>
         <p className="text-forest-deep/90 font-body-lg text-xl md:text-2xl leading-relaxed font-light">
           Gold Mountain was born from a desire to create a sanctuary where people could step away from the noise of modern life. We envisioned a place not just for leisure, but for genuine restoration: a space where the natural world and traditional healing practices work together quietly, without pretense.
         </p>
@@ -105,9 +105,9 @@ function FounderProfile() {
 
         {/* Right: Structured Text Blocks */}
         <div ref={contentRef} className="w-full lg:w-7/12 flex flex-col items-start text-left">
-          <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-1 block">The Founder</span>
+          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">The Founder</span>
           
-          <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-8 leading-[1.05] md:leading-[1.05]">
+          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8">
             [FOUNDER NAME TO BE PROVIDED]
           </h2>
           
@@ -155,7 +155,7 @@ function PhilosophyNarrative() {
         
         {/* Narrative Flow */}
         <div ref={textRef} className="w-full lg:w-3/5">
-          <h2 className="text-3xl font-headline-md text-forest-deep mb-10 leading-[1.05]">Our Philosophy & Place</h2>
+          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10">Our Philosophy & Place</h2>
           
           <div className="space-y-8 text-forest-deep/80 font-body-md text-lg leading-relaxed">
             <p>
@@ -206,8 +206,8 @@ function GroundsAndNourishment() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div ref={contentRef} className="max-w-6xl mx-auto flex flex-col items-center text-center">
-        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-1 block">The Sanctuary</span>
-        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16 leading-[1.05] md:leading-[1.05]">Grounds &amp; Nourishment</h2>
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">The Sanctuary</span>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16">Grounds &amp; Nourishment</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
           {/* Nature & Grounds */}
@@ -280,12 +280,12 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
+    <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-headline-md mb-12 leading-[1.05] md:leading-[1.05]">Come experience Gold Mountain.</h2>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Come experience Gold Mountain.</h2>
         <Link 
           href="/" 
-          className="inline-flex items-center gap-2 bg-accent-gold text-forest-charcoal px-10 py-4 rounded-lg font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors"
+          className="inline-flex items-center gap-2 bg-accent-gold text-forest-charcoal rounded-lg font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
         >
           Explore the Resort <span className="material-symbols-outlined text-[18px]">east</span>
         </Link>
