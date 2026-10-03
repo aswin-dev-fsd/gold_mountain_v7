@@ -18,3 +18,18 @@
 ### Known issues
 - Journal article text and card images are placeholders pending client content.
 - "Read All Journal Entries" still points to the home Journal section (no article index page).
+
+### Changed (design consistency pass)
+- Eyebrow labels on About, Ayurveda, Stay and Wellness pages now use the home style (`label-md`: 12px, weight 600, gold, wide tracking) instead of 14px / weight 400.
+- CTA buttons unified to the "Request Long Stay Rates" style: 12px, weight 600, 24px horizontal / 10px vertical padding, 42px min height, 4px corners. Applied to inner-page CTAs (Enquire, Email, Send Enquiry, Explore the Resort, package Enquire), Journal buttons, and home Enquire (rooms), Explore All Experiences, Explore Wellness Programs, Explore Farm to Table, Book Transfer, Discover Dining, Explore the Resort. WhatsApp keeps its pill shape. Hero CTAs, the enquiry form submit and the nav Book button are unchanged.
+- Section backgrounds now alternate ivory / cream between hero and footer on every page with no neighbours sharing a colour:
+  - Home: Trust is cream (cards switched to ivory) and Journal is ivory (cards switched to cream).
+  - About, Ayurveda, Stay and Wellness: closing CTA bands changed from charcoal to ivory/cream with dark text; the outline Email button now uses forest green; the Ayurveda band on Wellness is cream; Wellness "Our Approach" is ivory; Stay rooms alternate cream / ivory.
+  - Footer is now `forest-deep` so it no longer merges with the charcoal Contact section on the home page.
+- Heading sizes unified to the home scale: section headings 40px; in-layout titles (Stay room names, "Send an Enquiry", "Thank you.", package names, Journal article subheads) 28px, both at 1.05 line height.
+- Section header rows on home (Wellness, Stay, Journal) are top-aligned (`md:items-start`) so the eyebrow lines up with the right-hand column.
+
+### Known issues
+- Hero CTAs (14px), the enquiry form submit and the nav Book button are intentionally larger and were not changed.
+- Gold small text on ivory/cream is about 2.2:1 contrast; consider a darker gold token for text.
+- The Journal article page title stays at 48px (the home 56px would wrap to 4-5 lines).
