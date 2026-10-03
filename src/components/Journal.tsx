@@ -2,7 +2,9 @@
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+import Link from "next/link";
 import { revealStagger } from "../utils/animations";
+import { JOURNAL_ARTICLES } from "../data/journal";
 
 export default function Journal() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -33,7 +35,7 @@ export default function Journal() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Stories of Wellness &amp; Arunachala.
             </h2>
-            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
+            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
               Reflections on conscious living, ancient science, and sacred geography.
             </p>
           </div>
@@ -45,94 +47,38 @@ export default function Journal() {
         
         {/* 3 Featured Journal Articles */}
         <div ref={articlesRef} className="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
-          
-          {/* Article 1 */}
-          <article className="flex flex-col rounded-xl overflow-hidden bg-canvas-ivory shadow-sm group hover:shadow-md hover:-translate-y-1 transition-all">
-            <div className="w-full aspect-[16/10] overflow-hidden">
-              <div 
-                className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBff-dHQjJQAfDdnhZGObNdgAyI99t0GtLb7EDVP8ojtklmgX19VnBjxrvfzMTbFI_6YDtEo2pe5WQUu_QrL9ZXSv9I9-BHBMSrhft4EA4KkMY9OJ7yzHM3WzDRx8z5-0gshMLTr1X3nJaYjy4zQTy841pu4luxHmWdjHLC9y9g-_3s_ex3SMNadJZef8QJ6j9B7a2hirBcLVNZYTaW2dE1CWLeofQEdLwxJnHdfzT1uFjErccSkRbp')" }}
-              ></div>
-            </div>
-            <div className="p-space-lg flex-1 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-space-sm mb-space-xs">
-                  <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">Spirituality</span>
-                  <span className="font-label-sm text-label-sm text-on-surface-variant">5 min read</span>
+          {JOURNAL_ARTICLES.map((article) => (
+            <article key={article.slug} className="flex flex-col rounded-xl overflow-hidden bg-canvas-ivory shadow-sm group hover:shadow-md hover:-translate-y-1 transition-all">
+              <div className="w-full aspect-[16/10] overflow-hidden">
+                <div
+                  className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                  style={{ backgroundImage: `url('${article.image}')` }}
+                ></div>
+              </div>
+              <div className="p-space-lg flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-space-sm mb-space-xs">
+                    <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">{article.category}</span>
+                    <span className="font-label-sm text-label-sm text-on-surface-variant">{article.readTime}</span>
+                  </div>
+                  <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
+                    {article.title}
+                  </h3>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+                    {article.excerpt}
+                  </p>
                 </div>
-                <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
-                  The Sacred Stillness of Arunachala: An International Traveler&apos;s Guide
-                </h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
-                  Navigating the sacred geography of Thiruvannamalai, the 14 km Girivalam circumambulation, and finding deep inner quietude.
-                </p>
-              </div>
-              <div className="pt-space-md border-t border-border-muted mt-space-md">
-                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-forest-deep transition-colors">
-                  Read Article <span className="material-symbols-outlined text-[14px]">east</span>
-                </span>
-              </div>
-            </div>
-          </article>
-          
-          {/* Article 2 */}
-          <article className="flex flex-col rounded-xl overflow-hidden bg-canvas-ivory shadow-sm group hover:shadow-md hover:-translate-y-1 transition-all">
-            <div className="w-full aspect-[16/10] overflow-hidden">
-              <div 
-                className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAofNZqVnGVJzpaGvDlLSddXpowD08XVurhMktLFiO9MAIawNTe2m5F-qmtJb5-GXbPUG7moBCRYC8uZwCKxWOBYi_QSlDkZ5IvdOm_ED_i8atlnP9tu0EKclC1RTISXLMTtCWWJ-e6zOD6f6Il6aMpMhApasOoO4OU0hB7dnnfQrSL2FpjRT95HYxIZr7HMHCseBkVDfrsiZQhxLWngOaO-eAGsq1ZCYO48_OgBjQoaRsWBEHlpaH3')" }}
-              ></div>
-            </div>
-            <div className="p-space-lg flex-1 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-space-sm mb-space-xs">
-                  <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">Ayurveda</span>
-                  <span className="font-label-sm text-label-sm text-on-surface-variant">7 min read</span>
+                <div className="pt-space-md border-t border-border-muted mt-space-md">
+                  <Link
+                    href={`/journal/${article.slug}`}
+                    className="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px]"
+                  >
+                    Read Article <span className="material-symbols-outlined text-accent-gold text-[16px]">east</span>
+                  </Link>
                 </div>
-                <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
-                  Ayurveda as Daily Rhythm: Beyond Treatments to Wholesome Living
-                </h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
-                  How Dinacharya (daily natural routine) harmonizes the biological clock and prevents imbalances before they arise.
-                </p>
               </div>
-              <div className="pt-space-md border-t border-border-muted mt-space-md">
-                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-forest-deep transition-colors">
-                  Read Article <span className="material-symbols-outlined text-[14px]">east</span>
-                </span>
-              </div>
-            </div>
-          </article>
-          
-          {/* Article 3 */}
-          <article className="flex flex-col rounded-xl overflow-hidden bg-canvas-ivory shadow-sm group hover:shadow-md hover:-translate-y-1 transition-all">
-            <div className="w-full aspect-[16/10] overflow-hidden">
-              <div 
-                className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQrVUbYJVSxbYoschzu5xitIOLTAaVU2aHAQOEVI0kk-ohlq8Th8hQ0AgNchZm20LLAlpUuBQg7ORspahMAnocuEkkSFATvUEn4cv0LS_tCQcor_3-C0BPpxK8PfF-T74cYxyljgxq7DaJKOsnP6Z6mZ6IOHK2kxN-NHc4ePFyPdoDG3QamzjezgFLryZQREUcB21g9hy-FPNzxnXSWycj411z-hKKaFBBtynqQjiKdHJh5OtIcN6t')" }}
-              ></div>
-            </div>
-            <div className="p-space-lg flex-1 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-space-sm mb-space-xs">
-                  <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">Nourishment</span>
-                  <span className="font-label-sm text-label-sm text-on-surface-variant">4 min read</span>
-                </div>
-                <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
-                  From Soil to Plate: The Healing Power of Sattvic Garden Dining
-                </h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
-                  Why food harvested within hours of consumption retains vibrant prana and supports physical and mental lightness.
-                </p>
-              </div>
-              <div className="pt-space-md border-t border-border-muted mt-space-md">
-                <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep flex items-center gap-1 group-hover:text-forest-deep transition-colors">
-                  Read Article <span className="material-symbols-outlined text-[14px]">east</span>
-                </span>
-              </div>
-            </div>
-          </article>
-          
+            </article>
+          ))}
         </div>
       </div>
     </section>

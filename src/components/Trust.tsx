@@ -37,7 +37,7 @@ export default function Trust() {
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
             A Sanctuary Built on Authenticity.
           </h2>
-          <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
+          <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
             Uncompromised standards, certified lineage, and quiet dedication.
           </p>
         </div>

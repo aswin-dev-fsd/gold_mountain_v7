@@ -41,7 +41,7 @@ function AyurvedaHero() {
       <div className="absolute inset-0 z-10 bg-forest-charcoal/40 pointer-events-none"></div>
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
-        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
+        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           Traditional wisdom, <span className="text-accent-gold block mt-2">thoughtfully experienced.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -64,8 +64,8 @@ function AyurvedaIntro() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
-        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">The Science of Life</span>
-        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-8 leading-tight">
+        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-1 block">The Science of Life</span>
+        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-8 leading-[1.05] md:leading-[1.05]">
           Ayurveda is not just a treatment, but a way of living in harmony with nature.
         </h2>
         <p className="text-forest-deep/80 font-body-md text-lg max-w-2xl mx-auto leading-relaxed">
@@ -114,7 +114,7 @@ function TherapiesAccordion() {
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-y border-border-muted/30">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-headline-md text-forest-deep mb-4">Therapies & Treatments</h2>
+          <h2 className="text-3xl font-headline-md text-forest-deep mb-4 leading-[1.05]">Therapies & Treatments</h2>
           <p className="text-forest-deep/70 font-body-sm max-w-xl mx-auto">Our experienced therapists use sustainably sourced, traditional oils and herbs to deliver authentic treatments.</p>
         </div>
         
@@ -183,7 +183,7 @@ function AyurvedaPackages() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16 text-center">Ayurvedic Programmes</h2>
+        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16 text-center leading-[1.05] md:leading-[1.05]">Ayurvedic Programmes</h2>
         
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {PACKAGES.map(pkg => (
@@ -238,7 +238,7 @@ function FinalCTA() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-headline-md mb-12">Begin your healing journey.</h2>
+        <h2 className="text-3xl md:text-4xl font-headline-md mb-12 leading-[1.05] md:leading-[1.05]">Begin your healing journey.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link 
             href="/contact" 

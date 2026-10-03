@@ -63,7 +63,7 @@ export default function Wellness() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Wellness, in its own time.
             </h2>
-            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
+            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
               A place built around healing, healthy living, and traditional practices.
             </p>
           </div>

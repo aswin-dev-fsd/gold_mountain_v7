@@ -40,7 +40,7 @@ function WellnessHero() {
       <div className="absolute inset-0 z-10 bg-forest-charcoal/50 pointer-events-none"></div>
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
-        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
+        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           A slower way back to <span className="text-accent-gold">yourself.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -63,8 +63,8 @@ function Philosophy() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
-        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">Our Philosophy</span>
-        <h2 className="text-3xl md:text-5xl font-headline-md text-forest-deep mb-8 leading-tight">
+        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-1 block">Our Philosophy</span>
+        <h2 className="text-3xl md:text-5xl font-headline-md text-forest-deep mb-8 leading-[1.05] md:leading-[1.05]">
           Traditional wellness practices and the restorative qualities of nature.
         </h2>
         <p className="text-forest-deep/80 font-body-md text-lg max-w-2xl mx-auto leading-relaxed">
@@ -104,7 +104,7 @@ function WellnessApproach() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-headline-md text-forest-deep mb-16 text-center">Our Approach</h2>
+        <h2 className="text-3xl font-headline-md text-forest-deep mb-16 text-center leading-[1.05]">Our Approach</h2>
         
         <div ref={gridRef} className="flex flex-wrap justify-center gap-x-6 gap-y-8">
           {APPROACH_ITEMS.map((item) => (
@@ -134,8 +134,8 @@ function AyurvedaHighlight() {
   return (
     <section ref={sectionRef} className="py-32 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
       <div ref={contentRef} className="max-w-3xl mx-auto">
-        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">Ayurveda</span>
-        <h2 className="text-3xl md:text-5xl font-headline-md mb-8">Traditional wisdom, thoughtfully experienced.</h2>
+        <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-1 block">Ayurveda</span>
+        <h2 className="text-3xl md:text-5xl font-headline-md mb-8 leading-[1.05] md:leading-[1.05]">Traditional wisdom, thoughtfully experienced.</h2>
         <p className="text-canvas-ivory/80 font-body-md text-lg mb-12 max-w-2xl mx-auto">
           Ayurveda forms the root of our physical healing practices. We offer authentic treatments designed not just to cure, but to restore your body&apos;s natural balance. Discover a gentle, profound approach to well-being.
         </p>
@@ -187,7 +187,7 @@ function Programmes() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16 text-center">Programmes & Packages</h2>
+        <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-16 text-center leading-[1.05] md:leading-[1.05]">Programmes & Packages</h2>
         
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PACKAGES.map(pkg => (
@@ -242,7 +242,7 @@ function FinalCTA() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-headline-md mb-12">Find the kind of wellness that suits your stay.</h2>
+        <h2 className="text-3xl md:text-4xl font-headline-md mb-12 leading-[1.05] md:leading-[1.05]">Find the kind of wellness that suits your stay.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link 
             href="/contact" 

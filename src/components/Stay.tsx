@@ -50,7 +50,7 @@ export default function Stay() {
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
               Spaces for Rest and Healing.
             </h2>
-            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
+            <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
               Thoughtfully appointed sanctuaries designed for short visits, intensive retreats, and extended sabbaticals.
             </p>
           </div>

@@ -101,12 +101,12 @@ const config: Config = {
         "headline-sm": ["Outfit", "sans-serif"]
       },
       fontSize: {
-        "display-lg-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }],
-        "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+        "display-lg-mobile": ["2.25rem", { "lineHeight": "1.05", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+        "headline-lg": ["2.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.01em", "fontWeight": "400" }],
         "body-lg": ["1.125rem", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
         "label-lg": ["0.875rem", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600" }],
         "headline-md": ["1.75rem", { "lineHeight": "1.2", "letterSpacing": "0em", "fontWeight": "500" }],
-        "display-lg": ["3.5rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+        "display-lg": ["3.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.02em", "fontWeight": "400" }],
         "label-md": ["0.75rem", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
         "label-sm": ["0.6875rem", { "lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "600" }],
         "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "0em", "fontWeight": "400" }],

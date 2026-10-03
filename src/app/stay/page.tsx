@@ -41,7 +41,7 @@ function StayHero() {
       <div className="absolute inset-0 z-10 bg-forest-charcoal/40 pointer-events-none"></div>
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
-        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight leading-[1.15] mb-6">
+        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           A peaceful place to <span className="text-accent-gold">stay.</span>
         </h1>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -128,8 +128,8 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
 
         {/* Content Side */}
         <div ref={contentRef} className="w-full lg:w-1/2 flex flex-col items-start">
-          <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-4 block">Capacity: {room.capacity}</span>
-          <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-6">{room.name}</h2>
+          <span className="text-accent-gold uppercase tracking-widest font-label-sm text-sm mb-1 block">Capacity: {room.capacity}</span>
+          <h2 className="text-3xl md:text-4xl font-headline-md text-forest-deep mb-6 leading-[1.05] md:leading-[1.05]">{room.name}</h2>
           <p className="text-forest-deep/80 font-body-md text-lg leading-relaxed mb-8">
             {room.description}
           </p>
@@ -219,7 +219,7 @@ function AmenitiesGrid() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory border-t border-border-muted/30">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-headline-md text-forest-deep mb-16">Resort Amenities</h2>
+        <h2 className="text-2xl md:text-3xl font-headline-md text-forest-deep mb-16 leading-[1.05] md:leading-[1.05]">Resort Amenities</h2>
         
         <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-6">
           {AMENITIES.map(amenity => (
@@ -248,7 +248,7 @@ function FinalCTA() {
   return (
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-headline-md mb-12">Plan your stay at Gold Mountain.</h2>
+        <h2 className="text-3xl md:text-4xl font-headline-md mb-12 leading-[1.05] md:leading-[1.05]">Plan your stay at Gold Mountain.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
             href="mailto:goldmountainstay@gmail.com" 

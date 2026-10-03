@@ -38,7 +38,7 @@ export default function Experiences() {
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             More than a stay.
           </h2>
-          <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
+          <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
             A place shaped by nature, tradition, and a deeper connection to the surroundings.
           </p>
           <p className="font-body-md text-body-md text-surface-container-high/80 mt-space-sm leading-relaxed">

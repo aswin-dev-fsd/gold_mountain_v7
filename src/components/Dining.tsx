@@ -76,7 +76,7 @@ export default function Dining() {
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Food that nourishes.
               </h2>
-              <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-sm font-normal">
+              <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
                 What is grown here is served here, prepared with calm minds and clean fire.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm mb-space-lg leading-relaxed">

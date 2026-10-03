@@ -109,7 +109,7 @@ export default function Hero() {
         </div>
         
         {/* Headline */}
-        <h1 ref={headlineRef} className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory max-w-4xl tracking-tight leading-[1.15] mb-space-md font-normal">
+        <h1 ref={headlineRef} className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory max-w-4xl tracking-tight mb-space-md font-normal">
           A Wellness Stay in the Presence of <span className="text-accent-gold font-normal">Arunachala.</span>
         </h1>
         
