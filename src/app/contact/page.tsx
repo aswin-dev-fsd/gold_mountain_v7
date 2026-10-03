@@ -146,12 +146,10 @@ function EnquiryForm() {
           <textarea id="message" rows={5} className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm resize-none flex-1 min-h-[120px]"></textarea>
         </div>
 
-        <button 
-          type="submit" 
-          className="mt-6 bg-forest-deep text-canvas-ivory rounded-lg font-label-md uppercase tracking-wider hover:bg-forest-charcoal transition-colors w-full md:w-auto self-start text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-        >
-          Send Enquiry
-        </button>
+        <button type="submit" className="mt-6 w-full md:w-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Send Enquiry</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
       </form>
     </div>
   );
@@ -181,9 +179,10 @@ function ContactDetails() {
       <div className="flex flex-col items-start pt-6 border-t border-border-muted/50 mt-6">
         <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Email</span>
         <p className="text-lg font-body-md text-forest-deep mb-4">goldmountainstay@gmail.com</p>
-        <a href="mailto:goldmountainstay@gmail.com" className="inline-flex items-center gap-2 border border-forest-deep/20 text-forest-deep rounded-lg uppercase tracking-wider hover:bg-forest-deep/5 transition-colors font-label-md text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]">
-          Send Email
-        </a>
+        <a href="mailto:goldmountainstay@gmail.com" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
+<span>Send Email</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
       </div>
 
       <div className="flex flex-col items-start pt-6 border-t border-border-muted/50 mt-6">

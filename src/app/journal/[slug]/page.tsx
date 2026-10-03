@@ -92,12 +92,10 @@ export default async function JournalArticlePage({ params }: { params: Params })
                     <span className="font-label-sm text-label-sm text-on-surface-variant">{item.readTime}</span>
                   </div>
                   <h3 className="font-headline-sm text-xl text-forest-deep mb-6">{item.title}</h3>
-                  <Link
-                    href={`/journal/${item.slug}`}
-                    className="mt-auto self-start inline-flex items-center justify-center gap-2 rounded-lg bg-forest-deep text-canvas-ivory font-label-md uppercase tracking-wider hover:bg-forest-charcoal transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-                  >
-                    Read Article <span className="material-symbols-outlined text-[16px] text-accent-gold">east</span>
-                  </Link>
+                  <Link href={`/journal/${item.slug}`} className="mt-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Read Article</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
                 </div>
               </div>
             ))}
@@ -109,12 +107,10 @@ export default async function JournalArticlePage({ params }: { params: Params })
       <section className="py-24 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-headline-lg text-headline-lg tracking-tight mb-10">Experience it in person at Gold Mountain.</h2>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent-gold text-forest-charcoal font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-          >
-            Enquire Now <span className="material-symbols-outlined text-[18px]">east</span>
-          </Link>
+          <Link href="/contact" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
+<span>Enquire Now</span>
+<span className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
         </div>
       </section>
 

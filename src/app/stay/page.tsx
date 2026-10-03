@@ -151,12 +151,10 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
               <span className="text-xs uppercase tracking-widest text-forest-deep/60">From</span>
               <span className="font-headline-sm text-[25px] text-forest-deep">{room.prices[currency]}</span>
             </div>
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center justify-center bg-forest-deep text-canvas-ivory rounded-lg font-label-md uppercase tracking-wider hover:bg-forest-charcoal transition-colors whitespace-nowrap text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-            >
-              Enquire About This Room
-            </Link>
+            <Link href="/contact" className="whitespace-nowrap group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Enquire About This Room</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
           </div>
         </div>
         
@@ -184,12 +182,10 @@ function LongStayCallout() {
             <p className="font-body-sm text-body-sm text-on-surface-variant">Special seasonal privileges and complete wellness dietary plans for guests staying 14 nights or longer.</p>
           </div>
         </div>
-        <Link
-          href="/contact"
-          className="whitespace-nowrap px-space-lg py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center shrink-0"
-        >
-          Request Long Stay Rates
-        </Link>
+        <Link href="/contact" className="whitespace-nowrap shrink-0 group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Request Long Stay Rates</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
       </div>
     </section>
   );
@@ -250,12 +246,10 @@ function FinalCTA() {
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Plan your stay at Gold Mountain.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a 
-            href="mailto:goldmountainstay@gmail.com" 
-            className="w-full sm:w-auto inline-flex justify-center items-center gap-2 border border-forest-deep text-forest-deep rounded-lg font-label-md uppercase tracking-wider hover:bg-forest-deep hover:text-canvas-ivory transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-          >
-            Email
-          </a>
+          <a href="mailto:goldmountainstay@gmail.com" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
+<span>Email</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
           <a 
             href="https://wa.me/918838198769" 
             className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"

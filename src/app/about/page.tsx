@@ -283,12 +283,10 @@ function FinalCTA() {
     <section ref={sectionRef} className="py-24 px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Come experience Gold Mountain.</h2>
-        <Link 
-          href="/" 
-          className="inline-flex items-center gap-2 bg-accent-gold text-forest-charcoal rounded-lg font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-        >
-          Explore the Resort <span className="material-symbols-outlined text-[18px]">east</span>
-        </Link>
+        <Link href="/" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Explore the Resort</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
       </div>
     </section>
   );

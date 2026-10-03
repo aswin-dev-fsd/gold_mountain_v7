@@ -102,20 +102,14 @@ export default function Hero() {
         
         {/* Dual Call to Actions */}
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
-          <Link 
-            href="/wellness" 
-            className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-forest-deep text-canvas-ivory px-space-xl py-space-md rounded-xl font-label-lg text-label-lg uppercase tracking-wider shadow-lg hover:bg-forest-charcoal hover:border-accent-gold/60 border border-forest-deep focus:ring-2 focus:ring-accent-gold/50 active:scale-95 hover:-translate-y-0.5 transition-all duration-300 group"
-          >
-            <span>Explore Wellness</span>
-            <span className="material-symbols-outlined text-accent-gold text-[18px] group-hover:translate-x-1 transition-transform">east</span>
-          </Link>
-          <Link 
-            href="/stay" 
-            className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-space-sm bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md px-space-xl py-space-md rounded-xl font-label-lg text-label-lg uppercase tracking-wider shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300 hover:-translate-y-0.5"
-          >
-            <span>Plan Your Stay</span>
-            <span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_month</span>
-          </Link>
+          <Link href="/wellness" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Explore Wellness</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
+          <Link href="/stay" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300">
+<span>Plan Your Stay</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
         </div>
       </div>
 

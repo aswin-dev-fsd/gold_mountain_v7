@@ -82,10 +82,10 @@ export default function Contact() {
                 <textarea className="w-full p-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm resize-none" placeholder="Tell us about dietary needs, health considerations or arrival plans..." rows={3}></textarea>
               </div>
               
-              <button className="w-full min-h-[48px] py-space-md px-space-lg rounded-lg bg-accent-gold text-forest-charcoal font-label-lg text-label-lg uppercase tracking-wider font-semibold hover:bg-gold-light hover:border-gold-light border border-accent-gold transition-all shadow-md flex items-center justify-center gap-space-sm group cursor-pointer active:scale-[0.99]" type="submit">
-                <span>Send Sanctuary Enquiry</span>
-                <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>
-              </button>
+              <button type="submit" className="w-full cursor-pointer group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
+<span>Send Sanctuary Enquiry</span>
+<span className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
               
               <div className="hidden p-space-sm rounded bg-forest-deep text-accent-gold text-center font-body-sm" id="formSuccess">
                 Thank you. Our retreat advisor will be in touch within 12 hours.

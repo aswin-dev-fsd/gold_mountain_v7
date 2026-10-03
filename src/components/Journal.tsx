@@ -69,12 +69,10 @@ export default function Journal() {
                   </p>
                 </div>
                 <div className="pt-space-md border-t border-border-muted mt-space-md">
-                  <Link
-                    href={`/journal/${article.slug}`}
-                    className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all px-space-lg py-2.5 min-h-[42px]"
-                  >
-                    Read Article <span className="material-symbols-outlined text-accent-gold text-[16px]">east</span>
-                  </Link>
+                  <Link href={`/journal/${article.slug}`} className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Read Article</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
                 </div>
               </div>
             </article>

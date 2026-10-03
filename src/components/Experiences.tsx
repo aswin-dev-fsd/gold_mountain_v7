@@ -131,10 +131,10 @@ export default function Experiences() {
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
               <span className="font-label-sm text-label-sm text-accent-gold">Guided Daily Walks at 07:30 AM</span>
-              <a href="#dining" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-accent-gold text-forest-charcoal uppercase tracking-wider font-semibold shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all group font-label-md text-label-md px-space-lg py-2.5 min-h-[42px]">
-                <span>Explore Farm To Table</span>
-                <span className="material-symbols-outlined text-forest-charcoal text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-              </a>
+              <a href="#dining" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
+<span>Explore Farm To Table</span>
+<span className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
             </div>
           </div>
           
@@ -142,13 +142,10 @@ export default function Experiences() {
         
         {/* Action */}
         <div ref={ctaRef} className="text-center">
-          <a 
-            href="#enquiry" 
-            className="inline-flex items-center justify-center gap-space-xs bg-accent-gold text-forest-charcoal px-space-lg py-2.5 rounded-lg font-label-md text-label-md uppercase tracking-wider shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all font-semibold min-h-[42px]"
-          >
-            <span>Explore All Experiences</span>
-            <span className="material-symbols-outlined text-[18px]">explore</span>
-          </a>
+          <a href="#enquiry" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
+<span>Explore All Experiences</span>
+<span className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
         </div>
         
       </div>

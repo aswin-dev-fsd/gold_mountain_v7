@@ -139,12 +139,10 @@ function AyurvedaHighlight() {
         <p className="text-forest-deep/80 font-body-md text-lg mb-12 max-w-2xl mx-auto">
           Ayurveda forms the root of our physical healing practices. We offer authentic treatments designed not just to cure, but to restore your body&apos;s natural balance. Discover a gentle, profound approach to well-being.
         </p>
-        <Link 
-          href="/ayurveda" 
-          className="inline-flex items-center gap-2 bg-accent-gold text-forest-charcoal rounded-lg font-label-md uppercase tracking-wider hover:bg-gold-light transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-        >
-          Explore Ayurveda <span className="material-symbols-outlined text-[18px]">east</span>
-        </Link>
+        <Link href="/ayurveda" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Explore Ayurveda</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
       </div>
     </section>
   );
@@ -215,12 +213,10 @@ function Programmes() {
                   <span className="flex justify-between"><span>USD</span> <span>{pkg.price.USD}</span></span>
                   <span className="flex justify-between"><span>EUR</span> <span>{pkg.price.EUR}</span></span>
                 </div>
-                <Link 
-                  href="/contact" 
-                  className="w-full block text-center rounded-lg border border-forest-deep text-forest-deep uppercase tracking-wider font-semibold hover:bg-forest-deep hover:text-canvas-ivory transition-colors font-label-md text-label-md px-space-lg py-2.5 min-h-[42px]"
-                >
-                  Enquire
-                </Link>
+                <Link href="/contact" className="w-full group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+<span>Enquire</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
               </div>
             </div>
           ))}
@@ -244,12 +240,10 @@ function FinalCTA() {
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Find the kind of wellness that suits your stay.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link 
-            href="/contact" 
-            className="w-full sm:w-auto inline-flex justify-center items-center gap-2 border border-forest-deep text-forest-deep rounded-lg font-label-md uppercase tracking-wider hover:bg-forest-deep hover:text-canvas-ivory transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-          >
-            Send an Email
-          </Link>
+          <Link href="/contact" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
+<span>Send an Email</span>
+<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</Link>
           <Link 
             href="/contact" 
             className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
