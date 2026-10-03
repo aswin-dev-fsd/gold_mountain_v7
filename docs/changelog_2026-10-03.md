@@ -81,3 +81,9 @@
 ### Changed
 - Refactored `Journal.tsx` card links: replaced the solid button with a subtle underlined text link for a cleaner aesthetic.
 - Trimmed down the `client-details-needed.txt` file by removing completed/resolved items.
+
+### Added
+- Added a new `<RetreatPackage />` component to the homepage (`src/app/page.tsx`) to showcase integrated wellness stays.
+
+### Changed
+- Improved responsive layout in `Dining.tsx` by updating the image container to stretch fully on large screens (`lg:aspect-auto lg:h-full`) for better grid alignment.

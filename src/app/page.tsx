@@ -4,6 +4,7 @@ import Wellness from "@/components/Wellness";
 import Resort from "@/components/Resort";
 import Stay from "@/components/Stay";
 import Experiences from "@/components/Experiences";
+import RetreatPackage from "@/components/RetreatPackage";
 import Location from "@/components/Location";
 import Dining from "@/components/Dining";
 import Trust from "@/components/Trust";
@@ -20,6 +21,7 @@ export default function Home() {
       <Resort />
       <Stay />
       <Experiences />
+      <RetreatPackage />
       <Dining />
       <Location />
       <Trust />

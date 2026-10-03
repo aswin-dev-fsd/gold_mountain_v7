@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -46,11 +46,11 @@ export default function Dining() {
   return (
     <section ref={sectionRef} id="dining" className="w-full py-space-3xl bg-surface-cream relative">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl lg:items-start items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl lg:items-stretch items-center">
           
           {/* Dining Photography */}
           <div className="lg:col-span-6 relative order-2 lg:order-1 sm:mb-6 lg:mb-0">
-            <div ref={imageContainerRef} className="rounded-xl overflow-hidden shadow-2xl bg-canvas-ivory aspect-[4/3] group">
+            <div ref={imageContainerRef} className="rounded-xl overflow-hidden shadow-2xl bg-canvas-ivory aspect-[4/3] lg:aspect-auto lg:h-full w-full group">
               <div 
                 ref={imageRef}
                 className="w-full h-full bg-cover bg-center" 
