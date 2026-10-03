@@ -43,3 +43,10 @@
 - Arrow icons only appear on CTAs that had an arrow before (View Treatment Rituals, Explore the Resort, Discover Dining, Explore Farm to Table, Read All Journal Entries, Read Article, Explore Wellness / Ayurveda, Book Transfer, Enquire Now); the other arrow variants (outward, east) were unified to `arrow_forward`.
 - CTAs that never had an arrow (room and package Enquire, Request Long Stay Rates, Send Email, Send Enquiry, Email) are text only again; Plan Your Stay, Explore Wellness Programs, Explore All Experiences and Send Sanctuary Enquiry kept their original calendar / compass / send icons.
 - Book Transfer is set to `whitespace-nowrap shrink-0` so it stays on one line next to "Chauffeur Service Available".
+
+### Changed (hero and spacing follow-ups)
+- Home hero: removed the "Rooted in Nature · Inspired by Arunachala" pill and its entrance animation step.
+- Home hero: headline, copy and CTAs are now vertically centred between the nav and the bottom of the screen. The scroll chevron is positioned absolutely at the bottom edge (outside the content block) and the content padding is `pt-32 pb-12` (difference equals the 80px nav).
+- Inner pages: gap between a heading and its intro paragraph is 4px (`mb-1`) on Wellness (Our Philosophy, Ayurveda band), Ayurveda (The Science of Life, Therapies & Treatments) and Stay (room names), matching the label-to-heading gap. Headings above grids, forms and buttons are unchanged.
+- Inner-page section headings use the home heading style (`font-headline-lg`, 40px, tight tracking); the Journal article hero uses the standard display size.
+- Stay page: "Longer Retreats & Monthly Sadhana Stays" card now has equal space above and below (`py-16`).

@@ -172,7 +172,7 @@ function LongStayCallout() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="pt-16 px-6 md:px-12 bg-canvas-ivory">
+    <section ref={sectionRef} className="py-16 px-6 md:px-12 bg-canvas-ivory">
       <div ref={contentRef} className="max-w-7xl mx-auto p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
         <div className="flex items-center gap-space-md">
           <span className="material-symbols-outlined text-accent-gold text-[32px] shrink-0">calendar_today</span>
