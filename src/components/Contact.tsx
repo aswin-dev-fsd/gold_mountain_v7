@@ -38,7 +38,7 @@ export default function Contact() {
           <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-md font-normal">
             Plan your stay, explore our wellness offerings, or simply speak with our retreat advisors.
           </p>
-          <p className="font-body-md text-body-md text-surface-container-high/80 max-w-xl mx-auto mt-space-lg leading-relaxed">
+          <p className="font-body-md text-body-md text-surface-container-high/80 max-w-xl mx-auto mt-space-md leading-relaxed">
             Whether you seek a 3-night restorative pause, a 14-day Panchakarma journey, or a prolonged sabbatical, we are here to assist with travel, dietary preferences, and custom programs.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function Contact() {
         <div ref={formRef} className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl bg-forest-deep/70 backdrop-blur-md p-space-md sm:p-space-xl rounded-2xl shadow-2xl overflow-hidden lg:items-stretch">
           
           {/* Quick Form */}
-          <div className="lg:col-span-7 min-w-0 h-full flex flex-col justify-between">
+          <div className="lg:col-span-7 min-w-0 h-full flex flex-col">
             <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mb-space-md">Send a Direct Enquiry</h3>
             <form className="space-y-space-md" id="retreatEnquiryForm" onSubmit={(e) => { e.preventDefault(); document.getElementById('formSuccess')?.classList.remove('hidden'); }}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
@@ -132,6 +132,7 @@ export default function Contact() {
     </section>
   );
 }
+
 
 
 
