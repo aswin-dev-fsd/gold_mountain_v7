@@ -148,7 +148,6 @@ function EnquiryForm() {
 
         <button type="submit" className="mt-6 w-full md:w-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Send Enquiry</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </button>
       </form>
     </div>
@@ -181,7 +180,6 @@ function ContactDetails() {
         <p className="text-lg font-body-md text-forest-deep mb-4">goldmountainstay@gmail.com</p>
         <a href="mailto:goldmountainstay@gmail.com" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
 <span>Send Email</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
       </div>
 

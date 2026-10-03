@@ -84,7 +84,7 @@ export default function Contact() {
               
               <button type="submit" className="w-full cursor-pointer group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
 <span>Send Sanctuary Enquiry</span>
-<span className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>
 </button>
               
               <div className="hidden p-space-sm rounded bg-forest-deep text-accent-gold text-center font-body-sm" id="formSuccess">

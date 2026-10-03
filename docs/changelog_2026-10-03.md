@@ -25,7 +25,7 @@
 - Section backgrounds now alternate ivory / cream between hero and footer on every page with no neighbours sharing a colour:
   - Home: Trust is cream (cards switched to ivory) and Journal is ivory (cards switched to cream).
   - About, Ayurveda, Stay and Wellness: closing CTA bands changed from charcoal to ivory/cream with dark text; the outline Email button now uses forest green; the Ayurveda band on Wellness is cream; Wellness "Our Approach" is ivory; Stay rooms alternate cream / ivory.
-  - Footer is now `forest-deep` so it no longer merges with the charcoal Contact section on the home page.
+  - Footer is `forest-charcoal` again (same dark green as the Contact section above it), per client preference.
 - Heading sizes unified to the home scale: section headings 40px; in-layout titles (Stay room names, "Send an Enquiry", "Thank you.", package names, Journal article subheads) 28px, both at 1.05 line height.
 - Section header rows on home (Wellness, Stay, Journal) are top-aligned (`md:items-start`) so the eyebrow lines up with the right-hand column.
 
@@ -40,4 +40,6 @@
   - Dark sections (Experiences, Contact form, Journal article banner): gold fill with a dark arrow, same size and shape.
   - Secondary Email buttons stay outlined but gain the same arrow; WhatsApp buttons keep the brand-green pill and logo.
   - Hero buttons now use the standard size and arrow (previously 14px, rounded-xl, different icons). The nav Book button is unchanged.
-- Replaced mixed icons (arrow_outward, east, explore, send, calendar_add_on, a literal arrow character) with `arrow_forward`.
+- Arrow icons only appear on CTAs that had an arrow before (View Treatment Rituals, Explore the Resort, Discover Dining, Explore Farm to Table, Read All Journal Entries, Read Article, Explore Wellness / Ayurveda, Book Transfer, Enquire Now); the other arrow variants (outward, east) were unified to `arrow_forward`.
+- CTAs that never had an arrow (room and package Enquire, Request Long Stay Rates, Send Email, Send Enquiry, Email) are text only again; Plan Your Stay, Explore Wellness Programs, Explore All Experiences and Send Sanctuary Enquiry kept their original calendar / compass / send icons.
+- Book Transfer is set to `whitespace-nowrap shrink-0` so it stays on one line next to "Chauffeur Service Available".

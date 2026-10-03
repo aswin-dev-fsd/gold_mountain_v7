@@ -219,7 +219,7 @@ export default function Wellness() {
         <div ref={ctaRef} className="text-center">
           <a href="#stay" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Explore Wellness Programs</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_add_on</span>
 </a>
         </div>
         

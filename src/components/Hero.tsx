@@ -108,7 +108,7 @@ export default function Hero() {
 </Link>
           <Link href="/stay" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300">
 <span>Plan Your Stay</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_month</span>
 </Link>
         </div>
       </div>
