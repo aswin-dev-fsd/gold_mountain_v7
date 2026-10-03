@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -59,7 +59,6 @@ export default function Journal() {
                 <div>
                   <div className="flex items-center gap-space-sm mb-space-xs">
                     <span className="px-2 py-0.5 rounded bg-canvas-ivory text-forest-deep font-label-sm text-label-sm uppercase">{article.category}</span>
-                    <span className="font-label-sm text-label-sm text-on-surface-variant">{article.readTime}</span>
                   </div>
                   <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
                     {article.title}
@@ -82,6 +81,7 @@ export default function Journal() {
     </section>
   );
 }
+
 
 
 

@@ -92,11 +92,11 @@ export default function Hero() {
         
         {/* Headline */}
         <h1 ref={headlineRef} className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory max-w-4xl tracking-tight mb-space-md font-normal">
-          A Wellness Stay in the Presence of <span className="text-accent-gold font-normal">Arunachala.</span>
+          A Wellness Stay in the Presence <span className="block mt-2">of <span className="text-accent-gold font-normal">Arunachala.</span></span>
         </h1>
         
         {/* Supporting Copy */}
-        <p ref={paraRef} className="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl mx-auto mb-space-xl font-light leading-relaxed">
+        <p ref={paraRef} className="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl mx-auto mb-space-xl font-light leading-relaxed text-balance">
           A peaceful resort where traditional wellness, healthy food, and nature come together in unhurried silence.
         </p>
         

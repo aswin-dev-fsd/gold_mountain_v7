@@ -45,7 +45,7 @@ function AboutHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           A place created <span className="text-accent-gold block mt-2">with purpose.</span>
         </h1>
-        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
+        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed text-balance">
           Discover the story behind Gold Mountain, built on a foundation of harmony, traditional wellness, and deep respect for the natural world.
         </p>
       </div>

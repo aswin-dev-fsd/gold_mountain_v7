@@ -45,7 +45,7 @@ function AyurvedaHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           Traditional wisdom, <span className="text-accent-gold block mt-2">thoughtfully experienced.</span>
         </h1>
-        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
+        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed text-balance">
           A gentle, profound approach to well-being that restores your body&apos;s natural balance.
         </p>
       </div>

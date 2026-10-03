@@ -42,9 +42,9 @@ function WellnessHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
-          A slower way back to <span className="text-accent-gold">yourself.</span>
+          A slower way back <span className="block mt-2">to <span className="text-accent-gold">yourself.</span></span>
         </h1>
-        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
+        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed text-balance">
           Explore traditional wellness practices, nourishing food and quiet spaces designed to help you reconnect with body and mind.
         </p>
       </div>

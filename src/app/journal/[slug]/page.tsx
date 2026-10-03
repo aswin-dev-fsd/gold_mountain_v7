@@ -41,7 +41,6 @@ export default async function JournalArticlePage({ params }: { params: Params })
         <div className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
           <div className="flex items-center gap-4 mb-6 text-canvas-ivory/90">
             <span className="px-3 py-1 rounded bg-canvas-ivory/15 backdrop-blur-sm uppercase tracking-widest font-label-sm text-sm">{article.category}</span>
-            <span className="font-label-sm text-sm tracking-wider">{article.readTime}</span>
           </div>
           <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight">
             {article.title}
@@ -82,7 +81,6 @@ export default async function JournalArticlePage({ params }: { params: Params })
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">{item.category}</span>
-                    <span className="font-label-sm text-label-sm text-on-surface-variant">{item.readTime}</span>
                   </div>
                   <h3 className="font-headline-sm text-xl text-forest-deep mb-6">{item.title}</h3>
                   <Link href={`/journal/${item.slug}`} className="mt-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
@@ -111,4 +109,5 @@ export default async function JournalArticlePage({ params }: { params: Params })
     </main>
   );
 }
+
 

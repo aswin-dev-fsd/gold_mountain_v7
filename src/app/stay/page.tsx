@@ -43,9 +43,9 @@ function StayHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
-          A peaceful place to <span className="text-accent-gold">stay.</span>
+          A peaceful place <span className="block mt-2">to <span className="text-accent-gold">stay.</span></span>
         </h1>
-        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed">
+        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed text-balance">
           Peaceful spaces in nature, made for rest. Deluxe and Suite rooms include breakfast and lunch. The Family Suite includes all meals.
         </p>
       </div>
@@ -113,11 +113,11 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
 
   return (
     <section ref={sectionRef} className={`py-space-3xl px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden ${index % 2 === 0 ? "bg-surface-cream" : "bg-canvas-ivory"}`}>
-      <div className={`max-w-7xl mx-auto flex flex-col ${room.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center lg:items-start gap-16`}>
+      <div className={`max-w-7xl mx-auto flex flex-col ${room.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center lg:items-stretch gap-16`}>
         
         {/* Image Side */}
         <div className="w-full lg:w-1/2 relative">
-          <div className="aspect-[4/3] w-full overflow-hidden relative rounded-xl">
+          <div className="aspect-[4/3] lg:aspect-auto w-full lg:h-full overflow-hidden relative rounded-xl">
             <img 
               ref={imageRef} 
               src={room.image} 
