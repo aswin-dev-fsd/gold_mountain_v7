@@ -63,16 +63,9 @@ export default async function JournalArticlePage({ params }: { params: Params })
             {article.intro}
           </p>
 
-          <div className="space-y-12">
-            {article.sections.map((section) => (
-              <section key={section.heading}>
-                <h2 className="font-headline-md text-headline-md font-normal leading-[1.05] text-forest-deep mb-5">{section.heading}</h2>
-                <div className="space-y-5 text-forest-deep/80 font-body-md text-lg leading-relaxed">
-                  {section.paragraphs.map((p) => (
-                    <p key={p}>{p}</p>
-                  ))}
-                </div>
-              </section>
+          <div className="space-y-6 text-forest-deep/80 font-body-md text-lg leading-relaxed">
+            {article.sections.flatMap(section => section.paragraphs).map((p, index) => (
+              <p key={index}>{p}</p>
             ))}
           </div>
         </div>
@@ -118,3 +111,4 @@ export default async function JournalArticlePage({ params }: { params: Params })
     </main>
   );
 }
+
