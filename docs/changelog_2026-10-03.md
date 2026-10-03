@@ -77,3 +77,7 @@
 - Adjusted entrance animation timelines in `Hero.tsx` and `Footer.tsx` to match the faster global pacing.
 - Enhanced hero readability across `Stay`, `Wellness`, and `Contact` pages by introducing layered gradient/scrim overlays (`bg-gradient-to-b` and `radial-gradient`) behind the text.
 - Re-adjusted margins and text alignments in Hero sections (e.g., separating "stay." onto its own block on the Contact page).
+
+### Changed
+- Refactored `Journal.tsx` card links: replaced the solid button with a subtle underlined text link for a cleaner aesthetic.
+- Trimmed down the `client-details-needed.txt` file by removing completed/resolved items.

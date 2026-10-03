@@ -55,7 +55,7 @@ export default function Journal() {
                   style={{ backgroundImage: `url('${article.image}')` }}
                 ></div>
               </div>
-              <div className="p-space-lg flex-1 flex flex-col justify-between">
+              <div className="p-space-lg flex-1 flex flex-col">
                 <div>
                   <div className="flex items-center gap-space-sm mb-space-xs">
                     <span className="px-2 py-0.5 rounded bg-canvas-ivory text-forest-deep font-label-sm text-label-sm uppercase">{article.category}</span>
@@ -67,11 +67,10 @@ export default function Journal() {
                     {article.excerpt}
                   </p>
                 </div>
-                <div className="pt-space-md border-t border-border-muted mt-space-md">
-                  <Link href={`/journal/${article.slug}`} className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-<span>Read Article</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</Link>
+                <div className="mt-auto pt-space-md">
+                  <Link href={`/journal/${article.slug}`} className="group inline-flex font-label-sm text-label-sm uppercase tracking-widest text-forest-deep font-semibold">
+                    <span className="border-b border-forest-deep/40 group-hover:border-forest-deep transition-colors pb-0.5">Read More</span>
+                  </Link>
                 </div>
               </div>
             </article>
