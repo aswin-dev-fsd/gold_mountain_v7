@@ -49,7 +49,7 @@ export default function Dining() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl lg:items-start items-center">
           
           {/* Dining Photography */}
-          <div className="lg:col-span-6 relative order-2 lg:order-1">
+          <div className="lg:col-span-6 relative order-2 lg:order-1 sm:mb-6 lg:mb-0">
             <div ref={imageContainerRef} className="rounded-xl overflow-hidden shadow-2xl bg-canvas-ivory aspect-[4/3] group">
               <div 
                 ref={imageRef}

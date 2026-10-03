@@ -97,7 +97,7 @@ export default function Resort() {
           </div>
           
           {/* Right: Layered Image Composition */}
-          <div className="lg:col-span-6 relative">
+          <div className="lg:col-span-6 relative sm:mb-6 lg:mb-0">
             <div ref={rightImageContainerRef} className="rounded-xl overflow-hidden shadow-2xl bg-canvas-ivory aspect-[4/3] lg:aspect-auto lg:absolute lg:inset-0">
               <div 
                 ref={rightImageRef}
