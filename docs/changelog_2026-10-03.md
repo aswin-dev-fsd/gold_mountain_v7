@@ -33,3 +33,11 @@
 - Hero CTAs (14px), the enquiry form submit and the nav Book button are intentionally larger and were not changed.
 - Gold small text on ivory/cream is about 2.2:1 contrast; consider a darker gold token for text.
 - The Journal article page title stays at 48px (the home 56px would wrap to 4-5 lines).
+
+### Changed (CTA style)
+- All CTAs now follow the "View Treatment Rituals" pattern: 12px / weight 600 label, `rounded-lg`, 24px x 10px padding, 42px min height, and a trailing `arrow_forward` icon that nudges right on hover.
+  - Light sections: solid forest-green button with a gold arrow (home Wellness, Resort, Stay Enquire / Request Long Stay Rates, Dining, Location Book Transfer, Journal; About / Wellness / Ayurveda / Stay / Contact pages; package Enquire buttons are now solid instead of outlined).
+  - Dark sections (Experiences, Contact form, Journal article banner): gold fill with a dark arrow, same size and shape.
+  - Secondary Email buttons stay outlined but gain the same arrow; WhatsApp buttons keep the brand-green pill and logo.
+  - Hero buttons now use the standard size and arrow (previously 14px, rounded-xl, different icons). The nav Book button is unchanged.
+- Replaced mixed icons (arrow_outward, east, explore, send, calendar_add_on, a literal arrow character) with `arrow_forward`.
