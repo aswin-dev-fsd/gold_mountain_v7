@@ -61,7 +61,7 @@ export default function Experiences() {
                 Direct sacred sightlines to Arunachala in the East and Parvati Malai to the West, creating a unique energetic balance honoring the divine masculine and feminine principles.
               </p>
             </div>
-            <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
+            <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
               <span className="font-label-sm text-label-sm text-accent-gold">Dawn &amp; Dusk Viewpoints</span>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function Experiences() {
                 Home to indigenous Gir and Kangayam cows cared for with gentle reverence. Guests may participate in peaceful morning feedings and discover the spiritual calm of the sanctuary.
               </p>
             </div>
-            <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
+            <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
               <span className="font-label-sm text-label-sm text-accent-gold">Native Indigenous Breeds</span>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Experiences() {
                 A serene expanse of clear natural water reflecting the golden silhouette of the mountain at sunrise, surrounded by native water lilies and silent stepped stone ghats.
               </p>
             </div>
-            <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
+            <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
               <span className="font-label-sm text-label-sm text-accent-gold">Silent Contemplation</span>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function Experiences() {
                 The spatial plan honors Pancha Bhoota: Earth, Water, Fire, Air, and Space. Healing pathways are specifically sequenced to balance sensory stimuli and restore equilibrium.
               </p>
             </div>
-            <div className="mt-space-lg pt-space-sm border-t border-forest-deep">
+            <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
               <span className="font-label-sm text-label-sm text-accent-gold">Vedic Spatial Design</span>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Experiences() {
                 Walk through dense rows of Brahmi, Ashwagandha, Tulsi, Moringa, and heirloom indigenous vegetables. Learn herbal preparations and taste wild herbs harvested fresh during morning quiet walks.
               </p>
             </div>
-            <div className="mt-space-lg pt-space-sm border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
+            <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 min-h-[42px]">
               <span className="font-label-sm text-label-sm text-accent-gold">Guided Daily Walks at 07:30 AM</span>
               <a href="#dining" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
 <span>Explore Farm To Table</span>
@@ -152,6 +152,7 @@ export default function Experiences() {
     </section>
   );
 }
+
 
 
 
