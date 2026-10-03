@@ -50,3 +50,20 @@
 - Inner pages: gap between a heading and its intro paragraph is 4px (`mb-1`) on Wellness (Our Philosophy, Ayurveda band), Ayurveda (The Science of Life, Therapies & Treatments) and Stay (room names), matching the label-to-heading gap. Headings above grids, forms and buttons are unchanged.
 - Inner-page section headings use the home heading style (`font-headline-lg`, 40px, tight tracking); the Journal article hero uses the standard display size.
 - Stay page: "Longer Retreats & Monthly Sadhana Stays" card now has equal space above and below (`py-16`).
+
+### Changed (section spacing)
+- Top and bottom spacing of every section reduced from 6rem to 5rem (80px). The `space-3xl` spacing token in `tailwind.config.ts` is now `5rem`; all home sections and the top of the footer use it.
+- Inner-page sections (Wellness, Ayurveda, Stay, About, Contact, Journal article) now use `py-space-3xl` instead of mixed `py-16` / `py-20` / `py-24` / `py-32`, so one token controls the vertical rhythm site-wide. About "Our Story" / "Our Philosophy" and the Wellness Ayurveda band were 8rem, and the Stay "Longer Retreats" strip (previously `py-16`, 4rem) is now 5rem like every other section.
+- `/contact` header uses `pt-40 pb-space-3xl`: 160px includes the fixed 5rem nav, so the visible gap below the nav equals the 80px bottom gap.
+- Hero image sections are unchanged. The footer keeps its 2.5rem bottom padding (copyright row) and gets the new 5rem top.
+
+### Fixed (even top and bottom spacing)
+- Home Location: removed the trailing `mb-space-2xl` under the last grid, which left 161px below the content against 80px above.
+- Ayurveda "Therapies & Treatments": `last:mb-0` on the accordion items removes a 4px stray margin under the last item.
+- Home Resort and Dining at 640-1023px: the image column gets `sm:mb-6 lg:mb-0` so the overhanging "Vernacular Heritage" / "Ahara Chikitsa" card no longer cuts the bottom spacing to 55px.
+- Added `scroll-pt-20` to `<html>` so in-page anchor links (#stay, #enquiry, #location and others) land with the full 80px of top spacing under the fixed nav instead of about 16px.
+- Verified in the browser at 375, 639, 700, 768, 900, 1023, 1100, 1440 and 1920px: every padded section measures 80px top and 80px bottom (within 1-2px) and no page overflows horizontally.
+
+### Known issues
+- Section spacing is not responsive, so 80px also applies on phones and may feel generous on small screens.
+- Footer top (80px) and bottom (40px) are intentionally different because the bottom holds the copyright row.
