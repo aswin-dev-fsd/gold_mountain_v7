@@ -50,7 +50,7 @@ export default function Experiences() {
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-2xl">
           
           {/* Experience 1 */}
-          <div className="p-space-xl rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
+          <div className="p-space-lg rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
             <div>
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">visibility</span>
@@ -67,7 +67,7 @@ export default function Experiences() {
           </div>
           
           {/* Experience 2 */}
-          <div className="p-space-xl rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
+          <div className="p-space-lg rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
             <div>
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">cruelty_free</span>
@@ -84,7 +84,7 @@ export default function Experiences() {
           </div>
           
           {/* Experience 3 */}
-          <div className="p-space-xl rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
+          <div className="p-space-lg rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
             <div>
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">water_lux</span>
@@ -101,7 +101,7 @@ export default function Experiences() {
           </div>
           
           {/* Experience 4 */}
-          <div className="p-space-xl rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
+          <div className="p-space-lg rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between hover:bg-forest-charcoal transition-colors">
             <div>
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">blur_on</span>
@@ -118,7 +118,7 @@ export default function Experiences() {
           </div>
           
           {/* Experience 5 */}
-          <div className="p-space-xl rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between lg:col-span-2 hover:bg-forest-charcoal transition-colors">
+          <div className="p-space-lg rounded-xl bg-forest-charcoal/80 shadow-md flex flex-col justify-between lg:col-span-2 hover:bg-forest-charcoal transition-colors">
             <div>
               <div className="w-12 h-12 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">potted_plant</span>
@@ -152,6 +152,7 @@ export default function Experiences() {
     </section>
   );
 }
+
 
 
 

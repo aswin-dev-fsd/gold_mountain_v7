@@ -47,7 +47,7 @@ export default function Contact() {
         <div ref={formRef} className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl bg-forest-deep/70 backdrop-blur-md p-space-md sm:p-space-xl rounded-2xl shadow-2xl overflow-hidden lg:items-stretch">
           
           {/* Quick Form */}
-          <div className="lg:col-span-7 min-w-0 h-full flex flex-col">
+          <div className="lg:col-span-7 min-w-0 flex flex-col h-full">
             <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mb-space-md">Send a Direct Enquiry</h3>
             <form className="space-y-space-md" id="retreatEnquiryForm" onSubmit={(e) => { e.preventDefault(); document.getElementById('formSuccess')?.classList.remove('hidden'); }}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
@@ -87,14 +87,14 @@ export default function Contact() {
 <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>
 </button>
               
-              <div className="hidden p-space-sm rounded bg-forest-deep text-accent-gold text-center font-body-sm" id="formSuccess">
-                Thank you. Our retreat advisor will be in touch within 12 hours.
-              </div>
-            </form>
+              </form>
+            <div className="hidden p-space-sm rounded bg-forest-deep text-accent-gold text-center font-body-sm mt-4" id="formSuccess">
+              Thank you. Our retreat advisor will be in touch within 12 hours.
+            </div>
           </div>
           
           {/* Direct Channels & Concierge Card */}
-          <div className="lg:col-span-5 min-w-0 h-full flex flex-col justify-between p-space-md sm:p-space-lg rounded-xl bg-forest-charcoal shadow-inner">
+          <div className="lg:col-span-5 min-w-0 flex flex-col justify-between p-space-md sm:p-space-lg rounded-xl bg-forest-charcoal shadow-inner h-full">
             <div className="min-w-0">
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mb-space-md">Instant Connection</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/80 mb-space-lg leading-relaxed">
