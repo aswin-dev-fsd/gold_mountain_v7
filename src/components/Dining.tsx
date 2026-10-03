@@ -117,7 +117,7 @@ export default function Dining() {
             <div ref={ctaRef}>
               <a 
                 href="#enquiry" 
-                className="inline-flex items-center gap-space-sm bg-forest-deep text-canvas-ivory px-space-lg py-3 rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold shadow-md hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group min-h-[44px] hover:-translate-y-0.5"
+                className="inline-flex items-center gap-space-sm bg-forest-deep text-canvas-ivory rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold shadow-md hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]"
               >
                 <span>Discover Dining &amp; Menus</span>
                 <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">arrow_outward</span>

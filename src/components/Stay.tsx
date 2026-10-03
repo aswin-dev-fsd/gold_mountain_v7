@@ -41,7 +41,7 @@ export default function Stay() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
+        <div className="flex flex-col md:flex-row md:items-start justify-between mb-space-xl gap-space-lg">
           <div ref={introRef}>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
@@ -89,7 +89,7 @@ export default function Stay() {
                 </div>
                 <a 
                   href="#enquiry" 
-                  className="px-8 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
+                  className="px-space-lg py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
                 >
                   Enquire
                 </a>
@@ -126,7 +126,7 @@ export default function Stay() {
                 </div>
                 <a 
                   href="#enquiry" 
-                  className="px-8 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
+                  className="px-space-lg py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
                 >
                   Enquire
                 </a>
@@ -163,7 +163,7 @@ export default function Stay() {
                 </div>
                 <a 
                   href="#enquiry" 
-                  className="px-8 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
+                  className="px-space-lg py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] inline-flex items-center justify-center"
                 >
                   Enquire
                 </a>

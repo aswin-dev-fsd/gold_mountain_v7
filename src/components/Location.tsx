@@ -150,7 +150,7 @@ export default function Location() {
               
               <div className="travel-card mt-space-lg pt-space-md border-t border-border-muted flex items-center justify-between gap-2 mt-auto">
                 <span className="font-body-sm text-body-sm text-forest-deep font-medium">Chauffeur Service Available</span>
-                <a href="/contact" className="inline-flex items-center justify-center font-label-sm text-label-sm uppercase tracking-wider text-canvas-ivory bg-forest-deep hover:bg-forest-charcoal border border-forest-deep hover:border-accent-gold/40 px-4 py-2 min-h-[38px] rounded transition-all group font-semibold shadow-sm active:scale-95">
+                <a href="/contact" className="inline-flex items-center justify-center uppercase tracking-wider text-canvas-ivory bg-forest-deep hover:bg-forest-charcoal border border-forest-deep hover:border-accent-gold/40 rounded-lg transition-all group font-semibold shadow-sm active:scale-95 font-label-md text-label-md px-space-lg py-2.5 min-h-[42px]">
                   Book Transfer <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </div>

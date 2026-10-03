@@ -131,7 +131,7 @@ export default function Experiences() {
             </div>
             <div className="mt-space-lg pt-space-sm border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
               <span className="font-label-sm text-label-sm text-accent-gold">Guided Daily Walks at 07:30 AM</span>
-              <a href="#dining" className="inline-flex items-center justify-center gap-space-xs px-4 py-2 rounded-lg bg-accent-gold text-forest-charcoal font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all min-h-[36px] group">
+              <a href="#dining" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-accent-gold text-forest-charcoal uppercase tracking-wider font-semibold shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all group font-label-md text-label-md px-space-lg py-2.5 min-h-[42px]">
                 <span>Explore Farm To Table</span>
                 <span className="material-symbols-outlined text-forest-charcoal text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </a>
@@ -144,7 +144,7 @@ export default function Experiences() {
         <div ref={ctaRef} className="text-center">
           <a 
             href="#enquiry" 
-            className="inline-flex items-center justify-center gap-space-sm bg-accent-gold text-forest-charcoal px-space-xl py-3.5 sm:py-space-md rounded-lg font-label-lg text-label-lg uppercase tracking-wider shadow-lg hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all font-semibold min-h-[48px] hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center gap-space-xs bg-accent-gold text-forest-charcoal px-space-lg py-2.5 rounded-lg font-label-md text-label-md uppercase tracking-wider shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold active:scale-95 transition-all font-semibold min-h-[42px]"
           >
             <span>Explore All Experiences</span>
             <span className="material-symbols-outlined text-[18px]">explore</span>

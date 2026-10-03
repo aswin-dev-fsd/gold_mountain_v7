@@ -26,7 +26,7 @@ export default function Trust() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="w-full py-space-3xl bg-canvas-ivory relative">
+    <section ref={sectionRef} className="w-full py-space-3xl bg-surface-cream relative">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
@@ -44,22 +44,22 @@ export default function Trust() {
         
         {/* Trust Badges Bar */}
         <div ref={badgesRef} className="grid grid-cols-2 md:grid-cols-4 gap-space-sm sm:gap-space-md mb-space-2xl">
-          <div className="p-space-md sm:p-space-lg rounded-xl bg-surface-cream text-center flex flex-col items-center shadow-xs">
+          <div className="p-space-md sm:p-space-lg rounded-xl bg-canvas-ivory text-center flex flex-col items-center shadow-xs">
             <span className="material-symbols-outlined text-accent-gold text-[32px] mb-2">verified</span>
             <h3 className="font-headline-sm text-headline-sm text-forest-deep">Certified Vaidyas</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">BAMS-qualified resident Ayurvedic doctors</p>
           </div>
-          <div className="p-space-md sm:p-space-lg rounded-xl bg-surface-cream text-center flex flex-col items-center shadow-xs">
+          <div className="p-space-md sm:p-space-lg rounded-xl bg-canvas-ivory text-center flex flex-col items-center shadow-xs">
             <span className="material-symbols-outlined text-accent-gold text-[32px] mb-2">compost</span>
             <h3 className="font-headline-sm text-headline-sm text-forest-deep">100% Organic Soil</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Zero chemical pesticides or synthetic inputs</p>
           </div>
-          <div className="p-space-md sm:p-space-lg rounded-xl bg-surface-cream text-center flex flex-col items-center shadow-xs">
+          <div className="p-space-md sm:p-space-lg rounded-xl bg-canvas-ivory text-center flex flex-col items-center shadow-xs">
             <span className="material-symbols-outlined text-accent-gold text-[32px] mb-2">foundation</span>
             <h3 className="font-headline-sm text-headline-sm text-forest-deep">Earthen Architecture</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Low-carbon natural lime, stone &amp; clay</p>
           </div>
-          <div className="p-space-md sm:p-space-lg rounded-xl bg-surface-cream text-center flex flex-col items-center shadow-xs">
+          <div className="p-space-md sm:p-space-lg rounded-xl bg-canvas-ivory text-center flex flex-col items-center shadow-xs">
             <span className="material-symbols-outlined text-accent-gold text-[32px] mb-2">self_improvement</span>
             <h3 className="font-headline-sm text-headline-sm text-forest-deep">Traditional Lineage</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Rooted in ancient classical Kerala &amp; Tamil texts</p>
@@ -69,7 +69,7 @@ export default function Trust() {
         {/* Real Guest Reflections */}
         <div ref={reviewsRef} className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
           {/* Review 1 */}
-          <div className="p-space-xl rounded-xl bg-surface-cream shadow-sm flex flex-col justify-between">
+          <div className="p-space-xl rounded-xl bg-canvas-ivory shadow-sm flex flex-col justify-between">
             <div className="space-y-space-md">
               <div className="flex text-accent-gold">
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -89,7 +89,7 @@ export default function Trust() {
           </div>
           
           {/* Review 2 */}
-          <div className="p-space-xl rounded-xl bg-surface-cream shadow-sm flex flex-col justify-between">
+          <div className="p-space-xl rounded-xl bg-canvas-ivory shadow-sm flex flex-col justify-between">
             <div className="space-y-space-md">
               <div className="flex text-accent-gold">
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -109,7 +109,7 @@ export default function Trust() {
           </div>
           
           {/* Review 3 */}
-          <div className="p-space-xl rounded-xl bg-surface-cream shadow-sm flex flex-col justify-between">
+          <div className="p-space-xl rounded-xl bg-canvas-ivory shadow-sm flex flex-col justify-between">
             <div className="space-y-space-md">
               <div className="flex text-accent-gold">
                 <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>

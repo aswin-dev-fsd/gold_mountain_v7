@@ -91,7 +91,7 @@ export default function Resort() {
             <div>
               <a 
                 href="#stay" 
-                className="inline-flex items-center gap-space-sm bg-forest-deep text-canvas-ivory px-space-lg py-3 rounded-lg font-label-md text-label-md uppercase tracking-wider shadow-md hover:bg-forest-charcoal hover:border-accent-gold/50 border border-forest-deep active:scale-95 transition-all group min-h-[44px]"
+                className="inline-flex items-center gap-space-sm bg-forest-deep text-canvas-ivory rounded-lg font-label-md text-label-md uppercase tracking-wider shadow-md hover:bg-forest-charcoal hover:border-accent-gold/50 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]"
               >
                 <span>Explore the Resort</span>
                 <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">arrow_outward</span>

@@ -22,11 +22,11 @@ export default function Journal() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} id="journal" className="w-full py-space-3xl bg-surface-cream relative">
+    <section ref={sectionRef} id="journal" className="w-full py-space-3xl bg-canvas-ivory relative">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div ref={introRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
+        <div ref={introRef} className="flex flex-col md:flex-row md:items-start justify-between mb-space-xl gap-space-lg">
           <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
@@ -39,7 +39,7 @@ export default function Journal() {
               Reflections on conscious living, ancient science, and sacred geography.
             </p>
           </div>
-          <a href="#journal" className="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] group">
+          <a href="#journal" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]">
             <span>Read All Journal Entries</span>
             <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
@@ -48,7 +48,7 @@ export default function Journal() {
         {/* 3 Featured Journal Articles */}
         <div ref={articlesRef} className="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
           {JOURNAL_ARTICLES.map((article) => (
-            <article key={article.slug} className="flex flex-col rounded-xl overflow-hidden bg-canvas-ivory shadow-sm group hover:shadow-md hover:-translate-y-1 transition-all">
+            <article key={article.slug} className="flex flex-col rounded-xl overflow-hidden bg-surface-cream shadow-sm group hover:shadow-md hover:-translate-y-1 transition-all">
               <div className="w-full aspect-[16/10] overflow-hidden">
                 <div
                   className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
@@ -58,7 +58,7 @@ export default function Journal() {
               <div className="p-space-lg flex-1 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-space-sm mb-space-xs">
-                    <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">{article.category}</span>
+                    <span className="px-2 py-0.5 rounded bg-canvas-ivory text-forest-deep font-label-sm text-label-sm uppercase">{article.category}</span>
                     <span className="font-label-sm text-label-sm text-on-surface-variant">{article.readTime}</span>
                   </div>
                   <h3 className="font-headline-sm text-headline-sm text-forest-deep group-hover:text-accent-gold transition-colors">
@@ -71,7 +71,7 @@ export default function Journal() {
                 <div className="pt-space-md border-t border-border-muted mt-space-md">
                   <Link
                     href={`/journal/${article.slug}`}
-                    className="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px]"
+                    className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all px-space-lg py-2.5 min-h-[42px]"
                   >
                     Read Article <span className="material-symbols-outlined text-accent-gold text-[16px]">east</span>
                   </Link>

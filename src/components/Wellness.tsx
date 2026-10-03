@@ -54,7 +54,7 @@ export default function Wellness() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Header */}
-        <div ref={headerRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
+        <div ref={headerRef} className="flex flex-col md:flex-row md:items-start justify-between mb-space-xl gap-space-lg">
           <div className="max-w-2xl">
             <div className="flex items-center gap-space-xs mb-space-xs">
 
@@ -116,7 +116,7 @@ export default function Wellness() {
               </div>
             </div>
             <div className="pt-space-sm">
-              <a href="#enquiry" className="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all min-h-[42px] group">
+              <a href="#enquiry" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]">
                 <span>View Treatment Rituals</span>
                 <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </a>
@@ -219,7 +219,7 @@ export default function Wellness() {
         <div ref={ctaRef} className="text-center">
           <a 
             href="#stay" 
-            className="inline-flex items-center justify-center gap-space-sm bg-forest-deep text-canvas-ivory px-space-lg sm:px-space-xl py-3 sm:py-space-md rounded-lg font-label-lg text-label-lg uppercase tracking-wider shadow-md hover:bg-forest-charcoal hover:border-accent-gold/60 border border-forest-deep hover:-translate-y-0.5 active:scale-95 transition-all min-h-[48px]"
+            className="inline-flex items-center justify-center gap-space-sm bg-forest-deep text-canvas-ivory rounded-lg font-label-md text-label-md uppercase tracking-wider shadow-md hover:bg-forest-charcoal hover:border-accent-gold/60 border border-forest-deep active:scale-95 transition-all px-space-lg py-2.5 min-h-[42px]"
           >
             <span>Explore Wellness Programs</span>
             <span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_add_on</span>

@@ -11,7 +11,6 @@ export default function Hero() {
   const bgRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   
-  const subtitleRef = useRef<HTMLDivElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const paraRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
@@ -30,15 +29,10 @@ export default function Hero() {
       { scale: 1.05, opacity: 0 }, 
       { scale: 1, opacity: 1, duration: 2 }
     )
-    .fromTo(subtitleRef.current,
-      { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1 },
-      "-=1.2"
-    )
     .fromTo(headlineRef.current,
       { y: 40, opacity: 0 },
       { y: 0, opacity: 1, duration: 1.2 },
-      "-=0.8"
+      "-=1.2"
     )
     .fromTo(paraRef.current,
       { y: 30, opacity: 0 },
@@ -94,19 +88,7 @@ export default function Hero() {
       </div>
       
       {/* Hero Content Container */}
-      <div ref={contentRef} className="relative z-20 w-full max-w-5xl mx-auto px-margin lg:px-margin-desktop pt-32 pb-8 text-center flex flex-col items-center">
-        
-        {/* Subtitle Pill */}
-        <div ref={subtitleRef} className="inline-flex items-center gap-space-xs sm:gap-space-sm px-space-sm sm:px-space-md py-1 sm:py-space-xs rounded-full bg-forest-deep/80 border border-accent-gold/30 backdrop-blur-md shadow-md mb-space-lg max-w-[calc(100%-1rem)]">
-          <div className="flex items-center gap-1.5 shrink-0">
-            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-forest-deep"></span>
-            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-gold"></span>
-            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent-gold"></span>
-          </div>
-          <span className="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-wider sm:tracking-widest text-accent-gold text-center leading-tight">
-            Rooted in Nature · Inspired by Arunachala
-          </span>
-        </div>
+      <div ref={contentRef} className="relative z-20 w-full max-w-5xl mx-auto px-margin lg:px-margin-desktop pt-32 pb-12 text-center flex flex-col items-center">
         
         {/* Headline */}
         <h1 ref={headlineRef} className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory max-w-4xl tracking-tight mb-space-md font-normal">
@@ -135,11 +117,11 @@ export default function Hero() {
             <span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_month</span>
           </Link>
         </div>
-        
-        {/* Micro Indicator */}
-        <div ref={indicatorRef} className="mt-space-2xl flex items-center gap-space-xs text-surface-container-high/60">
-          <span className="material-symbols-outlined text-[20px] text-accent-gold animate-bounce">expand_more</span>
-        </div>
+      </div>
+
+      {/* Micro Indicator (out of flow so the content stays centred) */}
+      <div ref={indicatorRef} className="absolute bottom-8 inset-x-0 z-20 flex justify-center text-surface-container-high/60">
+        <span className="material-symbols-outlined text-[20px] text-accent-gold animate-bounce">expand_more</span>
       </div>
     </section>
   );
