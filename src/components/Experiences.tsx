@@ -129,13 +129,9 @@ export default function Experiences() {
                 Walk through dense rows of Brahmi, Ashwagandha, Tulsi, Moringa, and heirloom indigenous vegetables. Learn herbal preparations and taste wild herbs harvested fresh during morning quiet walks.
               </p>
             </div>
-            <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 min-h-[42px]">
-              <span className="font-label-sm text-label-sm text-accent-gold">Guided Daily Walks at 07:30 AM</span>
-              <a href="#dining" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
-<span>Explore Farm To Table</span>
-<span className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-            </div>
+            <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
+                <span className="font-label-sm text-label-sm text-accent-gold">Guided Daily Walks at 07:30 AM</span>
+              </div>
           </div>
           
         </div>
@@ -152,6 +148,7 @@ export default function Experiences() {
     </section>
   );
 }
+
 
 
 
