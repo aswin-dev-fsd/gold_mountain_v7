@@ -83,12 +83,12 @@ export default function Navigation() {
       <header ref={headerRef} className="fixed top-0 left-0 w-full z-40 bg-canvas-ivory/95 backdrop-blur-md transition-shadow duration-300 shadow-[0_1px_8px_rgba(27,50,36,0.05)]">
         <div className="h-20 w-full px-4 sm:px-margin lg:px-6 xl:px-6 2xl:px-margin-desktop flex items-center justify-between gap-2 xl:gap-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0 group" aria-label="Gold Mountain Wellness Sanctuary Home">
-            <img alt="Gold Mountain Wellness Resort" className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105" src="/images/logo.png" />
+          <Link href="/" className="flex items-center flex-1 justify-start group" aria-label="Gold Mountain Wellness Sanctuary Home">
+            <img alt="Gold Mountain Wellness Resort" className="h-16 sm:h-[76px] w-auto object-contain transition-transform duration-200 group-hover:scale-105" src="/images/logo.png" />
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden xl:flex items-center gap-2 2xl:gap-5 shrink">
+          <nav className="hidden xl:flex items-center justify-center shrink gap-2 2xl:gap-5">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.label}
@@ -101,7 +101,7 @@ export default function Navigation() {
           </nav>
 
           {/* Right Action & Utilities */}
-          <div className="flex items-center gap-1.5 sm:gap-2.5 2xl:gap-4 shrink-0">
+          <div className="flex items-center justify-end flex-1 gap-1.5 sm:gap-2.5 2xl:gap-4">
             {/* Compact Currency Dropdown (Desktop / Tablet) */}
             <div ref={currencyRef} className="relative hidden md:block">
               <button
@@ -198,7 +198,7 @@ export default function Navigation() {
           {/* Drawer Top Header */}
           <div className="flex items-center justify-between pb-4 border-b border-accent-gold/25">
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
-              <img alt="Gold Mountain Logo" className="h-9 sm:h-10 w-auto object-contain" src="/images/logo.png" />
+              <img alt="Gold Mountain Logo" className="h-14 sm:h-16 w-auto object-contain" src="/images/logo.png" />
             </Link>
             <button
               type="button"
