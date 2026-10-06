@@ -106,28 +106,24 @@ function FounderProfile() {
 
         {/* Right: Structured Text Blocks */}
         <div ref={contentRef} className="w-full lg:w-7/12 flex flex-col items-start text-left">
-          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">The Founder</span>
+          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Meet Our Founder</span>
           
-          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8">
-            [FOUNDER NAME TO BE PROVIDED]
+          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-2">
+            Preethi Parangusam
           </h2>
+          <p className="font-label-md uppercase tracking-widest text-forest-deep/60 mb-8">Founder, Gold Mountain Wellness Resort</p>
           
           <div className="space-y-8 text-forest-deep/80 font-body-md text-lg leading-relaxed">
-            <div>
-              <h3 className="text-xs uppercase tracking-widest text-forest-deep font-semibold mb-2">Biography</h3>
-              <p>[FOUNDER BIOGRAPHY TO BE PROVIDED. This section will contain the background and personal story of the founder, explaining their journey leading up to the creation of the resort.]</p>
+            <div className="space-y-4">
+              <p>Gold Mountain Wellness Resort was founded with a vision to create a peaceful sanctuary where spirituality, wellness, nature, and traditional hospitality come together.</p>
+              <p>Inspired by the sacred presence of Arunachala, Preethi Parangusam envisioned a space where guests from around the world can slow down, reconnect with themselves, and experience the serenity of Tiruvannamalai.</p>
+              <p>From mindful stays and wholesome food to Ayurveda, yoga, meditation, and spiritual experiences, every element of Gold Mountain is thoughtfully shaped around one purpose:</p>
             </div>
             
-            <div>
-              <h3 className="text-xs uppercase tracking-widest text-forest-deep font-semibold mb-2">The Vision</h3>
-              <p className="font-headline-sm text-forest-deep text-xl">
-                &ldquo;[FOUNDER VISION TO BE PROVIDED. A short, impactful quote or statement about what they hope guests experience here.]&rdquo;
+            <div className="relative border-l-2 border-accent-gold pl-6 py-2 mt-8">
+              <p className="font-headline-sm text-forest-deep text-2xl leading-snug">
+                &ldquo;To make every stay a journey towards peace, balance, and inner well-being.&rdquo;
               </p>
-            </div>
-
-            <div>
-              <h3 className="text-xs uppercase tracking-widest text-forest-deep font-semibold mb-2">Why Gold Mountain Exists</h3>
-              <p>[REASON FOR EXISTENCE TO BE PROVIDED. An explanation of the core motivation behind building this specific sanctuary at this specific location.]</p>
             </div>
           </div>
         </div>
@@ -213,10 +209,7 @@ function GroundsAndNourishment() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
           {/* Nature & Grounds */}
           <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
-            <h3 className="text-xl font-headline-sm text-forest-deep mb-4 flex items-center gap-2">
-              <span className="material-symbols-outlined text-accent-gold">local_florist</span>
-              The Estate
-            </h3>
+            <h3 className="text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">The Estate</h3>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">grass</span>
@@ -244,25 +237,29 @@ function GroundsAndNourishment() {
 
           {/* Dining */}
           <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
-            <h3 className="text-xl font-headline-sm text-forest-deep mb-4 flex items-center gap-2">
-              <span className="material-symbols-outlined text-accent-gold">restaurant</span>
-              Nourishment
-            </h3>
+            <h3 className="text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">Nourishment</h3>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">eco</span>
                 <div>
                   <strong className="block text-forest-deep font-medium">Sattvic Vegetarian Restaurant</strong>
-                  <p>Our kitchen follows pure Sattvic principles, serving meals designed to bring clarity to the mind and lightness to the body.</p>
+                  <p>Our kitchen follows pure Sattvic principles, serving meals crafted for mental clarity and physical lightness.</p>
                 </div>
               </li>
               <li className="flex gap-3">
-                <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">set_meal</span>
-                <div>
-                  <strong className="block text-forest-deep font-medium">Dietary Accommodations</strong>
-                  <p>Vegan and gluten-free meals are readily available upon advance request, thoughtfully prepared without compromising on taste.</p>
-                </div>
-              </li>
+                  <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">set_meal</span>
+                  <div>
+                    <strong className="block text-forest-deep font-medium">Dietary Accommodations</strong>
+                    <p>Vegan and gluten-free meals are available upon request, thoughtfully prepared without compromising on taste.</p>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">local_cafe</span>
+                  <div>
+                    <strong className="block text-forest-deep font-medium">Herbal Infusions</strong>
+                    <p>Freshly brewed teas using medicinal plants from our gardens, served daily to support healthy digestion.</p>
+                  </div>
+                </li>
             </ul>
           </div>
         </div>
