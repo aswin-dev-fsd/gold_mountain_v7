@@ -82,7 +82,7 @@ function ContactSection() {
   return (
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream">
       <div className="max-w-7xl mx-auto flex flex-col gap-12 lg:gap-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         
         {/* Left Column: Form */}
         <div ref={formRef} className="w-full">
@@ -159,12 +159,12 @@ function EnquiryForm({ formRef, enquiryType, onEnquiryTypeChange }: {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 w-full mt-4 flex-1">
+        <div className="flex flex-col gap-2 w-full mt-2">
           <label htmlFor="message" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Message</label>
-          <textarea id="message" name="message" rows={5} className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm resize-none flex-1 min-h-[120px]"></textarea>
+          <textarea id="message" name="message" rows={3} className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm resize-none min-h-[96px]"></textarea>
         </div>
 
-        <button type="submit" className="mt-6 w-full md:w-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+        <button type="submit" className="w-full md:w-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Continue to WhatsApp</span>
 </button>
         <p className="font-body-sm text-forest-deep/70">Your message will open in WhatsApp. Review it and tap Send to complete your enquiry.</p>
@@ -183,30 +183,33 @@ function ContactDetails() {
   });
 
   return (
-    <div ref={containerRef} className="flex flex-col p-6 md:p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl h-full">
+    <div ref={containerRef} className="flex flex-col p-6 md:p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
       <h2 className="font-headline-md text-headline-md font-normal leading-[1.05] text-forest-deep mb-8">Call, WhatsApp or Email</h2>
       
-      <div className="flex flex-col items-start">
-        <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">WhatsApp / Phone</span>
-        <a href="tel:+918838198769" className="text-lg font-body-md text-forest-deep mb-4 hover:text-surface-tint transition-colors">+91 88381 98769</a>
-        <a href="https://wa.me/918838198769" className="inline-flex items-center gap-2 bg-[#25D366] text-white rounded-[9999px] uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors font-label-md text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]">
-          <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          WhatsApp Now
-        </a>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
+        <div className="flex flex-col items-start">
+          <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">WhatsApp / Phone</span>
+          <a href="tel:+918838198769" className="text-lg font-body-md text-forest-deep mb-4 hover:text-surface-tint transition-colors">+91 88381 98769</a>
+          <a href="https://wa.me/918838198769" className="inline-flex items-center gap-2 bg-[#25D366] text-white rounded-[9999px] uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors font-label-md text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]">
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            WhatsApp Now
+          </a>
+        </div>
+        <div className="flex flex-col items-start">
+          <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Email</span>
+          <a href="mailto:goldmountainstay@gmail.com" className="text-base md:text-lg font-body-md text-forest-deep mb-4 break-all hover:text-surface-tint transition-colors">goldmountainstay@gmail.com</a>
+          <a href="mailto:goldmountainstay@gmail.com" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
+            <span>Send Email</span>
+          </a>
+        </div>
       </div>
 
-      <div className="flex flex-col items-start pt-6 border-t border-border-muted/50 mt-6">
-        <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Email</span>
-        <a href="mailto:goldmountainstay@gmail.com" className="text-lg font-body-md text-forest-deep mb-4 break-all hover:text-surface-tint transition-colors">goldmountainstay@gmail.com</a>
-        <a href="mailto:goldmountainstay@gmail.com" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
-<span>Send Email</span>
-</a>
-      </div>
-
-      <div className="flex flex-col items-start pt-6 border-t border-border-muted/50 mt-6">
-        <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Instagram</span>
-        <a href="https://www.instagram.com/goldmountainstay/" className="font-body-md text-forest-deep underline decoration-accent-gold underline-offset-4 hover:text-surface-tint transition-colors">@goldmountainstay</a>
-        <dl className="grid grid-cols-2 gap-6 w-full mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-border-muted/50 mt-6">
+        <div>
+          <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Instagram</span>
+          <a href="https://www.instagram.com/goldmountainstay/" className="font-body-md text-forest-deep underline decoration-accent-gold underline-offset-4 hover:text-surface-tint transition-colors">@goldmountainstay</a>
+        </div>
+        <dl className="grid grid-cols-2 gap-4">
           <div>
             <dt className="text-xs uppercase tracking-widest text-forest-deep font-semibold mb-2">Check-in</dt>
             <dd className="font-body-md text-forest-deep/80">12:00</dd>

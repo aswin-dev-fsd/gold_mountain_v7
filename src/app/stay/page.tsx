@@ -8,7 +8,18 @@ import { useCurrency, Currency } from "../../context/CurrencyContext";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { STAY_ROOMS, STAY_FAQS } from "@/content/stay";
 import { isReducedMotion, EASE_CINEMATIC, revealSection, revealStagger, createImageParallax } from "@/utils/animations";
+
+// Match the established WhatsApp style; rounded-full is only 12px in this theme.
+function WhatsAppButton() {
+  return (
+    <a href="https://wa.me/918838198769" className="w-full sm:w-auto shrink-0 inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-forest-deep">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" /></svg>
+      WhatsApp Now
+    </a>
+  );
+}
 
 // --- HERO SECTION ---
 function StayHero() {
@@ -34,19 +45,20 @@ function StayHero() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden bg-forest-charcoal mt-20">
+    <section ref={sectionRef} className="relative w-full min-h-[80vh] py-20 md:py-24 flex items-center justify-center overflow-hidden bg-forest-charcoal mt-20">
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/images/stay_suite.png')" }} />
       </div>
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest-charcoal/80 via-forest-charcoal/40 to-forest-charcoal/85 pointer-events-none"></div>
       <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-forest-deep/30 to-forest-charcoal/90 pointer-events-none"></div>
       
-      <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
-        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
-          A peaceful place <span className="block mt-2">to <span className="text-accent-gold">stay.</span></span>
+      <div ref={contentRef} className="relative z-20 w-full max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
+        <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight text-balance mb-6">
+          Rooms in Tiruvannamalai <span className="block mt-2 text-accent-gold">at Gold Mountain Wellness Resort</span>
         </h1>
+        <p className="font-headline-sm text-2xl text-accent-gold mb-6">A peaceful place to stay.</p>
         <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed text-balance">
-          Peaceful spaces in nature, made for rest. Deluxe and Suite rooms include breakfast and lunch. The Family Suite includes all meals.
+          Peaceful spaces in nature, made for rest. Our rooms in Tiruvannamalai face the mountain and sit about 6 km from the Arunachaleswarar Temple and 1 km from the Girivalam path. The Deluxe and Suite include breakfast and lunch; the Family Suite includes all meals.
         </p>
       </div>
     </section>
@@ -55,49 +67,19 @@ function StayHero() {
 
 // --- ROOMS SECTION ---
 
-const ROOMS = [
-  {
-    name: "Mountain View Deluxe",
-    capacity: "2 Persons",
-    description: "Our comfortable deluxe room offering direct views of the mountain. Features a king-sized bed, air conditioning, and a meal plan including breakfast and lunch.",
-    amenities: ["Mountain View", "King Size Bed", "Air Conditioning", "Breakfast & Lunch"],
-    prices: { INR: "₹3,099", USD: "$37", EUR: "€34" },
-    image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
-    reverse: false
-  },
-  {
-    name: "Mountain View Suite",
-    capacity: "2 Persons",
-    description: "A spacious suite offering elevated mountain views and additional living space. Perfect for longer stays, featuring a king-sized bed, premium amenities, and a meal plan including breakfast and lunch.",
-    amenities: ["Spacious Layout", "Mountain View", "King Size Bed", "Breakfast & Lunch"],
-    prices: { INR: "₹4,099", USD: "$49", EUR: "€45" },
-    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
-    reverse: true
-  },
-  {
-    name: "Mountain View Family Suite",
-    capacity: "4 Persons",
-    description: "Our largest accommodation, designed for families or small groups. Offers multiple sleeping arrangements, expansive mountain views, and full board for all guests (breakfast, lunch, and dinner).",
-    amenities: ["Family Layout", "Mountain View", "King Size Beds", "All Meals Included"],
-    prices: { INR: "₹7,999", USD: "$95", EUR: "€89" },
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-    reverse: false
-  }
-];
-
 function Rooms() {
   const { currency } = useCurrency();
 
   return (
     <div className="bg-canvas-ivory">
-      {ROOMS.map((room, index) => (
+      {STAY_ROOMS.map((room, index) => (
         <RoomBlock key={room.name} room={room} index={index} currency={currency} />
       ))}
     </div>
   );
 }
 
-function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: number, currency: Currency }) {
+function RoomBlock({ room, index, currency }: { room: typeof STAY_ROOMS[number], index: number, currency: Currency }) {
   const sectionRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -112,7 +94,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} id={["deluxe", "suite", "family-suite"][index]} className={`py-space-3xl px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden ${index % 2 === 0 ? "bg-surface-cream" : "bg-canvas-ivory"}`}>
+    <section ref={sectionRef} id={room.id} className={`scroll-mt-24 py-space-3xl px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden ${index % 2 === 0 ? "bg-surface-cream" : "bg-canvas-ivory"}`}>
       <div className={`max-w-7xl mx-auto flex flex-col ${room.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center lg:items-stretch gap-16`}>
         
         {/* Image Side */}
@@ -121,7 +103,8 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
             <img 
               ref={imageRef} 
               src={room.image} 
-              alt={room.name} 
+              alt=""
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover" 
             />
           </div>
@@ -129,8 +112,8 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
 
         {/* Content Side */}
         <div ref={contentRef} className="w-full lg:w-1/2 flex flex-col items-start">
-          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Capacity: {room.capacity}</span>
-          <h2 className="font-headline-md text-headline-md font-normal leading-[1.05] tracking-tight text-forest-deep mb-1">{room.name}</h2>
+          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">Capacity: {room.capacity} guests</span>
+          <h2 className="font-headline-md text-headline-md font-normal leading-[1.05] tracking-tight text-forest-deep mb-4">{room.name}</h2>
           <p className="text-forest-deep/80 font-body-md text-lg leading-relaxed mb-8">
             {room.description}
           </p>
@@ -150,7 +133,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
           <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between w-full gap-6">
             <div className="flex flex-col">
               <span className="text-xs uppercase tracking-widest text-forest-deep/60">From</span>
-              <span className="font-headline-sm text-[25px] text-forest-deep">{room.prices[currency]}</span>
+              <span className="font-headline-sm text-[25px] text-forest-deep">{room.prices[currency]} <span className="font-body-sm text-body-sm text-forest-deep/60">per night</span></span>
             </div>
             <Link href="/contact-us" className="whitespace-nowrap group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Enquire About This Room</span>
@@ -173,18 +156,21 @@ function LongStayCallout() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
-      <div ref={contentRef} className="max-w-7xl mx-auto p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
-        <div className="flex items-center gap-space-md">
-          <span className="material-symbols-outlined text-accent-gold text-[32px] shrink-0">calendar_today</span>
+    <section ref={sectionRef} aria-labelledby="long-stay-heading" className="py-space-xl md:py-space-2xl px-6 md:px-12 bg-canvas-ivory">
+      <div ref={contentRef} className="max-w-7xl mx-auto p-space-lg md:p-8 rounded-xl bg-surface-container flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+        <div className="flex items-start gap-space-md min-w-0">
+          <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[32px] shrink-0">calendar_today</span>
           <div>
-            <p className="font-headline-sm text-headline-sm text-forest-deep">Longer Retreats &amp; Monthly Sadhana Stays</p>
-            <p className="font-body-sm text-body-sm text-on-surface-variant">Special seasonal privileges and complete wellness dietary plans for guests staying 14 nights or longer.</p>
+            <h2 id="long-stay-heading" className="font-headline-sm text-headline-sm text-forest-deep mb-2">Longer Retreats &amp; Monthly Sadhana Stays</h2>
+            <p className="font-body-sm text-body-sm text-on-surface-variant">Special seasonal privileges and complete wellness diet plans for guests staying 14 nights or longer.</p>
           </div>
         </div>
-        <Link href="/contact-us" className="whitespace-nowrap shrink-0 group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-<span>Request Long Stay Rates</span>
-</Link>
+        <div className="w-full sm:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
+          <Link href="/contact-us" className="w-full sm:w-auto whitespace-nowrap group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+            Request Long Stay Rates
+          </Link>
+          <WhatsAppButton />
+        </div>
       </div>
     </section>
   );
@@ -199,7 +185,7 @@ const AMENITIES = [
   { name: "King Size Beds", icon: "bed" },
   { name: "Long-stay Options", icon: "calendar_month" },
   { name: "Alcohol & Smoke Free", icon: "smoke_free" },
-  { name: "Ayurveda Doctor", icon: "health_and_safety" }
+  { name: "Ayurveda Doctor on Site", icon: "health_and_safety" }
 ];
 
 function AmenitiesGrid() {
@@ -231,6 +217,100 @@ function AmenitiesGrid() {
   );
 }
 
+// --- LOCATION ---
+function NearbyLandmarks() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    revealSection(contentRef.current as Element);
+  }, { scope: sectionRef });
+
+  return (
+    <section ref={sectionRef} aria-labelledby="stay-location-heading" className="py-space-3xl px-6 md:px-12 bg-surface-cream">
+      <div ref={contentRef} className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div>
+          <p className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-4">Close to Arunachala</p>
+          <h2 id="stay-location-heading" className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-6">How Far Are We From Arunachaleswarar Temple?</h2>
+          <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-6">The resort is about 6 km from the Arunachaleswarar Temple, a 15 to 20 minute drive, and about 1 km from the Girivalam path. Adi Arunachala Temple is 1.5 km away and Ramanasramam is 5 km away.</p>
+          <Link href="/contact-us#location" className="font-body-md text-forest-deep underline decoration-accent-gold underline-offset-4 hover:text-surface-tint transition-colors">See the full location and travel times</Link>
+        </div>
+        <dl className="grid grid-cols-2 gap-4">
+          {[
+            { distance: "6 km", name: "Arunachaleswarar Temple" },
+            { distance: "1 km", name: "Girivalam Path" },
+            { distance: "1.5 km", name: "Adi Arunachala Temple" },
+            { distance: "5 km", name: "Ramanasramam" },
+          ].map(landmark => (
+            <div key={landmark.name} className="flex flex-col gap-3 p-4 sm:p-6 rounded-xl border border-border-muted bg-canvas-ivory">
+              <dt className="order-2 font-body-sm text-body-sm text-forest-deep/80">{landmark.name}</dt>
+              <dd className="font-headline-lg text-headline-md sm:text-headline-lg text-forest-deep">{landmark.distance}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+  );
+}
+
+// --- FESTIVAL STAYS ---
+function FestivalStays() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    revealSection(contentRef.current as Element);
+  }, { scope: sectionRef });
+
+  return (
+    <section ref={sectionRef} aria-labelledby="festival-stay-heading" className="py-space-3xl px-6 md:px-12 bg-forest-charcoal text-canvas-ivory">
+      <div ref={contentRef} className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div>
+          <p className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-4">Festival &amp; Full Moon Stays</p>
+          <h2 id="festival-stay-heading" className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-balance">Stay for Karthigai Deepam and Pournami</h2>
+        </div>
+        <div className="space-y-6 font-body-md text-lg text-canvas-ivory/85 leading-relaxed">
+          <p>Join the mountain lights celebration at Gold Mountain. Karthigai Deepam (also written Karthikai Deepam) brings lamp-lighting rituals, spiritual ceremonies and views of the Arunachala hills, and Pournami (full moon) draws Girivalam walkers from everywhere.</p>
+          <p>These dates are among the busiest in Tiruvannamalai and are priced separately, so enquire early for rates, availability and minimum stays.</p>
+          <Link href="/contact-us#enquiry" className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-accent-gold/60 text-canvas-ivory hover:bg-canvas-ivory hover:text-forest-deep hover:border-canvas-ivory">
+            Enquire for Festival Dates
+          </Link>
+          <p className="pt-6 border-t border-canvas-ivory/15 font-body-sm text-body-sm">Prefer a guided option? See the <Link href="/#retreat-package" className="text-canvas-ivory underline decoration-accent-gold underline-offset-4 hover:text-accent-gold transition-colors">Arunachala spiritual retreat</Link>, with guided Girivalam, saints&apos; samadhi visits and Annadanam.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// --- ROOMS FAQ ---
+function RoomsFAQ() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    revealSection(contentRef.current as Element);
+  }, { scope: sectionRef });
+
+  return (
+    <section ref={sectionRef} id="faq" aria-labelledby="rooms-faq-heading" className="scroll-mt-24 py-space-3xl px-6 md:px-12 bg-canvas-ivory">
+      <div ref={contentRef} className="max-w-3xl mx-auto">
+        <h2 id="rooms-faq-heading" className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep text-center mb-10">Rooms FAQ</h2>
+        <div className="border-t border-border-muted">
+          {STAY_FAQS.map(faq => (
+            <details key={faq.question} className="group border-b border-border-muted">
+              <summary className="flex items-center justify-between gap-4 py-6 cursor-pointer list-none font-headline-sm text-headline-sm text-forest-deep hover:text-surface-tint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-forest-deep [&::-webkit-details-marker]:hidden">
+                {faq.question}
+                <span aria-hidden="true" className="shrink-0 text-accent-gold transition-transform duration-200 group-open:rotate-45">+</span>
+              </summary>
+              <p className="font-body-md text-body-md text-forest-deep/80 leading-relaxed pb-6 pr-6">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // --- FINAL CTA ---
 function FinalCTA() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -242,19 +322,16 @@ function FinalCTA() {
 
   return (
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
-      <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Plan your stay at Gold Mountain.</h2>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div ref={contentRef} className="max-w-3xl mx-auto">
+        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight mb-10">Plan Your Stay at Gold Mountain</h2>
+        <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4">
           <a href="mailto:goldmountainstay@gmail.com" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
 <span>Email</span>
 </a>
-          <a 
-            href="https://wa.me/918838198769" 
-            className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-            WhatsApp Now
-          </a>
+          <WhatsAppButton />
+          <Link href="/contact-us#enquiry" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+            Enquiry Form
+          </Link>
         </div>
       </div>
     </section>
@@ -262,6 +339,10 @@ function FinalCTA() {
 }
 
 // --- MAIN PAGE ---
+/**
+ * Render the Stay page using the shared confirmed room and FAQ content.
+ * @returns The accommodation page, enquiry actions and shared site navigation.
+ */
 export default function StayPage() {
   return (
     <main className="w-full min-h-screen flex flex-col bg-canvas-ivory selection:bg-accent-gold/20 selection:text-forest-deep">
@@ -270,7 +351,10 @@ export default function StayPage() {
       <LongStayCallout />
       <Rooms />
       <AmenitiesGrid />
+      <NearbyLandmarks />
+      <FestivalStays />
       <FinalCTA />
+      <RoomsFAQ />
       <Footer />
     </main>
   );

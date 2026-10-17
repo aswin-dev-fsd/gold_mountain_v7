@@ -19,7 +19,7 @@
 
 - The technical SEO DOCX contains the new authoritative Search Console verification token, superseding the older token in the content PDF. All three technical tags run only when `NEXT_PUBLIC_SITE_ENV=live`.
 - Journal pages remain accessible, as requested while those pages are unfinished. The final content PDF calls for Journal material to live within the six main pages, so this is a temporary difference from the final site plan.
-- About and Contact now have their content and page-specific JSON-LD updates described below. The other four main pages still need their final copy and structured data. Client photography, corresponding image alt text, and social sharing images remain pending. Stock images, sample reviews, strong health claims, and price/content placeholders remain elsewhere.
+- About, Contact and Stay now have their content and page-specific JSON-LD updates described below. Home, Wellness and Ayurveda still need their final copy and structured data. Client photography, corresponding image alt text, and social sharing images remain pending. Stock images, sample reviews, strong health claims, and price/content placeholders remain elsewhere.
 - The supplied sitemap is represented by `src/app/sitemap.ts`; `docs/sitemap.xml` remains the source reference. The generated output contains the same six locations and dates, though its XML formatting and date serialization may differ.
 - Only the five staging-route redirects and the known misspelled Ayurveda redirect are implemented. The old WordPress sitemap is needed to map every other live URL before DNS cutover.
 - The client confirmed that the site's existing factual details are correct. Any conflicting `[CONFIRM]` notes in the PDF should be reconciled against those site values when the final copy is applied.
@@ -61,3 +61,46 @@
 - Included the approved implementation plan and completed task checklist with this update.
 - Deferred photography/social preview images and travel estimates remain recorded above for the next content pass.
 - Checked the final diff for whitespace errors before committing the About/Contact update.
+
+## Stay content and footer spacing update
+
+### Implemented
+
+- Applied the final Rooms H1 and intro, retaining the short headline as a supporting line. The hero has a minimum height and vertical padding so the longer copy can expand on small screens.
+- Kept the alternating room layout, Outfit/Inter typography, forest/gold palette, ivory/cream sections, room rates and currency switcher. Updated room descriptions to the final copy, made the per-night price unit explicit, and added room-anchor clearance below the fixed navigation.
+- Added a WhatsApp action to the monthly-stay banner and the Enquiry Form action to the final CTA. WhatsApp buttons use the existing green colour, WhatsApp icon and explicit 9999px pill radius; all other buttons retain the theme's 4px corner radius.
+- Added the nearby-landmark section with confirmed distances, the supplied approximate temple drive time and a Contact location link. Added the Karthigai Deepam/Pournami section with festival enquiries and a guided retreat link.
+- Added all seven Rooms FAQs using native keyboard-accessible details/summary controls. Shared room and FAQ data now drive both the visible page and server-rendered JSON-LD.
+- Added Resort, WebPage, BreadcrumbList, three HotelRoom entries with INR starting offers, and FAQPage schema. Completed page-specific Open Graph and Twitter title/description metadata. As on About/Contact, used `about` for the relationship to the resort rather than the PDF's `isPartOf` Resort relationship.
+- Applied the separately approved footer spacing adjustment: top padding is now 48px below the large breakpoint and 64px on desktop; the gap above the copyright divider is now 40px.
+
+### Deferred assets and content differences
+
+- Client photography remains deferred as previously agreed. Kept the current room photos and hero image; stock room images are decorative (`alt=""`) until actual room photography can receive truthful photo-specific descriptions. `/og/rooms.jpg` remains deferred with the real assets, matching the About/Contact approach.
+- The PDF's unknown room sizes, festival dates, festival tariffs and minimum-night values were not invented or published. Festival copy directs visitors to enquire for those details. No `[CONFIRM]` text appears in the page.
+- The guided retreat currently exists on Home at `/#retreat-package`, so the new festival link targets that working section until the planned Wellness content update moves it.
+- The `/stay` permanent redirect already existed in `next.config.mjs`; this update verified it rather than adding another rule. Next.js returns HTTP 308 for that permanent redirect.
+
+### Verification
+
+- Production build and TypeScript check passed.
+- Browser checks at 320, 390, 768, 1024, 1440 and 1920 pixels found no horizontal overflow or clipped hero text. Visually inspected desktop/mobile hero, monthly banner, room block, location, festival section, final CTA, expanded FAQ and footer screenshots.
+- Confirmed both WhatsApp buttons link to the resort's correct chat and compute to a 9999px radius, while the regular enquiry button computes to 4px.
+- Tested FAQ expansion with Enter and collapse with Space, currency changes to USD and back to INR without query parameters, the room-anchor position below the fixed header, and the Enquiry Form link reaching the Contact form with Stay selected.
+- Verified the final route returns 200, the former `/stay` route returns 308, there is one H1, canonical and social descriptions are present, and JSON-LD contains the three correct INR prices, room capacities and seven FAQs.
+- All new internal links and their hash targets resolved successfully, all three room images loaded, and no browser page errors were captured. Screenshots and machine-readable check results are saved under `screenshots/2026-10-17-stay/` (ignored by Git).
+
+## Contact enquiry layout refinement
+
+### Implemented
+
+- Moved the Email contact block beside WhatsApp / Phone on wider screens. It stacks below WhatsApp / Phone on mobile, where the two-column layout would be too narrow.
+- Reduced the contact card's desktop height by grouping Instagram with the check-in/check-out details and allowing the card to use its natural height instead of stretching to match the enquiry form.
+- Reduced the Message field from five rows to three rows with a 96px minimum height. Removed the extra gap above the Continue to WhatsApp button so it sits directly below the field.
+- Preserved the existing button language: WhatsApp remains the green pill button, and Send Email remains the outlined rounded-corner button.
+
+### Verification
+
+- Production build and TypeScript check passed.
+- At 1440px, Email aligns beside WhatsApp / Phone, the right card is 684px tall compared with the form's 715px, and the button starts 554px below the form heading. At 390px, the contact blocks stack without horizontal overflow.
+- Confirmed the WhatsApp and email destinations are unchanged, and no browser page errors were captured. Desktop and mobile preview screenshots are saved locally under `screenshots/2026-10-17-contact-compact/` (ignored by Git).
