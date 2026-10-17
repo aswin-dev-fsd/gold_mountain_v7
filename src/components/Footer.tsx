@@ -93,8 +93,6 @@ export default function Footer() {
           <p>© 2026 Gold Mountain Wellness Resort. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-space-lg">
             <span>Preserving Arunachala Ecology</span>
-            <a href="#" className="hover:text-canvas-ivory transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-canvas-ivory transition-colors">Terms &amp; Conditions</a>
           </div>
         </div>
       </div>

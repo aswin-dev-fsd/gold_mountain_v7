@@ -1,12 +1,13 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { isReducedMotion, EASE_CINEMATIC, revealSection } from "@/utils/animations";
+import { getWhatsAppEnquiryUrl } from "@/utils/whatsappEnquiry";
 
 // --- HERO SECTION ---
 function ContactHero() {
@@ -93,30 +94,10 @@ function ContactSection() {
 
 // --- ENQUIRY FORM ---
 function EnquiryForm() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    window.location.assign(getWhatsAppEnquiryUrl(e.currentTarget, "Contact Us"));
   };
-
-  if (isSubmitted) {
-    return (
-      <div className="bg-canvas-ivory border border-border-muted p-12 text-center rounded-xl h-full flex flex-col items-center justify-center">
-        <div className="w-16 h-16 rounded-lg bg-forest-deep/10 text-forest-deep flex items-center justify-center mb-6">
-          <span className="material-symbols-outlined text-[32px]">check</span>
-        </div>
-        <h3 className="font-headline-md text-headline-md font-normal leading-[1.05] text-forest-deep mb-4">Thank you.</h3>
-        <p className="text-forest-deep/80 font-body-md">We have received your enquiry and will contact you shortly.</p>
-        <button 
-          onClick={() => setIsSubmitted(false)}
-          className="mt-8 text-sm uppercase tracking-widest text-accent-gold hover:text-forest-deep transition-colors"
-        >
-          Send another enquiry
-        </button>
-      </div>
-    );
-  }
 
   return (
     <div className="bg-canvas-ivory border border-border-muted p-8 md:p-12 rounded-xl shadow-sm h-full flex flex-col">
@@ -126,50 +107,51 @@ function EnquiryForm() {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="name" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Name *</label>
-            <input required type="text" id="name" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
+            <input required type="text" id="name" name="name" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="email" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Email *</label>
-            <input required type="email" id="email" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
+            <input required type="email" id="email" name="email" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="phone" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">WhatsApp / Phone</label>
-            <input type="tel" id="phone" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
+            <input type="tel" id="phone" name="phone" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="dates" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Preferred Dates</label>
-            <input type="text" id="dates" placeholder="e.g. Oct 10 - Oct 15" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
+            <input type="text" id="dates" name="dates" placeholder="e.g. Oct 10 - Oct 15" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex flex-col gap-2 w-full md:w-1/2">
             <label htmlFor="guests" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Number of Guests</label>
-            <input type="number" min="1" id="guests" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
+            <input type="number" min="1" id="guests" name="guests" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm" />
           </div>
           <div className="flex flex-col gap-2 w-full md:w-1/2">
             <label htmlFor="type" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Enquiry Type</label>
-            <select id="type" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm text-forest-deep/80 cursor-pointer">
-              <option value="stay">Stay</option>
-              <option value="wellness">Wellness</option>
-              <option value="ayurveda">Ayurveda</option>
-              <option value="monthly">Monthly Stay</option>
-              <option value="general">General Enquiry</option>
+            <select id="type" name="type" className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm text-forest-deep/80 cursor-pointer">
+              <option value="Stay">Stay</option>
+              <option value="Wellness">Wellness</option>
+              <option value="Ayurveda">Ayurveda</option>
+              <option value="Monthly Stay">Monthly Stay</option>
+              <option value="General Enquiry">General Enquiry</option>
             </select>
           </div>
         </div>
 
         <div className="flex flex-col gap-2 w-full mt-4 flex-1">
           <label htmlFor="message" className="text-xs uppercase tracking-widest text-forest-deep font-semibold">Message</label>
-          <textarea id="message" rows={5} className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm resize-none flex-1 min-h-[120px]"></textarea>
+          <textarea id="message" name="message" rows={5} className="border border-border-muted bg-surface-cream/60 rounded-lg px-4 py-3 outline-none placeholder:text-forest-deep/40 focus:border-forest-deep focus:bg-canvas-ivory focus:ring-1 focus:ring-forest-deep/20 transition-colors font-body-sm resize-none flex-1 min-h-[120px]"></textarea>
         </div>
 
         <button type="submit" className="mt-6 w-full md:w-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-<span>Send Enquiry</span>
+<span>Continue to WhatsApp</span>
 </button>
+        <p className="font-body-sm text-forest-deep/70">Your message will open in WhatsApp. Review it and tap Send to complete your enquiry.</p>
       </form>
     </div>
   );

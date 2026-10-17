@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { revealStagger } from "../utils/animations";
+import { getWhatsAppEnquiryUrl } from "../utils/whatsappEnquiry";
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -49,26 +50,29 @@ export default function Contact() {
           {/* Quick Form */}
           <div className="lg:col-span-7 min-w-0 flex flex-col h-full">
             <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mb-space-md">Send a Direct Enquiry</h3>
-            <form className="space-y-space-md" id="retreatEnquiryForm" onSubmit={(e) => { e.preventDefault(); document.getElementById('formSuccess')?.classList.remove('hidden'); }}>
+            <form className="space-y-space-md" id="retreatEnquiryForm" onSubmit={(e) => {
+              e.preventDefault();
+              window.location.assign(getWhatsAppEnquiryUrl(e.currentTarget, "Home"));
+            }}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
                 <div>
-                  <label className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Your Full Name</label>
-                  <input className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm" placeholder="e.g. Maya Thorne" required type="text"/>
+                  <label htmlFor="home-name" className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Your Full Name</label>
+                  <input id="home-name" name="name" className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm" placeholder="e.g. Maya Thorne" required type="text"/>
                 </div>
                 <div>
-                  <label className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Email Address</label>
-                  <input className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm" placeholder="maya@example.com" required type="email"/>
+                  <label htmlFor="home-email" className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Email Address</label>
+                  <input id="home-email" name="email" className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm" placeholder="maya@example.com" required type="email"/>
                 </div>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
                 <div>
-                  <label className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Intended Dates / Month</label>
-                  <input className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm" placeholder="e.g. Nov 2024 (7 nights)" type="text"/>
+                  <label htmlFor="home-dates" className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Intended Dates / Month</label>
+                  <input id="home-dates" name="dates" className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm" placeholder="e.g. Nov 2026 (7 nights)" type="text"/>
                 </div>
                 <div>
-                  <label className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Area of Interest</label>
-                  <select className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm cursor-pointer">
+                  <label htmlFor="home-type" className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">Area of Interest</label>
+                  <select id="home-type" name="type" className="w-full h-12 px-space-md rounded-lg bg-forest-charcoal text-canvas-ivory focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm cursor-pointer">
                     <option>Ayurvedic Wellness Retreat</option>
                     <option>Personal Meditation &amp; Rest</option>
                     <option>Arunachala Spiritual Stay</option>
@@ -78,19 +82,17 @@ export default function Contact() {
               </div>
               
               <div>
-                <label className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">How can we support your stay?</label>
-                <textarea className="w-full p-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm resize-none" placeholder="Tell us about dietary needs, health considerations or arrival plans..." rows={3}></textarea>
+                <label htmlFor="home-message" className="block font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high/80 mb-1">How can we support your stay?</label>
+                <textarea id="home-message" name="message" className="w-full p-space-md rounded-lg bg-forest-charcoal text-canvas-ivory placeholder:text-surface-container-high/40 focus:outline-none focus:ring-1 focus:ring-accent-gold transition-all text-body-sm font-body-sm resize-none" placeholder="Tell us about dietary needs, health considerations or arrival plans..." rows={3}></textarea>
               </div>
               
               <button type="submit" className="w-full cursor-pointer group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
-<span>Send Sanctuary Enquiry</span>
+<span>Continue to WhatsApp</span>
 <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>
 </button>
               
+              <p className="font-body-sm text-body-sm text-surface-container-high/80">Your message will open in WhatsApp. Review it and tap Send to complete your enquiry.</p>
               </form>
-            <div className="hidden p-space-sm rounded bg-forest-deep text-accent-gold text-center font-body-sm mt-4" id="formSuccess">
-              Thank you. Our retreat advisor will be in touch within 12 hours.
-            </div>
           </div>
           
           {/* Direct Channels & Concierge Card */}

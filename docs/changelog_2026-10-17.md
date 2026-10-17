@@ -17,10 +17,11 @@
 
 ## Decisions and remaining work
 
-- The technical SEO DOCX has a different Search Console verification token from the content PDF. The DOCX token was selected, and all three technical tags run only when `NEXT_PUBLIC_SITE_ENV=live`.
+- The technical SEO DOCX contains the new authoritative Search Console verification token, superseding the older token in the content PDF. All three technical tags run only when `NEXT_PUBLIC_SITE_ENV=live`.
 - Journal pages remain accessible, as requested while those pages are unfinished. The final content PDF calls for Journal material to live within the six main pages, so this is a temporary difference from the final site plan.
 - The full page copy, page-specific JSON-LD, supplied image alt text, and social sharing images from the content PDF are not implemented yet. Several stock images, sample reviews, strong health claims, and price/content placeholders remain.
 - The supplied sitemap is represented by `src/app/sitemap.ts`; `docs/sitemap.xml` remains the source reference. The generated output contains the same six locations and dates, though its XML formatting and date serialization may differ.
 - Only the five staging-route redirects and the known misspelled Ayurveda redirect are implemented. The old WordPress sitemap is needed to map every other live URL before DNS cutover.
-- Client confirmation is still needed for the exact address, package prices, selected programs and timings, festival terms, room sizes, and review count. The enquiry forms still show success without sending a message.
-- The footer's Privacy Policy and Terms links still point to `#`; the site needs real destinations or removal before launch, especially with analytics enabled.
+- The client confirmed that the site's existing factual details are correct. Any conflicting `[CONFIRM]` notes in the PDF should be reconciled against those site values when the final copy is applied.
+- The home and contact enquiry forms now construct a WhatsApp message from the entered fields and open the resort's chat for the visitor to review and send. They no longer claim an enquiry was received before the visitor sends it.
+- Removed the footer's Privacy Policy and Terms links because they only pointed to `#`. Real policy pages or approved destinations can be added later.
