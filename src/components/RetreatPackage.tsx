@@ -147,7 +147,7 @@ export default function RetreatPackage() {
 
         {/* CTAs */}
         <div ref={ctaRef} className="mt-space-xl flex flex-col sm:flex-row items-center justify-center gap-space-md">
-          <Link href="/contact" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+          <Link href="/contact-us" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
             <span>Book This Retreat</span>
             <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">event_available</span>
           </Link>

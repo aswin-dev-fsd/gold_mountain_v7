@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Wellness from "@/components/Wellness";
@@ -11,6 +12,13 @@ import Trust from "@/components/Trust";
 import Journal from "@/components/Journal";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Resort in Tiruvannamalai | Gold Mountain Wellness Resort",
+  description: "Stay at Gold Mountain Wellness Resort, a peaceful resort in Tiruvannamalai near Arunachala with mountain-view rooms, Ayurveda and sattvic food. Book now.",
+  alternates: { canonical: "/" },
+  openGraph: { title: "Resort in Tiruvannamalai | Gold Mountain Wellness Resort", url: "/" },
+};
 
 export default function Home() {
   return (

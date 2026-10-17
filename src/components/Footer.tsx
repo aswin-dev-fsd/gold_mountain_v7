@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-space-lg xl:gap-space-xl pb-space-2xl">
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-3 xl:col-span-2 flex flex-col items-start pr-0 xl:pr-space-lg mb-space-md xl:mb-0">
-            <a href="/" className="inline-flex items-center mb-space-md" aria-label="Gold Mountain Wellness Sanctuary Home">
+            <a href="/" className="inline-flex items-center mb-space-md" aria-label="Gold Mountain Wellness Resort Home">
               <img alt="Gold Mountain Wellness Resort" className="h-24 sm:h-28 w-auto object-contain" src="/images/logo.png" />
             </a>
             <p className="font-body-md text-body-md text-surface-container-high/80 mb-space-lg leading-relaxed max-w-xl">
@@ -39,36 +39,34 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-space-xs text-accent-gold font-label-md text-label-md uppercase tracking-wider">
               <span className="material-symbols-outlined text-[18px]">spa</span>
-              <span>Thiruvannamalai, Tamil Nadu</span>
+              <span>Tiruvannamalai, Tamil Nadu</span>
             </div>
           </div>
           
           <div className="flex flex-col">
             <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Wellness</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
-              <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Ayurveda Programs</a></li>
-              <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Yoga Shala</a></li>
-              <li><a href="#wellness" className="hover:text-canvas-ivory transition-colors">Lifestyle Consultations</a></li>
+              <li><a href="/ayurveda-treatments-tiruvannamalai" className="hover:text-canvas-ivory transition-colors">Ayurveda Programs</a></li>
+              <li><a href="/wellness-resort-tiruvannamalai" className="hover:text-canvas-ivory transition-colors">Yoga and Retreats</a></li>
+              <li><a href="/wellness-resort-tiruvannamalai#programs" className="hover:text-canvas-ivory transition-colors">Wellness Programs</a></li>
             </ul>
           </div>
           
           <div className="flex flex-col">
             <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Stay</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
-              <li><a href="#stay" className="hover:text-canvas-ivory transition-colors">Garden Cottages</a></li>
-              <li><a href="#stay" className="hover:text-canvas-ivory transition-colors">Hill View Suites</a></li>
-              <li><a href="#stay" className="hover:text-canvas-ivory transition-colors">Wellness Villas</a></li>
-              <li><a href="#stay" className="hover:text-canvas-ivory transition-colors">Private Sanctums</a></li>
+              <li><a href="/rooms-in-tiruvannamalai#deluxe" className="hover:text-canvas-ivory transition-colors">Mountain View Deluxe</a></li>
+              <li><a href="/rooms-in-tiruvannamalai#suite" className="hover:text-canvas-ivory transition-colors">Mountain View Suite</a></li>
+              <li><a href="/rooms-in-tiruvannamalai#family-suite" className="hover:text-canvas-ivory transition-colors">Mountain View Family Suite</a></li>
             </ul>
           </div>
           
           <div className="flex flex-col">
             <h4 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-space-md">Experiences</h4>
             <ul className="space-y-space-sm font-body-sm text-body-sm text-surface-container-high/70">
-              <li><a href="#experiences" className="hover:text-canvas-ivory transition-colors">Shiva Shakti Darshan</a></li>
-              <li><a href="#experiences" className="hover:text-canvas-ivory transition-colors">Organic Farm &amp; Garden</a></li>
-              <li><a href="#experiences" className="hover:text-canvas-ivory transition-colors">Inner Girivalam Path</a></li>
-              <li><a href="#experiences" className="hover:text-canvas-ivory transition-colors">Nature &amp; Temple Walks</a></li>
+              <li><a href="/about-us#estate" className="hover:text-canvas-ivory transition-colors">Organic Farm &amp; Garden</a></li>
+              <li><a href="/#location" className="hover:text-canvas-ivory transition-colors">Girivalam Path</a></li>
+              <li><a href="/#location" className="hover:text-canvas-ivory transition-colors">Nature &amp; Temple Walks</a></li>
             </ul>
           </div>
           
@@ -83,7 +81,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#location" className="hover:text-canvas-ivory transition-colors flex items-center gap-space-xs">
+                <a href="/#location" className="hover:text-canvas-ivory transition-colors flex items-center gap-space-xs">
                   <span className="material-symbols-outlined text-[16px] text-accent-gold">map</span> Google Maps
                 </a>
               </li>
@@ -92,7 +90,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high/60 border-t border-canvas-ivory/15">
-          <p>© 2024 Gold Mountain Wellness Resort. All rights reserved.</p>
+          <p>© 2026 Gold Mountain Wellness Resort. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-space-lg">
             <span>Preserving Arunachala Ecology</span>
             <a href="#" className="hover:text-canvas-ivory transition-colors">Privacy Policy</a>

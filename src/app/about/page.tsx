@@ -209,7 +209,7 @@ function GroundsAndNourishment() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
           {/* Nature & Grounds */}
           <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
-            <h3 className="text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">The Estate</h3>
+            <h3 id="estate" className="text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">The Estate</h3>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">grass</span>

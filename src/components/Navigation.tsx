@@ -9,11 +9,11 @@ import { useCurrency, Currency } from "../context/CurrencyContext";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "Wellness", href: "/wellness" },
-  { label: "Ayurveda", href: "/ayurveda" },
-  { label: "Stay & Rooms", href: "/stay" },
-  { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Wellness", href: "/wellness-resort-tiruvannamalai" },
+  { label: "Ayurveda", href: "/ayurveda-treatments-tiruvannamalai" },
+  { label: "Stay & Rooms", href: "/rooms-in-tiruvannamalai" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 const CURRENCIES = [
@@ -149,7 +149,7 @@ export default function Navigation() {
 
             {/* Book / Enquire Desktop & Tablet CTA */}
             <Link
-              href="/contact"
+              href="/contact-us"
               className="hidden sm:inline-flex items-center justify-center bg-forest-deep text-canvas-ivory font-label-md text-xs 2xl:text-label-md uppercase tracking-wider px-3 xl:px-4 2xl:px-5 py-2 2xl:py-2.5 rounded-lg hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep shadow-sm transition-all font-semibold active:scale-95"
             >
               Book / Enquire
@@ -157,7 +157,7 @@ export default function Navigation() {
 
             {/* Compact Mobile Book CTA */}
             <Link
-              href="/contact"
+              href="/contact-us"
               className="sm:hidden inline-flex items-center justify-center bg-forest-deep text-canvas-ivory font-label-sm text-[11px] uppercase tracking-wider px-3.5 py-2 min-h-[36px] rounded-md hover:bg-forest-charcoal font-semibold active:scale-95 shadow-xs"
             >
               Book

@@ -112,7 +112,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className={`py-space-3xl px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden ${index % 2 === 0 ? "bg-surface-cream" : "bg-canvas-ivory"}`}>
+    <section ref={sectionRef} id={["deluxe", "suite", "family-suite"][index]} className={`py-space-3xl px-6 md:px-12 border-b border-border-muted/30 last:border-b-0 overflow-hidden ${index % 2 === 0 ? "bg-surface-cream" : "bg-canvas-ivory"}`}>
       <div className={`max-w-7xl mx-auto flex flex-col ${room.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center lg:items-stretch gap-16`}>
         
         {/* Image Side */}
@@ -152,7 +152,7 @@ function RoomBlock({ room, index, currency }: { room: typeof ROOMS[0], index: nu
               <span className="text-xs uppercase tracking-widest text-forest-deep/60">From</span>
               <span className="font-headline-sm text-[25px] text-forest-deep">{room.prices[currency]}</span>
             </div>
-            <Link href="/contact" className="whitespace-nowrap group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+            <Link href="/contact-us" className="whitespace-nowrap group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Enquire About This Room</span>
 </Link>
           </div>
@@ -182,7 +182,7 @@ function LongStayCallout() {
             <p className="font-body-sm text-body-sm text-on-surface-variant">Special seasonal privileges and complete wellness dietary plans for guests staying 14 nights or longer.</p>
           </div>
         </div>
-        <Link href="/contact" className="whitespace-nowrap shrink-0 group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+        <Link href="/contact-us" className="whitespace-nowrap shrink-0 group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Request Long Stay Rates</span>
 </Link>
       </div>
