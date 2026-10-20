@@ -48,10 +48,10 @@ export default function Stay() {
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Rest &amp; Replenishment</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-              Spaces for Rest and Healing.
+              Rooms and Suites at Our Resort in Tiruvannamalai
             </h2>
             <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
-              Thoughtfully appointed sanctuaries designed for short visits, intensive retreats, and extended sabbaticals.
+              Thoughtfully designed rooms for short visits, intensive retreats and longer stays. Rates are per night.
             </p>
           </div>
           
@@ -75,7 +75,7 @@ export default function Stay() {
               <div>
                 <h3 className="font-headline-sm text-headline-sm text-forest-deep">Mountain View Deluxe</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs mb-space-md leading-relaxed">
-                  A serene and comfortable space offering beautiful views of the mountain, perfect for a peaceful retreat.
+                  A comfortable room with direct mountain views, a king-size bed and air conditioning.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
                   <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Mountain View</span>
@@ -89,6 +89,7 @@ export default function Stay() {
                 </div>
                 <a href="#enquiry" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Enquire</span>
+<span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
               </div>
             </div>
@@ -109,7 +110,7 @@ export default function Stay() {
               <div>
                 <h3 className="font-headline-sm text-headline-sm text-forest-deep">Mountain View Suite</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs mb-space-md leading-relaxed">
-                  An expansive suite featuring a comfortable sitting area and uninterrupted panoramic views of the sacred mountain.
+                  A spacious suite with elevated mountain views, extra living space and a king-size bed.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
                   <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Panoramic View</span>
@@ -123,6 +124,7 @@ export default function Stay() {
                 </div>
                 <a href="#enquiry" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Enquire</span>
+<span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
               </div>
             </div>
@@ -143,7 +145,7 @@ export default function Stay() {
               <div>
                 <h3 className="font-headline-sm text-headline-sm text-forest-deep">Mountain View Family Suite</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs mb-space-md leading-relaxed">
-                  A spacious suite designed for families or larger groups, offering comfort, togetherness, and stunning mountain vistas.
+                  Our largest accommodation for families or small groups, with multiple sleeping arrangements and expansive mountain views.
                 </p>
                 <div className="flex flex-wrap gap-space-xs mb-space-md">
                   <span className="px-3 py-1 rounded-full bg-canvas-ivory text-forest-charcoal font-label-sm text-label-sm border border-border-muted/40 shadow-sm">Spacious Living</span>
@@ -157,6 +159,7 @@ export default function Stay() {
                 </div>
                 <a href="#enquiry" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Enquire</span>
+<span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
               </div>
             </div>
@@ -164,17 +167,25 @@ export default function Stay() {
           
         </div>
         
+        <div className="text-center mb-space-xl">
+          <a href="/rooms-in-tiruvannamalai" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory transition-colors">
+            See All Rooms in Tiruvannamalai
+            <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+
         {/* Extended Stay Notice Callout */}
         <div ref={calloutRef} className="p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
           <div className="flex items-center gap-space-md">
-            <span className="material-symbols-outlined text-accent-gold text-[32px] shrink-0">calendar_today</span>
+            <svg aria-hidden="true" className="h-8 w-8 text-accent-gold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>
             <div>
               <p className="font-headline-sm text-headline-sm text-forest-deep">Longer Retreats &amp; Monthly Sadhana Stays</p>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">Special seasonal privileges and complete wellness dietary plans for guests staying 14 nights or longer.</p>
+              <p className="font-body-sm text-body-sm text-on-surface-variant">Staying 14 nights or longer? Ask about long-stay rates and complete wellness diet plans.</p>
             </div>
           </div>
           <a href="#enquiry" className="whitespace-nowrap shrink-0 group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Request Long Stay Rates</span>
+<span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
         </div>
         

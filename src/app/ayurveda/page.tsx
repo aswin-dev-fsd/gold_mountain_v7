@@ -69,13 +69,13 @@ function AyurvedaIntro() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-center">
+    <section ref={sectionRef} className="pt-12 pb-8 md:pt-16 md:pb-10 px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
-        <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-12">
+        <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-8">
           Reconnect with your body, calm your mind and restore your natural balance through authentic Kerala Ayurveda treatments at Gold Mountain in Tiruvannamalai. Our programs are designed around you, with personal care from an Ayurveda doctor and experienced therapists, in a setting that never feels overly clinical.
         </p>
-        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">The Science of Life</span>
-        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-1">
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">The Science of Life</span>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-4">
           Ayurveda, the Science of Life
         </h2>
         <p className="text-forest-deep/80 font-body-md text-lg max-w-2xl mx-auto leading-relaxed">
@@ -98,10 +98,10 @@ function TherapiesAccordion() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream border-y border-border-muted/30">
+    <section ref={sectionRef} className="py-12 md:py-16 px-6 md:px-12 bg-surface-cream border-y border-border-muted/30">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-1">Ayurvedic Therapies and Treatments</h2>
+        <div className="text-center mb-8 md:mb-10">
+          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-4">Ayurvedic Therapies and Treatments</h2>
           <p className="text-forest-deep/70 font-body-sm max-w-xl mx-auto">Traditional treatments with herbal oils, powders and steam, guided by your personal consultation.</p>
         </div>
         
@@ -152,11 +152,11 @@ function AyurvedaPackages() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
+    <section ref={sectionRef} className="pt-8 pb-12 md:pt-10 md:pb-16 px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8 text-center">Ayurvedic Programs and Packages</h2>
 
-        <div className="max-w-4xl mx-auto mb-12 text-center">
+        <div className="max-w-4xl mx-auto mb-8 md:mb-10 text-center">
           <h2 className="font-headline-md text-headline-md text-forest-deep mb-4">Panchakarma Treatment in Tiruvannamalai</h2>
           <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed">
             Panchakarma is Ayurveda&apos;s classical cleansing approach and the most sought-after program at our resort. It is not a fixed routine: our Ayurveda doctor sets your plan after a personal consultation, based on your constitution, the season and your comfort. Programs run for 14 or 21 days and include daily therapies, a prescribed diet and herbal medicines. You stay on the property, so there is no travelling between treatment and rest, and meals follow your plan. Panchakarma is not suitable for everyone, which is why the first step is always a consultation.
@@ -212,9 +212,9 @@ const PACKAGE_INCLUSIONS = [
 
 function PackageInclusions() {
   return (
-    <section className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
+    <section className="py-12 md:py-16 px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10 text-center">What Every Package Includes</h2>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8 text-center">What Every Package Includes</h2>
         <div className="bg-surface-cream border border-border-muted rounded-xl p-8 md:p-12">
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5">
             {PACKAGE_INCLUSIONS.map(item => (
@@ -235,10 +235,10 @@ function PackageInclusions() {
 
 function StayWithTreatment() {
   return (
-    <section className="py-space-3xl px-6 md:px-12 bg-surface-cream">
+    <section className="pt-12 pb-8 md:pt-16 px-6 md:px-12 bg-surface-cream">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-6">Stay With Your Treatment</h2>
-        <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-8">
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-4">Stay With Your Treatment</h2>
+        <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-6">
           Treatment is gentler when you are not travelling. Choose a mountain-view room from our rooms in Tiruvannamalai and combine your program with yoga, sattvic meals and the quiet of the wellness resort. All bookings include doctor pre-consultation notes and dietary planning before check-in.
         </p>
         <Link href="/rooms-in-tiruvannamalai" className="inline-flex items-center justify-center rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory transition-colors">Explore Rooms</Link>
@@ -249,9 +249,9 @@ function StayWithTreatment() {
 
 function AyurvedaFaqs() {
   return (
-    <section id="faq" className="py-space-3xl px-6 md:px-12 bg-canvas-ivory scroll-mt-24">
+    <section id="faq" className="py-12 md:py-16 px-6 md:px-12 bg-canvas-ivory scroll-mt-24">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10 text-center">Frequently Asked Questions</h2>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8 text-center">Frequently Asked Questions</h2>
         <div className="divide-y divide-border-muted border-y border-border-muted">
           {AYURVEDA_FAQS.map(faq => (
             <details key={faq.question} className="group py-5">
@@ -278,9 +278,9 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
+    <section ref={sectionRef} className="pt-8 pb-12 md:pb-16 px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-12">Begin your healing journey.</h2>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-6">Begin your healing journey.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="mailto:goldmountainstay@gmail.com" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
 <span>Send an Email</span>

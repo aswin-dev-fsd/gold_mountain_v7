@@ -64,7 +64,7 @@ export default function Hero() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden bg-forest-charcoal">
+    <section ref={sectionRef} className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-forest-charcoal">
       {/* Immersive Background Image with Subtle Parallax Scrim */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div 
@@ -92,30 +92,30 @@ export default function Hero() {
         
         {/* Headline */}
         <h1 ref={headlineRef} className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory max-w-4xl tracking-tight mb-space-md font-normal">
-          A Wellness Stay in the Presence <span className="block mt-2">of <span className="text-accent-gold font-normal">Arunachala.</span></span>
+          Resort in Tiruvannamalai <span className="block mt-2 text-accent-gold font-normal">Near Arunachala Hill</span>
         </h1>
         
         {/* Supporting Copy */}
         <p ref={paraRef} className="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl mx-auto mb-space-xl font-light leading-relaxed text-balance">
-          A peaceful resort where traditional wellness, healthy food, and nature come together in unhurried silence.
+          A wellness stay in the presence of Arunachala.
         </p>
         
         {/* Dual Call to Actions */}
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
           <Link href="/wellness-resort-tiruvannamalai" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Explore Wellness</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </Link>
           <Link href="/rooms-in-tiruvannamalai" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] bg-canvas-ivory/15 hover:bg-canvas-ivory/25 text-canvas-ivory border border-canvas-ivory/40 hover:border-canvas-ivory/80 backdrop-blur-md shadow-sm focus:ring-2 focus:ring-canvas-ivory/50 active:scale-95 transition-all duration-300">
 <span>Plan Your Stay</span>
-<span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_month</span>
+<span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </Link>
         </div>
       </div>
 
       {/* Micro Indicator (out of flow so the content stays centred) */}
       <div ref={indicatorRef} className="absolute bottom-8 inset-x-0 z-20 flex justify-center text-surface-container-high/60">
-        <span className="material-symbols-outlined text-[20px] text-accent-gold animate-bounce">expand_more</span>
+        <span aria-hidden="true" className="text-[28px] leading-none text-accent-gold animate-bounce">⌄</span>
       </div>
     </section>
   );

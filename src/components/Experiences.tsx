@@ -58,7 +58,7 @@ export default function Experiences() {
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Sacred Alignment</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Shiva Shakti Darshanam</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                Direct sacred sightlines to Arunachala in the East and Parvati Malai to the West, creating a unique energetic balance honoring the divine masculine and feminine principles.
+                Sightlines to Arunachala in the east and Parvati Malai in the west, especially beautiful at dawn and dusk.
               </p>
             </div>
             <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
@@ -73,9 +73,9 @@ export default function Experiences() {
                 <span className="material-symbols-outlined text-[24px]">cruelty_free</span>
               </div>
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Compassionate Living</span>
-              <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Desi Cow Goshala</h3>
+              <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Goshala with Kangayam Cows</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                Home to indigenous Gir and Kangayam cows cared for with gentle reverence. Guests may participate in peaceful morning feedings and discover the spiritual calm of the sanctuary.
+                A traditional cow shelter supporting the resort&apos;s farming cycle. Guests can join the peaceful morning feeding.
               </p>
             </div>
             <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
@@ -92,7 +92,7 @@ export default function Experiences() {
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Water Meditation</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Lotus Reflection Pond</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                A serene expanse of clear natural water reflecting the golden silhouette of the mountain at sunrise, surrounded by native water lilies and silent stepped stone ghats.
+                Native water lilies and stepped stone ghats make the lotus reflection pond a quiet place for contemplation.
               </p>
             </div>
             <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
@@ -109,7 +109,7 @@ export default function Experiences() {
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Spatial Harmony</span>
               <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Five-Element Philosophy</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                The spatial plan honors Pancha Bhoota: Earth, Water, Fire, Air, and Space. Healing pathways are specifically sequenced to balance sensory stimuli and restore equilibrium.
+                Earth, water, fire, air and space shape the layout of the resort.
               </p>
             </div>
             <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
@@ -124,13 +124,13 @@ export default function Experiences() {
                 <span className="material-symbols-outlined text-[24px]">potted_plant</span>
               </div>
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Soil Medicine</span>
-              <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Organic Farm &amp; Medicinal Flora Garden</h3>
+              <h3 className="font-headline-sm text-headline-sm text-canvas-ivory mt-space-xs mb-space-xs">Organic Farm &amp; Medicinal Garden</h3>
               <p className="font-body-sm text-body-sm text-surface-container-high/70 leading-relaxed">
-                Walk through dense rows of Brahmi, Ashwagandha, Tulsi, Moringa, and heirloom indigenous vegetables. Learn herbal preparations and taste wild herbs harvested fresh during morning quiet walks.
+                Fresh vegetables and herbs such as Brahmi, Ashwagandha, Tulsi and Moringa grow here. Ask about a guided walk through the gardens.
               </p>
             </div>
             <div className="mt-space-lg pt-space-lg border-t border-forest-deep flex items-center min-h-[42px]">
-                <span className="font-label-sm text-label-sm text-accent-gold">Guided Daily Walks at 07:30 AM</span>
+                <span className="font-label-sm text-label-sm text-accent-gold">Garden Walks on Request</span>
               </div>
           </div>
           
@@ -138,9 +138,9 @@ export default function Experiences() {
         
         {/* Action */}
         <div ref={ctaRef} className="text-center">
-          <a href="#enquiry" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
-<span>Explore All Experiences</span>
-<span className="material-symbols-outlined text-[18px]">explore</span>
+          <a href="/about-us#estate" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
+<span>Explore the Estate</span>
+<span aria-hidden="true" className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
         </div>
         

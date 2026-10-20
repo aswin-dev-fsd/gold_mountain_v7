@@ -74,13 +74,13 @@ export default function Dining() {
                 <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Conscious Nourishment</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-                Food that nourishes.
+                Sattvic Farm-to-Table Food
               </h2>
               <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
-                What is grown here is served here, prepared with calm minds and clean fire.
+                What is grown here is served here.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm mb-space-lg leading-relaxed">
-                We position food as an indispensable pillar of deep retreat restoration. Our kitchen cooks without chemical additives, refined sugars, or excessive oils. Instead, we elevate farm-harvested seasonal produce, traditional cold-pressed sesame oil, raw wild honey, and digestive spices like fresh cumin, turmeric, and ginger.
+                Our kitchen cooks without chemical additives, refined sugars or excessive oils, using farm-harvested seasonal produce, cold-pressed sesame oil, raw honey and digestive spices such as cumin, turmeric and ginger. Vegan and gluten-free meals are available on request.
               </p>
             </div>
             
@@ -100,7 +100,7 @@ export default function Dining() {
                 </span>
                 <div>
                   <h3 className="font-headline-sm text-headline-sm text-forest-deep">Herbal Infusions &amp; Decoctions</h3>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Customized herbal teas (Kashayams) brewed fresh twice daily from garden-picked holy basil, vetiver, and lemongrass.</p>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant">Herbal infusions (kashayams) are brewed fresh twice a day from tulsi, vetiver and lemongrass.</p>
                 </div>
               </div>
               <div className="flex items-start gap-space-md">
@@ -116,7 +116,7 @@ export default function Dining() {
             
             <div ref={ctaRef}>
               <a href="#enquiry" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-<span>Discover Dining &amp; Menus</span>
+<span>Enquire About Dining</span>
 <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
             </div>

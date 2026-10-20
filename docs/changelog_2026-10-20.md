@@ -24,6 +24,12 @@
 - Inspected mobile and desktop screenshots for the hero, package cards and FAQs; server JSON-LD contains Resort, WebPage, Service, BreadcrumbList and six FAQ entries.
 - Tested treatment accordion toggling, FAQ keyboard expansion and collapse, and the Ayurveda booking link's enquiry type selection on mobile and desktop.
 
+## Ayurveda spacing refinement
+
+- Reduced repeated section padding and regularised heading, paragraph and button spacing across the Ayurveda content sections.
+- Reduced the Science of Life-to-Programs gap from 160px to 80px on desktop and 64px on mobile. Reduced the Explore Rooms-to-final-enquiry-heading gap from 160px to 64px, and the final heading-to-buttons gap from 48px to 24px.
+- Production build passed. Visually checked the affected sections at 390px and 1536px; no horizontal overflow or browser page errors were found.
+
 ## Wellness content and SEO update
 
 - Applied the final Wellness H1, supporting line, introduction, philosophy, approach, programs, Ayurveda cross-link, spiritual retreat content and four FAQs.

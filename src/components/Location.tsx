@@ -57,13 +57,13 @@ export default function Location() {
             <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Geography</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-            In the presence of Arunachala.
+            Location: Near Arunachala, the Girivalam Path and the Temple
           </h2>
           <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
-            Thiruvannamalai, Tamil Nadu, the eternal beacon of silence and transformation.
+            A peaceful base for exploring Tiruvannamalai.
           </p>
           <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
-            Nestled along the quiet outer perimeter, Gold Mountain offers undisturbed visual access to sacred Mount Arunachala to the East and the undulating Parvati Malai mountain stretch to the West. Guests enjoy seamless proximity to the ancient Girivalam path while remaining enveloped in complete sanctuary quietude.
+            Gold Mountain is about 1 km from the Girivalam path, 1.5 km from Adi Arunachala Temple, 5 km from Ramanasramam and 6 km from Arunachaleswarar Temple. Airport transfer assistance and pre-booked cabs are available.
           </p>
         </div>
         
@@ -81,8 +81,8 @@ export default function Location() {
               {/* Overlay Pin Details */}
               <div ref={mapOverlayRef} className="absolute bottom-4 left-4 bg-forest-deep text-canvas-ivory p-space-md rounded-xl shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs border border-accent-gold/20">
                 <span className="material-symbols-outlined text-accent-gold text-[32px] mb-space-xs">location_on</span>
-                <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Sanctuary Coordinates</p>
-                <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Gold Mountain Wellness Resort, Kottangal, Girivalam Path, Thiruvannamalai 606604</p>
+                <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Resort Location</p>
+                <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Gold Mountain Wellness Resort, Kottangal, Girivalam Path, Tiruvannamalai 606604</p>
               </div>
             </div>
             
@@ -120,7 +120,7 @@ export default function Location() {
             <div ref={travelCardsRef} className="p-space-xl rounded-xl bg-surface-cream shadow-sm h-full flex flex-col">
               <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-space-md flex items-center gap-2">
                 <span className="material-symbols-outlined text-accent-gold">directions_car</span>
-                Arriving at the Sanctuary
+                Getting to Gold Mountain
               </h3>
               <div className="space-y-space-md flex-grow">
                 <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">

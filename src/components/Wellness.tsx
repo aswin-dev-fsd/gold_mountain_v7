@@ -61,14 +61,14 @@ export default function Wellness() {
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Restoration</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-              Wellness, in its own time.
+              Wellness, in Its Own Time: A Wellness Resort in Tiruvannamalai
             </h2>
             <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
-              A place built around healing, healthy living, and traditional practices.
+              A place built around healing, healthy living and traditional practices.
             </p>
           </div>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-md leading-relaxed">
-            Gold Mountain offers an unhurried environment where guests can slow down, reconnect, and explore authentic Ayurvedic living. Healing here is an organic way of being not a clinical transaction.
+            Gold Mountain offers an unhurried environment where guests can slow down, reconnect and explore authentic Ayurvedic living. Healing here is an organic way of being, shaped by traditional practices and the quiet rhythm of Arunachala.
           </p>
         </div>
         
@@ -99,26 +99,26 @@ export default function Wellness() {
               A Return to Wholeness in the Shadow of the Red Mountain
             </h3>
             <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Our wellness paradigm honors centuries-old classical traditions. We do not prescribe rigid regimes; instead, we listen to the seasons, the constitution of your doshas, and the gentle rhythm of sacred Arunachala.
+              We honour classical traditions and listen to the seasons, your constitution and the gentle rhythm of Arunachala. Choices include Panchakarma and rejuvenation programs with personal consultations, open-air yoga, and quiet spots for reflection.
             </p>
             <div className="space-y-space-sm">
               <div className="flex items-center gap-space-sm text-forest-charcoal font-body-sm text-body-sm">
                 <span className="material-symbols-outlined text-accent-gold text-[20px]">check_circle</span>
-                <span>Tailored Panchakarma and Detox programs</span>
+                <span>Panchakarma and rejuvenation programs</span>
               </div>
               <div className="flex items-center gap-space-sm text-forest-charcoal font-body-sm text-body-sm">
                 <span className="material-symbols-outlined text-accent-gold text-[20px]">check_circle</span>
-                <span>Open-air Shala morning and sunset Hatha yoga</span>
+                <span>Open-air yoga and mindful movement</span>
               </div>
               <div className="flex items-center gap-space-sm text-forest-charcoal font-body-sm text-body-sm">
                 <span className="material-symbols-outlined text-accent-gold text-[20px]">check_circle</span>
-                <span>Quiet stillness reflection spots</span>
+                <span>Quiet spaces for reflection</span>
               </div>
             </div>
             <div className="pt-space-sm">
-              <a href="#enquiry" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]">
-                <span>View Treatment Rituals</span>
-                <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              <a href="/wellness-resort-tiruvannamalai" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]">
+                <span>Explore Wellness</span>
+                <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </a>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function Wellness() {
         <div ref={pillarsTriggerRef} className="mb-space-2xl">
           <div className="text-center max-w-xl mx-auto mb-space-xl pillar-card">
             <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Our Foundation</span>
-            <h3 className="font-headline-lg text-headline-lg text-forest-deep mt-space-xs">The Five Pillars of Natural Health</h3>
+            <h2 className="font-headline-lg text-headline-lg text-forest-deep mt-space-xs">The Five Pillars of Natural Health</h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md">
@@ -139,9 +139,9 @@ export default function Wellness() {
                   <span className="material-symbols-outlined text-[20px]">local_pharmacy</span>
                 </div>
                 <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Body</span>
-                <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Ayurveda</h4>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Ayurveda</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  Traditional therapies matched to individual constitution, herbal concoctions, and healing bodywork.
+                  Traditional therapies matched to your constitution, herbal preparations and healing bodywork.
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
@@ -155,9 +155,9 @@ export default function Wellness() {
                   <span className="material-symbols-outlined text-[20px]">self_improvement</span>
                 </div>
                 <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Mind</span>
-                <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Meditation</h4>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Meditation</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  Guided mindfulness and quiet contemplation attuned to the sacred timeless silence of Mount Arunachala.
+                  Guided mindfulness and quiet contemplation in the silence of Arunachala.
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
@@ -171,9 +171,9 @@ export default function Wellness() {
                   <span className="material-symbols-outlined text-[20px]">air</span>
                 </div>
                 <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Spirit</span>
-                <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Yoga &amp; Prana</h4>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Yoga &amp; Prana</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  Restorative movement, pranayama, and breathwork connecting somatic flow with tranquil presence.
+                  Restorative movement, pranayama and breathwork in a daily shala practice.
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
@@ -187,9 +187,9 @@ export default function Wellness() {
                   <span className="material-symbols-outlined text-[20px]">nutrition</span>
                 </div>
                 <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Food</span>
-                <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Sattvic Diet</h4>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Sattvic Diet</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  Pure seasonal nourishment harvested directly from our chemical-free soil to kindle digestive fire.
+                  Pure seasonal nourishment from the resort farm and kitchen.
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
@@ -203,9 +203,9 @@ export default function Wellness() {
                   <span className="material-symbols-outlined text-[20px]">landscape</span>
                 </div>
                 <span className="font-label-sm text-label-sm uppercase tracking-widest text-accent-gold">Habitat</span>
-                <h4 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Sacred Earth</h4>
+                <h3 className="font-headline-sm text-headline-sm text-forest-deep mt-space-xs mb-space-xs break-words">Sacred Earth</h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  Biophilic architecture aligned with Arunachala to the East and the ancient Parvati Malai ridge to the West.
+                  Natural architecture aligned with Arunachala to the east and the Parvati Malai ridge to the west.
                 </p>
               </div>
               <div className="mt-space-md pt-space-sm border-t border-border-muted/40">
@@ -217,9 +217,9 @@ export default function Wellness() {
         
         {/* Action */}
         <div ref={ctaRef} className="text-center">
-          <a href="#stay" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
+          <a href="/wellness-resort-tiruvannamalai#programs" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Explore Wellness Programs</span>
-<span className="material-symbols-outlined text-accent-gold text-[18px]">calendar_add_on</span>
+<span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
         </div>
         
