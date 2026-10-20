@@ -29,7 +29,7 @@
 - Applied the final Wellness H1, supporting line, introduction, philosophy, approach, programs, Ayurveda cross-link, spiritual retreat content and four FAQs.
 - Added canonical metadata, page-specific Open Graph and Twitter data, and server-rendered Resort, WebPage, BreadcrumbList, TouristTrip and FAQPage JSON-LD for the canonical Wellness route.
 - Replaced program price placeholders with rate-enquiry copy where final numeric rates are unavailable. Retained the supplied retreat offers and directed booking actions to the existing enquiry flow.
-- Added shared Wellness FAQ content and resilient image fallbacks for the approach cards.
+- Added shared Wellness FAQ content and switched the approach cards to existing local site images.
 
 ## Contact and Rooms hero refinement
 

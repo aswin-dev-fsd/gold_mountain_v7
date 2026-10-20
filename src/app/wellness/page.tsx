@@ -89,12 +89,12 @@ function Philosophy() {
 
 // --- APPROACH GRID ---
 const APPROACH_ITEMS = [
-  { title: "Ayurveda and Traditional Therapies", description: "Authentic treatments that support your body's natural balance.", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80", fallback: "/images/wellness_image.png" },
-  { title: "Yoga", description: "Gentle movement and breathwork in an open-air shala.", img: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=800&q=80", fallback: "/images/hero_bg.png" },
-  { title: "Meditation", description: "Guided mindfulness and silent spaces for reflection.", img: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80", fallback: "/images/hero_bg.png" },
-  { title: "Healthy Food", description: "Sattvic vegetarian meals, with vegan and gluten-free options on request.", img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80", fallback: "/images/dining_image.png" },
-  { title: "Nature", description: "Time by the lotus pond, flower garden and medicinal herb garden.", img: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80", fallback: "/images/hero_bg.png" },
-  { title: "Lifestyle Consultations", description: "Personal guidance on daily routine and diet.", img: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=800&q=80", fallback: "/images/wellness_image.png" },
+  { title: "Ayurveda and Traditional Therapies", description: "Authentic treatments that support your body's natural balance.", image: "/images/wellness_image.png" },
+  { title: "Yoga", description: "Gentle movement and breathwork in an open-air shala.", image: "/images/hero_bg.png" },
+  { title: "Meditation", description: "Guided mindfulness and silent spaces for reflection.", image: "/images/hero_bg.png" },
+  { title: "Healthy Food", description: "Sattvic vegetarian meals, with vegan and gluten-free options on request.", image: "/images/dining_image.png" },
+  { title: "Nature", description: "Time by the lotus pond, flower garden and medicinal herb garden.", image: "/images/hero_bg.png" },
+  { title: "Lifestyle Consultations", description: "Personal guidance on daily routine and diet.", image: "/images/wellness_image.png" },
 ];
 
 function WellnessApproach() {
@@ -121,7 +121,7 @@ function WellnessApproach() {
           {APPROACH_ITEMS.map((item) => (
             <div key={item.title} className="approach-item group relative overflow-hidden flex flex-col w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
               <div className="relative aspect-[4/3] w-full overflow-hidden mb-3">
-                <div className="parallax-img absolute inset-0 w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('${item.img}'), url('${item.fallback}')` }} />
+                <div className="parallax-img absolute inset-0 w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('${item.image}')` }} />
               </div>
               <h3 className="text-base md:text-lg font-headline-sm text-forest-deep uppercase tracking-wider">{item.title}</h3>
               <p className="font-body-sm text-body-sm text-forest-deep/75 mt-2 leading-relaxed">{item.description}</p>
