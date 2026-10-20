@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -49,13 +49,7 @@ function ContactHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           Contact Gold Mountain <span className="block mt-2 text-accent-gold">Wellness Resort</span>
         </h1>
-        <p className="font-headline-sm text-2xl text-accent-gold mb-6">Let&apos;s plan your stay.</p>
-        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed text-balance">
-          Have a question about staying, wellness programs or availability? Speak with us directly.
-        </p>
-        <p className="font-body-md text-body-md text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed mt-4 text-balance">
-          Our retreat advisor replies within 12 hours, and we are happy to help with travel, dietary preferences and custom programs.
-        </p>
+        <p className="font-headline-sm text-2xl text-canvas-ivory">Let&apos;s plan your stay.</p>
       </div>
     </section>
   );
@@ -68,6 +62,12 @@ function ContactSection() {
   const infoRef = useRef<HTMLDivElement>(null);
   const enquiryRef = useRef<HTMLFormElement>(null);
   const [enquiryType, setEnquiryType] = useState("Stay");
+
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("enquiry") === "Ayurveda") {
+      setEnquiryType("Ayurveda");
+    }
+  }, []);
 
   const handleBookTransfer = () => {
     setEnquiryType("Stay");
@@ -82,6 +82,14 @@ function ContactSection() {
   return (
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream">
       <div className="max-w-7xl mx-auto flex flex-col gap-12 lg:gap-16">
+        <div className="max-w-4xl mx-auto text-center text-forest-deep">
+          <p className="font-body-lg text-lg md:text-xl font-normal leading-relaxed text-balance">
+            Have a question about staying, wellness programs or availability? Speak with us directly.
+          </p>
+          <p className="font-body-md text-sm md:text-base text-forest-deep/80 font-light leading-relaxed mt-4 text-balance">
+            Our retreat advisor replies within 12 hours, and we are happy to help with travel, dietary preferences and custom programs.
+          </p>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-stretch">
         
         {/* Left Column: Form */}

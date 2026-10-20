@@ -5,7 +5,13 @@ import { useGSAP } from "@gsap/react";
 import { revealStagger } from "../utils/animations";
 import Link from "next/link";
 
-export default function RetreatPackage() {
+export default function RetreatPackage({
+  sectionId = "retreat-package",
+  title = "Arunachala Spiritual Retreat",
+}: {
+  sectionId?: string;
+  title?: string;
+}) {
   const sectionRef = useRef<HTMLElement>(null);
   const leftColRef = useRef<HTMLDivElement>(null);
   const rightColRef = useRef<HTMLDivElement>(null);
@@ -26,7 +32,7 @@ export default function RetreatPackage() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} id="retreat-package" className="w-full py-space-3xl bg-canvas-ivory relative overflow-hidden">
+    <section ref={sectionRef} id={sectionId} className="w-full py-space-3xl bg-canvas-ivory relative overflow-hidden scroll-mt-24">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop relative z-10">
         
         {/* Content Flow */}
@@ -44,7 +50,7 @@ export default function RetreatPackage() {
                 <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Journey · 2 Nights / 3 Days</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight mb-space-md">
-                Arunachala Spiritual Retreat
+                {title}
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed text-balance">
                 Walk the sacred Girivalam, sit in the presence of great saints, and offer food to those who have renounced everything. A complete spiritual pilgrimage, gently guided, with rest and nourishment at Gold Mountain.
@@ -66,7 +72,7 @@ export default function RetreatPackage() {
                   "Annadanam: serve a meal to 10 sadhus with your own hands"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-forest-deep/60 text-[20px] shrink-0 mt-0.5">check_circle</span>
+                    <span aria-hidden="true" className="text-forest-deep/60 text-lg leading-none shrink-0 mt-1">✓</span>
                     <span className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{item}</span>
                   </li>
                 ))}
@@ -117,7 +123,7 @@ export default function RetreatPackage() {
             {/* Pricing Box */}
             <div className="bg-surface-cream rounded-xl p-space-md border border-border-muted/50 shadow-sm w-full">
               <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-space-sm flex items-center gap-2">
-                <span className="material-symbols-outlined text-accent-gold text-[20px]">key</span>
+                <span aria-hidden="true" className="text-accent-gold text-lg leading-none">✦</span>
                 Choose Your Stay
               </h3>
               
@@ -134,7 +140,7 @@ export default function RetreatPackage() {
               </div>
 
               <div className="flex items-start gap-2 text-forest-deep/70 bg-forest-deep/5 p-3 rounded-md">
-                <span className="material-symbols-outlined text-[16px] shrink-0 mt-0.5 text-accent-gold">info</span>
+                <span aria-hidden="true" className="text-accent-gold font-semibold shrink-0 leading-none mt-0.5">ⓘ</span>
                 <p className="font-body-xs text-body-xs text-balance">
                   Full Moon (Pournami) and festival dates are priced separately. Please enquire for specific dates.
                 </p>
@@ -149,7 +155,7 @@ export default function RetreatPackage() {
         <div ref={ctaRef} className="mt-space-xl flex flex-col sm:flex-row items-center justify-center gap-space-md">
           <Link href="/contact-us" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
             <span>Book This Retreat</span>
-            <span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">event_available</span>
+            <span aria-hidden="true" className="text-accent-gold text-lg leading-none group-hover:translate-x-1 transition-transform">→</span>
           </Link>
           
           <a href="https://wa.me/918838198769" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-8 py-3 min-h-[46px] border border-[#25D366]">
