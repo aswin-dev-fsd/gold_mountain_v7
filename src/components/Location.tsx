@@ -81,7 +81,9 @@ export default function Location() {
               
               {/* Overlay Pin Details */}
               <div ref={mapOverlayRef} className="absolute bottom-4 left-4 bg-forest-deep text-canvas-ivory p-space-md rounded-xl shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs border border-accent-gold/20">
-                <span className="material-symbols-outlined text-accent-gold text-[32px] mb-space-xs">location_on</span>
+                <div className="w-10 h-10 rounded-lg bg-accent-gold text-forest-charcoal flex items-center justify-center mb-3 shadow-sm">
+                  <span className="material-symbols-outlined text-[22px]">location_on</span>
+                </div>
                 <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Resort Location</p>
                 <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Gold Mountain Wellness Resort, Kottangal, Girivalam Path, Tiruvannamalai 606604</p>
               </div>

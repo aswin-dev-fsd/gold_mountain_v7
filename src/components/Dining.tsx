@@ -60,7 +60,9 @@ export default function Dining() {
             
             {/* Inset Quote / Tag */}
             <div ref={quoteRef} className="absolute -bottom-4 left-3 sm:-bottom-6 sm:left-2 lg:bottom-4 lg:left-4 bg-forest-deep text-canvas-ivory p-space-md rounded-xl shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs hidden sm:block border border-accent-gold/20">
-              <span className="material-symbols-outlined text-accent-gold text-[32px] mb-space-xs">restaurant</span>
+              <div className="w-10 h-10 rounded-lg bg-accent-gold text-forest-charcoal flex items-center justify-center mb-3 shadow-sm">
+                <span className="material-symbols-outlined text-[22px]">restaurant</span>
+              </div>
               <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Ahara Chikitsa</p>
               <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">&quot;Food taken in awareness is medicine; food taken in haste is burden.&quot;</p>
             </div>
@@ -84,32 +86,32 @@ export default function Dining() {
               </p>
             </div>
             
-            <div ref={listRef} className="space-y-space-md mb-space-xl">
+            <div ref={listRef} className="space-y-space-lg mb-space-xl">
               <div className="flex items-start gap-space-md">
-                <span className="w-8 h-8 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
-                  <span className="material-symbols-outlined text-[16px]">eco</span>
+                <span className="w-14 h-14 rounded-xl bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="material-symbols-outlined !text-[36px]" style={{ fontSize: "36px" }}>eco</span>
                 </span>
                 <div>
                   <h3 className="font-headline-sm text-headline-sm text-forest-deep">Purely Sattvic &amp; Seasonal</h3>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Wholesome vegetarian dining that encourages mental clarity, light digestion, and deeper meditation.</p>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Wholesome vegetarian dining that encourages mental clarity, light digestion, and deeper meditation.</p>
                 </div>
               </div>
               <div className="flex items-start gap-space-md">
-                <span className="w-8 h-8 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
-                  <span className="material-symbols-outlined text-[16px]">water_drop</span>
+                <span className="w-14 h-14 rounded-xl bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="material-symbols-outlined !text-[36px]" style={{ fontSize: "36px" }}>water_drop</span>
                 </span>
                 <div>
                   <h3 className="font-headline-sm text-headline-sm text-forest-deep">Herbal Infusions &amp; Decoctions</h3>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Herbal infusions (kashayams) are brewed fresh twice a day from tulsi, vetiver and lemongrass.</p>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Herbal infusions (kashayams) are brewed fresh twice a day from tulsi, vetiver and lemongrass.</p>
                 </div>
               </div>
               <div className="flex items-start gap-space-md">
-                <span className="w-8 h-8 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-1">
-                  <span className="material-symbols-outlined text-[16px]">group</span>
+                <span className="w-14 h-14 rounded-xl bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="material-symbols-outlined !text-[36px]" style={{ fontSize: "36px" }}>group</span>
                 </span>
                 <div>
                   <h3 className="font-headline-sm text-headline-sm text-forest-deep">Communal &amp; Private Dining Verandas</h3>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Enjoy mindful meals in shared silence or engage in gentle discussion with fellow seekers overlooking the lotus pond.</p>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Enjoy mindful meals in shared silence or engage in gentle discussion with fellow seekers overlooking the lotus pond.</p>
                 </div>
               </div>
             </div>

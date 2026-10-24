@@ -44,9 +44,9 @@ function WellnessHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6 text-balance">
-          Wellness Resort <span className="text-accent-gold">in Tiruvannamalai</span>
+          Wellness Resort <span className="text-accent-gold block mt-2">in Tiruvannamalai</span>
         </h1>
-        <p className="font-headline-sm text-2xl text-accent-gold mb-8">A slower way back to yourself.</p>
+        <p className="font-headline-sm text-2xl text-canvas-ivory mb-8">A slower way back to yourself.</p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a href="#programs" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal border border-forest-deep">
             Check Programs

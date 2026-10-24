@@ -107,7 +107,9 @@ export default function Resort() {
             
             {/* Inset Floating Badge */}
             <div ref={badgeRef} className="absolute -bottom-4 left-3 sm:-bottom-6 sm:left-2 lg:bottom-4 lg:left-4 bg-forest-deep text-canvas-ivory p-space-md rounded-xl shadow-xl max-w-[calc(100%-2rem)] sm:max-w-xs hidden sm:block border border-accent-gold/20">
-              <span className="material-symbols-outlined text-accent-gold text-[32px] mb-space-xs">architecture</span>
+              <div className="w-10 h-10 rounded-lg bg-accent-gold text-forest-charcoal flex items-center justify-center mb-3 shadow-sm">
+                <span className="material-symbols-outlined text-[22px]">architecture</span>
+              </div>
               <p className="font-headline-sm text-headline-sm text-canvas-ivory leading-snug">Vernacular Heritage</p>
               <p className="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Constructed with minimal ecological disturbance to the sacred terrain.</p>
             </div>

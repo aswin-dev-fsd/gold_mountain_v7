@@ -26,7 +26,7 @@ export default function Journal() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div ref={introRef} className="flex flex-col md:flex-row md:items-start justify-between mb-space-xl gap-space-lg">
+        <div ref={introRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
           <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
@@ -39,9 +39,11 @@ export default function Journal() {
               Reflections on conscious living, ancient science, and sacred geography.
             </p>
           </div>
-          <a href="#journal" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]">
-            <span>Read All Journal Entries</span>
-          </a>
+          <div className="shrink-0">
+            <a href="#journal" className="inline-flex items-center justify-center gap-space-xs rounded-lg bg-forest-deep text-canvas-ivory font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep active:scale-95 transition-all group px-space-lg py-2.5 min-h-[42px]">
+              <span>Read All Journal Entries</span>
+            </a>
+          </div>
         </div>
         
         {/* 3 Featured Journal Articles */}

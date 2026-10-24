@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -62,7 +62,7 @@ export default function RetreatPackage({
               <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-space-md">
                 What&apos;s Included
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-2">
                 {[
                   "2 nights stay for 2 guests",
                   "All meals: breakfast, lunch & dinner (Sattvic vegetarian)",
@@ -71,7 +71,7 @@ export default function RetreatPackage({
                   "Private cab for all temple and ashram visits",
                   "Annadanam: serve a meal to 10 sadhus with your own hands"
                 ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
+                  <li key={idx} className="flex items-start gap-3">
                     <span aria-hidden="true" className="text-forest-deep/60 text-lg leading-none shrink-0 mt-1">✓</span>
                     <span className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{item}</span>
                   </li>
@@ -111,7 +111,7 @@ export default function RetreatPackage({
                 </div>
 
                 <div className="relative">
-                  <div className="absolute -left-6 top-1 w-3 h-3 rounded-full bg-forest-deep border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
+                  <div className="absolute -left-6 top-1 w-3 h-3 rounded-full bg-accent-gold border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
                   <h4 className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep font-semibold mb-2">Day 3 · Blessings &amp; Departure</h4>
                   <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Morning meditation, breakfast, and checkout.
@@ -122,20 +122,17 @@ export default function RetreatPackage({
 
             {/* Pricing Box */}
             <div className="bg-surface-cream rounded-xl p-space-md border border-border-muted/50 shadow-sm w-full">
-              <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-space-sm flex items-center gap-2">
-                <span aria-hidden="true" className="text-accent-gold text-lg leading-none">✦</span>
-                Choose Your Stay
-              </h3>
+              <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-space-sm">Choose Your Stay</h3>
               
               <div className="space-y-3 mb-space-sm">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-3 border-b border-border-muted/40">
                   <span className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep font-semibold">Deluxe Mountain View</span>
-                  <span className="font-headline-sm text-headline-sm text-forest-deep whitespace-nowrap">₹8,999 <span className="font-body-sm text-on-surface-variant font-normal">for 2 guests</span></span>
+                  <span className="font-headline-sm text-headline-sm text-forest-deep whitespace-nowrap">₹8,999 <span className="text-xs text-on-surface-variant font-normal">for 2 guests</span></span>
                 </div>
                 
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <span className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep font-semibold">Mountain View Suite</span>
-                  <span className="font-headline-sm text-headline-sm text-forest-deep whitespace-nowrap">₹10,999 <span className="font-body-sm text-on-surface-variant font-normal">for 2 guests</span></span>
+                  <span className="font-headline-sm text-headline-sm text-forest-deep whitespace-nowrap">₹10,999 <span className="text-xs text-on-surface-variant font-normal">for 2 guests</span></span>
                 </div>
               </div>
 

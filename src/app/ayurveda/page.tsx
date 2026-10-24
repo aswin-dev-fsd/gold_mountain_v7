@@ -46,7 +46,7 @@ function AyurvedaHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6 text-balance">
           Kerala Ayurveda Treatments <span className="text-accent-gold block mt-2">in Tiruvannamalai</span>
         </h1>
-        <p className="font-headline-sm text-2xl text-accent-gold mb-8 text-balance">Traditional wisdom, thoughtfully experienced.</p>
+        <p className="font-headline-sm text-2xl text-canvas-ivory mb-8 text-balance">Traditional wisdom, thoughtfully experienced.</p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <Link href="/contact-us?enquiry=Ayurveda#enquiry" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-canvas-ivory text-forest-deep shadow-sm hover:bg-surface-cream border border-canvas-ivory">Book Your Treatment</Link>
           <a href="https://wa.me/918838198769" className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]">

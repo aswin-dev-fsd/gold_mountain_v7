@@ -5,10 +5,10 @@ import { useGSAP } from "@gsap/react";
 import { revealStagger } from "../utils/animations";
 
 const highlights = [
-  { title: "Ayurveda on Site", detail: "Personal consultations and traditional therapies" },
-  { title: "Sattvic Dining", detail: "Vegetarian meals prepared at the resort" },
-  { title: "Mountain View Rooms", detail: "Three room types for short and longer stays" },
-  { title: "Room to Slow Down", detail: "Yoga, meditation and quiet natural spaces" },
+  { title: "Ayurveda on Site", detail: "Personal consultations and traditional therapies", icon: "spa" },
+  { title: "Sattvic Dining", detail: "Vegetarian meals prepared at the resort", icon: "restaurant" },
+  { title: "Mountain View Rooms", detail: "Three room types for short and longer stays", icon: "landscape" },
+  { title: "Room to Slow Down", detail: "Yoga, meditation and quiet natural spaces", icon: "self_improvement" },
 ];
 
 const reviews = [
@@ -30,9 +30,9 @@ export default function Trust() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="w-full py-space-3xl bg-surface-cream relative">
+    <section ref={sectionRef} className="w-full py-space-xl bg-surface-cream relative">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
-        <div ref={introRef} className="text-center max-w-2xl mx-auto mb-space-xl">
+        <div ref={introRef} className="text-center max-w-2xl mx-auto mb-space-lg">
           <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Gold Mountain</span>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight mt-space-xs">What Our Guests Say</h2>
           <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
@@ -40,24 +40,28 @@ export default function Trust() {
           </p>
         </div>
 
-        <div ref={badgesRef} className="grid grid-cols-2 md:grid-cols-4 gap-space-sm sm:gap-space-md mb-space-2xl">
-          {highlights.map(({ title, detail }) => (
+        <div ref={badgesRef} className="grid grid-cols-2 md:grid-cols-4 gap-space-sm sm:gap-space-md mb-space-lg">
+          {highlights.map(({ title, detail, icon }) => (
             <div key={title} className="p-space-md sm:p-space-lg rounded-xl bg-canvas-ivory text-center flex flex-col items-center shadow-xs">
-              <span aria-hidden="true" className="text-accent-gold text-[32px] leading-none mb-3">✦</span>
+              <div className="w-10 h-10 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">
+                <span aria-hidden="true" className="material-symbols-outlined text-[20px]">{icon}</span>
+              </div>
               <h3 className="font-headline-sm text-headline-sm text-forest-deep">{title}</h3>
               <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">{detail}</p>
             </div>
           ))}
         </div>
 
-        <div ref={reviewsRef} className="grid grid-cols-1 md:grid-cols-2 gap-space-lg max-w-4xl mx-auto">
+        <div ref={reviewsRef} className="grid grid-cols-1 md:grid-cols-2 gap-space-md sm:gap-space-lg max-w-3xl mx-auto">
           {reviews.map(({ quote, author }) => (
-            <blockquote key={author} className="p-space-xl rounded-xl bg-canvas-ivory shadow-sm flex flex-col justify-between">
-              <p className="font-body-md text-body-md text-forest-charcoal leading-relaxed">
-                <span aria-hidden="true" className="block font-headline-lg text-4xl leading-none text-accent-gold mb-space-sm">“</span>
-                {quote}
-              </p>
-              <footer className="pt-space-md border-t border-border-muted mt-space-md font-headline-sm text-headline-sm text-forest-deep">
+            <blockquote key={author} className="p-space-md sm:p-space-lg rounded-xl bg-canvas-ivory shadow-xs flex flex-col justify-between">
+              <div>
+                <span aria-hidden="true" className="block font-serif text-5xl sm:text-6xl leading-none text-accent-gold -mb-1 select-none">“</span>
+                <p className="font-body-md text-body-md text-forest-charcoal leading-relaxed pt-1">
+                  {quote}
+                </p>
+              </div>
+              <footer className="pt-space-sm border-t border-border-muted mt-space-md font-headline-sm text-headline-sm text-forest-deep">
                 {author}
               </footer>
             </blockquote>

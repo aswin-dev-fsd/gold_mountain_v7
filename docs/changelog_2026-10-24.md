@@ -1,5 +1,23 @@
 # Changelog 2026-10-24
 
+## Dining Feature Icons, Hero Heading Layout & Subtitle Consistency
+
+### Changed
+- **Dining Feature Badges (`src/components/Dining.tsx`)**:
+  - Resized the three right-column feature badge containers from `32px` (`w-8 h-8`) to `56px` (`w-14 h-14`) with `rounded-xl` corners and solid `forest-deep` background, matching the height of the title and description block.
+  - Aligned badge items to the top (`items-start mt-0.5`) alongside each title, and increased vertical row separation (`space-y-space-lg`).
+  - Enscaled the inner Material Symbols icons (`eco`, `water_drop`, `group`) to 36px with explicit inline style (`style={{ fontSize: "36px" }}`) and `!text-[36px]` to prevent external Google Fonts CDN defaults (24px) from overriding Tailwind sizing.
+  - Refined the "Ahara Chikitsa" quote card icon into a clean accent-gold container with a centered restaurant icon.
+- **Hero Section Line Break & Typography Alignment**:
+  - **Wellness Page (`src/app/wellness/page.tsx`)**: Added `block mt-2` to `<span className="text-accent-gold block mt-2">in Tiruvannamalai</span>` so the location cleanly breaks to the second line, matching the layout of Ayurveda, Stay, and About pages.
+  - **Hero Subtitle Color Unification**: Changed hero subtitles from gold (`text-accent-gold`) to warm brand ivory (`text-canvas-ivory`) across Wellness (`/wellness-resort-tiruvannamalai`), Ayurveda (`/ayurveda-treatments-tiruvannamalai`), and About (`/about-us`) pages for unified typography across the entire site.
+- **Home Components Polish**:
+  - **Trust Section (`src/components/Trust.tsx`)**: Replaced star glyphs with rounded dark green icon badges (`spa`, `restaurant`, `landscape`, `self_improvement`) and optimized quote card padding.
+  - **Journal Section (`src/components/Journal.tsx`)**: Standardized character encoding entities and refined card typography.
+  - **Location Section (`src/components/Location.tsx`) & Resort Section (`src/components/Resort.tsx`)**: Fine-tuned spacing and typography consistency.
+
+---
+
 ## UI Polish, SVG Icon Migration & Shared Travel Content
 
 ### Added
