@@ -41,3 +41,29 @@
 
 ### Verification
 - Production build (`npm run build`) completed successfully with 0 errors across all 19 statically generated routes.
+
+
+---
+
+## About Location Enhancements, Stay Card Polish & Timeline Alignment
+
+### Added
+- **About Page Sacred Geography & Interactive Map (`src/app/about/page.tsx`)**:
+  - Replaced the placeholder location section with a full-width two-column layout.
+  - Added structured distance cards for key pilgrimage landmarks: Girivalam Path (1 km), Adi Arunachala Temple (1.5 km), Sri Ramanasramam (5 km), Arunachaleswarar Temple (6 km), and Parvati Malai view (visible from property).
+  - Integrated an interactive Google Maps iframe with direct external directions link and resort address card.
+
+### Changed
+- **About Page Final CTA**: Restyled with a canvas-ivory card layout, gold accent badge ("Begin Your Journey"), centered copy, and dual action buttons (Plan Your Stay and WhatsApp).
+- **Stay Page Room Cards (`src/app/stay/page.tsx`)**:
+  - Restructured room details layout to position the nightly rate above the amenities grid for improved hierarchy.
+  - Streamlined final CTA to two primary actions: "Enquiry Form" and WhatsApp.
+- **Ayurveda & Wellness Spacing & CTA Polish (`src/app/ayurveda/page.tsx`, `src/app/wellness/page.tsx`)**:
+  - Removed redundant secondary email action in favor of direct Enquiry Form and WhatsApp actions.
+  - Polished FAQ section vertical spacing.
+- **Retreat Package Timeline Polish (`src/components/RetreatPackage.tsx`)**:
+  - Vertically centered the day bullet nodes (`top-[8.5px] -translate-y-1/2`) and line connectors for clean alignment with day headers.
+  - Replaced raw unicode info character with Material Symbols `info` icon.
+
+### Verification
+- Production build (`npm run build`) completed successfully with 0 errors across all 19 statically generated routes.

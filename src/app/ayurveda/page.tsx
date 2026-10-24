@@ -154,17 +154,9 @@ function AyurvedaPackages() {
   return (
     <section ref={sectionRef} className="pt-8 pb-12 md:pt-10 md:pb-16 px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8 text-center">Ayurvedic Programs &amp; Packages</h2>
-
-        <div className="max-w-4xl mx-auto mb-8 md:mb-10 text-center">
-          <h2 className="font-headline-md text-headline-md text-forest-deep mb-4">Panchakarma Treatment in Tiruvannamalai</h2>
-          <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed">
-            Panchakarma is Ayurveda&apos;s classical cleansing approach and the most sought-after program at our resort. It is not a fixed routine: our Ayurveda doctor sets your plan after a personal consultation, based on your constitution, the season and your comfort. Programs run for 14 or 21 days and include daily therapies, a prescribed diet and herbal medicines. You stay on the property, so there is no travelling between treatment and rest, and meals follow your plan. Panchakarma is not suitable for everyone, which is why the first step is always a consultation.
-          </p>
-          <Link href="/contact-us?enquiry=Ayurveda#enquiry" className="inline-flex mt-6 items-center justify-center rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory transition-colors">Book a Consultation</Link>
-        </div>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10 text-center">Ayurvedic Programs &amp; Packages</h2>
         
-        <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 md:mb-16">
           {AYURVEDA_PACKAGES.map(pkg => (
             <div key={pkg.name} className="pkg-card bg-surface-cream border border-border-muted p-8 flex flex-col h-full rounded-xl">
               <h3 className="font-headline-md text-headline-md font-normal leading-[1.05] text-forest-deep mb-2">{pkg.name}</h3>
@@ -187,11 +179,19 @@ function AyurvedaPackages() {
               <div className="pt-6 border-t border-border-muted/50 mt-auto">
                 <p className="mb-6 text-sm text-forest-deep/80">Enquire for current rates and a personal program plan.</p>
                 <Link href="/contact-us?enquiry=Ayurveda#enquiry" className="w-full group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-<span>Enquire</span>
-</Link>
+                  <span>Enquire</span>
+                </Link>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="max-w-4xl mx-auto text-center pt-10 border-t border-border-muted/40">
+          <h3 className="font-headline-md text-headline-md text-forest-deep mb-4">Panchakarma Treatment in Tiruvannamalai</h3>
+          <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed">
+            Panchakarma is Ayurveda&apos;s classical cleansing approach and the most sought-after program at our resort. It is not a fixed routine: our Ayurveda doctor sets your plan after a personal consultation, based on your constitution, the season and your comfort. Programs run for 14 or 21 days and include daily therapies, a prescribed diet and herbal medicines. You stay on the property, so there is no travelling between treatment and rest, and meals follow your plan. Panchakarma is not suitable for everyone, which is why the first step is always a consultation.
+          </p>
+          <Link href="/contact-us?enquiry=Ayurveda#enquiry" className="inline-flex mt-6 items-center justify-center rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory transition-colors">Book a Consultation</Link>
         </div>
       </div>
     </section>
@@ -235,7 +235,7 @@ function PackageInclusions() {
 
 function StayWithTreatment() {
   return (
-    <section className="pt-12 pb-8 md:pt-16 px-6 md:px-12 bg-surface-cream">
+    <section className="py-14 md:py-20 px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-4">Stay With Your Treatment</h2>
         <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-6">
@@ -278,21 +278,24 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="pt-8 pb-12 md:pb-16 px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
-      <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-6">Begin your healing journey.</h2>
+    <section ref={sectionRef} className="py-16 md:py-20 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center relative overflow-hidden border-t border-forest-deep/60">
+      <div ref={contentRef} className="max-w-2xl mx-auto relative z-10">
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">Take the First Step</span>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-8 text-canvas-ivory">Begin your healing journey.</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="mailto:goldmountainstay@gmail.com" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
-<span>Send an Email</span>
-</a>
+          <Link 
+            href="/contact-us?enquiry=Ayurveda#enquiry" 
+            className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal hover:bg-gold-light border border-accent-gold shadow-sm"
+          >
+            <span>Enquiry Form</span>
+          </Link>
           <a
             href="https://wa.me/918838198769"
-            className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
+            className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px] shadow-sm"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-            WhatsApp Now
+            <span>WhatsApp Now</span>
           </a>
-          <Link href="/contact-us?enquiry=Ayurveda#enquiry" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal border border-forest-deep">Enquiry Form</Link>
         </div>
       </div>
     </section>

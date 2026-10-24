@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -144,11 +144,11 @@ function AyurvedaHighlight() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
+    <section ref={sectionRef} className="pt-space-2xl pb-space-lg px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
       <div ref={contentRef} className="max-w-3xl mx-auto">
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Ayurveda</span>
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-4">Explore Ayurveda in Tiruvannamalai</h2>
-        <p className="text-forest-deep/80 font-body-md text-lg mb-12 max-w-2xl mx-auto">
+        <p className="text-forest-deep/80 font-body-md text-lg mb-6 max-w-2xl mx-auto">
           Ayurveda and traditional therapies support your body&apos;s natural balance. Explore personalised treatments with guidance from our Ayurveda doctor.
         </p>
         <Link href="/ayurveda-treatments-tiruvannamalai" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
@@ -248,7 +248,7 @@ function GirivalamGuidance() {
 
 function NourishmentAndLongStays() {
   return (
-    <section className="py-space-3xl px-6 md:px-12 bg-surface-cream">
+    <section className="pt-space-lg pb-space-2xl px-6 md:px-12 bg-surface-cream">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         <div className="bg-canvas-ivory border border-border-muted rounded-xl p-8 md:p-10 flex flex-col">
           <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold block mb-3">Nourishment</span>
@@ -278,17 +278,14 @@ function FinalCTA() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
+    <section ref={sectionRef} className="pt-space-2xl pb-space-md px-6 md:px-12 bg-canvas-ivory text-forest-deep text-center">
       <div ref={contentRef} className="max-w-2xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight mb-5 text-balance">Find the Kind of Wellness That Suits Your Stay</h2>
         <p className="font-body-md text-body-md text-forest-deep/80 mb-8">Choose a program, then a room. Our team can help you plan both.</p>
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4">
           <Link href="/rooms-in-tiruvannamalai" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory hover:bg-forest-charcoal">
-            Rooms in Tiruvannamalai
+            Book Now
           </Link>
-          <a href="mailto:goldmountainstay@gmail.com" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
-<span>Send an Email</span>
-</a>
           <a
             href="https://wa.me/918838198769"
             className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]"
@@ -304,7 +301,7 @@ function FinalCTA() {
 
 function WellnessFAQs() {
   return (
-    <section id="faq" className="scroll-mt-24 py-space-3xl px-6 md:px-12 bg-canvas-ivory">
+    <section id="faq" className="scroll-mt-24 pt-space-lg pb-space-3xl px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-4xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep text-center mb-10">Frequently Asked Questions</h2>
         <div className="space-y-4">

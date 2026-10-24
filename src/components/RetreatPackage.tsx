@@ -93,8 +93,8 @@ export default function RetreatPackage({
               <div className="relative pl-6">
                 
                 <div className="relative mb-space-lg">
-                  <div className="absolute -left-[14px] top-4 bottom-[-2rem] w-px bg-forest-deep/15"></div>
-                  <div className="absolute -left-6 top-1 w-3 h-3 rounded-full bg-accent-gold border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
+                  <div className="absolute -left-[14px] top-[9px] bottom-[-2rem] w-px bg-forest-deep/15"></div>
+                  <div className="absolute -left-6 top-[8.5px] -translate-y-1/2 w-3 h-3 rounded-full bg-accent-gold border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
                   <h4 className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep font-semibold mb-2">Day 1 · Arrival &amp; Stillness</h4>
                   <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Check in, lunch, and rest. Evening sunset viewing of Arunachala from the resort, followed by a quiet dinner.
@@ -102,8 +102,8 @@ export default function RetreatPackage({
                 </div>
 
                 <div className="relative mb-space-lg">
-                  <div className="absolute -left-[14px] top-4 bottom-[-2rem] w-px bg-forest-deep/15"></div>
-                  <div className="absolute -left-6 top-1 w-3 h-3 rounded-full bg-accent-gold border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
+                  <div className="absolute -left-[14px] top-[9px] bottom-[-2rem] w-px bg-forest-deep/15"></div>
+                  <div className="absolute -left-6 top-[8.5px] -translate-y-1/2 w-3 h-3 rounded-full bg-accent-gold border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
                   <h4 className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep font-semibold mb-2">Day 2 · Girivalam &amp; Saints</h4>
                   <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Early morning Girivalam with your guide. Breakfast and rest. Afternoon cab visits to the saints&apos; samadhis, and Annadanam offering to sadhus.
@@ -111,7 +111,7 @@ export default function RetreatPackage({
                 </div>
 
                 <div className="relative">
-                  <div className="absolute -left-6 top-1 w-3 h-3 rounded-full bg-accent-gold border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
+                  <div className="absolute -left-6 top-[8.5px] -translate-y-1/2 w-3 h-3 rounded-full bg-accent-gold border-4 border-canvas-ivory shadow-sm z-10 box-content"></div>
                   <h4 className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep font-semibold mb-2">Day 3 · Blessings &amp; Departure</h4>
                   <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Morning meditation, breakfast, and checkout.
@@ -137,7 +137,7 @@ export default function RetreatPackage({
               </div>
 
               <div className="flex items-start gap-2 text-forest-deep/70 bg-forest-deep/5 p-3 rounded-md">
-                <span aria-hidden="true" className="text-accent-gold font-semibold shrink-0 leading-none mt-0.5">ⓘ</span>
+                <span aria-hidden="true" className="material-symbols-outlined text-[16px] text-forest-deep/70 shrink-0 leading-none mt-0.5 select-none">info</span>
                 <p className="font-body-xs text-body-xs text-balance">
                   Full Moon (Pournami) and festival dates are priced separately. Please enquire for specific dates.
                 </p>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -108,7 +108,7 @@ function FounderProfile() {
         {/* Right: Structured Text Blocks */}
         <div ref={contentRef} className="w-full lg:w-7/12 flex flex-col items-start text-left">
           <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-2">
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Meet Our Founder,</span>{" "}
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-3 block">Meet Our Founder,</span>{" "}
             Preethi Parangusam
           </h2>
           <p className="font-label-md uppercase tracking-widest text-forest-deep/60 mb-8">Founder, Gold Mountain Wellness Resort</p>
@@ -203,7 +203,7 @@ function GroundsAndNourishment() {
   return (
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div ref={contentRef} className="max-w-6xl mx-auto flex flex-col items-center text-center">
-        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">The Resort</span>
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-3 block">The Resort</span>
         <p className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16">Grounds &amp; Nourishment</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
@@ -278,37 +278,100 @@ function OurLocation() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-center">
-      <div ref={contentRef} className="max-w-3xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-6">Our Location</h2>
-        <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-6">
-          The resort lies on the quiet outer side of Arunachala, about 1 km from the Girivalam path, 1.5 km from Adi Arunachala Temple, 5 km from Ramanasramam and 6 km from Arunachaleswarar Temple.
-        </p>
-        <Link href="/contact-us#location" className="font-body-md text-forest-deep underline decoration-accent-gold underline-offset-4 hover:text-surface-tint transition-colors">See how to reach us</Link>
-      </div>
-    </section>
-  );
-}
+    <section ref={sectionRef} id="location" className="py-space-3xl px-6 md:px-12 bg-canvas-ivory border-t border-border-muted/30">
+      <div ref={contentRef} className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
+          
+          {/* Left Column: Details & Landmark Distances */}
+          <div className="lg:col-span-6 flex flex-col justify-between">
+            <div>
+              <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-3 block">
+                Sacred Geography
+              </span>
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-3">
+                Our Location
+              </h2>
+              <p className="font-body-md text-base md:text-lg text-forest-deep/80 leading-relaxed mb-6">
+                The resort lies on the quiet outer side of Arunachala, immersed in nature yet conveniently close to Tiruvannamalai&apos;s sacred sites and temples.
+              </p>
 
-// --- FINAL CTA ---
-function FinalCTA() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
+              {/* Address Box */}
+              <div className="p-4 rounded-xl bg-surface-cream border border-border-muted/50 mb-6 flex items-start gap-3">
+                <div className="w-10 h-10 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="material-symbols-outlined text-[20px]">location_on</span>
+                </div>
+                <div>
+                  <h3 className="font-label-md text-label-md uppercase tracking-wider text-forest-deep font-semibold">Resort Address</h3>
+                  <p className="font-body-sm text-sm text-forest-deep/80 mt-0.5">
+                    Gold Mountain Wellness Resort, Kottangal, Girivalam Path, Tiruvannamalai 606604
+                  </p>
+                </div>
+              </div>
 
-  useGSAP(() => {
-    revealSection(contentRef.current as Element);
-  }, { scope: sectionRef });
+              {/* Nearby Landmarks Grid */}
+              <div className="mb-8">
+                <span className="font-label-sm text-xs uppercase tracking-widest text-forest-deep/70 font-semibold block mb-3">
+                  Proximity to Key Sacred Landmarks
+                </span>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="p-3.5 bg-surface-cream rounded-lg border border-border-muted/40 flex items-center justify-between">
+                    <span className="font-body-sm text-xs md:text-sm text-forest-deep font-medium">Girivalam Path</span>
+                    <span className="font-label-sm text-xs font-semibold text-accent-gold">1.0 KM</span>
+                  </div>
+                  <div className="p-3.5 bg-surface-cream rounded-lg border border-border-muted/40 flex items-center justify-between">
+                    <span className="font-body-sm text-xs md:text-sm text-forest-deep font-medium">Adi Arunachala Temple</span>
+                    <span className="font-label-sm text-xs font-semibold text-accent-gold">1.5 KM</span>
+                  </div>
+                  <div className="p-3.5 bg-surface-cream rounded-lg border border-border-muted/40 flex items-center justify-between">
+                    <span className="font-body-sm text-xs md:text-sm text-forest-deep font-medium">Sri Ramanasramam</span>
+                    <span className="font-label-sm text-xs font-semibold text-accent-gold">5.0 KM</span>
+                  </div>
+                  <div className="p-3.5 bg-surface-cream rounded-lg border border-border-muted/40 flex items-center justify-between">
+                    <span className="font-body-sm text-xs md:text-sm text-forest-deep font-medium">Arunachaleswarar Temple</span>
+                    <span className="font-label-sm text-xs font-semibold text-accent-gold">6.0 KM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  return (
-    <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
-      <div ref={contentRef} className="max-w-2xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-6">Come Experience Gold Mountain</h2>
-        <p className="font-body-md text-lg text-forest-deep/80 leading-relaxed mb-10">
-          Stay with us in our <Link href="/rooms-in-tiruvannamalai" className="text-forest-deep underline decoration-accent-gold underline-offset-4 hover:text-surface-tint transition-colors">rooms in Tiruvannamalai</Link> or <Link href="/contact-us" className="text-forest-deep underline decoration-accent-gold underline-offset-4 hover:text-surface-tint transition-colors">get in touch</Link>.
-        </p>
-        <Link href="/" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-<span>Explore the Resort</span>
-</Link>
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-4 border-t border-border-muted/50">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=12.2428722,79.0256161"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep"
+              >
+                <span>Get Directions</span>
+                <span className="material-symbols-outlined text-[16px] text-accent-gold group-hover:translate-x-0.5 transition-transform">directions</span>
+              </a>
+              <Link
+                href="/contact-us#location"
+                className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory"
+              >
+                <span>How to Reach Us</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Column: Live Interactive Google Map */}
+          <div className="lg:col-span-6 flex flex-col">
+            <div className="w-full h-80 sm:h-96 lg:h-full min-h-[360px] lg:min-h-[440px] rounded-xl overflow-hidden border border-border-muted shadow-sm relative bg-surface-cream">
+              <iframe
+                src="https://www.google.com/maps?q=12.2428722,79.0256161&hl=en&z=15&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Gold Mountain Wellness Resort location on Google Maps"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   );
@@ -325,7 +388,6 @@ export default function AboutPage() {
       <PhilosophyNarrative />
       <GroundsAndNourishment />
       <OurLocation />
-      <FinalCTA />
       <Footer />
     </main>
   );

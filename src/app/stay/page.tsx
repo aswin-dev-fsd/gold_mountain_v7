@@ -126,11 +126,18 @@ function RoomBlock({ room, index, currency }: { room: typeof STAY_ROOMS[number],
         <div ref={contentRef} className="w-full lg:w-1/2 flex flex-col items-start">
           <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">Capacity: {room.capacity} guests</span>
           <h2 className="font-headline-md text-headline-md font-normal leading-[1.05] tracking-tight text-forest-deep mb-4">{room.name}</h2>
-          <p className="text-forest-deep/80 font-body-md text-lg leading-relaxed mb-8">
+          <p className="text-forest-deep/80 font-body-md text-lg leading-relaxed mb-6">
             {room.description}
           </p>
+
+          <div className="flex flex-col mb-8">
+            <span className="text-xs uppercase tracking-widest text-forest-deep/60 mb-0.5">From</span>
+            <p className="font-headline-md text-headline-md font-medium text-forest-deep">
+              {room.prices[currency]} <span className="font-body-sm text-body-sm text-forest-deep/60 font-normal">per night</span>
+            </p>
+          </div>
           
-          <div className="mb-10 w-full">
+          <div className="mb-8 w-full">
             <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-4 border-b border-border-muted pb-2">Room Amenities</span>
             <ul className="grid grid-cols-2 gap-y-3 gap-x-4">
               {room.amenities.map(item => (
@@ -142,14 +149,10 @@ function RoomBlock({ room, index, currency }: { room: typeof STAY_ROOMS[number],
             </ul>
           </div>
           
-          <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between w-full gap-6">
-            <div className="flex flex-col">
-              <span className="text-xs uppercase tracking-widest text-forest-deep/60">From</span>
-              <span className="font-headline-sm text-[25px] text-forest-deep">{room.prices[currency]} <span className="font-body-sm text-body-sm text-forest-deep/60">per night</span></span>
-            </div>
+          <div className="w-full flex justify-start">
             <Link href="/contact-us" className="whitespace-nowrap group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-<span>Enquire About This Room</span>
-</Link>
+              <span>Enquire About This Room</span>
+            </Link>
           </div>
         </div>
         
@@ -336,14 +339,11 @@ function FinalCTA() {
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
       <div ref={contentRef} className="max-w-3xl mx-auto">
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight mb-10">Plan Your Stay at Gold Mountain</h2>
-        <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4">
-          <a href="mailto:goldmountainstay@gmail.com" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
-<span>Email</span>
-</a>
-          <WhatsAppButton />
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/contact-us#enquiry" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
-            Enquiry Form
+            <span>Enquiry Form</span>
           </Link>
+          <WhatsAppButton />
         </div>
       </div>
     </section>
