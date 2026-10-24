@@ -48,10 +48,10 @@ export default function Stay() {
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Rest &amp; Replenishment</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-              Rooms &amp; Suites at Our Resort <br /> in Tiruvannamalai
+              Rooms &amp; Suites at Our Resort in Tiruvannamalai
             </h2>
             <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
-              Thoughtfully designed rooms for short visits, intensive retreats <br /> and longer stays. Rates are per night.
+              Thoughtfully designed rooms for short visits, intensive retreats and longer stays. Rates are per night.
             </p>
           </div>
           <div className="shrink-0">
