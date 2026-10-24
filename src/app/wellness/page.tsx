@@ -77,7 +77,7 @@ function Philosophy() {
         </p>
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Our Philosophy</span>
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-4 text-balance">
-          Traditional Wellness and the Healing Qualities of Nature
+          Traditional Wellness &amp; the Healing Qualities of Nature
         </h2>
         <p className="text-forest-deep/80 font-body-md text-lg max-w-2xl mx-auto leading-relaxed">
           At Gold Mountain, wellness is not a rigid program but a personal experience. By bringing together timeless traditions and the quiet power of our natural surroundings, we offer a space where healing happens at its own natural pace. It is not a clinic and not a busy tourist hotel, but a peaceful place to rest.
@@ -115,7 +115,7 @@ function WellnessApproach() {
   return (
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-12 text-center text-balance">Our Approach: Ayurveda, Yoga, Meditation, Food and Nature</h2>
+        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-12 text-center text-balance">Our Approach: Ayurveda, Yoga, Meditation, Food &amp; Nature</h2>
         
         <div ref={gridRef} className="flex flex-wrap justify-center gap-x-6 gap-y-8">
           {APPROACH_ITEMS.map((item) => (
@@ -193,7 +193,7 @@ function Programmes() {
   return (
     <section ref={sectionRef} id="programs" className="scroll-mt-24 py-space-3xl px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-12 text-center text-balance">Wellness Programs and Packages in Tiruvannamalai</h2>
+        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-12 text-center text-balance">Wellness Programs &amp; Packages in Tiruvannamalai</h2>
         
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PACKAGES.map(pkg => (
@@ -252,12 +252,12 @@ function NourishmentAndLongStays() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         <div className="bg-canvas-ivory border border-border-muted rounded-xl p-8 md:p-10 flex flex-col">
           <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold block mb-3">Nourishment</span>
-          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-5 text-balance">Sattvic Diet and Herbal Infusions</h2>
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-5 text-balance">Sattvic Diet &amp; Herbal Infusions</h2>
           <p className="font-body-md text-body-md text-forest-deep/80 leading-relaxed">Food is part of the healing. Meals are vegetarian and prepared without chemical additives or refined sugar, using seasonal produce from our own soil, cold-pressed sesame oil, honey and digestive spices. Fresh herbal infusions from tulsi, vetiver and lemongrass are served through the day.</p>
         </div>
         <div className="bg-canvas-ivory border border-border-muted rounded-xl p-8 md:p-10 flex flex-col">
           <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold block mb-3">Extended stays</span>
-          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-5 text-balance">Long Stays and Monthly Sadhana</h2>
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-5 text-balance">Long Stays &amp; Monthly Sadhana</h2>
           <p className="font-body-md text-body-md text-forest-deep/80 leading-relaxed mb-8">For guests staying 14 nights or longer, we offer seasonal privileges and complete wellness diet plans.</p>
           <Link href="/contact-us#enquiry" className="mt-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory">
             Request Long-Stay Rates

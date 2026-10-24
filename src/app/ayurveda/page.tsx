@@ -101,7 +101,7 @@ function TherapiesAccordion() {
     <section ref={sectionRef} className="py-12 md:py-16 px-6 md:px-12 bg-surface-cream border-y border-border-muted/30">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8 md:mb-10">
-          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-4">Ayurvedic Therapies and Treatments</h2>
+          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-4">Ayurvedic Therapies &amp; Treatments</h2>
           <p className="text-forest-deep/70 font-body-sm max-w-xl mx-auto">Traditional treatments with herbal oils, powders and steam, guided by your personal consultation.</p>
         </div>
         
@@ -154,7 +154,7 @@ function AyurvedaPackages() {
   return (
     <section ref={sectionRef} className="pt-8 pb-12 md:pt-10 md:pb-16 px-6 md:px-12 bg-canvas-ivory">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8 text-center">Ayurvedic Programs and Packages</h2>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-8 text-center">Ayurvedic Programs &amp; Packages</h2>
 
         <div className="max-w-4xl mx-auto mb-8 md:mb-10 text-center">
           <h2 className="font-headline-md text-headline-md text-forest-deep mb-4">Panchakarma Treatment in Tiruvannamalai</h2>

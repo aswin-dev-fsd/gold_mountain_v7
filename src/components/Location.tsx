@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -58,7 +58,7 @@ export default function Location() {
             <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Geography</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-            Location: Near Arunachala, the Girivalam Path and the Temple
+            Location: Near Arunachala, the Girivalam Path &amp; the Temple
           </h2>
           <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
             A peaceful base for exploring Tiruvannamalai.

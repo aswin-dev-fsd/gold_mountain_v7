@@ -41,20 +41,24 @@ export default function Stay() {
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         
         {/* Section Intro */}
-        <div className="flex flex-col md:flex-row md:items-start justify-between mb-space-xl gap-space-lg">
-          <div ref={introRef}>
+        <div ref={introRef} className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-lg">
+          <div>
             <div className="flex items-center gap-space-xs mb-space-xs">
 
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Rest &amp; Replenishment</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-              Rooms and Suites at Our Resort in Tiruvannamalai
+              Rooms &amp; Suites at Our Resort <br /> in Tiruvannamalai
             </h2>
             <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
-              Thoughtfully designed rooms for short visits, intensive retreats and longer stays. Rates are per night.
+              Thoughtfully designed rooms for short visits, intensive retreats <br /> and longer stays. Rates are per night.
             </p>
           </div>
-          
+          <div className="shrink-0">
+            <a href="/rooms-in-tiruvannamalai" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory transition-colors">
+              View All Rooms
+            </a>
+          </div>
         </div>
         
         {/* Accommodation Cards Grid */}
@@ -164,11 +168,7 @@ export default function Stay() {
           
         </div>
         
-        <div className="text-center mb-space-xl">
-          <a href="/rooms-in-tiruvannamalai" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] border border-forest-deep text-forest-deep hover:bg-forest-deep hover:text-canvas-ivory transition-colors">
-            See All Rooms in Tiruvannamalai
-          </a>
-        </div>
+
 
         {/* Extended Stay Notice Callout */}
         <div ref={calloutRef} className="p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">

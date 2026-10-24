@@ -152,7 +152,7 @@ function PhilosophyNarrative() {
         
         {/* Narrative Flow */}
         <div ref={textRef} className="w-full lg:w-3/5">
-          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10">Our Philosophy and Place</h2>
+          <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-10">Our Philosophy &amp; Place</h2>
           
           <div className="space-y-8 text-forest-deep/80 font-body-md text-lg leading-relaxed">
             <p>
@@ -209,7 +209,7 @@ function GroundsAndNourishment() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
           {/* Nature & Grounds */}
           <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
-            <h2 id="estate" className="scroll-mt-24 text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">The Estate: <span className="block text-lg mt-1">Goshala, Organic Farm and Gardens</span></h2>
+            <h2 id="estate" className="scroll-mt-24 text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">The Estate: <span className="block text-lg mt-1">Goshala, Organic Farm &amp; Gardens</span></h2>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">grass</span>

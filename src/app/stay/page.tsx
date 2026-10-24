@@ -279,7 +279,7 @@ function FestivalStays() {
       <div ref={contentRef} className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div>
           <p className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-4">Festival &amp; Full Moon Stays</p>
-          <h2 id="festival-stay-heading" className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-balance">Stay for Karthigai Deepam and Pournami</h2>
+          <h2 id="festival-stay-heading" className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-balance">Stay for Karthigai Deepam &amp; Pournami</h2>
         </div>
         <div className="space-y-6 font-body-md text-lg text-canvas-ivory/85 leading-relaxed">
           <p>Join the mountain lights celebration at Gold Mountain. Karthigai Deepam (also written Karthikai Deepam) brings lamp-lighting rituals, spiritual ceremonies and views of the Arunachala hills, and Pournami (full moon) draws Girivalam walkers from everywhere.</p>
