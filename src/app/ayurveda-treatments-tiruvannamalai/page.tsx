@@ -3,7 +3,7 @@ import AyurvedaPage from "../ayurveda/page";
 import { AYURVEDA_FAQS } from "@/content/ayurveda";
 
 const title = "Kerala Ayurveda Treatments in Tiruvannamalai | Book Now";
-const description = "Authentic Kerala Ayurveda treatments in Tiruvannamalai at Gold Mountain: Panchakarma, Shirodhara, Kizhi and wellness therapies. Book now.";
+const description = "Authentic Kerala Ayurveda treatments in Tiruvannamalai at Gold Mountain: Panchakarma, Shirodhara, Abhyanga and wellness therapies. Book now.";
 const siteUrl = "https://goldmountainwellnessresort.com";
 const pageUrl = `${siteUrl}/ayurveda-treatments-tiruvannamalai`;
 

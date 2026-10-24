@@ -83,7 +83,7 @@ export default function Navigation() {
       <header ref={headerRef} className="fixed top-0 left-0 w-full z-40 bg-canvas-ivory/95 backdrop-blur-md transition-shadow duration-300 shadow-[0_1px_8px_rgba(27,50,36,0.05)]">
         <div className="h-20 w-full px-4 sm:px-margin lg:px-6 xl:px-6 2xl:px-margin-desktop flex items-center justify-between gap-2 xl:gap-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center flex-1 justify-start group" aria-label="Gold Mountain Wellness Sanctuary Home">
+          <Link href="/" className="flex items-center flex-1 justify-start group" aria-label="Gold Mountain Wellness Resort Home">
             <img alt="Gold Mountain Wellness Resort" className="h-16 sm:h-[76px] w-auto object-contain transition-transform duration-200 group-hover:scale-105" src="/images/logo.png" />
           </Link>
 
@@ -113,9 +113,7 @@ export default function Navigation() {
                 aria-label="Select Currency"
               >
                 <span>{selectedCurrency.label}</span>
-                <span className={`material-symbols-outlined text-[16px] text-forest-deep/70 transition-transform duration-200 ${isCurrencyOpen ? "rotate-180" : ""}`}>
-                  keyboard_arrow_down
-                </span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`h-4 w-4 shrink-0 text-forest-deep/70 transition-transform duration-200 ${isCurrencyOpen ? "rotate-180" : ""}`}><path d="m6 9 6 6 6-6"/></svg>
               </button>
 
               {isCurrencyOpen && (
@@ -139,7 +137,7 @@ export default function Navigation() {
                     >
                       <span>{curr.label}</span>
                       {selectedCurrency.code === curr.code && (
-                        <span className="material-symbols-outlined text-[14px]">check</span>
+                        <svg aria-hidden="true" className="h-3.5 w-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m5 12 4 4L19 6"/></svg>
                       )}
                     </button>
                   ))}
@@ -171,7 +169,7 @@ export default function Navigation() {
               aria-label="Open navigation menu"
               aria-expanded={isMobileMenuOpen}
             >
-              <span className="material-symbols-outlined text-[26px]">menu</span>
+              <svg aria-hidden="true" className="h-[26px] w-[26px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
           </div>
         </div>
@@ -206,7 +204,7 @@ export default function Navigation() {
               className="w-9 h-9 rounded-lg flex items-center justify-center text-forest-deep hover:bg-forest-deep/10 transition-colors"
               aria-label="Close menu"
             >
-              <span className="material-symbols-outlined text-[24px]">close</span>
+              <svg aria-hidden="true" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="m6 6 12 12M6 18 18 6"/></svg>
             </button>
           </div>
 
@@ -220,9 +218,7 @@ export default function Navigation() {
                 className="font-label-lg text-label-lg uppercase tracking-wider text-forest-deep hover:text-forest-deep hover:translate-x-1.5 transition-all py-2.5 px-2 rounded-lg flex items-center justify-between group"
               >
                 <span>{item.label}</span>
-                <span className="material-symbols-outlined text-border-muted text-[18px] group-hover:text-accent-gold group-hover:translate-x-0.5 transition-all">
-                  chevron_right
-                </span>
+                <svg aria-hidden="true" className="h-[18px] w-[18px] shrink-0 text-border-muted group-hover:text-accent-gold group-hover:translate-x-0.5 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 6 6 6-6 6"/></svg>
               </Link>
             ))}
           </nav>
@@ -251,10 +247,10 @@ export default function Navigation() {
             </div>
           </div>
 
-          {/* Sanctuary Location Note */}
+          {/* Resort Location Note */}
           <div className="text-center pt-2">
             <span className="font-label-sm text-[10px] uppercase tracking-widest text-forest-deep">
-              Thiruvannamalai, Tamil Nadu
+              Tiruvannamalai, Tamil Nadu
             </span>
           </div>
         </div>

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const article = getArticle(slug);
   if (!article) return {};
   return {
-    title: `${article.title} | Gold Mountain Wellness Sanctuary`,
+    title: `${article.title} | Gold Mountain Wellness Resort`,
     description: article.excerpt,
   };
 }
@@ -85,7 +85,6 @@ export default async function JournalArticlePage({ params }: { params: Params })
                   <h3 className="font-headline-sm text-xl text-forest-deep mb-6">{item.title}</h3>
                   <Link href={`/journal/${item.slug}`} className="mt-auto self-start group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Read Article</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </Link>
                 </div>
               </div>

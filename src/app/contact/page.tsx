@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { isReducedMotion, EASE_CINEMATIC, revealSection } from "@/utils/animations";
 import { getWhatsAppEnquiryUrl } from "@/utils/whatsappEnquiry";
+import { TRAVEL_OPTIONS } from "@/content/travel";
 
 // --- HERO SECTION ---
 function ContactHero() {
@@ -285,21 +286,13 @@ function TravelInformation({ onBookTransfer }: { onBookTransfer: () => void }) {
       <div ref={contentRef} className="max-w-6xl mx-auto">
         <h2 id="travel-heading" className="font-headline-lg text-display-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-10 text-center">How to Reach Our Resort in Tiruvannamalai</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-          <div className="p-6 md:p-8 rounded-xl bg-canvas-ivory border border-border-muted/50">
-            <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[32px] mb-4 block">flight</span>
-            <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-3">Chennai International Airport (MAA)</h3>
-            <p className="font-body-sm text-body-sm text-forest-deep/80 leading-relaxed">Via Tindivanam. Contact us to plan your airport transfer and confirm the journey time for your arrival.</p>
-          </div>
-          <div className="p-6 md:p-8 rounded-xl bg-canvas-ivory border border-border-muted/50">
-            <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[32px] mb-4 block">flight</span>
-            <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-3">Bengaluru International Airport (BLR)</h3>
-            <p className="font-body-sm text-body-sm text-forest-deep/80 leading-relaxed">Via Krishnagiri and Chengam. Contact us to plan your airport transfer and confirm the journey time for your arrival.</p>
-          </div>
-          <div className="p-6 md:p-8 rounded-xl bg-canvas-ivory border border-border-muted/50">
-            <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[32px] mb-4 block">train</span>
-            <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-3">Katpadi Junction</h3>
-            <p className="font-body-sm text-body-sm text-forest-deep/80 leading-relaxed">Arriving by train? Contact us for onward travel assistance from the railway station.</p>
-          </div>
+          {TRAVEL_OPTIONS.map((option) => (
+            <div key={option.name} className="p-6 md:p-8 rounded-xl bg-canvas-ivory border border-border-muted/50">
+              <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[32px] mb-4 block">{option.icon}</span>
+              <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-3">{option.name}</h3>
+              <p className="font-body-sm text-body-sm text-forest-deep/80 leading-relaxed">{option.description}</p>
+            </div>
+          ))}
         </div>
         <div className="mt-space-xl p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-lg">
           <p className="font-body-md text-forest-deep/80 leading-relaxed">We provide airport transfer assistance and pre-booked cabs.</p>

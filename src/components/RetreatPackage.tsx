@@ -155,7 +155,6 @@ export default function RetreatPackage({
         <div ref={ctaRef} className="mt-space-xl flex flex-col sm:flex-row items-center justify-center gap-space-md">
           <Link href="/contact-us" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
             <span>Book This Retreat</span>
-            <span aria-hidden="true" className="text-accent-gold text-lg leading-none group-hover:translate-x-1 transition-transform">→</span>
           </Link>
           
           <a href="https://wa.me/918838198769" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-8 py-3 min-h-[46px] border border-[#25D366]">

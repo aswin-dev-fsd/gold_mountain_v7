@@ -153,7 +153,6 @@ function AyurvedaHighlight() {
         </p>
         <Link href="/ayurveda-treatments-tiruvannamalai" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Explore Ayurveda</span>
-<span aria-hidden="true" className="text-accent-gold text-lg leading-none group-hover:translate-x-1 transition-transform">→</span>
 </Link>
       </div>
     </section>

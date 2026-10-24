@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { revealStagger, revealSection, createImageReveal } from "../utils/animations";
+import { TRAVEL_OPTIONS } from "@/content/travel";
 
 export default function Location() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -123,36 +124,18 @@ export default function Location() {
                 Getting to Gold Mountain
               </h3>
               <div className="space-y-space-md flex-grow">
-                <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep">Chennai International (MAA)</span>
-                    <span className="font-headline-sm text-headline-sm text-forest-deep">3.5 Hours</span>
+                {TRAVEL_OPTIONS.map((option) => (
+                  <div key={option.name} className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
+                    <p className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep mb-1">{option.shortName}</p>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant">{option.description}</p>
                   </div>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Smooth highway transit (180 km) via scenic Tindivanam route. We provide dedicated airport transfer assistance.</p>
-                </div>
-                
-                <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep">Bengaluru International (BLR)</span>
-                    <span className="font-headline-sm text-headline-sm text-forest-deep">4.0 Hours</span>
-                  </div>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Direct roadway (205 km) through Krishnagiri and Chengam ghats into the quiet valleys of Thiruvannamalai.</p>
-                </div>
-
-                <div className="travel-card p-space-md rounded-lg bg-canvas-ivory shadow-xs">
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-forest-deep">Katpadi Junction (Railway)</span>
-                    <span className="font-headline-sm text-headline-sm text-forest-deep">2.0 Hours</span>
-                  </div>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">Major railway junction (105 km) with direct connections from all major cities. Pre-booked cabs available for a comfortable drive.</p>
-                </div>
+                ))}
               </div>
               
               <div className="travel-card mt-space-lg pt-space-md border-t border-border-muted flex items-center justify-between gap-2 mt-auto">
                 <span className="font-body-sm text-body-sm text-forest-deep font-medium">Chauffeur Service Available</span>
                 <a href="/contact-us" className="whitespace-nowrap shrink-0 group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Book Transfer</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
               </div>
             </div>

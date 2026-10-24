@@ -33,7 +33,7 @@ export default function Experiences() {
         <div ref={introRef} className="max-w-3xl mb-space-lg">
           <div className="flex items-center gap-space-xs mb-space-xs">
 
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">The Living Sanctuary</span>
+            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Life at the Resort</span>
           </div>
           <h2 className="font-headline-lg text-headline-lg text-canvas-ivory tracking-tight">
             More than a stay.
@@ -140,7 +140,6 @@ export default function Experiences() {
         <div ref={ctaRef} className="text-center">
           <a href="/about-us#estate" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
 <span>Explore the Estate</span>
-<span aria-hidden="true" className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
         </div>
         

@@ -1,27 +1,48 @@
 import Link from "next/link";
 import { HOME_FAQS } from "@/content/home";
 
+const RESORT_HIGHLIGHTS = [
+  {
+    icon: "temple_hindu",
+    title: "6 km to Arunachaleswarar Temple",
+  },
+  {
+    icon: "directions_walk",
+    title: "1 km to Girivalam Path",
+  },
+  {
+    icon: "local_pharmacy",
+    title: "Kerala Ayurveda",
+  },
+  {
+    icon: "nutrition",
+    title: "Sattvic farm food",
+  },
+  {
+    icon: "local_parking",
+    title: "Secure free parking",
+  },
+  {
+    icon: "wifi",
+    title: "High-speed Wi-Fi",
+  },
+] as const;
+
 /** Keep the Home introduction readable without crowding the image-led hero. */
 export function HomeIntroduction() {
-  const facts = [
-    "6 km to Arunachaleswarar Temple",
-    "1 km to Girivalam path",
-    "Kerala Ayurveda",
-    "Sattvic farm food",
-    "Secure free parking",
-    "High-speed Wi-Fi",
-  ];
-
   return (
     <section className="bg-surface-cream px-margin lg:px-margin-desktop py-space-xl text-forest-deep">
       <div className="max-w-7xl mx-auto">
         <p className="max-w-4xl mx-auto text-center font-body-md text-body-md md:text-lg leading-relaxed text-forest-deep/80 text-balance">
           Gold Mountain Wellness Resort is a peaceful resort in Tiruvannamalai, about 6 km from the Arunachaleswarar Temple and 1 km from the Girivalam path. Traditional wellness, healthy food and nature come together here in unhurried silence, with views of the sacred mountain from your room.
         </p>
-        <ul className="mt-space-lg grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3" aria-label="Resort highlights">
-          {facts.map((fact) => (
-            <li key={fact} className="min-h-[72px] flex items-center justify-center rounded-lg border border-border-muted/60 bg-canvas-ivory px-3 py-3 text-center font-label-sm text-label-sm text-forest-deep leading-snug shadow-sm">
-              {fact}
+        <ul className="max-w-6xl mx-auto mt-space-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md" aria-label="Resort highlights">
+          {RESORT_HIGHLIGHTS.map((highlight) => (
+            <li key={highlight.title} className="rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm transition-transform hover:-translate-y-1">
+              <div className="w-9 h-9 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">
+                <span aria-hidden="true" className="material-symbols-outlined text-[18px]">{highlight.icon}</span>
+              </div>
+              <h3 className="font-headline-sm text-lg text-forest-deep leading-snug">{highlight.title}</h3>
             </li>
           ))}
         </ul>
@@ -41,7 +62,7 @@ export function HomeAyurveda() {
             Kerala Ayurveda Treatments in Tiruvannamalai
           </h2>
           <p className="font-body-md text-body-md text-forest-deep/80 leading-relaxed max-w-2xl">
-            Meet our Ayurveda doctor, then choose a program that suits your stay. Panchakarma, rejuvenation, stress relief, spine and joint care, and therapies such as Abhyanga, Shirodhara, Udvartana, Pizhichil and Swedana bring traditional oils, herbs and experienced therapists together.
+            Meet our Ayurveda doctor, then choose a program that suits your stay. Panchakarma and rejuvenation (Rasayana) programs, with therapies such as Abhyanga, Shirodhara, Udvartana, Pizhichil and Swedana, bring traditional oils, herbs and experienced therapists together.
           </p>
         </div>
         <div className="lg:col-span-5 rounded-xl border border-border-muted/60 bg-canvas-ivory p-space-lg shadow-sm">
@@ -49,7 +70,6 @@ export function HomeAyurveda() {
           <p className="font-body-sm text-body-sm text-forest-deep/70 leading-relaxed mb-space-lg">The dedicated Ayurveda page explains the therapies and longer programs in detail.</p>
           <Link href="/ayurveda-treatments-tiruvannamalai" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal border border-forest-deep">
             View Ayurveda Treatments
-            <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </Link>
         </div>
       </div>
@@ -72,7 +92,6 @@ export function HomeRetreatTeaser() {
         <div className="lg:col-span-4 lg:flex lg:justify-end">
           <Link href="/wellness-resort-tiruvannamalai#spiritual-retreat" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal border border-forest-deep">
             See the Spiritual Retreat
-            <span aria-hidden="true" className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </Link>
         </div>
       </div>

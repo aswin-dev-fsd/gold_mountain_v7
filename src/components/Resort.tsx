@@ -47,13 +47,13 @@ export default function Resort() {
             <div ref={leftContentRef}>
               <div className="flex items-center gap-space-xs mb-space-xs">
 
-                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sanctuary Architecture</span>
+                <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Resort Architecture</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
                 Stay close to nature. <br className="hidden sm:block"/>Stay close to yourself.
               </h2>
               <p className="font-body-lg text-body-lg text-forest-charcoal/90 mt-space-md mb-space-lg leading-relaxed">
-                Gold Mountain is first and foremost a peaceful resort that offers a grounded, meaningful stay. Not an impersonal clinic or busy tourist hotel, but a serene sanctuary where natural materials harmonize with the earth.
+                Gold Mountain is first and foremost a peaceful resort that offers a grounded, meaningful stay. Not an impersonal clinic or busy tourist hotel, but a serene resort where natural materials harmonize with the earth.
               </p>
             </div>
             
@@ -91,7 +91,6 @@ export default function Resort() {
             <div>
               <a href="#stay" className="group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal hover:border-accent-gold/40 border border-forest-deep">
 <span>Explore the Resort</span>
-<span className="material-symbols-outlined text-accent-gold text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
             </div>
           </div>

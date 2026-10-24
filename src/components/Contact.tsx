@@ -44,17 +44,6 @@ export default function Contact() {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-space-md mb-space-xl">
-          <a href="#retreatEnquiryForm" className="group w-full sm:w-auto inline-flex items-center justify-center gap-space-xs rounded-lg border border-accent-gold bg-accent-gold px-space-lg py-2.5 min-h-[42px] font-label-md text-label-md uppercase tracking-wider font-semibold text-forest-charcoal hover:bg-gold-light transition-colors">
-            <span>Send an Enquiry</span>
-            <span aria-hidden="true" className="material-symbols-outlined text-forest-charcoal text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </a>
-          <a href="https://wa.me/918838198769" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-[9999px] bg-[#25D366] px-space-lg py-2.5 min-h-[42px] font-label-md text-label-md uppercase tracking-wider font-semibold text-white hover:bg-[#25D366]/90 transition-colors">
-            <svg aria-hidden="true" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.45 0 .08 5.37.08 11.97c0 2.11.55 4.17 1.59 5.99L0 24l6.2-1.63a11.9 11.9 0 0 0 5.85 1.5h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-1.25-6.21-3.51-8.42Zm-8.47 18.37h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.75.98 1-3.66-.24-.37a9.91 9.91 0 0 1-1.52-5.24c0-5.5 4.48-9.98 9.99-9.98a9.9 9.9 0 0 1 7.06 2.92 9.9 9.9 0 0 1 2.92 7.06c0 5.51-4.48 9.99-10 9.99Zm5.48-7.48c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.41-1.49-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
-            WhatsApp Now
-          </a>
-        </div>
-
         {/* Interactive Enquiry Form & Direct Actions Grid */}
         <div ref={formRef} className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl bg-forest-deep/70 backdrop-blur-md p-space-md sm:p-space-xl rounded-2xl shadow-2xl overflow-hidden lg:items-stretch">
           
@@ -99,7 +88,6 @@ export default function Contact() {
               
               <button type="submit" className="w-full cursor-pointer group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-accent-gold text-forest-charcoal shadow-sm hover:bg-gold-light hover:border-gold-light border border-accent-gold">
 <span>Continue to WhatsApp</span>
-<span aria-hidden="true" className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </button>
               
               <p className="font-body-sm text-body-sm text-surface-container-high/80">Your message will open in WhatsApp. Review it and tap Send to complete your enquiry.</p>
@@ -115,14 +103,14 @@ export default function Contact() {
               </p>
               <div className="space-y-3 min-w-0">
                 <a href="https://wa.me/918838198769" rel="noopener noreferrer" target="_blank" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-start gap-3 text-canvas-ivory shadow-sm group min-w-0">
-                  <span className="w-8 h-8 rounded-md bg-accent-gold text-forest-charcoal flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <svg aria-hidden="true" className="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M20 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-3.8-.9L3 21l1.9-4.7a8.7 8.7 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.5 4H13a8.5 8.5 0 0 1 7 7.5Z"/></svg>
+                  <span className="w-8 h-8 rounded-md bg-accent-gold text-forest-charcoal flex items-center justify-center shrink-0">
+                    <svg aria-hidden="true" className="h-[18px] w-[18px] translate-x-px" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.45 0 .08 5.37.08 11.97c0 2.11.55 4.17 1.59 5.99L0 24l6.2-1.63a11.9 11.9 0 0 0 5.85 1.5h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-1.25-6.21-3.51-8.42Zm-8.47 18.37h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.75.98 1-3.66-.24-.37a9.91 9.91 0 0 1-1.52-5.24c0-5.5 4.48-9.98 9.99-9.98a9.9 9.9 0 0 1 7.06 2.92 9.9 9.9 0 0 1 2.92 7.06c0 5.51-4.48 9.99-10 9.99Zm5.48-7.48c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.41-1.49-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
                   </span>
                   <span className="font-body-md font-medium truncate">+91 88381 98769</span>
                 </a>
                 <a href="mailto:goldmountainstay@gmail.com" className="py-3 px-4 rounded-lg bg-forest-deep hover:bg-forest-deep/80 transition-colors flex items-center justify-start gap-3 text-canvas-ivory shadow-sm group min-w-0">
-                  <span className="w-8 h-8 rounded-md bg-forest-charcoal text-accent-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <svg aria-hidden="true" className="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  <span className="w-8 h-8 rounded-md bg-forest-charcoal text-accent-gold flex items-center justify-center shrink-0">
+                    <svg aria-hidden="true" className="h-[18px] w-[18px] translate-x-px" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
                   </span>
                   <span className="font-body-md font-medium truncate">goldmountainstay@gmail.com</span>
                 </a>
