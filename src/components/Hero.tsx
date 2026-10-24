@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -96,8 +96,8 @@ export default function Hero() {
         </h1>
         
         {/* Supporting Copy */}
-        <p ref={paraRef} className="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl mx-auto mb-space-xl font-light leading-relaxed text-balance">
-          A wellness stay in the presence of Arunachala.
+        <p ref={paraRef} className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto mb-space-xl font-light leading-relaxed text-balance">
+          A peaceful wellness resort in Tiruvannamalai 1 km from the Girivalam path and 6 km from the Arunachaleswarar Temple, with mountain-view rooms, Kerala Ayurveda, and sattvic dining.
         </p>
         
         {/* Dual Call to Actions */}

@@ -67,3 +67,24 @@
 
 ### Verification
 - Production build (`npm run build`) completed successfully with 0 errors across all 19 statically generated routes.
+
+
+---
+
+## Hero Subtitle Consolidation & Duplicate Intro Cleanup
+
+### Changed
+- **Hero Subtitle & Introduction Unification Across Pages**:
+  - **About Page (`src/app/about/page.tsx`)**: Replaced generic tagline with comprehensive founder & sanctuary description highlighting Preethi Parangusam, chemical-free organic farming, native Kangayam cow goshala, and quiet Arunachala living.
+  - **Ayurveda Page (`src/app/ayurveda/page.tsx`)**: Upgraded hero description to detail authentic Panchakarma, Rasayana, and doctor-led therapies; removed repetitive duplicate text block in `AyurvedaIntro`.
+  - **Contact Page (`src/app/contact/page.tsx`)**: Updated hero copy to clearly outline reservation and consultation enquiries; removed redundant duplicate paragraph in `ContactIntro`.
+  - **Stay Page (`src/app/stay/page.tsx`)**: Upgraded hero subtitle with air-conditioned room details and 1 km Girivalam distance; removed redundant introductory block in `StayIntro`.
+  - **Wellness Page (`src/app/wellness/page.tsx`)**: Replaced tagline with holistic retreat summary covering Ayurveda, yoga, meditation, and sattvic dining; removed duplicate text in `WellnessIntro`.
+- **Homepage Copy & Header Tightening**:
+  - **Hero Section (`src/components/Hero.tsx`)**: Expanded supporting copy to clearly articulate distance (1 km from Girivalam path, 6 km from Arunachaleswarar Temple) and key amenities.
+  - **Home Sections (`src/components/HomeSections.tsx`)**: Removed redundant paragraph in `HomeIntroduction` and reduced vertical padding from `py-space-xl` to `py-space-lg`.
+  - **Location (`src/components/Location.tsx`)**: Removed inline car icon from "Getting to Gold Mountain" header for cleaner typography.
+  - **Testimonials (`src/components/Trust.tsx`)**: Enhanced blockquote styling with oversized editorial quotation marks (`text-7xl sm:text-8xl` bold gold).
+
+### Verification
+- Production build (`npm run build`) completed successfully with 0 errors across all 19 statically generated routes.

@@ -46,7 +46,7 @@ function WellnessHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6 text-balance">
           Wellness Resort <span className="text-accent-gold block mt-2">in Tiruvannamalai</span>
         </h1>
-        <p className="font-headline-sm text-2xl text-canvas-ivory mb-8">A slower way back to yourself.</p>
+        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto mb-8 font-light leading-relaxed text-balance">Restorative yoga, meditation, and guided Arunachala retreats beneath the sacred hill, paired with authentic doctor-guided Kerala Ayurveda therapies and organic sattvic nutrition.</p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a href="#programs" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal border border-forest-deep">
             Check Programs
@@ -72,9 +72,6 @@ function Philosophy() {
   return (
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
-        <p className="font-body-lg text-body-lg text-forest-deep/80 max-w-2xl mx-auto leading-relaxed mb-12 text-balance">
-          Gold Mountain is a wellness resort in Tiruvannamalai built for slowing down. Explore traditional wellness practices, nourishing food and quiet spaces designed to help you reconnect with body and mind, below the sacred hill of Arunachala.
-        </p>
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Our Philosophy</span>
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-forest-deep mb-4 text-balance">
           Traditional Wellness &amp; the Healing Qualities of Nature

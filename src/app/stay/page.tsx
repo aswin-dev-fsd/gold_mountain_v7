@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -56,22 +56,7 @@ function StayHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight text-balance mb-6">
           Rooms in Tiruvannamalai <span className="block mt-2 text-accent-gold">at Gold Mountain Wellness Resort</span>
         </h1>
-        <p className="font-headline-sm text-2xl text-canvas-ivory">A peaceful place to stay.</p>
-      </div>
-    </section>
-  );
-}
-
-function StayIntroduction() {
-  return (
-    <section className="pt-space-3xl pb-space-md px-6 md:px-12 bg-canvas-ivory">
-      <div className="max-w-4xl mx-auto text-center text-forest-deep">
-        <p className="font-body-lg text-lg md:text-xl font-normal leading-relaxed text-balance">
-          Peaceful spaces in nature, made for rest.
-        </p>
-        <p className="font-body-md text-sm md:text-base text-forest-deep/80 font-light leading-relaxed mt-4 text-balance">
-          Our rooms in Tiruvannamalai face the mountain and sit about 6 km from the Arunachaleswarar Temple and 1 km from the Girivalam path. The Deluxe and Suite include breakfast and lunch; the Family Suite includes all meals.
-        </p>
+        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto font-light leading-relaxed text-balance">Mountain-facing Deluxe rooms and Suites 1 km from the Girivalam path, featuring private balconies, quiet natural surroundings, and farm-fresh sattvic meals included.</p>
       </div>
     </section>
   );
@@ -360,8 +345,7 @@ export default function StayPage() {
     <main className="w-full min-h-screen flex flex-col bg-canvas-ivory selection:bg-accent-gold/20 selection:text-forest-deep">
       <Navigation />
       <StayHero />
-      <StayIntroduction />
-      <LongStayCallout />
+            <LongStayCallout />
       <Rooms />
       <AmenitiesGrid />
       <NearbyLandmarks />

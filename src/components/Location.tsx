@@ -121,8 +121,7 @@ export default function Location() {
           {/* Travel Guidance Card */}
           <div className="lg:col-span-5 h-full">
             <div ref={travelCardsRef} className="p-space-xl rounded-xl bg-surface-cream shadow-sm h-full flex flex-col">
-              <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-space-md flex items-center gap-2">
-                <span className="material-symbols-outlined text-accent-gold">directions_car</span>
+              <h3 className="font-headline-sm text-headline-sm text-forest-deep mb-space-md">
                 Getting to Gold Mountain
               </h3>
               <div className="space-y-space-md flex-grow">

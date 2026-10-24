@@ -45,10 +45,7 @@ function AboutHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           About Gold Mountain Wellness Resort, <span className="text-accent-gold block mt-2">Tiruvannamalai</span>
         </h1>
-        <p className="font-headline-sm text-2xl text-canvas-ivory mb-6">A place created with purpose.</p>
-        <p className="font-body-lg text-body-lg text-canvas-ivory/90 max-w-2xl mx-auto font-light leading-relaxed text-balance">
-          Discover the story behind Gold Mountain, a resort in Tiruvannamalai built on harmony, traditional wellness and deep respect for the natural world.
-        </p>
+        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto font-light leading-relaxed text-balance">Founded by Preethi Parangusam, a peaceful wellness sanctuary in Tiruvannamalai integrating chemical-free organic farming, native Kangayam cow goshala, and quiet Arunachala living.</p>
       </div>
     </section>
   );

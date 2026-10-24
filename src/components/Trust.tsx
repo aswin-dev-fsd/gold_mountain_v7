@@ -56,7 +56,7 @@ export default function Trust() {
           {reviews.map(({ quote, author }) => (
             <blockquote key={author} className="p-space-md sm:p-space-lg rounded-xl bg-canvas-ivory shadow-xs flex flex-col justify-between">
               <div>
-                <span aria-hidden="true" className="block font-serif text-5xl sm:text-6xl leading-none text-accent-gold -mb-1 select-none">“</span>
+                <span aria-hidden="true" className="block font-serif text-7xl sm:text-8xl leading-none text-accent-gold/90 -mb-4 sm:-mb-5 select-none font-bold">“</span>
                 <p className="font-body-md text-body-md text-forest-charcoal leading-relaxed pt-1">
                   {quote}
                 </p>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { HOME_FAQS } from "@/content/home";
 
 const RESORT_HIGHLIGHTS = [
@@ -31,12 +31,9 @@ const RESORT_HIGHLIGHTS = [
 /** Keep the Home introduction readable without crowding the image-led hero. */
 export function HomeIntroduction() {
   return (
-    <section className="bg-surface-cream px-margin lg:px-margin-desktop py-space-xl text-forest-deep">
+    <section className="bg-surface-cream px-margin lg:px-margin-desktop py-space-lg text-forest-deep">
       <div className="max-w-7xl mx-auto">
-        <p className="max-w-4xl mx-auto text-center font-body-md text-body-md md:text-lg leading-relaxed text-forest-deep/80 text-balance">
-          Gold Mountain Wellness Resort is a peaceful resort in Tiruvannamalai, about 6 km from the Arunachaleswarar Temple and 1 km from the Girivalam path. Traditional wellness, healthy food and nature come together here in unhurried silence, with views of the sacred mountain from your room.
-        </p>
-        <ul className="max-w-6xl mx-auto mt-space-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md" aria-label="Resort highlights">
+        <ul className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md" aria-label="Resort highlights">
           {RESORT_HIGHLIGHTS.map((highlight) => (
             <li key={highlight.title} className="rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm transition-transform hover:-translate-y-1">
               <div className="w-9 h-9 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">

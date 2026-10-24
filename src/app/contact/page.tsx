@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -50,7 +50,7 @@ function ContactHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           Contact Gold Mountain <span className="block mt-2 text-accent-gold">Wellness Resort</span>
         </h1>
-        <p className="font-headline-sm text-2xl text-canvas-ivory">Let&apos;s plan your stay.</p>
+        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto font-light leading-relaxed text-balance">Connect directly with our retreat team in Tiruvannamalai for room reservations, doctor consultations, custom Ayurveda packages, and travel transfer assistance.</p>
       </div>
     </section>
   );
