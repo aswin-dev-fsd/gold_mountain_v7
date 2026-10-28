@@ -33,7 +33,7 @@ export default function Trust() {
     <section ref={sectionRef} className="w-full py-space-xl bg-surface-cream relative">
       <div className="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop">
         <div ref={introRef} className="text-center max-w-2xl mx-auto mb-space-lg">
-          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Gold Mountain</span>
+          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Guest Experiences</span>
           <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight mt-space-xs">What Our Guests Say</h2>
           <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
             A place for rest, nourishment and time in nature.

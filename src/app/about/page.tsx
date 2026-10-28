@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -45,7 +45,7 @@ function AboutHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
           About Gold Mountain Wellness Resort, <span className="text-accent-gold block mt-2">Tiruvannamalai</span>
         </h1>
-        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto font-light leading-relaxed text-balance">Founded by Preethi Parangusam, a peaceful wellness sanctuary in Tiruvannamalai integrating chemical-free organic farming, native Kangayam cow goshala, and quiet Arunachala living.</p>
+        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto font-light leading-relaxed text-balance">Founded by Preethi Parangusam, a peaceful Tiruvannamalai sanctuary uniting chemical-free organic farming, native Kangayam goshala, and quiet Arunachala living.</p>
       </div>
     </section>
   );
@@ -63,7 +63,8 @@ function TheStory() {
   return (
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
-        <h2 className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Our Story</h2>
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">The Vision</span>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-6">The Story of Gold Mountain</h2>
         <p className="text-forest-deep/90 font-body-lg text-xl md:text-2xl leading-relaxed font-light">
           Gold Mountain was born from a desire to create a sanctuary where people could step away from the noise of modern life. We envisioned a place not just for leisure but for genuine restoration: a space where the natural world and traditional healing practices work together quietly, without pretense.
         </p>
@@ -104,8 +105,8 @@ function FounderProfile() {
 
         {/* Right: Structured Text Blocks */}
         <div ref={contentRef} className="w-full lg:w-7/12 flex flex-col items-start text-left">
+          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">Founder Profile</span>
           <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-2">
-            <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-3 block">Meet Our Founder,</span>{" "}
             Preethi Parangusam
           </h2>
           <p className="font-label-md uppercase tracking-widest text-forest-deep/60 mb-8">Founder, Gold Mountain Wellness Resort</p>
@@ -201,12 +202,12 @@ function GroundsAndNourishment() {
     <section ref={sectionRef} className="py-space-3xl px-6 md:px-12 bg-surface-cream border-t border-border-muted/30">
       <div ref={contentRef} className="max-w-6xl mx-auto flex flex-col items-center text-center">
         <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-3 block">The Resort</span>
-        <p className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16">Grounds &amp; Nourishment</p>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-16">Grounds &amp; Nourishment</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full">
           {/* Nature & Grounds */}
           <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
-            <h2 id="estate" className="scroll-mt-24 text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">The Estate: <span className="block text-lg mt-1">Goshala, Organic Farm &amp; Gardens</span></h2>
+            <h3 id="estate" className="scroll-mt-24 text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">The Estate: <span className="block text-lg mt-1">Goshala, Organic Farm &amp; Gardens</span></h3>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">grass</span>
@@ -234,7 +235,7 @@ function GroundsAndNourishment() {
 
           {/* Dining */}
           <div className="p-8 bg-canvas-ivory border border-border-muted/50 rounded-xl">
-            <h2 className="text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">Nourishment: <span className="block text-lg mt-1">Sattvic Vegetarian Restaurant</span></h2>
+            <h3 className="text-2xl font-headline-sm text-forest-deep mb-6 pb-4 border-b border-accent-gold/30 text-center w-full block">Nourishment: <span className="block text-lg mt-1">Sattvic Vegetarian Restaurant</span></h3>
             <ul className="space-y-4 text-forest-deep/80 font-body-sm leading-relaxed">
               <li className="flex gap-3">
                 <span className="material-symbols-outlined text-[20px] text-accent-gold mt-0.5">eco</span>

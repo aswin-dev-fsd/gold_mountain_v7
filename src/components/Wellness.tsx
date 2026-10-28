@@ -61,10 +61,10 @@ export default function Wellness() {
               <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold">Sacred Restoration</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-forest-deep tracking-tight">
-              Wellness, in Its Own Time: A Wellness Resort in Tiruvannamalai
+              Wellness in Its Own Time
             </h2>
             <p className="font-headline-sm text-headline-sm text-accent-gold mt-space-xs font-normal">
-              A place built around healing, healthy living and traditional practices.
+              A mindful sanctuary in Tiruvannamalai beneath Arunachala.
             </p>
           </div>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-md leading-relaxed">

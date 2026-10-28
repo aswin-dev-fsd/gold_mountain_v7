@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef, useState } from "react";
 import gsap from "gsap";
@@ -46,7 +46,7 @@ function AyurvedaHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6 text-balance">
           Kerala Ayurveda Treatments <span className="text-accent-gold block mt-2">in Tiruvannamalai</span>
         </h1>
-        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto mb-8 font-light leading-relaxed text-balance">Authentic Panchakarma, Rasayana rejuvenation, and personalised herbal therapies administered by an in-house Ayurveda doctor and experienced therapists in Tiruvannamalai.</p>
+        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto mb-8 font-light leading-relaxed text-balance">Doctor-guided Panchakarma, Rasayana rejuvenation, and authentic herbal therapies administered by experienced traditional therapists in Tiruvannamalai.</p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <Link href="/contact-us?enquiry=Ayurveda#enquiry" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-canvas-ivory text-forest-deep shadow-sm hover:bg-surface-cream border border-canvas-ivory">Book Your Treatment</Link>
           <a href="https://wa.me/918838198769" className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#25D366] text-white rounded-[9999px] font-label-md uppercase tracking-wider hover:bg-[#25D366]/90 transition-colors text-label-md font-semibold px-space-lg py-2.5 min-h-[42px]">
@@ -71,7 +71,7 @@ function AyurvedaIntro() {
   return (
     <section ref={sectionRef} className="pt-12 pb-8 md:pt-16 md:pb-10 px-6 md:px-12 bg-canvas-ivory text-center">
       <div ref={textRef} className="max-w-3xl mx-auto">
-        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">The Science of Life</span>
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">Ayurvedic Philosophy</span>
         <h2 className="font-headline-lg text-headline-lg tracking-tight text-forest-deep mb-4">
           Ayurveda, the Science of Life
         </h2>
@@ -277,8 +277,8 @@ function FinalCTA() {
   return (
     <section ref={sectionRef} className="py-16 md:py-20 px-6 md:px-12 bg-forest-charcoal text-canvas-ivory text-center relative overflow-hidden border-t border-forest-deep/60">
       <div ref={contentRef} className="max-w-2xl mx-auto relative z-10">
-        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">Take the First Step</span>
-        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-8 text-canvas-ivory">Begin your healing journey.</h2>
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-2 block">Personalized Consultations</span>
+        <h2 className="font-headline-lg text-headline-lg tracking-tight mb-8 text-canvas-ivory">Begin Your Healing Journey with Our Vaidya</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link 
             href="/contact-us?enquiry=Ayurveda#enquiry" 

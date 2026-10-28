@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -46,7 +46,7 @@ function WellnessHero() {
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6 text-balance">
           Wellness Resort <span className="text-accent-gold block mt-2">in Tiruvannamalai</span>
         </h1>
-        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto mb-8 font-light leading-relaxed text-balance">Restorative yoga, meditation, and guided Arunachala retreats beneath the sacred hill, paired with authentic doctor-guided Kerala Ayurveda therapies and organic sattvic nutrition.</p>
+        <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto mb-8 font-light leading-relaxed text-balance">Restorative yoga, meditation, and guided Arunachala retreats beneath the sacred hill, with authentic Kerala Ayurveda therapies and organic sattvic nutrition.</p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a href="#programs" className="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider font-semibold px-space-lg py-2.5 min-h-[42px] active:scale-95 transition-all bg-forest-deep text-canvas-ivory shadow-sm hover:bg-forest-charcoal border border-forest-deep">
             Check Programs
@@ -143,7 +143,7 @@ function AyurvedaHighlight() {
   return (
     <section ref={sectionRef} className="pt-space-2xl pb-space-lg px-6 md:px-12 bg-surface-cream text-forest-deep text-center">
       <div ref={contentRef} className="max-w-3xl mx-auto">
-        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Ayurveda</span>
+        <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold mb-1 block">Doctor-Guided Care</span>
         <h2 className="font-headline-lg text-headline-lg tracking-tight mb-4">Explore Ayurveda in Tiruvannamalai</h2>
         <p className="text-forest-deep/80 font-body-md text-lg mb-6 max-w-2xl mx-auto">
           Ayurveda and traditional therapies support your body&apos;s natural balance. Explore personalised treatments with guidance from our Ayurveda doctor.
@@ -231,7 +231,7 @@ function GirivalamGuidance() {
     <section className="py-space-3xl px-6 md:px-12 bg-forest-charcoal text-canvas-ivory">
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-16 items-start">
         <div>
-          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold block mb-3">Arunachala</span>
+          <span className="font-label-md text-label-md uppercase tracking-widest text-accent-gold block mb-3">Sacred Pilgrimage</span>
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight text-balance">Girivalam: What to Know Before You Walk</h2>
         </div>
         <div className="font-body-md text-body-md text-canvas-ivory/85 leading-relaxed space-y-4">

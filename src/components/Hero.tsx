@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -97,7 +97,7 @@ export default function Hero() {
         
         {/* Supporting Copy */}
         <p ref={paraRef} className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto mb-space-xl font-light leading-relaxed text-balance">
-          A peaceful wellness resort in Tiruvannamalai 1 km from the Girivalam path and 6 km from the Arunachaleswarar Temple, with mountain-view rooms, Kerala Ayurveda, and sattvic dining.
+          A peaceful resort in Tiruvannamalai 1 km from the Girivalam path, with mountain-view rooms, authentic Kerala Ayurveda, and farm-to-table sattvic dining.
         </p>
         
         {/* Dual Call to Actions */}
