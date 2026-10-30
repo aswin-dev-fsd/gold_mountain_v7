@@ -97,6 +97,8 @@ export default function Footer() {
             <a href="/terms-and-conditions" className="hover:text-canvas-ivory transition-colors">Terms &amp; Conditions</a>
             <span className="text-canvas-ivory/20" aria-hidden="true">&bull;</span>
             <span>Preserving Arunachala Ecology</span>
+            <span className="text-canvas-ivory/20" aria-hidden="true">&bull;</span>
+            <span>Crafted by <span className="text-canvas-ivory/80 font-medium">DreamLand Pictures</span></span>
           </div>
         </div>
       </div>
