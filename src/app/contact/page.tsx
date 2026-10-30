@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -216,8 +216,12 @@ function ContactDetails() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-border-muted/50 mt-6">
           <div>
-            <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Instagram</span>
-            <a href="https://www.instagram.com/goldmountainstay/" className="font-body-md text-forest-deep underline decoration-accent-gold underline-offset-4 hover:text-surface-tint transition-colors">@goldmountainstay</a>
+            <h2 className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Our Location</h2>
+            <p className="font-body-md text-forest-deep leading-relaxed">
+              Gold Mountain Wellness Resort,<br/>
+              Kottangal, Girivalam Path,<br/>
+              Tiruvannamalai 606604
+            </p>
           </div>
           <dl className="grid grid-cols-2 gap-4">
             <div>
@@ -232,12 +236,20 @@ function ContactDetails() {
         </div>
 
         <div className="flex flex-col items-start pt-6 border-t border-border-muted/50 mt-6">
-          <h2 className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Our Location</h2>
-          <p className="font-body-md text-forest-deep leading-relaxed">
-            Gold Mountain Wellness Resort,<br/>
-            Kottangal, Girivalam Path,<br/>
-            Tiruvannamalai 606604
-          </p>
+          <span className="text-xs uppercase tracking-widest text-forest-deep font-semibold block mb-2">Instagram</span>
+          <a
+            href="https://www.instagram.com/goldmountainstay/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-body-md text-forest-deep hover:text-surface-tint transition-colors group"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-accent-gold group-hover:scale-110 transition-transform">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            <span>@goldmountainstay</span>
+          </a>
         </div>
       </div>
       

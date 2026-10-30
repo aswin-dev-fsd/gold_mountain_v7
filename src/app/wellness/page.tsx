@@ -159,7 +159,7 @@ function AyurvedaHighlight() {
 // --- PROGRAMMES / PACKAGES ---
 const PACKAGES = [
   {
-    name: "Inner Silence Retreat",
+    name: "Inner Silence\nRetreat",
     duration: "3 Days / 2 Nights",
     description: "A gentle introduction to mindful living with daily yoga, silent walks and organic food.",
     includes: ["Daily yoga", "Guided meditation", "Organic meals", "Nature walks"],
@@ -195,7 +195,7 @@ function Programmes() {
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PACKAGES.map(pkg => (
             <div key={pkg.name} className="pkg-card bg-canvas-ivory border border-border-muted p-8 flex flex-col h-full rounded-xl">
-              <h3 className="font-headline-md text-headline-md font-normal leading-[1.05] text-forest-deep mb-2">{pkg.name}</h3>
+              <h3 className="font-headline-md text-headline-md font-normal leading-[1.05] text-forest-deep mb-2 whitespace-pre-line">{pkg.name}</h3>
               <p className="text-accent-gold font-label-md uppercase tracking-wider mb-6">{pkg.duration}</p>
               
               <p className="text-forest-deep/80 font-body-sm mb-6 flex-grow">{pkg.description}</p>

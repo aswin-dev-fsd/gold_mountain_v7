@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { HOME_FAQS } from "@/content/home";
 
 const RESORT_HIGHLIGHTS = [
@@ -28,21 +28,54 @@ const RESORT_HIGHLIGHTS = [
   },
 ] as const;
 
-/** Keep the Home introduction readable without crowding the image-led hero. */
+/** Continuous scrolling marquee of resort highlights. */
 export function HomeIntroduction() {
+  const marqueeItems = [...RESORT_HIGHLIGHTS, ...RESORT_HIGHLIGHTS];
+
   return (
-    <section className="bg-surface-cream px-margin lg:px-margin-desktop py-space-lg text-forest-deep">
-      <div className="max-w-7xl mx-auto">
-        <ul className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md" aria-label="Resort highlights">
-          {RESORT_HIGHLIGHTS.map((highlight) => (
-            <li key={highlight.title} className="rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm transition-transform hover:-translate-y-1">
-              <div className="w-9 h-9 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">
-                <span aria-hidden="true" className="material-symbols-outlined text-[18px]">{highlight.icon}</span>
-              </div>
-              <h3 className="font-headline-sm text-lg text-forest-deep leading-snug">{highlight.title}</h3>
-            </li>
-          ))}
-        </ul>
+    <section className="bg-surface-cream py-10 md:py-14 text-forest-deep overflow-hidden relative">
+      {/* Soft gradient edge fade on left and right */}
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 md:w-36 bg-gradient-to-r from-surface-cream to-transparent z-10" 
+      />
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 md:w-36 bg-gradient-to-l from-surface-cream to-transparent z-10" 
+      />
+
+      <div className="w-full overflow-hidden">
+        <div className="flex w-max animate-marquee hover:[animation-play-state:paused] focus-within:[animation-play-state:paused]">
+          {/* Primary Track */}
+          <ul className="flex shrink-0 items-center gap-4 sm:gap-6 pr-4 sm:pr-6" aria-label="Resort highlights">
+            {marqueeItems.map((highlight, index) => (
+              <li
+                key={`primary-${highlight.title}-${index}`}
+                className="w-[260px] sm:w-[300px] shrink-0 rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm border border-border-muted/30 transition-transform hover:-translate-y-1"
+              >
+                <div className="w-9 h-9 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">
+                  <span aria-hidden="true" className="material-symbols-outlined text-[18px]">{highlight.icon}</span>
+                </div>
+                <h3 className="font-headline-sm text-base sm:text-lg text-forest-deep leading-snug">{highlight.title}</h3>
+              </li>
+            ))}
+          </ul>
+
+          {/* Secondary Track for seamless loop */}
+          <ul className="flex shrink-0 items-center gap-4 sm:gap-6 pr-4 sm:pr-6" aria-hidden="true">
+            {marqueeItems.map((highlight, index) => (
+              <li
+                key={`dup-${highlight.title}-${index}`}
+                className="w-[260px] sm:w-[300px] shrink-0 rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm border border-border-muted/30 transition-transform hover:-translate-y-1"
+              >
+                <div className="w-9 h-9 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">
+                  <span aria-hidden="true" className="material-symbols-outlined text-[18px]">{highlight.icon}</span>
+                </div>
+                <h3 className="font-headline-sm text-base sm:text-lg text-forest-deep leading-snug">{highlight.title}</h3>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
