@@ -43,7 +43,7 @@ function AboutHero() {
       
       <div ref={contentRef} className="relative z-20 w-full max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6">
-          About Gold Mountain Wellness Resort, <span className="text-accent-gold block mt-2">Tiruvannamalai</span>
+          About Gold Mountain <span className="text-accent-gold block mt-2">Wellness Resort</span>
         </h1>
         <p className="font-body-lg text-body-lg text-surface-container-high/90 max-w-3xl mx-auto font-light leading-relaxed text-balance">Founded by Preethi Parangusam, a peaceful Tiruvannamalai sanctuary uniting chemical-free organic farming, native Kangayam goshala, and quiet Arunachala living.</p>
       </div>
