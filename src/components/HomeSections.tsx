@@ -51,12 +51,12 @@ export function HomeIntroduction() {
             {marqueeItems.map((highlight, index) => (
               <li
                 key={`primary-${highlight.title}-${index}`}
-                className="w-[260px] sm:w-[300px] shrink-0 rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm border border-border-muted/30 transition-transform hover:-translate-y-1"
+                className="w-[310px] sm:w-[340px] shrink-0 rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm border border-border-muted/30 transition-transform hover:-translate-y-1"
               >
                 <div className="w-9 h-9 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">
                   <span aria-hidden="true" className="material-symbols-outlined text-[18px]">{highlight.icon}</span>
                 </div>
-                <h3 className="font-headline-sm text-base sm:text-lg text-forest-deep leading-snug">{highlight.title}</h3>
+                <h3 className="font-headline-sm text-base sm:text-lg text-forest-deep leading-snug whitespace-nowrap">{highlight.title}</h3>
               </li>
             ))}
           </ul>
@@ -66,12 +66,12 @@ export function HomeIntroduction() {
             {marqueeItems.map((highlight, index) => (
               <li
                 key={`dup-${highlight.title}-${index}`}
-                className="w-[260px] sm:w-[300px] shrink-0 rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm border border-border-muted/30 transition-transform hover:-translate-y-1"
+                className="w-[310px] sm:w-[340px] shrink-0 rounded-xl bg-canvas-ivory p-4 sm:p-5 shadow-sm border border-border-muted/30 transition-transform hover:-translate-y-1"
               >
                 <div className="w-9 h-9 rounded-lg bg-forest-deep text-accent-gold flex items-center justify-center mb-3">
                   <span aria-hidden="true" className="material-symbols-outlined text-[18px]">{highlight.icon}</span>
                 </div>
-                <h3 className="font-headline-sm text-base sm:text-lg text-forest-deep leading-snug">{highlight.title}</h3>
+                <h3 className="font-headline-sm text-base sm:text-lg text-forest-deep leading-snug whitespace-nowrap">{highlight.title}</h3>
               </li>
             ))}
           </ul>

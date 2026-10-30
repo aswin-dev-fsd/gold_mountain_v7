@@ -91,7 +91,11 @@ export default function Footer() {
         
         <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high/60 border-t border-canvas-ivory/15">
           <p>© 2026 Gold Mountain Wellness Resort. All rights reserved.</p>
-          <div className="flex flex-wrap items-center gap-space-lg">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <a href="/privacy-policy" className="hover:text-canvas-ivory transition-colors">Privacy Policy</a>
+            <span className="text-canvas-ivory/20" aria-hidden="true">&bull;</span>
+            <a href="/terms-and-conditions" className="hover:text-canvas-ivory transition-colors">Terms &amp; Conditions</a>
+            <span className="text-canvas-ivory/20" aria-hidden="true">&bull;</span>
             <span>Preserving Arunachala Ecology</span>
           </div>
         </div>

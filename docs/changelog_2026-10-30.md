@@ -19,3 +19,27 @@
 
 ### Verification
 - Production build (`npm run build`) passed with 0 errors across all 19 statically generated routes.
+
+
+---
+
+## Privacy Policy & Terms and Conditions Pages Integration
+
+### Added
+- **Privacy Policy Page (`src/app/privacy-policy/page.tsx`)**:
+  - Created complete, responsive legal Privacy Policy page tailored for Gold Mountain Wellness Resort, detailing personal data collection, enquiry and booking communication, guest privacy rights, and contact information.
+- **Terms and Conditions Page (`src/app/terms-and-conditions/page.tsx`)**:
+  - Created comprehensive Terms and Conditions page covering reservations, payments, cancellations, check-in/check-out guidelines, code of conduct, quiet hours, and facility usage policies.
+
+### Changed
+- **Footer Links (`src/components/Footer.tsx`)**:
+  - Linked bottom bar legal items directly to `/privacy-policy` and `/terms-and-conditions`.
+- **Sitemap (`src/app/sitemap.ts`)**:
+  - Registered `/privacy-policy` and `/terms-and-conditions` with canonical routes and updated `lastModified` to `2026-10-30`.
+- **Contact Details Header (`src/app/contact/page.tsx`)**:
+  - Refined the Instagram section header with an inline brand SVG icon next to the section label.
+- **Temporary Reference Cleanup**:
+  - Removed `temp_privacy.txt` and `temp_terms.txt` after converting them into official Next.js pages.
+
+### Verification
+- Production build (`npm run build`) succeeded with 0 errors across 21 statically generated routes.
