@@ -89,17 +89,16 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high/60 border-t border-canvas-ivory/15">
-          <p>© 2026 Gold Mountain Wellness Resort. All rights reserved.</p>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-y-4 font-label-sm text-label-sm text-surface-container-high/60 border-t border-canvas-ivory/15">
+          <p className="flex-1 text-center md:text-left">© 2026 Gold Mountain Wellness Resort. All rights reserved.</p>
+          <div className="flex items-center justify-center gap-x-6">
             <a href="/privacy-policy" className="hover:text-canvas-ivory transition-colors">Privacy Policy</a>
             <span className="text-canvas-ivory/20" aria-hidden="true">&bull;</span>
             <a href="/terms-and-conditions" className="hover:text-canvas-ivory transition-colors">Terms &amp; Conditions</a>
-            <span className="text-canvas-ivory/20" aria-hidden="true">&bull;</span>
-            <span>Preserving Arunachala Ecology</span>
-            <span className="text-canvas-ivory/20" aria-hidden="true">&bull;</span>
-            <span>Crafted by <span className="text-canvas-ivory/80 font-medium">DreamLand Pictures</span></span>
           </div>
+          <p className="flex-1 text-center md:text-right">
+            <span>Crafted by <span className="text-canvas-ivory/80 font-medium">DreamLand Pictures</span></span>
+          </p>
         </div>
       </div>
     </footer>

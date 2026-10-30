@@ -43,3 +43,19 @@
 
 ### Verification
 - Production build (`npm run build`) succeeded with 0 errors across 21 statically generated routes.
+
+
+---
+
+## Footer Bottom Bar Layout Alignment
+
+### Changed
+- **Footer Bottom Bar (`src/components/Footer.tsx`)**:
+  - Restructured the bottom sub-footer into a balanced 3-column layout on medium/large viewports:
+    - Left-aligned copyright notice (`flex-1 text-center md:text-left`).
+    - Centered legal links for Privacy Policy and Terms & Conditions (`justify-center gap-x-6`).
+    - Right-aligned agency credit for DreamLand Pictures (`flex-1 text-center md:text-right`).
+  - Removed redundant filler text from the legal line for cleaner spacing and visual balance.
+
+### Verification
+- Production build (`npm run build`) succeeded with 0 errors across 21 statically generated routes.
