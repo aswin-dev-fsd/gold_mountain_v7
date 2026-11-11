@@ -10,6 +10,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { STAY_ROOMS, STAY_FAQS } from "@/content/stay";
 import { isReducedMotion, EASE_CINEMATIC, revealSection, revealStagger, createImageParallax } from "@/utils/animations";
+import TempImageBadge from "@/components/TempImageBadge";
 
 // Match the established WhatsApp style; rounded-full is only 12px in this theme.
 function WhatsAppButton() {
@@ -47,7 +48,7 @@ function StayHero() {
   return (
     <section ref={sectionRef} className="relative w-full min-h-[80vh] py-20 md:py-24 flex items-center justify-center overflow-hidden bg-forest-charcoal mt-20">
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/images/stay_suite.png')" }} />
+        <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/images/suite-living-room-arunachala-view-02.webp')" }} />
       </div>
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest-charcoal/80 via-forest-charcoal/40 to-forest-charcoal/85 pointer-events-none"></div>
       <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-forest-deep/30 to-forest-charcoal/90 pointer-events-none"></div>
@@ -104,6 +105,7 @@ function RoomBlock({ room, index, currency }: { room: typeof STAY_ROOMS[number],
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover" 
             />
+            {"imageSource" in room && <TempImageBadge source={room.imageSource} note={room.imageNote} />}
           </div>
         </div>
 

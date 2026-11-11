@@ -1,3 +1,5 @@
+import type { TempImageSource } from "@/components/TempImageBadge";
+
 export interface JournalSection {
   heading: string;
   paragraphs: string[];
@@ -10,6 +12,8 @@ export interface JournalArticle {
   title: string;
   excerpt: string;
   image: string;
+  /** Set while the image is not a final resort photo; shows a review badge. */
+  imageSource?: TempImageSource;
   intro: string;
   sections: JournalSection[];
 }
@@ -23,6 +27,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     title: "The Sacred Stillness of Arunachala: An International Traveler's Guide",
     excerpt: "Navigating the sacred geography of Thiruvannamalai, the 14 km Girivalam circumambulation, and finding deep inner quietude.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBff-dHQjJQAfDdnhZGObNdgAyI99t0GtLb7EDVP8ojtklmgX19VnBjxrvfzMTbFI_6YDtEo2pe5WQUu_QrL9ZXSv9I9-BHBMSrhft4EA4KkMY9OJ7yzHM3WzDRx8z5-0gshMLTr1X3nJaYjy4zQTy841pu4luxHmWdjHLC9y9g-_3s_ex3SMNadJZef8QJ6j9B7a2hirBcLVNZYTaW2dE1CWLeofQEdLwxJnHdfzT1uFjErccSkRbp",
+    imageSource: "ai",
     intro: "Rising quietly above the plains of Tamil Nadu, Arunachala has drawn seekers for centuries. For travelers arriving from far away, the mountain can feel both welcoming and mysterious. This guide offers a gentle starting point.",
     sections: [
       {
@@ -60,6 +65,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     title: "Ayurveda as Daily Rhythm: Beyond Treatments to Wholesome Living",
     excerpt: "How Dinacharya (daily natural routine) harmonizes the biological clock and prevents imbalances before they arise.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAofNZqVnGVJzpaGvDlLSddXpowD08XVurhMktLFiO9MAIawNTe2m5F-qmtJb5-GXbPUG7moBCRYC8uZwCKxWOBYi_QSlDkZ5IvdOm_ED_i8atlnP9tu0EKclC1RTISXLMTtCWWJ-e6zOD6f6Il6aMpMhApasOoO4OU0hB7dnnfQrSL2FpjRT95HYxIZr7HMHCseBkVDfrsiZQhxLWngOaO-eAGsq1ZCYO48_OgBjQoaRsWBEHlpaH3",
+    imageSource: "ai",
     intro: "Ayurveda is often introduced through treatments such as massage and cleansing. Yet the tradition begins somewhere simpler: with how we spend an ordinary day.",
     sections: [
       {
@@ -95,7 +101,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     readTime: "4 min read",
     title: "From Soil to Plate: The Healing Power of Sattvic Garden Dining",
     excerpt: "Why food harvested within hours of consumption retains vibrant prana and supports physical and mental lightness.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAQrVUbYJVSxbYoschzu5xitIOLTAaVU2aHAQOEVI0kk-ohlq8Th8hQ0AgNchZm20LLAlpUuBQg7ORspahMAnocuEkkSFATvUEn4cv0LS_tCQcor_3-C0BPpxK8PfF-T74cYxyljgxq7DaJKOsnP6Z6mZ6IOHK2kxN-NHc4ePFyPdoDG3QamzjezgFLryZQREUcB21g9hy-FPNzxnXSWycj411z-hKKaFBBtynqQjiKdHJh5OtIcN6t",
+    image: "/images/dining-idli-breakfast-thali.webp",
     intro: "In the Ayurvedic view, food is more than fuel. It shapes how we feel, how we think and how deeply we rest. Sattvic eating is built on that idea.",
     sections: [
       {

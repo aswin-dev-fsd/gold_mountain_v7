@@ -8,6 +8,7 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { isReducedMotion, EASE_CINEMATIC, revealSection, createImageParallax } from "@/utils/animations";
+import TempImageBadge from "@/components/TempImageBadge";
 
 // --- HERO SECTION ---
 function AboutHero() {
@@ -36,7 +37,7 @@ function AboutHero() {
     <section ref={sectionRef} className="relative w-full min-h-[80svh] py-20 flex items-center justify-center overflow-hidden bg-forest-charcoal mt-20">
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Placeholder image for About (a wide landscape view) */}
-        <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80')" }} />
+        <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/images/aerial-drone-resort-top-view-fields.webp')" }} />
       </div>
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest-charcoal/80 via-forest-charcoal/40 to-forest-charcoal/85 pointer-events-none"></div>
       <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-forest-deep/30 to-forest-charcoal/90 pointer-events-none"></div>
@@ -100,6 +101,7 @@ function FounderProfile() {
               className="absolute inset-0 w-full h-full object-cover grayscale opacity-80" 
             />
             <div className="absolute inset-0 border border-border-muted m-4 pointer-events-none"></div>
+            <TempImageBadge source="stock" note="Temporary · founder photo needed" position="bottom-left" />
           </div>
         </div>
 
@@ -176,7 +178,7 @@ function PhilosophyNarrative() {
           <div className="aspect-[3/4] w-full overflow-hidden relative">
             <img 
               ref={imageRef}
-              src="https://images.unsplash.com/photo-1518104593124-ac2e82a5eb9b?auto=format&fit=crop&w=800&q=80" 
+              src="/images/garden-path-building-view-portrait.webp" 
               alt=""
               className="absolute inset-0 w-full h-full object-cover" 
             />

@@ -21,7 +21,7 @@ export default function Resort() {
     // Right Image Reveal
     if (rightImageRef.current) {
       createImageReveal(rightImageRef.current);
-      createImageParallax(rightImageRef.current, rightImageContainerRef.current!);
+      createImageParallax(rightImageRef.current, rightImageContainerRef.current!, -4, 4, 1.08);
     }
 
     // Cards Stagger
@@ -101,7 +101,7 @@ export default function Resort() {
               <div 
                 ref={rightImageRef}
                 className="w-full h-full bg-cover bg-center" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbc1dAtW8lplSOhvQcqHBVeGpQhdF-oUn_WEz1SqN0VzX79McoGhpsI_7SY3DC1KS3xSthm58U7B0hDmlcZZX2AGjR8HhXK7K-rwSqh3Kb677ALVjR-gwJZqJIDyzSfxZaAQUPG9saFF5QJoxxlR1Z10GGYgkOz8Zj3Xa8Ym2wMQz1XHy8ZOB5sGj0J2ZortSftwgX3hBMuFVEejenIwhrTt85AdiiJItGxDJu2Eq0ZD2mY2PbfZj_')" }}
+                style={{ backgroundImage: "url('/images/exterior-sunset-reception-cottage-wide.webp')" }}
               ></div>
             </div>
             

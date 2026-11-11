@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { revealStagger, revealSection } from "../utils/animations";
 import { useCurrency } from "../context/CurrencyContext";
+import TempImageBadge from "@/components/TempImageBadge";
 
 const PRICES = {
   deluxe: { INR: '₹3,099', USD: '$37', EUR: '€34' },
@@ -69,7 +70,7 @@ export default function Stay() {
             <div className="w-full aspect-[16/10] overflow-hidden relative">
               <div 
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgHH2vB_Lh8e5Q8IMxsfZP65dP-16-6HiBxMKJxFwFHwv7UwVKcY9DTOXKUplRFYLaTBQsp2aos0xypMpDNF6toKbYLgQdvdaoB_KUyUq3mWM6XVj-65T2KLTvLRzm_436vRndIvc2InOZQo8b_ok-TA4bo6lvKaHrdlT1nK1d71xl4A2fzsysbM4aM1ClVa0hyGISrMXkZXqtYEeg_lTHsTte8P2dIizeqK0yWiBm-27TmbV0B7DP')" }}
+                style={{ backgroundImage: "url('/images/deluxe-bedroom-balcony-door.webp')" }}
               ></div>
               <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-forest-deep/90 text-canvas-ivory font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
                 2 Guests
@@ -103,7 +104,7 @@ export default function Stay() {
             <div className="w-full aspect-[16/10] overflow-hidden relative">
               <div 
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
-                style={{ backgroundImage: "url('/images/stay_suite.png')" }}
+                style={{ backgroundImage: "url('/images/suite-living-room-arunachala-view-01.webp')" }}
               ></div>
               <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-forest-deep/90 text-canvas-ivory font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
                 2 Guests
@@ -137,8 +138,9 @@ export default function Stay() {
             <div className="w-full aspect-[16/10] overflow-hidden relative">
               <div 
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWI45UeEFbYgTReGpFa8JM3ytvvvwzSU9RNhRMXIbnYWoOmKmuGEolhG9O3r-rzv6TmRi-VCyntHk12zJw66uvU8KM4TKX-QbMn2bpbu9_5oGfo4RTKsKhWayJISk01Cx302LzZCJCI86Ot3yaJjc12mOhQ_QZp_QStc1xlPq1gYw4l1h-DwFbDswrtAA0PJBcMNuN33u-HdLYRMvZkA01iZbpMkmnkKVvAq8Vo-75XBXhG8fPq9ni')" }}
+                style={{ backgroundImage: "url('/images/suite-open-plan-living-bedroom.webp')" }}
               ></div>
+              <TempImageBadge source="original" note="Suite photo shown · Family Suite photo needed" position="bottom-left" />
               <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-forest-deep/90 text-canvas-ivory font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
                 4 Guests
               </span>

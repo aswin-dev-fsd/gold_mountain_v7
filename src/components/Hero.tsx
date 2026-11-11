@@ -70,7 +70,7 @@ export default function Hero() {
         <div 
           ref={bgRef}
           className="w-full h-full bg-cover bg-center" 
-          style={{ backgroundImage: "url('/images/hero_bg.png')" }}
+          style={{ backgroundImage: "url('/images/aerial-drone-room-blocks-dusk.webp')" }}
         >
         </div>
       </div>

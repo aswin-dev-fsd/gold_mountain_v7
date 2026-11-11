@@ -54,7 +54,7 @@ export default function Dining() {
               <div 
                 ref={imageRef}
                 className="w-full h-full bg-cover bg-center" 
-                style={{ backgroundImage: "url('/images/dining_image.png')" }}
+                style={{ backgroundImage: "url('/images/dining-sunset-bamboo-terrace-portrait.webp')" }}
               ></div>
             </div>
             

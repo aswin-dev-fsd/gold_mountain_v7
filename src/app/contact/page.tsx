@@ -39,7 +39,7 @@ function ContactHero() {
     <section ref={sectionRef} className="relative w-full min-h-[80svh] py-20 flex items-center justify-center overflow-hidden bg-forest-charcoal mt-20">
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Scenic image for Contact (reception or serene setting) */}
-        <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1920&q=80')" }} />
+        <div ref={bgRef} className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/images/exterior-night-room-blocks-garden.webp')" }} />
       </div>
       
       {/* Scrim / Gradient Overlays */}

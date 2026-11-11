@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import TempImageBadge from "@/components/TempImageBadge";
 import { isReducedMotion, EASE_CINEMATIC, revealSection, revealStagger } from "@/utils/animations";
 import { AYURVEDA_FAQS, AYURVEDA_PACKAGES, AYURVEDA_THERAPIES } from "@/content/ayurveda";
 
@@ -41,6 +42,7 @@ function AyurvedaHero() {
       </div>
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest-charcoal/80 via-forest-charcoal/40 to-forest-charcoal/85 pointer-events-none"></div>
       <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-forest-deep/30 to-forest-charcoal/90 pointer-events-none"></div>
+      <TempImageBadge source="stock" position="bottom-left" />
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6 text-balance">

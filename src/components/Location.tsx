@@ -76,7 +76,7 @@ export default function Location() {
               <div 
                 ref={mapRef}
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000"
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDRdyHJqnJE92zop-G2JS7NpUvQOsxFFsWZ6YCzaiIo2ZXDU0X1SYv_Z2vzCt2yrYsWVtA75NTnfBPfNMs3Gx-YbYWCH0jmDEOJTEtsBWAoalST2FsDfVqTL3DOpiIWqeZ28qhUuwoYxuBebB2icrnA7VA8MCssZwvLZKAZVoDsMzJTxEUCcSHlJeOafUzpkfXIJT2ZiVNoLehFevkCi3i51CDDAhVUOOPEDwdRoFA8o0gZfISI3p5')" }}
+                style={{ backgroundImage: "url('/images/deluxe-balcony-arunachala-view.webp')" }}
               ></div>
               
               {/* Overlay Pin Details */}
