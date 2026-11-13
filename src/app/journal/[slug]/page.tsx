@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { JOURNAL_ARTICLES, getArticle } from "@/data/journal";
-import TempImageBadge from "@/components/TempImageBadge";
 
 type Params = Promise<{ slug: string }>;
 
@@ -39,7 +38,6 @@ export default async function JournalArticlePage({ params }: { params: Params })
           <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('${article.image}')` }} />
         </div>
         <div className="absolute inset-0 z-10 bg-forest-charcoal/60 pointer-events-none"></div>
-        {article.imageSource && <TempImageBadge source={article.imageSource} position="bottom-left" />}
         <div className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
           <div className="flex items-center gap-4 mb-6 text-canvas-ivory/90">
             <span className="px-3 py-1 rounded bg-canvas-ivory/15 backdrop-blur-sm uppercase tracking-widest font-label-sm text-sm">{article.category}</span>
@@ -79,9 +77,7 @@ export default async function JournalArticlePage({ params }: { params: Params })
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {related.map((item) => (
               <div key={item.slug} className="flex flex-col rounded-xl overflow-hidden bg-canvas-ivory border border-border-muted/50 shadow-sm">
-                <div className="relative w-full aspect-[16/9] bg-cover bg-center" style={{ backgroundImage: `url('${item.image}')` }}>
-                  {item.imageSource && <TempImageBadge source={item.imageSource} />}
-                </div>
+                <div className="w-full aspect-[16/9] bg-cover bg-center" style={{ backgroundImage: `url('${item.image}')` }} />
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="px-2 py-0.5 rounded bg-surface-cream text-forest-deep font-label-sm text-label-sm uppercase">{item.category}</span>

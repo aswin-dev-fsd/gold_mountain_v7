@@ -1,5 +1,3 @@
-import type { TempImageSource } from "@/components/TempImageBadge";
-
 export interface JournalSection {
   heading: string;
   paragraphs: string[];
@@ -12,8 +10,6 @@ export interface JournalArticle {
   title: string;
   excerpt: string;
   image: string;
-  /** Set while the image is not a final resort photo; shows a review badge. */
-  imageSource?: TempImageSource;
   intro: string;
   sections: JournalSection[];
 }
@@ -27,7 +23,6 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     title: "The Sacred Stillness of Arunachala: An International Traveler's Guide",
     excerpt: "Navigating the sacred geography of Thiruvannamalai, the 14 km Girivalam circumambulation, and finding deep inner quietude.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBff-dHQjJQAfDdnhZGObNdgAyI99t0GtLb7EDVP8ojtklmgX19VnBjxrvfzMTbFI_6YDtEo2pe5WQUu_QrL9ZXSv9I9-BHBMSrhft4EA4KkMY9OJ7yzHM3WzDRx8z5-0gshMLTr1X3nJaYjy4zQTy841pu4luxHmWdjHLC9y9g-_3s_ex3SMNadJZef8QJ6j9B7a2hirBcLVNZYTaW2dE1CWLeofQEdLwxJnHdfzT1uFjErccSkRbp",
-    imageSource: "ai",
     intro: "Rising quietly above the plains of Tamil Nadu, Arunachala has drawn seekers for centuries. For travelers arriving from far away, the mountain can feel both welcoming and mysterious. This guide offers a gentle starting point.",
     sections: [
       {
@@ -65,7 +60,6 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     title: "Ayurveda as Daily Rhythm: Beyond Treatments to Wholesome Living",
     excerpt: "How Dinacharya (daily natural routine) harmonizes the biological clock and prevents imbalances before they arise.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAofNZqVnGVJzpaGvDlLSddXpowD08XVurhMktLFiO9MAIawNTe2m5F-qmtJb5-GXbPUG7moBCRYC8uZwCKxWOBYi_QSlDkZ5IvdOm_ED_i8atlnP9tu0EKclC1RTISXLMTtCWWJ-e6zOD6f6Il6aMpMhApasOoO4OU0hB7dnnfQrSL2FpjRT95HYxIZr7HMHCseBkVDfrsiZQhxLWngOaO-eAGsq1ZCYO48_OgBjQoaRsWBEHlpaH3",
-    imageSource: "ai",
     intro: "Ayurveda is often introduced through treatments such as massage and cleansing. Yet the tradition begins somewhere simpler: with how we spend an ordinary day.",
     sections: [
       {

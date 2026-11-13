@@ -8,7 +8,6 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RetreatPackage from "@/components/RetreatPackage";
-import TempImageBadge from "@/components/TempImageBadge";
 import { WELLNESS_FAQS } from "@/content/wellness";
 import { isReducedMotion, EASE_CINEMATIC, revealSection, revealStagger, createImageParallax } from "@/utils/animations";
 
@@ -42,7 +41,6 @@ function WellnessHero() {
       </div>
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest-charcoal/80 via-forest-charcoal/40 to-forest-charcoal/85 pointer-events-none"></div>
       <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-forest-deep/30 to-forest-charcoal/90 pointer-events-none"></div>
-      <TempImageBadge source="ai" position="bottom-left" />
       
       <div ref={contentRef} className="relative z-20 w-full max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-headline-lg text-display-lg-mobile md:text-display-lg text-canvas-ivory tracking-tight mb-6 text-balance">
@@ -88,12 +86,12 @@ function Philosophy() {
 
 // --- APPROACH GRID ---
 const APPROACH_ITEMS = [
-  { title: "Ayurveda and Traditional Therapies", description: "Authentic treatments that support your body's natural balance.", image: "/images/wellness_image.png", imageSource: "ai" as const },
-  { title: "Yoga", description: "Gentle movement and breathwork in an open-air shala.", image: "/images/hero_bg.png", imageSource: "ai" as const },
+  { title: "Ayurveda and Traditional Therapies", description: "Authentic treatments that support your body's natural balance.", image: "/images/wellness_image.png" },
+  { title: "Yoga", description: "Gentle movement and breathwork in an open-air shala.", image: "/images/hero_bg.png" },
   { title: "Meditation", description: "Guided mindfulness and silent spaces for reflection.", image: "/images/buddha-statue-meditation-corner.webp" },
   { title: "Healthy Food", description: "Sattvic vegetarian meals, with vegan and gluten-free options on request.", image: "/images/dining-idli-breakfast-thali.webp" },
   { title: "Nature", description: "Time by the lotus pond, flower garden and medicinal herb garden.", image: "/images/garden-path-building-view-portrait.webp" },
-  { title: "Lifestyle Consultations", description: "Personal guidance on daily routine and diet.", image: "/images/wellness_image.png", imageSource: "ai" as const },
+  { title: "Lifestyle Consultations", description: "Personal guidance on daily routine and diet.", image: "/images/wellness_image.png" },
 ];
 
 function WellnessApproach() {
@@ -121,7 +119,6 @@ function WellnessApproach() {
             <div key={item.title} className="approach-item group relative overflow-hidden flex flex-col w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
               <div className="relative aspect-[4/3] w-full overflow-hidden mb-3">
                 <div className="parallax-img absolute inset-0 w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('${item.image}')` }} />
-                {"imageSource" in item && item.imageSource && <TempImageBadge source={item.imageSource} />}
               </div>
               <h3 className="text-base md:text-lg font-headline-sm text-forest-deep uppercase tracking-wider">{item.title}</h3>
               <p className="font-body-sm text-body-sm text-forest-deep/75 mt-2 leading-relaxed">{item.description}</p>

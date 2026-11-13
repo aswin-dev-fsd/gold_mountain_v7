@@ -27,8 +27,6 @@ export const STAY_ROOMS = [
     amenities: ["Family Layout", "Mountain View", "King-size Beds", "All Meals Included"],
     prices: { INR: "₹7,999", USD: "$95", EUR: "€89" },
     image: "/images/suite-open-plan-living-bedroom.webp",
-    imageSource: "original",
-    imageNote: "Suite photo shown · Family Suite photo needed",
     reverse: false,
   },
 ] as const;

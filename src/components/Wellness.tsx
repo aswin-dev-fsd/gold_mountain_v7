@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { revealStagger, createParallax, createImageReveal, createImageParallax } from "../utils/animations";
-import TempImageBadge from "@/components/TempImageBadge";
 
 export default function Wellness() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -83,7 +82,6 @@ export default function Wellness() {
               className="w-full aspect-[4/3] lg:aspect-auto lg:h-full lg:flex-1 bg-cover bg-center" 
               style={{ backgroundImage: "url('/images/wellness_image.png')" }}
             ></div>
-            <TempImageBadge source="ai" />
             
             {/* Editorial Floating Overlay Tag */}
             <div ref={overlayRef} className="absolute bottom-3 left-3 right-3 sm:bottom-space-lg sm:left-space-lg sm:right-space-lg p-3 sm:p-space-md rounded-lg bg-forest-charcoal/90 text-canvas-ivory backdrop-blur-md flex items-center justify-start gap-3 sm:gap-4 shadow-lg">

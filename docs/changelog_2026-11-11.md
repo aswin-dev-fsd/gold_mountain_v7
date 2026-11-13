@@ -40,3 +40,17 @@
 ### Verification
 - Production build (`npm run build`) passed with 0 errors across all 21 statically generated routes.
 - All 15 new WebP assets return 200 on every page that references them; badge counts verified per page in the browser.
+
+
+---
+
+## Temporary Image Badges Removed (2026-11-13)
+
+### Removed
+- **Temporary Image Badge (`src/components/TempImageBadge.tsx`)**: deleted the component and every usage, import and data field ahead of Google indexing, so visitors and search engines no longer see review labels.
+  - Removed `imageSource` / `imageNote` fields from `src/data/journal.ts`, `src/content/stay.ts` and the wellness approach items in `src/app/wellness/page.tsx`.
+  - Restored the original markup of the journal card wrapper (`src/components/Journal.tsx`) and the related-article image (`src/app/journal/[slug]/page.tsx`).
+- The images themselves are unchanged. The AI/stock images and the Family Suite stand-in listed under "Still Needed From Client" remain on the site until real photos arrive.
+
+### Verification
+- TypeScript check and production build (`npm run build`) passed with 0 errors.

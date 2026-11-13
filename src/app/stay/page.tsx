@@ -10,7 +10,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { STAY_ROOMS, STAY_FAQS } from "@/content/stay";
 import { isReducedMotion, EASE_CINEMATIC, revealSection, revealStagger, createImageParallax } from "@/utils/animations";
-import TempImageBadge from "@/components/TempImageBadge";
 
 // Match the established WhatsApp style; rounded-full is only 12px in this theme.
 function WhatsAppButton() {
@@ -105,7 +104,6 @@ function RoomBlock({ room, index, currency }: { room: typeof STAY_ROOMS[number],
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover" 
             />
-            {"imageSource" in room && <TempImageBadge source={room.imageSource} note={room.imageNote} />}
           </div>
         </div>
 

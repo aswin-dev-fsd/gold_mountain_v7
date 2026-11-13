@@ -8,7 +8,6 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { isReducedMotion, EASE_CINEMATIC, revealSection, createImageParallax } from "@/utils/animations";
-import TempImageBadge from "@/components/TempImageBadge";
 
 // --- HERO SECTION ---
 function AboutHero() {
@@ -101,7 +100,6 @@ function FounderProfile() {
               className="absolute inset-0 w-full h-full object-cover grayscale opacity-80" 
             />
             <div className="absolute inset-0 border border-border-muted m-4 pointer-events-none"></div>
-            <TempImageBadge source="stock" note="Temporary · founder photo needed" position="bottom-left" />
           </div>
         </div>
 

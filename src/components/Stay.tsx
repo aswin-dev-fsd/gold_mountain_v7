@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { revealStagger, revealSection } from "../utils/animations";
 import { useCurrency } from "../context/CurrencyContext";
-import TempImageBadge from "@/components/TempImageBadge";
 
 const PRICES = {
   deluxe: { INR: '₹3,099', USD: '$37', EUR: '€34' },
@@ -140,7 +139,6 @@ export default function Stay() {
                 className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
                 style={{ backgroundImage: "url('/images/suite-open-plan-living-bedroom.webp')" }}
               ></div>
-              <TempImageBadge source="original" note="Suite photo shown · Family Suite photo needed" position="bottom-left" />
               <span className="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-forest-deep/90 text-canvas-ivory font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
                 4 Guests
               </span>

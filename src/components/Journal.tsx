@@ -5,7 +5,6 @@ import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import { revealStagger } from "../utils/animations";
 import { JOURNAL_ARTICLES } from "../data/journal";
-import TempImageBadge from "@/components/TempImageBadge";
 
 export default function Journal() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -51,12 +50,11 @@ export default function Journal() {
         <div ref={articlesRef} className="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
           {JOURNAL_ARTICLES.map((article) => (
             <article key={article.slug} className="flex flex-col rounded-xl overflow-hidden bg-surface-cream shadow-sm group hover:shadow-md hover:-translate-y-1 transition-all">
-              <div className="w-full aspect-[16/10] overflow-hidden relative">
+              <div className="w-full aspect-[16/10] overflow-hidden">
                 <div
                   className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
                   style={{ backgroundImage: `url('${article.image}')` }}
                 ></div>
-                {article.imageSource && <TempImageBadge source={article.imageSource} />}
               </div>
               <div className="p-space-lg flex-1 flex flex-col">
                 <div>
